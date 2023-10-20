@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import useLocalStorage from "use-local-storage";
 import Footer from "@/components/Footer";
 
@@ -50,9 +50,13 @@ function App() {
     setTheme(newTheme);
   };
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
     <>
-      <main className="App" data-theme={theme}>
+      <main className="App">
         <button className="yellow-eye" onClick={switchThemeYellow} />
         <button className="red-eye" onClick={switchThemeRed} />
         <button className="magenta-eye" onClick={switchThemeMagenta} />
