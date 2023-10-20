@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+
+  --yellow: #f0d056;
+  --red: #ff5e5a;
+  --magenta: #9b3a98;
+  --purple: #b075f8;
+  --violet: #7b8ffc;
+  --blue: #4389ff;
+  --ocean: #5cc2e4;
+  --green: #6ef0bc;
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+[data-theme="yellow"] {
+  --background: var(--yellow);
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+[data-theme="red"] {
+  --background: var(--red);
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+[data-theme="magenta"] {
+  --background: var(--magenta);
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+[data-theme="purple"] {
+  --background: var(--purple);
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+[data-theme="violet"] {
+  --background: var(--violet);
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+[data-theme="blue"] {
+  --background: var(--blue);
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+[data-theme="ocean"] {
+  --background: var(--ocean);
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+[data-theme="green"] {
+  --background: var(--green);
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+.yellow-eye,
+.red-eye,
+.magenta-eye,
+.purple-eye,
+.violet-eye,
+.blue-eye,
+.ocean-eye,
+.green-eye {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.yellow-eye {
+  background-color: var(--yellow);
+}
+
+.red-eye {
+  background-color: var(--red);
+}
+
+.magenta-eye {
+  background-color: var(--magenta);
+}
+
+.purple-eye {
+  background-color: var(--purple);
+}
+
+.violet-eye {
+  background-color: var(--violet);
+}
+
+.blue-eye {
+  background-color: var(--blue);
+}
+
+.ocean-eye {
+  background-color: var(--ocean);
+}
+
+.green-eye {
+  background-color: var(--green);
+}
