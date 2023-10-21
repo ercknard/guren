@@ -9,6 +9,16 @@ function Theme() {
     defaultDark ? "dark" : "light"
   );
 
+  const switchThemeWhite = () => {
+    const newTheme = "white";
+    setTheme(newTheme);
+  };
+
+  const switchThemeBlack = () => {
+    const newTheme = "black";
+    setTheme(newTheme);
+  };
+
   const switchThemeYellow = () => {
     const newTheme = "yellow";
     setTheme(newTheme);
@@ -56,6 +66,8 @@ function Theme() {
   return (
     <>
       <section>
+        <button className="white-eye" onClick={switchThemeWhite} />
+        <button className="black-eye" onClick={switchThemeBlack} />
         <button className="yellow-eye" onClick={switchThemeYellow} />
         <button className="red-eye" onClick={switchThemeRed} />
         <button className="magenta-eye" onClick={switchThemeMagenta} />

@@ -5,11 +5,8 @@
 }
 
 :root {
-  --background: white;
-  --text-primary: black;
-  --text-secondary: royalblue;
-  --accent: purple;
-
+  --white: #ffffff;
+  --black: #000000;
   --yellow: #f0d056;
   --red: #ff5e5a;
   --magenta: #9b3a98;
@@ -24,6 +21,20 @@
 }
 
 @media (prefers-color-scheme: light) {
+}
+
+[data-theme="white"] {
+  --background: var(--white);
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+[data-theme="black"] {
+  --background: var(--black);
+  --text-primary: black;
+  --text-secondary: grey;
+  --accent: darkred;
 }
 
 [data-theme="yellow"] {
@@ -82,6 +93,8 @@
   --accent: darkred;
 }
 
+.white-eye,
+.black-eye,
 .yellow-eye,
 .red-eye,
 .magenta-eye,
@@ -95,6 +108,14 @@
   height: 2rem;
   cursor: pointer;
   margin: 0.5rem;
+}
+
+.white-eye {
+  background-color: var(--white);
+}
+
+.black-eye {
+  background-color: var(--black);
 }
 
 .yellow-eye {
