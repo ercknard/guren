@@ -53,6 +53,8 @@ function Theme() {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
+  console.log({ theme });
+
   return (
     <>
       <section>

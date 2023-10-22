@@ -8,6 +8,7 @@ function App() {
   const DynamicComponent = dynamic(() => import("@/components/Theme"), {
     ssr: false,
   });
+
   return (
     <>
       <main className="App">
