@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
+import Particlesview from "@/components/Particles";
 
 function App() {
   const DynamicComponent = dynamic(() => import("@/components/Theme"), {
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <main className="App">
+        <Particlesview />
         <DynamicComponent />
       </main>
     </>

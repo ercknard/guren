@@ -18,79 +18,98 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--black) !important;
+  }
 }
 
 @media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--white) !important;
+  }
 }
 
-[data-theme="white"] {
-  --background: var(--white);
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
+/* [data-theme="white"] {
+  background: var(--white);
 }
 
 [data-theme="black"] {
-  --background: var(--black);
-  --text-primary: black;
-  --text-secondary: grey;
-  --accent: darkred;
-}
+  background: var(--black);
+} */
 
 [data-theme="yellow"] {
-  --background: var(--yellow);
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
+  /* --background: var(--yellow); */
+  background: url("/static/images/bgs/yellow-surf.svg"),
+    url("/static/images/bgs/ercknard-yellow.webp"),
+    url("/static/images/bgs/yellow.svg");
 }
 
 [data-theme="red"] {
-  --background: var(--red);
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
+  /* --background: var(--red); */
+  background: url("/static/images/bgs/red-surf.svg"),
+    url("/static/images/bgs/ercknard-red.webp"),
+    url("/static/images/bgs/red.svg");
 }
 
 [data-theme="magenta"] {
-  --background: var(--magenta);
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
+  /* --background: var(--magenta); */
+  background: url("/static/images/bgs/magenta-surf.svg"),
+    url("/static/images/bgs/ercknard-magenta.webp"),
+    url("/static/images/bgs/magenta.svg");
 }
 
 [data-theme="purple"] {
-  --background: var(--purple);
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
+  /* --background: var(--purple); */
+  background: url("/static/images/bgs/purple-surf.svg"),
+    url("/static/images/bgs/ercknard-purple.webp"),
+    url("/static/images/bgs/purple.svg");
 }
 
 [data-theme="violet"] {
-  --background: var(--violet);
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
+  /* --background: var(--violet); */
+  background: url("/static/images/bgs/violet-surf.svg"),
+    url("/static/images/bgs/ercknard-violet.webp"),
+    url("/static/images/bgs/violet.svg");
 }
 
 [data-theme="blue"] {
-  --background: var(--blue);
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
+  /* --background: var(--blue); */
+  background: url("/static/images/bgs/blue-surf.svg"),
+    url("/static/images/bgs/ercknard-blue.webp"),
+    url("/static/images/bgs/blue.svg");
 }
 
 [data-theme="ocean"] {
-  --background: var(--ocean);
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
+  /* --background: var(--ocean); */
+  background: url("/static/images/bgs/ocean-surf.svg"),
+    url("/static/images/bgs/ercknard-ocean.webp"),
+    url("/static/images/bgs/ocean.svg");
 }
 
 [data-theme="green"] {
-  --background: var(--green);
+  /* --background: var(--green); */
+  background: url("/static/images/bgs/green-surf.svg"),
+    url("/static/images/bgs/ercknard-green.webp"),
+    url("/static/images/bgs/green.svg");
+}
+
+[data-theme="white"],
+[data-theme="black"],
+[data-theme="yellow"],
+[data-theme="red"],
+[data-theme="magenta"],
+[data-theme="purple"],
+[data-theme="violet"],
+[data-theme="blue"],
+[data-theme="ocean"],
+[data-theme="green"] {
+  background-repeat: no-repeat;
+  background-position: bottom, center, center;
+  background-size: cover, contain, cover;
   --text-primary: white;
   --text-secondary: grey;
   --accent: darkred;
+  transition: 0.5s;
 }
 
 .white-eye,
@@ -148,4 +167,8 @@
 
 .green-eye {
   background-color: var(--green);
+}
+
+#tsparticles {
+  z-index: -1 !important;
 }
