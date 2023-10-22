@@ -5,6 +5,7 @@
 }
 
 :root {
+  --transparent: #0e0915;
   --white: #ffffff;
   --black: #000000;
   --yellow: #f0d056;
@@ -17,77 +18,79 @@
   --green: #6ef0bc;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    background-color: var(--black) !important;
+@keyframes bg-anim {
+  0% {
+    background-color: var(--black);
+  }
+
+  10% {
+    background-color: var(--background);
+  }
+
+  100% {
+    background-color: var(--black);
   }
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: var(--white) !important;
-  }
-}
-
-/* [data-theme="white"] {
-  background: var(--white);
-}
-
-[data-theme="black"] {
-  background: var(--black);
-} */
 
 [data-theme="yellow"] {
-  /* --background: var(--yellow); */
+  --background: var(--yellow);
+  --accent: #f0d05630;
   background: url("/static/images/bgs/yellow-surf.svg"),
     url("/static/images/bgs/ercknard-yellow.webp"),
     url("/static/images/bgs/yellow.svg");
 }
 
 [data-theme="red"] {
-  /* --background: var(--red); */
+  --background: var(--red);
+  --accent: #ff5e5a30;
   background: url("/static/images/bgs/red-surf.svg"),
     url("/static/images/bgs/ercknard-red.webp"),
     url("/static/images/bgs/red.svg");
 }
 
 [data-theme="magenta"] {
-  /* --background: var(--magenta); */
+  --background: var(--magenta);
+  --accent: #9b3a9830;
   background: url("/static/images/bgs/magenta-surf.svg"),
     url("/static/images/bgs/ercknard-magenta.webp"),
     url("/static/images/bgs/magenta.svg");
 }
 
 [data-theme="purple"] {
-  /* --background: var(--purple); */
+  --background: var(--purple);
+  --accent: #b075f830;
   background: url("/static/images/bgs/purple-surf.svg"),
     url("/static/images/bgs/ercknard-purple.webp"),
     url("/static/images/bgs/purple.svg");
 }
 
 [data-theme="violet"] {
-  /* --background: var(--violet); */
+  --background: var(--violet);
+  --accent: #7b8ffc30;
   background: url("/static/images/bgs/violet-surf.svg"),
     url("/static/images/bgs/ercknard-violet.webp"),
     url("/static/images/bgs/violet.svg");
 }
 
 [data-theme="blue"] {
-  /* --background: var(--blue); */
+  --background: var(--blue);
+  --accent: #4389ff30;
   background: url("/static/images/bgs/blue-surf.svg"),
     url("/static/images/bgs/ercknard-blue.webp"),
     url("/static/images/bgs/blue.svg");
 }
 
 [data-theme="ocean"] {
-  /* --background: var(--ocean); */
+  --background: var(--ocean);
+  --accent: #5cc2e430;
   background: url("/static/images/bgs/ocean-surf.svg"),
     url("/static/images/bgs/ercknard-ocean.webp"),
     url("/static/images/bgs/ocean.svg");
 }
 
 [data-theme="green"] {
-  /* --background: var(--green); */
+  --background: var(--green);
+  --accent: #6ef0bc30;
   background: url("/static/images/bgs/green-surf.svg"),
     url("/static/images/bgs/ercknard-green.webp"),
     url("/static/images/bgs/green.svg");
@@ -108,8 +111,8 @@
   background-size: cover, contain, cover;
   --text-primary: white;
   --text-secondary: grey;
-  --accent: darkred;
   transition: 0.5s;
+  height: 100vh;
 }
 
 .white-eye,
@@ -169,6 +172,14 @@
   background-color: var(--green);
 }
 
-#tsparticles {
-  z-index: -1 !important;
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--accent);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--accent);
+  }
 }

@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 import Particlesview from "@/components/Particles";
+import Footer from "@/components/Footer";
 
 function App() {
   const DynamicComponent = dynamic(() => import("@/components/Theme"), {
@@ -13,6 +14,7 @@ function App() {
         <Particlesview />
         <DynamicComponent />
       </main>
+      {/* <Footer /> */}
     </>
   );
 }
