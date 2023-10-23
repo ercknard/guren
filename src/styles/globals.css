@@ -13,6 +13,25 @@
     url("/static/images/bgs/white-surf.svg");
   --background-ter: url("/static/images/bgs/white-surf.svg");
 
+  --ercknard-white: url("/static/images/bgs/ercknard-white.webp"),
+    url("/static/images/bgs/white-surf.svg");
+  --ercknard-yellow: url("/static/images/bgs/ercknard-yellow.webp"),
+    url("/static/images/bgs/yellow-surf.svg");
+  --ercknard-red: url("/static/images/bgs/ercknard-red.webp"),
+    url("/static/images/bgs/red-surf.svg");
+  --ercknard-magenta: url("/static/images/bgs/ercknard-magenta.webp"),
+    url("/static/images/bgs/magenta-surf.svg");
+  --ercknard-purple: url("/static/images/bgs/ercknard-purple.webp"),
+    url("/static/images/bgs/purple-surf.svg");
+  --ercknard-violet: url("/static/images/bgs/ercknard-violet.webp"),
+    url("/static/images/bgs/violet-surf.svg");
+  --ercknard-blue: url("/static/images/bgs/ercknard-blue.webp"),
+    url("/static/images/bgs/blue-surf.svg");
+  --ercknard-ocean: url("/static/images/bgs/ercknard-ocean.webp"),
+    url("/static/images/bgs/ocean-surf.svg");
+  --ercknard-green: url("/static/images/bgs/ercknard-green.webp"),
+    url("/static/images/bgs/green-surf.svg");
+
   --transparent: rgba(0, 0, 0, 0);
   --white: #ffffff;
   --black: #000000;
@@ -125,23 +144,6 @@
   transition: 0.5s;
 }
 
-.white-eye,
-.black-eye,
-.yellow-eye,
-.red-eye,
-.magenta-eye,
-.purple-eye,
-.violet-eye,
-.blue-eye,
-.ocean-eye,
-.green-eye {
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-  margin: 0.5rem;
-}
-
 .eye {
   filter: drop-shadow(1px 1px 1px black);
 }
@@ -152,43 +154,65 @@
 }
 
 .white-eye {
-  background-color: var(--white);
+  background: var(--ercknard-white), var(--white);
 }
 
 .black-eye {
-  background-color: var(--black);
+  background: var(--ercknard-black), var(--black);
 }
 
 .yellow-eye {
-  background-color: var(--yellow);
+  background: var(--ercknard-yellow), var(--yellow);
 }
 
 .red-eye {
-  background-color: var(--red);
+  background: var(--ercknard-red), var(--red);
 }
 
 .magenta-eye {
-  background-color: var(--magenta);
+  background: var(--ercknard-magenta), var(--magenta);
 }
 
 .purple-eye {
-  background-color: var(--purple);
+  background: var(--ercknard-purple), var(--purple);
 }
 
 .violet-eye {
-  background-color: var(--violet);
+  background: var(--ercknard-violet), var(--violet);
 }
 
 .blue-eye {
-  background-color: var(--blue);
+  background: var(--ercknard-blue), var(--blue);
 }
 
 .ocean-eye {
-  background-color: var(--ocean);
+  background: var(--ercknard-ocean), var(--ocean);
 }
 
 .green-eye {
-  background-color: var(--green);
+  background: var(--ercknard-green), var(--green);
+}
+
+.white-eye,
+.black-eye,
+.yellow-eye,
+.red-eye,
+.magenta-eye,
+.purple-eye,
+.violet-eye,
+.blue-eye,
+.ocean-eye,
+.green-eye {
+  /* border-radius: 50%;
+  width: 2rem;
+  height: 2rem; */
+  background-size: contain, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 125px;
+  height: 10rem;
+  cursor: pointer;
+  margin: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -210,12 +234,12 @@
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 1 !important;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     var(--transparent),
     var(--transparent),
     var(--background)
-  );
+  ); */
   border-bottom: 2.5px solid;
   border-image: linear-gradient(
       to left,
@@ -227,8 +251,8 @@
     1;
   padding: 0.5rem 4rem;
   padding-top: 1rem;
-  -webkit-clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+  /* -webkit-clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%); */
   filter: drop-shadow(0px -1px 1px var(--background));
   overflow: visible;
 }
@@ -295,5 +319,62 @@
     background-position: bottom, center, center;
     background-size: contain, cover, cover;
     background-attachment: fixed;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .white-eye {
+    background: var(--white);
+  }
+
+  .black-eye {
+    background: var(--black);
+  }
+
+  .yellow-eye {
+    background: var(--yellow);
+  }
+
+  .red-eye {
+    background: var(--red);
+  }
+
+  .magenta-eye {
+    background: var(--magenta);
+  }
+
+  .purple-eye {
+    background: var(--purple);
+  }
+
+  .violet-eye {
+    background: var(--violet);
+  }
+
+  .blue-eye {
+    background: var(--blue);
+  }
+
+  .ocean-eye {
+    background: var(--ocean);
+  }
+
+  .green-eye {
+    background: var(--green);
+  }
+
+  .white-eye,
+  .black-eye,
+  .yellow-eye,
+  .red-eye,
+  .magenta-eye,
+  .purple-eye,
+  .violet-eye,
+  .blue-eye,
+  .ocean-eye,
+  .green-eye {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
   }
 }
