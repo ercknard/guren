@@ -162,7 +162,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    background: var(--white);
+    background: var(--black);
   }
 }
 
