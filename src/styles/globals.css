@@ -109,10 +109,10 @@
   background-repeat: no-repeat;
   background-position: bottom, center, center;
   background-size: cover, contain, cover;
+  background-attachment: fixed;
   --text-primary: white;
   --text-secondary: grey;
   transition: 0.5s;
-  height: 100vh;
 }
 
 .white-eye,
@@ -174,7 +174,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background-color: var(--accent);
+    background-color: black;
   }
 }
 

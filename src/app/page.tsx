@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import Particlesview from "@/components/Particles";
 import Footer from "@/components/Footer";
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
   return (
     <>
       <main className="App">
-        <Particlesview />
         <DynamicComponent />
       </main>
       {/* <Footer /> */}

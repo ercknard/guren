@@ -1,17 +1,15 @@
 import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "tsparticles-slim";
 
-const Particlesview = () => {
+interface ParticleAnimationProps {
+  particleColor: string;
+}
+
+const Particlesview: React.FC<ParticleAnimationProps> = ({ particleColor }) => {
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
-
-    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    //await loadFull(engine);
     await loadSlim(engine);
   }, []);
 
@@ -21,23 +19,26 @@ const Particlesview = () => {
     },
     []
   );
+
+  console.log({ particleColor });
+
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        fpsLimit: 120,
+        fpsLimit: 1000,
         particles: {
           number: {
-            value: 50,
+            value: 100,
             density: {
               enable: true,
               value_area: 800,
             },
           },
           color: {
-            value: "#ffffff",
+            value: particleColor,
           },
           shape: {
             type: "circle",
@@ -81,20 +82,20 @@ const Particlesview = () => {
             opacity: 0.4,
             width: 1,
           },
-          move: {
-            enable: true,
-            speed: 0.1,
-            direction: "none",
-            random: true,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: {
-              enable: false,
-              rotateX: 600,
-              rotateY: 600,
-            },
-          },
+          // move: {
+          //   enable: true,
+          //   speed: 0.1,
+          //   direction: "none",
+          //   random: true,
+          //   straight: false,
+          //   out_mode: "out",
+          //   bounce: false,
+          //   attract: {
+          //     enable: false,
+          //     rotateX: 600,
+          //     rotateY: 600,
+          //   },
+          // },
         },
         detectRetina: true,
       }}
