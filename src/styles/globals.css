@@ -145,43 +145,43 @@
 }
 
 .white-eye {
-  background: var(--ercknard-white), var(--white);
+  background: var(--ercknard-white);
 }
 
 .black-eye {
-  background: var(--ercknard-black), var(--black);
+  background: var(--ercknard-black);
 }
 
 .yellow-eye {
-  background: var(--ercknard-yellow), var(--yellow);
+  background: var(--ercknard-yellow);
 }
 
 .red-eye {
-  background: var(--ercknard-red), var(--red);
+  background: var(--ercknard-red);
 }
 
 .magenta-eye {
-  background: var(--ercknard-magenta), var(--magenta);
+  background: var(--ercknard-magenta);
 }
 
 .purple-eye {
-  background: var(--ercknard-purple), var(--purple);
+  background: var(--ercknard-purple);
 }
 
 .violet-eye {
-  background: var(--ercknard-violet), var(--violet);
+  background: var(--ercknard-violet);
 }
 
 .blue-eye {
-  background: var(--ercknard-blue), var(--blue);
+  background: var(--ercknard-blue);
 }
 
 .ocean-eye {
-  background: var(--ercknard-ocean), var(--ocean);
+  background: var(--ercknard-ocean);
 }
 
 .green-eye {
-  background: var(--ercknard-green), var(--green);
+  background: var(--ercknard-green);
 }
 
 .white-eye,
@@ -202,6 +202,14 @@
   cursor: pointer;
   margin: 0.5rem;
   transition: 0.25s linear;
+  border-top: none;
+  border-image: linear-gradient(
+      to top,
+      var(--black),
+      var(--transparent),
+      var(--transparent)
+    )
+    1;
 }
 
 .eye {
