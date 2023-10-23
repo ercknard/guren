@@ -5,6 +5,7 @@
 }
 
 :root {
+  --background: #ffffff;
   --accent: #ffffff50;
   --background-prime: url("/static/images/bgs/ercknard-white.webp"),
     url("/static/images/bgs/white-surf.svg");
