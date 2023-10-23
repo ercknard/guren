@@ -209,7 +209,7 @@
   --text-secondary: grey;
   transition: 0.5s;
   z-index: 3 !important;
-  animation: bg-anim 10s ease infinite;
+  animation: bg-anim 15s ease infinite;
 }
 
 @keyframes bg-anim {
