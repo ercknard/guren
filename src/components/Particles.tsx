@@ -29,14 +29,14 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({ particleColor }) => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fpsLimit: 1000,
+          fpsLimit: 120,
           fullScreen: {
             enable: false,
             zIndex: -1,
           },
           particles: {
             number: {
-              value: 75,
+              value: 50,
               density: {
                 enable: true,
                 value_area: 800,
@@ -89,7 +89,7 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({ particleColor }) => {
             },
             move: {
               enable: true,
-              speed: 2,
+              speed: 1,
               direction: "none",
               random: true,
               straight: false,
