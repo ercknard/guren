@@ -7,7 +7,9 @@
 :root {
   --accent: #ffffff50;
   --background-prime: url("/static/images/bgs/ercknard-white.webp"),
-    url("/static/images/bgs/white.svg");
+    url("/static/images/bgs/white-surf.svg");
+  --background-second: url("/static/images/bgs/ercknard-white-closed.webp"),
+    url("/static/images/bgs/white-surf.svg");
 
   --transparent: #0e0915;
   --white: #ffffff;
@@ -27,12 +29,16 @@
   --accent: #f0d05650;
   --background-prime: url("/static/images/bgs/ercknard-yellow.webp"),
     url("/static/images/bgs/yellow-surf.svg");
+  --background-second: url("/static/images/bgs/ercknard-yellow-closed.webp"),
+    url("/static/images/bgs/yellow-surf.svg");
 }
 
 [data-theme="red"] {
   --background: var(--red);
   --accent: #ff5e5a50;
   --background-prime: url("/static/images/bgs/ercknard-red.webp"),
+    url("/static/images/bgs/red-surf.svg");
+  --background-second: url("/static/images/bgs/ercknard-red-closed.webp"),
     url("/static/images/bgs/red-surf.svg");
 }
 
@@ -41,12 +47,16 @@
   --accent: #9b3a9850;
   --background-prime: url("/static/images/bgs/ercknard-magenta.webp"),
     url("/static/images/bgs/magenta-surf.svg");
+  --background-second: url("/static/images/bgs/ercknard-magenta-closed.webp"),
+    url("/static/images/bgs/magenta-surf.svg");
 }
 
 [data-theme="purple"] {
   --background: var(--purple);
   --accent: #b075f850;
   --background-prime: url("/static/images/bgs/ercknard-purple.webp"),
+    url("/static/images/bgs/purple-surf.svg");
+  --background-second: url("/static/images/bgs/ercknard-purple-closed.webp"),
     url("/static/images/bgs/purple-surf.svg");
 }
 
@@ -55,12 +65,16 @@
   --accent: #7b8ffc50;
   --background-prime: url("/static/images/bgs/ercknard-violet.webp"),
     url("/static/images/bgs/violet-surf.svg");
+  --background-second: url("/static/images/bgs/ercknard-violet-closed.webp"),
+    url("/static/images/bgs/violet-surf.svg");
 }
 
 [data-theme="blue"] {
   --background: var(--blue);
   --accent: #4389ff50;
   --background-prime: url("/static/images/bgs/ercknard-blue.webp"),
+    url("/static/images/bgs/blue-surf.svg");
+  --background-second: url("/static/images/bgs/ercknard-blue-closed.webp"),
     url("/static/images/bgs/blue-surf.svg");
 }
 
@@ -69,12 +83,16 @@
   --accent: #5cc2e450;
   --background-prime: url("/static/images/bgs/ercknard-ocean.webp"),
     url("/static/images/bgs/ocean-surf.svg");
+  --background-second: url("/static/images/bgs/ercknard-ocean-closed.webp"),
+    url("/static/images/bgs/ocean-surf.svg");
 }
 
 [data-theme="green"] {
   --background: var(--green);
   --accent: #6ef0bc50;
   --background-prime: url("/static/images/bgs/ercknard-green.webp"),
+    url("/static/images/bgs/green-surf.svg");
+  --background-second: url("/static/images/bgs/ercknard-green-closed.webp"),
     url("/static/images/bgs/green-surf.svg");
 }
 
@@ -166,20 +184,6 @@
   }
 }
 
-@keyframes bg-anim {
-  0% {
-    background: var(--black);
-  }
-
-  50% {
-    background: var(--accent);
-  }
-
-  100% {
-    background: var(--black);
-  }
-}
-
 .theme-buttons {
   position: fixed;
   z-index: 1 !important;
@@ -201,16 +205,35 @@
 .landing-container {
   width: 100%;
   height: 100vh;
-  background: var(--background-prime);
-}
-
-.landing-container {
-  background-repeat: no-repeat;
-  background-position: bottom, center, center;
-  background-size: contain, cover, cover;
-  background-attachment: fixed;
   --text-primary: white;
   --text-secondary: grey;
   transition: 0.5s;
   z-index: 3 !important;
+  animation: bg-anim 10s ease infinite;
+}
+
+@keyframes bg-anim {
+  0% {
+    background: var(--background-prime);
+    background-repeat: no-repeat;
+    background-position: bottom, center, center;
+    background-size: contain, cover, cover;
+    background-attachment: fixed;
+  }
+
+  50% {
+    background: var(--background-second);
+    background-repeat: no-repeat;
+    background-position: bottom, center, center;
+    background-size: contain, cover, cover;
+    background-attachment: fixed;
+  }
+
+  100% {
+    background: var(--background-prime);
+    background-repeat: no-repeat;
+    background-position: bottom, center, center;
+    background-size: contain, cover, cover;
+    background-attachment: fixed;
+  }
 }
