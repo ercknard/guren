@@ -5,6 +5,10 @@
 }
 
 :root {
+  --accent: #ffffff50;
+  --background-prime: url("/static/images/bgs/ercknard-white.webp"),
+    url("/static/images/bgs/white.svg");
+
   --transparent: #0e0915;
   --white: #ffffff;
   --black: #000000;
@@ -18,72 +22,58 @@
   --green: #6ef0bc;
 }
 
-@keyframes bg-anim {
-  0% {
-    background-color: var(--black);
-  }
-
-  10% {
-    background-color: var(--background);
-  }
-
-  100% {
-    background-color: var(--black);
-  }
-}
-
 [data-theme="yellow"] {
   --background: var(--yellow);
-  --accent: #f0d05630;
+  --accent: #f0d05650;
   --background-prime: url("/static/images/bgs/ercknard-yellow.webp"),
     url("/static/images/bgs/yellow-surf.svg");
 }
 
 [data-theme="red"] {
   --background: var(--red);
-  --accent: #ff5e5a30;
+  --accent: #ff5e5a50;
   --background-prime: url("/static/images/bgs/ercknard-red.webp"),
     url("/static/images/bgs/red-surf.svg");
 }
 
 [data-theme="magenta"] {
   --background: var(--magenta);
-  --accent: #9b3a9830;
+  --accent: #9b3a9850;
   --background-prime: url("/static/images/bgs/ercknard-magenta.webp"),
     url("/static/images/bgs/magenta-surf.svg");
 }
 
 [data-theme="purple"] {
   --background: var(--purple);
-  --accent: #b075f830;
+  --accent: #b075f850;
   --background-prime: url("/static/images/bgs/ercknard-purple.webp"),
     url("/static/images/bgs/purple-surf.svg");
 }
 
 [data-theme="violet"] {
   --background: var(--violet);
-  --accent: #7b8ffc30;
+  --accent: #7b8ffc50;
   --background-prime: url("/static/images/bgs/ercknard-violet.webp"),
     url("/static/images/bgs/violet-surf.svg");
 }
 
 [data-theme="blue"] {
   --background: var(--blue);
-  --accent: #4389ff30;
+  --accent: #4389ff50;
   --background-prime: url("/static/images/bgs/ercknard-blue.webp"),
     url("/static/images/bgs/blue-surf.svg");
 }
 
 [data-theme="ocean"] {
   --background: var(--ocean);
-  --accent: #5cc2e430;
+  --accent: #5cc2e450;
   --background-prime: url("/static/images/bgs/ercknard-ocean.webp"),
     url("/static/images/bgs/ocean-surf.svg");
 }
 
 [data-theme="green"] {
   --background: var(--green);
-  --accent: #6ef0bc30;
+  --accent: #6ef0bc50;
   --background-prime: url("/static/images/bgs/ercknard-green.webp"),
     url("/static/images/bgs/green-surf.svg");
 }
@@ -99,7 +89,7 @@
 [data-theme="ocean"],
 [data-theme="green"] {
   background-repeat: no-repeat;
-  background-position: bottom, center, center;
+  background-position: center, center;
   background-size: contain, cover;
   background-attachment: fixed;
   --text-primary: white;
@@ -166,13 +156,27 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background-color: black;
+    background: var(--black);
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    background-color: var(--accent);
+    background: var(--white);
+  }
+}
+
+@keyframes bg-anim {
+  0% {
+    background: var(--black);
+  }
+
+  50% {
+    background: var(--accent);
+  }
+
+  100% {
+    background: var(--black);
   }
 }
 
