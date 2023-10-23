@@ -11,7 +11,7 @@
   --background-second: url("/static/images/bgs/ercknard-white-closed.webp"),
     url("/static/images/bgs/white-surf.svg");
 
-  --transparent: #0e0915;
+  --transparent: rgba(0, 0, 0, 0);
   --white: #ffffff;
   --black: #000000;
   --yellow: #f0d056;
@@ -132,6 +132,15 @@
   margin: 0.5rem;
 }
 
+.eye {
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+.eye:hover,
+.eye:active {
+  transform: translateY(-2px);
+}
+
 .white-eye {
   background-color: var(--white);
 }
@@ -186,7 +195,23 @@
 
 .theme-buttons {
   position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   z-index: 1 !important;
+  background: linear-gradient(to bottom, var(--transparent), var(--background));
+  border: 1px solid;
+  border-image: linear-gradient(
+      to left,
+      var(--black),
+      var(--background),
+      var(--black)
+    )
+    1;
+  padding: 0.5rem 5rem;
+  -webkit-clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
 }
 
 .canvas-container {
