@@ -1,7 +1,6 @@
 .App {
   color: var(--text-primary);
   transition: all 0.5s;
-  height: 200vh;
 }
 
 button {

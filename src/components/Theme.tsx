@@ -83,15 +83,17 @@ function Theme() {
 
   return (
     <section>
+      <div className="theme-buttons">
+        <button className="yellow-eye" onClick={switchThemeYellow} />
+        <button className="red-eye" onClick={switchThemeRed} />
+        <button className="magenta-eye" onClick={switchThemeMagenta} />
+        <button className="purple-eye" onClick={switchThemePurple} />
+        <button className="violet-eye" onClick={switchThemeViolet} />
+        <button className="blue-eye" onClick={switchThemeBlue} />
+        <button className="ocean-eye" onClick={switchThemeOcean} />
+        <button className="green-eye" onClick={switchThemeGreen} />
+      </div>
       <Particlesview particleColor={particleColor} />
-      <button className="yellow-eye" onClick={switchThemeYellow} />
-      <button className="red-eye" onClick={switchThemeRed} />
-      <button className="magenta-eye" onClick={switchThemeMagenta} />
-      <button className="purple-eye" onClick={switchThemePurple} />
-      <button className="violet-eye" onClick={switchThemeViolet} />
-      <button className="blue-eye" onClick={switchThemeBlue} />
-      <button className="ocean-eye" onClick={switchThemeOcean} />
-      <button className="green-eye" onClick={switchThemeGreen} />
     </section>
   );
 }
