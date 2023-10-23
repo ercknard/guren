@@ -1,0 +1,82 @@
+[data-theme="yellow"] {
+  --background: var(--yellow);
+  --accent: #f0d05630;
+  background: url("/static/images/bgs/yellow-surf.svg"),
+    url("/static/images/bgs/ercknard-yellow.webp"),
+    url("/static/images/bgs/yellow.svg");
+}
+
+[data-theme="red"] {
+  --background: var(--red);
+  --accent: #ff5e5a30;
+  background: url("/static/images/bgs/red-surf.svg"),
+    url("/static/images/bgs/ercknard-red.webp"),
+    url("/static/images/bgs/red.svg");
+}
+
+[data-theme="magenta"] {
+  --background: var(--magenta);
+  --accent: #9b3a9830;
+  background: url("/static/images/bgs/magenta-surf.svg"),
+    url("/static/images/bgs/ercknard-magenta.webp"),
+    url("/static/images/bgs/magenta.svg");
+}
+
+[data-theme="purple"] {
+  --background: var(--purple);
+  --accent: #b075f830;
+  background: url("/static/images/bgs/purple-surf.svg"),
+    url("/static/images/bgs/ercknard-purple.webp"),
+    url("/static/images/bgs/purple.svg");
+}
+
+[data-theme="violet"] {
+  --background: var(--violet);
+  --accent: #7b8ffc30;
+  background: url("/static/images/bgs/violet-surf.svg"),
+    url("/static/images/bgs/ercknard-violet.webp"),
+    url("/static/images/bgs/violet.svg");
+}
+
+[data-theme="blue"] {
+  --background: var(--blue);
+  --accent: #4389ff30;
+  background: url("/static/images/bgs/blue-surf.svg"),
+    url("/static/images/bgs/ercknard-blue.webp"),
+    url("/static/images/bgs/blue.svg");
+}
+
+[data-theme="ocean"] {
+  --background: var(--ocean);
+  --accent: #5cc2e430;
+  background: url("/static/images/bgs/ocean-surf.svg"),
+    url("/static/images/bgs/ercknard-ocean.webp"),
+    url("/static/images/bgs/ocean.svg");
+}
+
+[data-theme="green"] {
+  --background: var(--green);
+  --accent: #6ef0bc30;
+  background: url("/static/images/bgs/green-surf.svg"),
+    url("/static/images/bgs/ercknard-green.webp"),
+    url("/static/images/bgs/green.svg");
+}
+
+[data-theme="white"],
+[data-theme="black"],
+[data-theme="yellow"],
+[data-theme="red"],
+[data-theme="magenta"],
+[data-theme="purple"],
+[data-theme="violet"],
+[data-theme="blue"],
+[data-theme="ocean"],
+[data-theme="green"] {
+  background-repeat: no-repeat;
+  background-position: bottom, center, center;
+  background-size: cover, contain, cover;
+  background-attachment: fixed;
+  --text-primary: white;
+  --text-secondary: grey;
+  transition: 0.5s;
+}
