@@ -13,7 +13,11 @@ function App() {
       <main className="App">
         <Navigation />
         <DynamicComponent />
-        <div className="landing-container"></div>
+        <div className="landing-container">
+          <div className="landing">
+            <h1 className="main-title"> ERCKNARD GUREN V </h1>
+          </div>
+        </div>
       </main>
     </>
   );

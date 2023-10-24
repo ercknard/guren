@@ -11,6 +11,7 @@ body {
 :root {
   --background: #ffffff;
   --accent: #ffffff50;
+  --accent-sub: #ffffff75;
   --background-prime: url("/static/images/bgs/ercknard-white.webp"),
     url("/static/images/bgs/white-surf.svg");
   --background-second: url("/static/images/bgs/ercknard-white-closed-clean.webp"),
@@ -105,6 +106,7 @@ body {
 [data-theme="yellow"] {
   --background: var(--yellow);
   --accent: #f0d05650;
+  --accent-sub: #f0d05675;
   --background-prime: url("/static/images/bgs/ercknard-yellow.webp"),
     url("/static/images/bgs/yellow-surf.svg");
   --background-second: url("/static/images/bgs/ercknard-yellow-closed-clean.webp"),
@@ -115,6 +117,7 @@ body {
 [data-theme="red"] {
   --background: var(--red);
   --accent: #ff5e5a50;
+  --accent-sub: #ff5e5a75;
   --background-prime: url("/static/images/bgs/ercknard-red.webp"),
     url("/static/images/bgs/red-surf.svg");
   --background-second: url("/static/images/bgs/ercknard-red-closed-clean.webp"),
@@ -125,6 +128,7 @@ body {
 [data-theme="magenta"] {
   --background: var(--magenta);
   --accent: #9b3a9850;
+  --accent-sub: #9b3a9875;
   --background-prime: url("/static/images/bgs/ercknard-magenta.webp"),
     url("/static/images/bgs/magenta-surf.svg");
   --background-second: url("/static/images/bgs/ercknard-magenta-closed-clean.webp"),
@@ -135,6 +139,7 @@ body {
 [data-theme="purple"] {
   --background: var(--purple);
   --accent: #b075f850;
+  --accent-sub: #075f8575;
   --background-prime: url("/static/images/bgs/ercknard-purple.webp"),
     url("/static/images/bgs/purple-surf.svg");
   --background-second: url("/static/images/bgs/ercknard-purple-closed-clean.webp"),
@@ -145,6 +150,7 @@ body {
 [data-theme="violet"] {
   --background: var(--violet);
   --accent: #7b8ffc50;
+  --accent-sub: #7b8ffc75;
   --background-prime: url("/static/images/bgs/ercknard-violet.webp"),
     url("/static/images/bgs/violet-surf.svg");
   --background-second: url("/static/images/bgs/ercknard-violet-closed-clean.webp"),
@@ -155,6 +161,7 @@ body {
 [data-theme="blue"] {
   --background: var(--blue);
   --accent: #4389ff50;
+  --accent-sub: #4389ff75;
   --background-prime: url("/static/images/bgs/ercknard-blue.webp"),
     url("/static/images/bgs/blue-surf.svg");
   --background-second: url("/static/images/bgs/ercknard-blue-closed-clean.webp"),
@@ -165,6 +172,7 @@ body {
 [data-theme="ocean"] {
   --background: var(--ocean);
   --accent: #5cc2e450;
+  --accent-sub: #5cc2e475;
   --background-prime: url("/static/images/bgs/ercknard-ocean.webp"),
     url("/static/images/bgs/ocean-surf.svg");
   --background-second: url("/static/images/bgs/ercknard-ocean-closed-clean.webp"),
@@ -175,6 +183,7 @@ body {
 [data-theme="green"] {
   --background: var(--green);
   --accent: #6ef0bc50;
+  --accent-sub: #6ef0bc75;
   --background-prime: url("/static/images/bgs/ercknard-green.webp"),
     url("/static/images/bgs/green-surf.svg");
   --background-second: url("/static/images/bgs/ercknard-green-closed-clean.webp"),
@@ -723,4 +732,44 @@ body {
     display: flex;
     margin-left: -10rem !important;
   }
+}
+
+.landing {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000050;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: var(--accent-sub);
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  z-index: -1;
+}
+
+.landing::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: var(--accent-sub);
+  -webkit-clip-path: polygon(100% 100%, 100% 0, 0% 100%);
+  clip-path: polygon(100% 100%, 100% 0, 0% 100%);
+  z-index: -1;
+}
+
+.main-title {
+  color: var(--background);
+  font-size: var(--gifted-font);
+  filter: drop-shadow(5px 5px 1px var(--black));
+  font-weight: 800;
 }
