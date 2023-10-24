@@ -139,7 +139,7 @@ body {
 [data-theme="purple"] {
   --background: var(--purple);
   --accent: #b075f850;
-  --accent-sub: #075f8575;
+  --accent-sub: #b075f875;
   --background-prime: url("/static/images/bgs/ercknard-purple.webp"),
     url("/static/images/bgs/purple-surf.svg");
   --background-second: url("/static/images/bgs/ercknard-purple-closed-clean.webp"),
@@ -736,35 +736,38 @@ body {
 
 .landing {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #00000050;
+  background-color: #00000090;
 }
 
 .landing::before {
   content: "";
   position: absolute;
   left: 0;
-  width: 50vw;
+  width: 30vw;
   height: 100vh;
-  background-color: var(--accent-sub);
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  background-color: var(--accent);
+  /* -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0); */
   z-index: -1;
+  filter: blur(18px);
 }
 
 .landing::after {
   content: "";
   position: absolute;
   right: 0;
-  width: 50vw;
+  width: 30vw;
   height: 100vh;
-  background-color: var(--accent-sub);
-  -webkit-clip-path: polygon(100% 100%, 100% 0, 0% 100%);
-  clip-path: polygon(100% 100%, 100% 0, 0% 100%);
+  background-color: var(--accent);
+  /* -webkit-clip-path: polygon(100% 100%, 100% 0, 0% 100%);
+  clip-path: polygon(100% 100%, 100% 0, 0% 100%); */
   z-index: -1;
+  filter: blur(18px);
 }
 
 .main-title {
@@ -772,4 +775,36 @@ body {
   font-size: var(--gifted-font);
   filter: drop-shadow(5px 5px 1px var(--black));
   font-weight: 800;
+}
+
+/* .main-title::before {
+  content: "WELCOME TO";
+  position: absolute;
+  margin-top: -8rem;
+  margin-left: -10rem;
+  color: var(--accent);
+  font-size: var(--special-font);
+  filter: drop-shadow(5px 5px 1px var(--black));
+  font-weight: 800;
+} */
+
+.sub-title {
+  text-align: center;
+  width: 50%;
+  color: var(--white);
+  font-size: var(--special-font);
+  filter: drop-shadow(5px 5px 1px var(--black));
+  font-weight: 500;
+  background-color: #00000050;
+  border-top: 3px solid;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-image: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--background),
+      var(--background),
+      var(--transparent)
+    )
+    1;
 }
