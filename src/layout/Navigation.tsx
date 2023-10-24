@@ -48,7 +48,7 @@ export default class Navigation extends Component<Props, State> {
                   className="navigation-logo"
                   src="/static/images/bgs/ercknard-head.webp"
                 />{" "} */}
-                <b className="to-font-color">Ercknard Guren V</b>
+                <b className="to-font-color text-motion">Ercknard Guren V</b>
               </span>
             </Link>
             <div className="the-links">
