@@ -513,12 +513,21 @@ body {
   position: fixed !important;
   display: flex;
   justify-content: space-around;
-  background-size: contain !important;
   width: 100vw;
   top: 0 !important;
   background: linear-gradient(to bottom, black, transparent);
   height: 5rem;
   z-index: 100 !important;
+  border-top: 2px solid;
+  border-image: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--background),
+      var(--background),
+      var(--transparent)
+    )
+    1;
+  margin-top: 5px;
 }
 
 .navigation-logo {
