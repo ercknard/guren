@@ -27,15 +27,6 @@ export default class Navigation extends Component<Props, State> {
             </span>
           </Link> */}
           <div className="navigation-buttons">
-            <Link href="/" passHref>
-              <span className="to-flex navigation-text-logo to-hide">
-                <Image
-                  className="navigation-logo"
-                  src="/static/images/bgs/ercknard-head.webp"
-                />{" "}
-                <b>Ercknard Guren</b>
-              </span>
-            </Link>
             <div className="the-links">
               <Link href="/device" passHref>
                 ABOUT
@@ -51,6 +42,15 @@ export default class Navigation extends Component<Props, State> {
                 EXPERIENCES
               </Link>
             </div>
+            <Link href="/" passHref>
+              <span className="to-flex navigation-text-logo to-hide">
+                {/* <Image
+                  className="navigation-logo"
+                  src="/static/images/bgs/ercknard-head.webp"
+                />{" "} */}
+                <b className="to-font-color">ERCKNARD GUREN</b>
+              </span>
+            </Link>
             <div className="the-links">
               <Link href="/blog" passHref>
                 PROJECTS

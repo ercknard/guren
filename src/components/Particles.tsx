@@ -71,7 +71,7 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({ particleColor }) => {
               },
             },
             size: {
-              value: 2.5,
+              value: 1.5,
               random: true,
               anim: {
                 enable: false,

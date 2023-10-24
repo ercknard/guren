@@ -517,6 +517,11 @@ body {
   }
 }
 
+.to-font-color {
+  color: var(--background);
+  -webkit-box-reflect: below -0.5rem linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
 #menu input {
   display: none;
   margin: 0;
@@ -542,13 +547,14 @@ body {
   color: var(--white);
 }
 
-.the-links {
+/* .the-links {
   margin-top: 0.8rem;
-}
+} */
 
 /* #menu label:after {
   font-size: 2em;
-  content: " AerCrypt";
+  content: "Ercknard Guren";
+  width: 80vw;
   position: absolute;
   justify-content: center;
   color: var(--white);
