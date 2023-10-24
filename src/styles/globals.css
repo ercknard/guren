@@ -360,7 +360,7 @@
   --text-secondary: grey;
   transition: 0.5s;
   z-index: 3 !important;
-  animation: bg-anim 15s ease infinite;
+  animation: bg-anim 7s ease infinite;
 }
 
 @keyframes bg-anim {
@@ -372,23 +372,7 @@
     background-attachment: fixed;
   }
 
-  25% {
-    background: var(--background-second);
-    background-repeat: no-repeat;
-    background-position: bottom, center, center;
-    background-size: contain, cover, cover;
-    background-attachment: fixed;
-  }
-
   50% {
-    background: var(--background-prime);
-    background-repeat: no-repeat;
-    background-position: bottom, center, center;
-    background-size: contain, cover, cover;
-    background-attachment: fixed;
-  }
-
-  75% {
     background: var(--background-second);
     background-repeat: no-repeat;
     background-position: bottom, center, center;
