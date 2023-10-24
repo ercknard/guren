@@ -289,7 +289,9 @@
 
 .eye:hover,
 .eye:active {
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.1);
+  margin-left: 1rem;
+  margin-right: 1rem;
   background: var(--ercknard-white);
   background-size: contain, cover;
   background-position: center;
@@ -458,6 +460,13 @@
     width: 2rem;
     height: 2rem;
     border: 1px solid var(--black);
+  }
+
+  .eye:hover,
+  .eye:active {
+    transform: unset;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .theme-buttons {
