@@ -479,8 +479,8 @@ body {
   display: none;
   margin: 0;
   padding: 0;
-  height: 45px;
-  width: 100%;
+  height: 60px;
+  width: 60px;
   opacity: 0;
   cursor: pointer;
 }
@@ -601,7 +601,8 @@ body {
   }
 
   #menu .main-sec-nav {
-    background-color: var(--black) !important;
+    background: var(--background-ter), var(--black);
+    background-size: cover;
     position: absolute;
     top: 100%;
     right: 0;
