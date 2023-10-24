@@ -46,7 +46,7 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({ particleColor }) => {
               value: particleColor,
             },
             shape: {
-              type: "circle",
+              type: "star",
               stroke: {
                 width: 0,
                 color: "#000000",
@@ -89,7 +89,7 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({ particleColor }) => {
             },
             move: {
               enable: true,
-              speed: 1,
+              speed: 0.5,
               direction: "none",
               random: true,
               straight: false,

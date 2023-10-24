@@ -33,27 +33,27 @@ export default class Navigation extends Component<Props, State> {
               </Link>
             </div>
             <div className="the-links">
-              <Link className="the-links" href="/store" passHref>
+              <Link href="/store" passHref>
                 SKILLS
               </Link>
             </div>
             <div className="the-links">
-              <Link className="the-links" href="/project" passHref>
+              <Link href="/project" passHref>
                 EXPERIENCES
               </Link>
             </div>
             <div className="the-links">
-              <Link className="the-links" href="/blog" passHref>
+              <Link href="/blog" passHref>
                 PROJECTS
               </Link>
             </div>
             <div className="the-links">
-              <Link className="the-links" href="/user" passHref>
+              <Link href="/user" passHref>
                 FEEDBACKS
               </Link>
             </div>
             <div className="the-links">
-              <Link className="the-links" href="/about" passHref>
+              <Link href="/about" passHref>
                 CONTACT
               </Link>
             </div>

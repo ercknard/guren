@@ -274,7 +274,7 @@ body {
   width: 8rem;
   height: 10rem;
   cursor: pointer;
-  margin: 0.5rem;
+  margin: 0.5rem 1rem;
   border-top: none;
   border-image: linear-gradient(
       to top,
@@ -292,8 +292,8 @@ body {
 .eye:hover,
 .eye:active {
   transform: translateY(-2px) scale(1.1);
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   background: var(--ercknard-white);
   background-size: contain, cover;
   background-position: center;
@@ -315,7 +315,9 @@ body {
 .theme-buttons {
   position: fixed;
   display: flex;
-  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0 !important;
   justify-content: center;
   z-index: 1 !important;
   width: 100vw;
@@ -455,6 +457,7 @@ body {
     width: 2rem;
     height: 2rem;
     border: 1px solid var(--black);
+    margin: 0.4rem 0.4rem;
   }
 
   .eye:hover,
@@ -497,14 +500,14 @@ body {
   color: var(--white);
 }
 
-#menu label:after {
+/* #menu label:after {
   font-size: 2em;
   content: " AerCrypt";
   position: absolute;
   justify-content: center;
   color: var(--white);
   margin-left: 1rem !important;
-}
+} */
 
 .main-navigation {
   position: fixed !important;
@@ -575,9 +578,7 @@ body {
 @media screen and (max-width: 800px) {
   .main-navigation {
     position: absolute;
-    background-color: var(--black);
     height: 4.75rem;
-    border-bottom: 3px solid var(--background);
   }
 
   .navigation-logo {
