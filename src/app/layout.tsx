@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import "@/styles/App.css";
 import type { Metadata } from "next";
+import AOScall from "@/components/Aos";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+      <AOScall />
     </html>
   );
 }
