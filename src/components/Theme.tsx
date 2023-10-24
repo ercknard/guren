@@ -43,6 +43,14 @@ function Theme() {
     console.log({ newColor });
   };
 
+  const switchThemeWhite = () => {
+    const newTheme = "white";
+    setTheme(newTheme);
+    const newColor = "#ffffff";
+    setParticleColor(newColor);
+    console.log({ newColor });
+  };
+
   const switchThemeViolet = () => {
     const newTheme = "violet";
     setTheme(newTheme);
@@ -88,6 +96,7 @@ function Theme() {
         <button className="red-eye eye" onClick={switchThemeRed} />
         <button className="magenta-eye eye" onClick={switchThemeMagenta} />
         <button className="purple-eye eye" onClick={switchThemePurple} />
+        <button className="white-eye eye" onClick={switchThemeWhite} />
         <button className="violet-eye eye" onClick={switchThemeViolet} />
         <button className="blue-eye eye" onClick={switchThemeBlue} />
         <button className="ocean-eye eye" onClick={switchThemeOcean} />
