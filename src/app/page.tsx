@@ -15,7 +15,7 @@ function App() {
         <DynamicComponent />
         <div className="landing-container">
           <div className="landing">
-            <div className="main-title"> ERCKNARD GUREN V </div>
+            <div className="main-title text-motion"> ERCKNARD GUREN V </div>
             <div className="sub-title to-width">
               {" "}
               Ercknard web portfolio is a digital exhibit of my creative
