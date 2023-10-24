@@ -549,10 +549,11 @@ body {
 
 #menu input {
   display: none;
-  margin: 0;
+  margin-left: 20px;
+  margin-top: 15px;
   padding: 0;
-  height: 60px;
-  width: 60px;
+  height: 2.5em;
+  width: 2.5em;
   opacity: 0;
   cursor: pointer;
 }
@@ -566,9 +567,10 @@ body {
   left: 35px;
 }
 #menu label:before {
-  font-size: 4em;
-  content: "\2261";
+  font-size: 3em;
+  content: "☲";
   margin-left: 20px;
+  margin-top: 20px;
   color: var(--white);
 }
 
@@ -649,7 +651,7 @@ body {
 
 .navigation-buttons a:hover,
 .navigation-buttons a:active {
-  color: rgb(208, 188, 210) !important;
+  color: var(--background) !important;
 }
 
 .navigation-buttons a:hover::after {
@@ -661,7 +663,7 @@ body {
   bottom: -3px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .main-navigation {
     position: absolute;
     height: 4.75rem;
@@ -697,13 +699,24 @@ body {
     margin-left: 1rem !important;
   }
 
+  .up-to {
+    margin-top: -1rem !important;
+  }
+
   .navigation-buttons {
     flex-direction: column;
-    margin-top: 2.5rem !important;
+    margin-top: 2rem !important;
     margin-bottom: 2.5rem !important;
-    margin-left: 0.5rem !important;
     gap: 1rem !important;
   }
+
+  /* .cover {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: -10;
+  } */
 
   .the-links {
     display: block;
@@ -731,10 +744,12 @@ body {
   #menu input:checked + label {
     color: white;
   }
-  #menu input:checked + label:before {
+  #menu input:checked + label::before {
     display: flex;
-    content: "\00d7";
-    margin-top: -0.15rem !important;
+    content: "✕";
+    margin-top: -0.1rem !important;
+    width: 2.5em;
+    height: 2.5em;
   }
   #menu input:checked ~ .main-sec-nav {
     display: block !important;

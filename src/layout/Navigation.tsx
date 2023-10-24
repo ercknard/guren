@@ -27,6 +27,7 @@ export default class Navigation extends Component<Props, State> {
             </span>
           </Link> */}
           <div className="navigation-buttons">
+            <div className="cover"></div>
             <div className="the-links">
               <Link href="/device" passHref>
                 ABOUT
@@ -51,7 +52,7 @@ export default class Navigation extends Component<Props, State> {
                 <b className="to-font-color text-motion">Ercknard Guren V</b>
               </span>
             </Link>
-            <div className="the-links">
+            <div className="the-links up-to">
               <Link href="/blog" passHref>
                 PROJECTS
               </Link>
