@@ -43,6 +43,17 @@
   --blue: #4389ff;
   --ocean: #5cc2e4;
   --green: #6ef0bc;
+
+  --white-accent: #ffffff75;
+  --black-accent: #00000075;
+  --yellow-accent: #f0d05675;
+  --red-accent: #ff5e5a75;
+  --magenta-accent: #9b3a9875;
+  --purple-accent: #b075f875;
+  --violet-accent: #7b8ffc75;
+  --blue-accent: #4389ff75;
+  --ocean-accent: #5cc2e475;
+  --green-accent: #6ef0bc75;
 }
 
 [data-theme="yellow"] {
@@ -145,43 +156,103 @@
 }
 
 .white-eye {
-  background: var(--ercknard-white);
+  background: var(--ercknard-white),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--white-accent)
+    );
 }
 
 .black-eye {
-  background: var(--ercknard-black);
+  background: var(--ercknard-black),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--black-accent)
+    );
 }
 
 .yellow-eye {
-  background: var(--ercknard-yellow);
+  background: var(--ercknard-yellow),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--yellow-accent)
+    );
 }
 
 .red-eye {
-  background: var(--ercknard-red);
+  background: var(--ercknard-red),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--red-accent)
+    );
 }
 
 .magenta-eye {
-  background: var(--ercknard-magenta);
+  background: var(--ercknard-magenta),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--magenta-accent)
+    );
 }
 
 .purple-eye {
-  background: var(--ercknard-purple);
+  background: var(--ercknard-purple),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--purple-accent)
+    );
 }
 
 .violet-eye {
-  background: var(--ercknard-violet);
+  background: var(--ercknard-violet),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--violet-accent)
+    );
 }
 
 .blue-eye {
-  background: var(--ercknard-blue);
+  background: var(--ercknard-blue),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--blue-accent)
+    );
 }
 
 .ocean-eye {
-  background: var(--ercknard-ocean);
+  background: var(--ercknard-ocean),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--ocean-accent)
+    );
 }
 
 .green-eye {
-  background: var(--ercknard-green);
+  background: var(--ercknard-green),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--green-accent)
+    );
 }
 
 .white-eye,
@@ -241,16 +312,17 @@
   position: fixed;
   display: flex;
   bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+  justify-content: center;
   z-index: 1 !important;
+  width: 100vw;
   /* background: linear-gradient(
     to bottom,
     var(--transparent),
     var(--transparent),
-    var(--background)
+    var(--accent),
+    var(--black)
   ); */
-  border-bottom: 2.5px solid;
+  border-bottom: 5px solid;
   border-image: linear-gradient(
       to left,
       var(--transparent),
@@ -259,10 +331,9 @@
       var(--transparent)
     )
     1;
-  padding: 0.5rem 4rem;
-  padding-top: 1rem;
-  /* -webkit-clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%); */
+  padding: 0.5rem;
+  /* -webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%); */
   filter: drop-shadow(0px -1px 1px var(--background));
   overflow: visible;
 }
@@ -386,5 +457,20 @@
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
+    border: 1px solid var(--black);
+  }
+
+  .theme-buttons {
+    background: linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--background)
+    );
+    padding: 0.5rem 4rem;
+    padding-top: 1rem;
+    -webkit-clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+    filter: drop-shadow(0px -1px 1px var(--background));
   }
 }
