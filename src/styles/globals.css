@@ -852,7 +852,7 @@ body {
     1;
 }
 
-.text-motion {
+.text-effect {
   background: -webkit-linear-gradient(
     45deg,
     rgba(182, 67, 174, 0.15),
@@ -863,6 +863,21 @@ body {
   background-size: 80%;
   background-position: center;
   background: linear-gradient(to top, var(--accent-sub), var(--background));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.text-motion {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(182, 67, 174, 0.15),
+    rgba(255, 255, 255),
+    rgba(182, 67, 174, 0.15)
+  );
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  background-color: var(--background);
   animation: text-motion 5s infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
