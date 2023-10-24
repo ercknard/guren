@@ -22,11 +22,20 @@ export default class Navigation extends Component<Props, State> {
               />{" "}
               <span className="highlight">
                 {" "}
-                <b className="to-wheat">AerCrypt.net</b>{" "}
+                <b className="to-wheat">Ercknard Guren</b>{" "}
               </span>{" "}
             </span>
           </Link> */}
           <div className="navigation-buttons">
+            <Link href="/" passHref>
+              <span className="to-flex navigation-text-logo to-hide">
+                <Image
+                  className="navigation-logo"
+                  src="/static/images/bgs/ercknard-head.webp"
+                />{" "}
+                <b>Ercknard Guren</b>
+              </span>
+            </Link>
             <div className="the-links">
               <Link href="/device" passHref>
                 ABOUT

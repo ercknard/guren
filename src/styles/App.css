@@ -21,6 +21,10 @@ button {
   transform: translate(-50%);
 }
 
+.to-flex {
+  display: flex;
+}
+
 .to-center-flex {
   display: flex;
   margin-left: auto;
@@ -36,6 +40,12 @@ button {
 @media screen and (max-width: 1600px) {
   .to-width {
     width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .to-hide {
+    display: none;
   }
 }
 

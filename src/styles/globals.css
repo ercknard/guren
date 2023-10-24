@@ -58,6 +58,48 @@ body {
   --blue-accent: #4389ff75;
   --ocean-accent: #5cc2e475;
   --green-accent: #6ef0bc75;
+
+  --gifted-font: 5em;
+  --primary-font: 4em;
+  --prim-secon-font: 3.5em;
+  --secondary-font: 3em;
+  --secon-ter-font: 2.5em;
+  --tertiary-font: 2em;
+  --ter-spec-font: 1.75em;
+  --special-font: 1.5em;
+  --quaternary-font: 1.25em;
+  --quinary-font: 1em;
+  --sixth-font: 0.2em;
+}
+
+@media (max-width: 1920px) {
+  :root {
+    --gifted-font: 4em;
+    --primary-font: 3.75em;
+    --prim-secon-font: 3.25em;
+    --secondary-font: 2.75em;
+    --secon-ter-font: 2.25em;
+    --tertiary-font: 1.75em;
+    --ter-spec-font: 1.5em;
+    --special-font: 1.25em;
+    --quaternary-font: 1em;
+    --quinary-font: 1em;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --gifted-font: 2em;
+    --primary-font: 2em;
+    --prim-secon-font: 1.25em;
+    --secondary-font: 2.25em;
+    --secon-ter-font: 2em;
+    --tertiary-font: 1.75em;
+    --ter-spec-font: 1.5em;
+    --special-font: 1.25em;
+    --quaternary-font: 1em;
+    --quinary-font: 1em;
+  }
 }
 
 [data-theme="yellow"] {
@@ -500,6 +542,10 @@ body {
   color: var(--white);
 }
 
+.the-links {
+  margin-top: 0.8rem;
+}
+
 /* #menu label:after {
   font-size: 2em;
   content: " AerCrypt";
@@ -634,6 +680,7 @@ body {
     width: auto;
     padding: 1rem;
     width: 98% !important;
+    margin-top: unset;
   }
 
   .the-links:hover {
