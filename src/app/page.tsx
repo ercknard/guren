@@ -15,14 +15,12 @@ function App() {
         <DynamicComponent />
         <div className="landing-container">
           <div className="landing">
-            <div className="main-title text-motion"> ERCKNARD GUREN V </div>
+            <div className="main-title text-motion"> ' ERCKNARD GUREN V ' </div>
             <div className="sub-title to-width">
               {" "}
               Ercknard web portfolio is a digital exhibit of my creative
               journey. Explore my projects, designs, and achievements all in one
-              place. Get to know my skills and passion through a collection of
-              my best work, beautifully presented for your inspiration and
-              insight.{" "}
+              place.{" "}
             </div>
           </div>
         </div>

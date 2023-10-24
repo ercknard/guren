@@ -841,8 +841,7 @@ body {
   font-weight: 500;
   background-color: #00000070;
   border-top: 3px solid;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   border-image: linear-gradient(
       to left,
       var(--transparent),
