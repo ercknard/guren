@@ -96,7 +96,6 @@ function Theme() {
       <div className="reveal-eye">
         <Fab className="fab-reveal" size="medium" aria-label="add">
           <DarkModeIcon />
-
           <div className="theme-buttons">
             <button className="yellow-eye eye" onClick={switchThemeYellow} />
             <button className="red-eye eye" onClick={switchThemeRed} />

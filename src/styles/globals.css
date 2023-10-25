@@ -419,6 +419,11 @@ body {
   transform: translate(-50%);
   bottom: -3.5rem;
   background: var(--accent-sub) !important;
+  transition: all 1s ease-in-out;
+}
+
+.fab-reveal:hover {
+  background: var(--accent) !important;
 }
 
 .fab-reveal:hover > .theme-buttons {
