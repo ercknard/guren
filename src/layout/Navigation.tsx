@@ -27,7 +27,7 @@ export default class Navigation extends Component<Props, State> {
             </span>
           </Link> */}
           <div className="navigation-buttons">
-            <div className="cover"></div>
+            {/* <div className="cover"></div> */}
             <div className="the-links">
               <Link href="/device" passHref>
                 ABOUT

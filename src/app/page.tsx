@@ -15,6 +15,7 @@ function App() {
         <DynamicComponent />
         <div className="landing-container">
           <div className="landing">
+            <div className="text-motion icon-text to-hide"> ⚔ </div>
             <div className="main-title text-effect"> ERCKNARD GUREN V </div>
             <div className="sub-title to-width">
               {""}

@@ -383,17 +383,23 @@ body {
   display: flex;
   left: 50%;
   transform: translate(-50%);
-  bottom: 0 !important;
+  bottom: 3rem !important;
   justify-content: center;
   z-index: 1 !important;
   width: 100vw;
-  /* background: linear-gradient(
-    to bottom,
-    var(--transparent),
-    var(--transparent),
-    var(--accent),
-    var(--black)
-  ); */
+  display: none;
+  padding: 0.5rem;
+  transition: all 1s ease-in-out;
+}
+
+.reveal-eye {
+  width: 100vw;
+  height: 8rem;
+  position: fixed;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0 !important;
   border-bottom: 5px solid;
   border-image: linear-gradient(
       to left,
@@ -403,10 +409,21 @@ body {
       var(--transparent)
     )
     1;
-  padding: 0.5rem;
-  /* -webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%); */
   filter: drop-shadow(0px -1px 1px var(--background));
+  transition: all 1s ease-in-out;
+}
+
+.fab-reveal {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -3.5rem;
+  background: var(--accent-sub) !important;
+}
+
+.fab-reveal:hover > .theme-buttons {
+  display: flex !important;
+  transition: all 1s ease-in-out;
 }
 
 .canvas-container {
@@ -857,7 +874,7 @@ body {
   font-size: var(--special-font);
   filter: drop-shadow(5px 5px 1px var(--black));
   font-weight: 500;
-  background-color: #00000070;
+  background-color: #00000050;
   border-top: 3px solid;
   padding: 1rem;
   border-image: linear-gradient(
@@ -868,6 +885,13 @@ body {
       var(--transparent)
     )
     1;
+}
+
+.icon-text {
+  text-align: center;
+  font-size: var(--prim-secon-font);
+  font-weight: 500;
+  margin-bottom: -1.5rem;
 }
 
 .text-effect {

@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import useLocalStorage from "use-local-storage";
 import Particlesview from "@/components/Particles";
+import { Fab } from "@mui/material";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 function Theme() {
   const [particleColor, setParticleColor] = useState("#ffffff");
@@ -91,16 +93,22 @@ function Theme() {
 
   return (
     <section>
-      <div className="theme-buttons">
-        <button className="yellow-eye eye" onClick={switchThemeYellow} />
-        <button className="red-eye eye" onClick={switchThemeRed} />
-        <button className="magenta-eye eye" onClick={switchThemeMagenta} />
-        <button className="purple-eye eye" onClick={switchThemePurple} />
-        <button className="white-eye eye" onClick={switchThemeWhite} />
-        <button className="violet-eye eye" onClick={switchThemeViolet} />
-        <button className="blue-eye eye" onClick={switchThemeBlue} />
-        <button className="ocean-eye eye" onClick={switchThemeOcean} />
-        <button className="green-eye eye" onClick={switchThemeGreen} />
+      <div className="reveal-eye">
+        <Fab className="fab-reveal" size="medium" aria-label="add">
+          <DarkModeIcon />
+
+          <div className="theme-buttons">
+            <button className="yellow-eye eye" onClick={switchThemeYellow} />
+            <button className="red-eye eye" onClick={switchThemeRed} />
+            <button className="magenta-eye eye" onClick={switchThemeMagenta} />
+            <button className="purple-eye eye" onClick={switchThemePurple} />
+            <button className="white-eye eye" onClick={switchThemeWhite} />
+            <button className="violet-eye eye" onClick={switchThemeViolet} />
+            <button className="blue-eye eye" onClick={switchThemeBlue} />
+            <button className="ocean-eye eye" onClick={switchThemeOcean} />
+            <button className="green-eye eye" onClick={switchThemeGreen} />
+          </div>
+        </Fab>
       </div>
       <Particlesview particleColor={particleColor} />
     </section>
