@@ -712,7 +712,7 @@ body {
   justify-content: space-evenly;
   font-size: calc(var(--quinary-font) - var(--sixth-font));
   position: relative;
-  transition: 1s linear !important;
+  transition: 0.5s linear !important;
 }
 
 .navigation-buttons a:hover,
