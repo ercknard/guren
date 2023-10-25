@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { Component } from "react";
-import { Image } from "semantic-ui-react";
+"use client";
+import React from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-type Props = {};
-type State = {};
-export default class Navigation extends Component<Props, State> {
-  state = {};
-  render() {
+export default function Navigation() {
+  const pathname = usePathname();
+
+  {
     return (
       <section id="menu" className="main-navigation">
         <input type="checkbox" id="responsive-menu" />
@@ -29,21 +29,30 @@ export default class Navigation extends Component<Props, State> {
           <div className="navigation-buttons">
             {/* <div className="cover"></div> */}
             <div className="the-links">
-              <Link href="/device" passHref>
+              <Link
+                className={`${pathname === "/about" ? "active" : ""}`}
+                href="/about"
+              >
                 ABOUT
               </Link>
             </div>
             <div className="the-links">
-              <Link href="/store" passHref>
+              <Link
+                className={`${pathname === "/skills" ? "active" : ""}`}
+                href="/skills"
+              >
                 SKILLS
               </Link>
             </div>
             <div className="the-links">
-              <Link href="/project" passHref>
+              <Link
+                className={`${pathname === "/experiences" ? "active" : ""}`}
+                href="/experiences"
+              >
                 EXPERIENCES
               </Link>
             </div>
-            <Link href="/" passHref>
+            <Link className={`${pathname === "/" ? "active" : ""}`} href="/">
               <span className="to-flex navigation-text-logo to-hide">
                 {/* <Image
                   className="navigation-logo"
@@ -53,17 +62,26 @@ export default class Navigation extends Component<Props, State> {
               </span>
             </Link>
             <div className="the-links up-to">
-              <Link href="/blog" passHref>
+              <Link
+                className={`${pathname === "/projects" ? "active" : ""}`}
+                href="/projects"
+              >
                 PROJECTS
               </Link>
             </div>
             <div className="the-links">
-              <Link href="/user" passHref>
+              <Link
+                className={`${pathname === "/feedback" ? "active" : ""}`}
+                href="/feedback"
+              >
                 FEEDBACKS
               </Link>
             </div>
             <div className="the-links">
-              <Link href="/about" passHref>
+              <Link
+                className={`${pathname === "/contact" ? "active" : ""}`}
+                href="/contact"
+              >
                 CONTACT
               </Link>
             </div>

@@ -711,7 +711,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   font-size: calc(var(--quinary-font) - var(--sixth-font));
-  color: rgb(var(--background)) !important;
   position: relative;
   transition: 1s linear !important;
 }
@@ -997,4 +996,8 @@ body {
   100% {
     background-position: 500%;
   }
+}
+
+.active {
+  color: var(--background) !important;
 }
