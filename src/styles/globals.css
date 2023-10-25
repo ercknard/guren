@@ -15,9 +15,11 @@ body {
   --accent-sub: #ffffff75;
   --accent-sub-ter: #ffffff10;
   --background-prime: url("/static/images/bgs/ercknard-white.webp"),
+    url("/static/images/bgs/white-sword.webp"),
     url("/static/images/bgs/white-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-white-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/white-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/white-surf.svg");
@@ -114,9 +116,11 @@ body {
   --accent-sub: #f0d05675;
   --accent-sub-ter: #f0d05610;
   --background-prime: url("/static/images/bgs/ercknard-yellow.webp"),
+    url("/static/images/bgs/yellow-sword.webp"),
     url("/static/images/bgs/yellow-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-yellow-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/yellow-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/yellow-surf.svg");
@@ -129,8 +133,10 @@ body {
   --accent-sub: #ff5e5a75;
   --accent-sub-ter: #ff5e5a10;
   --background-prime: url("/static/images/bgs/ercknard-red.webp"),
+    url("/static/images/bgs/red-sword.webp"),
     url("/static/images/bgs/red-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-red-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/red-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/red-surf.svg");
   --cloud: url("/static/images/bgs/red-cloud.svg");
@@ -142,9 +148,11 @@ body {
   --accent-sub: #9b3a9875;
   --accent-sub-ter: #9b3a9810;
   --background-prime: url("/static/images/bgs/ercknard-magenta.webp"),
+    url("/static/images/bgs/magenta-sword.webp"),
     url("/static/images/bgs/magenta-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-magenta-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/magenta-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/magenta-surf.svg");
@@ -157,9 +165,11 @@ body {
   --accent-sub: #b075f875;
   --accent-sub-ter: #b075f810;
   --background-prime: url("/static/images/bgs/ercknard-purple.webp"),
+    url("/static/images/bgs/purple-sword.webp"),
     url("/static/images/bgs/purple-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-purple-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/purple-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/purple-surf.svg");
@@ -172,9 +182,11 @@ body {
   --accent-sub: #7b8ffc75;
   --accent-sub-ter: #7b8ffc10;
   --background-prime: url("/static/images/bgs/ercknard-violet.webp"),
+    url("/static/images/bgs/violet-sword.webp"),
     url("/static/images/bgs/violet-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-violet-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/violet-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/violet-surf.svg");
@@ -187,8 +199,10 @@ body {
   --accent-sub: #4389ff75;
   --accent-sub-ter: #4389ff10;
   --background-prime: url("/static/images/bgs/ercknard-blue.webp"),
+    url("/static/images/bgs/blue-sword.webp"),
     url("/static/images/bgs/blue-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-blue-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/blue-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/blue-surf.svg");
   --cloud: url("/static/images/bgs/blue-cloud.svg");
@@ -200,9 +214,11 @@ body {
   --accent-sub: #5cc2e475;
   --accent-sub-ter: #5cc2e410;
   --background-prime: url("/static/images/bgs/ercknard-ocean.webp"),
+    url("/static/images/bgs/ocean-sword.webp"),
     url("/static/images/bgs/ocean-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-ocean-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/ocean-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/ocean-surf.svg");
@@ -215,9 +231,11 @@ body {
   --accent-sub: #6ef0bc75;
   --accent-sub-ter: #6ef0bc10;
   --background-prime: url("/static/images/bgs/ercknard-green.webp"),
+    url("/static/images/bgs/green-sword.webp"),
     url("/static/images/bgs/green-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-green-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/green-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/green-surf.svg");
@@ -476,7 +494,7 @@ body {
     background: var(--background-prime);
     background-repeat: no-repeat;
     background-position: bottom, center, center;
-    background-size: contain, cover, cover;
+    background-size: contain, contain, cover, cover;
     background-attachment: fixed;
   }
 
@@ -484,7 +502,7 @@ body {
     background: var(--background-second);
     background-repeat: no-repeat;
     background-position: bottom, center, center;
-    background-size: contain, cover, cover;
+    background-size: contain, contain, cover, cover;
     background-attachment: fixed;
   }
 
@@ -492,7 +510,7 @@ body {
     background: var(--background-prime);
     background-repeat: no-repeat;
     background-position: bottom, center, center;
-    background-size: contain, cover, cover;
+    background-size: contain, contain, cover, cover;
     background-attachment: fixed;
   }
 }
