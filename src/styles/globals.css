@@ -13,7 +13,7 @@ body {
   --background: #ffffff;
   --accent: #ffffff50;
   --accent-sub: #ffffff75;
-  --accent-sub-ter: #ffffff15;
+  --accent-sub-ter: #ffffff10;
   --background-prime: url("/static/images/bgs/ercknard-white.webp"),
     url("/static/images/bgs/white-surf.svg"),
     url("/static/images/bgs/moon.webp");
@@ -112,7 +112,7 @@ body {
   --background: var(--yellow);
   --accent: #f0d05650;
   --accent-sub: #f0d05675;
-  --accent-sub-ter: #f0d05615;
+  --accent-sub-ter: #f0d05610;
   --background-prime: url("/static/images/bgs/ercknard-yellow.webp"),
     url("/static/images/bgs/yellow-surf.svg"),
     url("/static/images/bgs/moon.webp");
@@ -127,7 +127,7 @@ body {
   --background: var(--red);
   --accent: #ff5e5a50;
   --accent-sub: #ff5e5a75;
-  --accent-sub-ter: #ff5e5a15;
+  --accent-sub-ter: #ff5e5a10;
   --background-prime: url("/static/images/bgs/ercknard-red.webp"),
     url("/static/images/bgs/red-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-red-closed-clean.webp"),
@@ -140,7 +140,7 @@ body {
   --background: var(--magenta);
   --accent: #9b3a9850;
   --accent-sub: #9b3a9875;
-  --accent-sub-ter: #9b3a9815;
+  --accent-sub-ter: #9b3a9810;
   --background-prime: url("/static/images/bgs/ercknard-magenta.webp"),
     url("/static/images/bgs/magenta-surf.svg"),
     url("/static/images/bgs/moon.webp");
@@ -155,7 +155,7 @@ body {
   --background: var(--purple);
   --accent: #b075f850;
   --accent-sub: #b075f875;
-  --accent-sub-ter: #b075f815;
+  --accent-sub-ter: #b075f810;
   --background-prime: url("/static/images/bgs/ercknard-purple.webp"),
     url("/static/images/bgs/purple-surf.svg"),
     url("/static/images/bgs/moon.webp");
@@ -170,7 +170,7 @@ body {
   --background: var(--violet);
   --accent: #7b8ffc50;
   --accent-sub: #7b8ffc75;
-  --accent-sub-ter: #7b8ffc15;
+  --accent-sub-ter: #7b8ffc10;
   --background-prime: url("/static/images/bgs/ercknard-violet.webp"),
     url("/static/images/bgs/violet-surf.svg"),
     url("/static/images/bgs/moon.webp");
@@ -185,7 +185,7 @@ body {
   --background: var(--blue);
   --accent: #4389ff50;
   --accent-sub: #4389ff75;
-  --accent-sub-ter: #4389ff15;
+  --accent-sub-ter: #4389ff10;
   --background-prime: url("/static/images/bgs/ercknard-blue.webp"),
     url("/static/images/bgs/blue-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-second: url("/static/images/bgs/ercknard-blue-closed-clean.webp"),
@@ -198,7 +198,7 @@ body {
   --background: var(--ocean);
   --accent: #5cc2e450;
   --accent-sub: #5cc2e475;
-  --accent-sub-ter: #5cc2e415;
+  --accent-sub-ter: #5cc2e410;
   --background-prime: url("/static/images/bgs/ercknard-ocean.webp"),
     url("/static/images/bgs/ocean-surf.svg"),
     url("/static/images/bgs/moon.webp");
@@ -213,7 +213,7 @@ body {
   --background: var(--green);
   --accent: #6ef0bc50;
   --accent-sub: #6ef0bc75;
-  --accent-sub-ter: #6ef0bc15;
+  --accent-sub-ter: #6ef0bc10;
   --background-prime: url("/static/images/bgs/ercknard-green.webp"),
     url("/static/images/bgs/green-surf.svg"),
     url("/static/images/bgs/moon.webp");
@@ -820,6 +820,7 @@ body {
     display: flex;
     gap: 1rem;
     font-size: var(--special-font);
+    display: none;
   }
 }
 
@@ -830,7 +831,8 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(var(--accent-sub-ter), transparent), #00000095;
+  background: radial-gradient(at bottom, var(--accent-sub-ter), transparent),
+    #00000090;
   /* background: #00000090; */
 }
 
