@@ -1,4 +1,6 @@
 "use client";
+import "@/styles/globals.css";
+import "@/styles/App.css";
 import React from "react";
 import dynamic from "next/dynamic";
 import Navigation from "@/layout/Navigation";
