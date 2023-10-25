@@ -487,14 +487,14 @@ body {
   --text-primary: white;
   --text-secondary: grey;
   z-index: 3 !important;
-  animation: bg-anim 7s ease infinite;
+  animation: bg-anim linear 7s infinite;
 }
 
 @keyframes bg-anim {
   0% {
     background: var(--background-prime);
     background-repeat: no-repeat;
-    background-position: bottom, center, center;
+    background-position: bottom, center, center, center;
     background-size: contain, contain, cover, cover;
     background-attachment: fixed;
   }
@@ -502,7 +502,7 @@ body {
   50% {
     background: var(--background-second);
     background-repeat: no-repeat;
-    background-position: bottom, center, center;
+    background-position: bottom, center, center, center;
     background-size: contain, contain, cover, cover;
     background-attachment: fixed;
   }
@@ -510,7 +510,7 @@ body {
   100% {
     background: var(--background-prime);
     background-repeat: no-repeat;
-    background-position: bottom, center, center;
+    background-position: bottom, center, center, center;
     background-size: contain, contain, cover, cover;
     background-attachment: fixed;
   }
