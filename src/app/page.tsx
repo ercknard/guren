@@ -1,4 +1,7 @@
 "use client";
+import "@fontsource/ysabeau";
+import "@fontsource/ysabeau/400.css";
+import "@fontsource/ysabeau/400-italic.css";
 import "@/styles/globals.css";
 import "@/styles/App.css";
 import React from "react";
