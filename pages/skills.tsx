@@ -1,13 +1,14 @@
 import React, { Component } from "react";
+import App from "@/app/page";
 
 type Props = {};
 
 type State = {};
 
-export default class Experiences extends Component<Props, State> {
+export default class Skills extends Component<Props, State> {
   state = {};
 
   render() {
-    return <div>Experiences</div>;
+    return <App />;
   }
 }

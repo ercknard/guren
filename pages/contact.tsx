@@ -1,13 +1,14 @@
 import React, { Component } from "react";
+import App from "@/app/page";
 
 type Props = {};
 
 type State = {};
 
-export default class Feedbacks extends Component<Props, State> {
+export default class Contact extends Component<Props, State> {
   state = {};
 
   render() {
-    return <div>Feedbacks</div>;
+    return <App />;
   }
 }

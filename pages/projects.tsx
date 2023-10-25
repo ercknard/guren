@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import App from "@/app/page";
 
 type Props = {};
 
@@ -8,6 +9,6 @@ export default class Projects extends Component<Props, State> {
   state = {};
 
   render() {
-    return <div>Projects</div>;
+    return <App />;
   }
 }

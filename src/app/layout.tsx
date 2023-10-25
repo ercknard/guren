@@ -1,12 +1,11 @@
 import "@/styles/globals.css";
 import "@/styles/App.css";
-import { Inter } from "next/font/google";
 import "@fontsource/ysabeau";
 import "@fontsource/ysabeau/400.css";
 import "@fontsource/ysabeau/400-italic.css";
+import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import AOScall from "@/components/Aos";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,10 +23,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="favicon.ico" />
-      </Head>
       <body className={inter.className}>{children}</body>
       <AOScall />
     </html>

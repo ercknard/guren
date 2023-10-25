@@ -2,6 +2,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import Navigation from "@/layout/Navigation";
+import Home from "../../pages/home";
 
 function App() {
   const DynamicComponent = dynamic(() => import("@/components/Theme"), {
@@ -9,38 +10,17 @@ function App() {
   });
 
   return (
-    <>
-      <main className="App">
-        <Navigation />
-        <DynamicComponent />
+    <main className="App">
+      <Navigation />
+      <DynamicComponent />
+      <section>
         <div className="landing-container">
           <div className="landing">
-            <div className="text-motion icon-text to-hide"> ⚔ </div>
-            <div className="main-title text-effect"> ERCKNARD GUREN </div>
-            <div className="sub-title to-width">
-              {""}
-              Ercknard web portfolio is a digital exhibit of my creative
-              journey. Explore my projects, designs, and achievements all in one
-              place.{" "}
-            </div>
-            <div className="text-motion zodiac">
-              <span>♒︎</span>
-              <span>♓︎</span>
-              <span>♈︎</span>
-              <span>♉︎</span>
-              <span>♊︎</span>
-              <span>♋︎</span>
-              <span>♌︎</span>
-              <span>♍︎</span>
-              <span>♎︎</span>
-              <span>♏︎</span>
-              <span>♐︎</span>
-              <span>♑︎</span>
-            </div>
+            <Home />
           </div>
         </div>
-      </main>
-    </>
+      </section>
+    </main>
   );
 }
 

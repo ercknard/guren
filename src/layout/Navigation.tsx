@@ -9,7 +9,7 @@ export default function Navigation() {
 
   {
     return (
-      <section id="menu" className="main-navigation">
+      <nav id="menu" className="main-navigation">
         <input type="checkbox" id="responsive-menu" />
         <label></label>
         <div className="main-sec-nav to-width">
@@ -87,7 +87,7 @@ export default function Navigation() {
             </div>
           </div>
         </div>
-      </section>
+      </nav>
     );
   }
 }
