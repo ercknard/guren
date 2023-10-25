@@ -378,6 +378,7 @@ body {
   cursor: pointer;
   margin: 0.5rem 1rem;
   border-top: none;
+  border: 2px solid;
   border-image: linear-gradient(
       to top,
       var(--black),
