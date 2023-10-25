@@ -23,6 +23,20 @@ function App() {
               journey. Explore my projects, designs, and achievements all in one
               place.{" "}
             </div>
+            <div className="text-motion zodiac">
+              <span>♒︎</span>
+              <span>♓︎</span>
+              <span>♈︎</span>
+              <span>♉︎</span>
+              <span>♊︎</span>
+              <span>♋︎</span>
+              <span>♌︎</span>
+              <span>♍︎</span>
+              <span>♎︎</span>
+              <span>♏︎</span>
+              <span>♐︎</span>
+              <span>♑︎</span>
+            </div>
           </div>
         </div>
       </main>
