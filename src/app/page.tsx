@@ -16,7 +16,7 @@ function App() {
         <div className="landing-container">
           <div className="landing">
             <div className="text-motion icon-text to-hide"> ⚔ </div>
-            <div className="main-title text-effect"> ERCKNARD GUREN V </div>
+            <div className="main-title text-effect"> ERCKNARD GUREN </div>
             <div className="sub-title to-width">
               {""}
               Ercknard web portfolio is a digital exhibit of my creative
