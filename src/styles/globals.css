@@ -25,7 +25,7 @@ body {
   --background-ter: url("/static/images/bgs/white-surf.svg");
   --cloud: url("/static/images/bgs/white-cloud.svg"); */
   --content: "⚔";
-  --theme-name: "Please select a theme >";
+  --theme-name: "(NONE), Please select a theme ⚔";
 
   --text-primary: white;
   --text-secondary: grey;
