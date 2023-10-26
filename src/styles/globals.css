@@ -546,7 +546,8 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background: var(--black);
+    background: url("/static/images/bgs/2215323.webp");
+    background-size: cover;
   }
 }
 
@@ -1056,7 +1057,7 @@ body {
   left: 0;
   animation: gate-anim 7s linear infinite;
   height: 100vh;
-  background: var(--cloud), var(--accent);
+  background: var(--accent);
   /* -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
   clip-path: polygon(0 0, 0% 100%, 100% 0); */
   background-size: cover;
@@ -1072,13 +1073,21 @@ body {
   z-index: -1;
 }
 
+.landing::before::after {
+  content: var(--content);
+  position: absolute;
+  color: var(--background);
+  font-size: 10rem;
+  z-index: -1;
+}
+
 .landing::after {
   content: "";
   position: absolute;
   right: 0;
   animation: gate-anim 7s linear infinite;
   height: 100vh;
-  background: var(--cloud), var(--accent);
+  background: var(--accent);
   /* -webkit-clip-path: polygon(100% 100%, 100% 0, 0% 100%);
   clip-path: polygon(100% 100%, 100% 0, 0% 100%); */
   background-size: cover;
@@ -1100,7 +1109,7 @@ body {
   }
 
   50% {
-    width: 20vw;
+    width: 10vw;
   }
 
   100% {

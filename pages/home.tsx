@@ -11,7 +11,7 @@ export default class Home extends Component<Props, State> {
     return (
       <>
         <div>
-          <div className="text-motion icon-text to-hide"> </div>
+          <div className="text-motion icon-text to-hide"></div>
           <div className="main-title text-effect"> ERCKNARD GUREN </div>
           <div className="sub-title">
             {""}

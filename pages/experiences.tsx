@@ -17,7 +17,7 @@ export default class Experiences extends Component<Props, State> {
         </Head>
         <Layout>
           <div>
-            <div className="text-motion icon-text to-hide"> ⚔ </div>
+            <div className="text-motion icon-text to-hide"></div>
             <div className="main-title text-effect"> This is Experiences </div>
           </div>
         </Layout>

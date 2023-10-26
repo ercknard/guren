@@ -17,7 +17,7 @@ export default class Custom404 extends Component<Props, State> {
         </Head>
         <Layout>
           <div>
-            <div className="text-motion icon-text to-hide"> ⚔ </div>
+            <div className="text-motion icon-text to-hide"></div>
             <div className="main-title text-effect"> Error 404 </div>
           </div>
         </Layout>
