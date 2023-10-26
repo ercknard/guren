@@ -824,10 +824,17 @@ body {
 
 .navi-icon {
   font-size: 1em;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1.5rem;
-  filter: drop-shadow(3px 3px 20px var(--background));
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2.5rem;
+  background: var(--accent) !important;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.navi-icon::before {
+  filter: drop-shadow(0px 0px 5px var(--black));
 }
 
 .navigation-logo {
