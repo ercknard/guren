@@ -546,10 +546,22 @@ body {
 
 [data-bg="bg"] {
   --to-bg: url("/static/images/bgs/2215323.webp");
+  transition: 1s linear;
 }
 
 [data-bg="nobg"] {
   --to-bg: #00000000;
+  transition: 1s linear;
+}
+
+[data-gate="gate"] {
+  --to-gate: 30vw;
+  transition: 1s linear;
+}
+
+[data-gate="nogate"] {
+  --to-gate: 0vw;
+  transition: 1s linear;
 }
 
 .bg-eye {
@@ -1091,7 +1103,7 @@ body {
   left: 0;
   animation: gate-anim 7s linear;
   animation-iteration-count: 1;
-  width: 0vw;
+  width: var(--to-gate);
   height: 100vh;
   background: var(--accent);
   background-size: cover;
@@ -1116,7 +1128,7 @@ body {
   right: 0;
   animation: gate-anim 7s linear;
   animation-iteration-count: 1;
-  width: 0vw;
+  width: var(--to-gate);
   height: 100vh;
   background: var(--accent);
   background-size: cover;

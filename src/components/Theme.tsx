@@ -15,6 +15,11 @@ function Theme() {
 
   const [bg, setBG] = useLocalStorage("bg", defaultDark ? "dark" : "light");
 
+  const [gate, setGate] = useLocalStorage(
+    "gate",
+    defaultDark ? "dark" : "light"
+  );
+
   const switchThemeYellow = () => {
     const newTheme = "yellow";
     setTheme(newTheme);
@@ -121,10 +126,21 @@ function Theme() {
     setBG(newBG);
   };
 
+  const switchThemeGates = () => {
+    const newgate = "gate";
+    setGate(newgate);
+  };
+
+  const switchThemeNOGates = () => {
+    const newgate = "nogate";
+    setGate(newgate);
+  };
+
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     document.documentElement.setAttribute("data-bg", bg);
-  }, [theme, bg]);
+    document.documentElement.setAttribute("data-gate", gate);
+  }, [theme, bg, gate]);
 
   console.log({ theme });
 
@@ -133,6 +149,7 @@ function Theme() {
       <div className="reveal-eye">
         <div className="fab-container">
           <button className="bg-eye" onClick={switchThemeBG} />
+          <button className="bg-eye" onClick={switchThemeNOBG} />
           <Fab className="fab-reveal" size="medium" aria-label="add">
             <DarkModeIcon />
             <div className="theme-buttons">
@@ -153,7 +170,8 @@ function Theme() {
               <button className="epic-eye eye" onClick={switchThemeEpic} />
             </div>
           </Fab>
-          <button className="bg-eye" onClick={switchThemeNOBG} />
+          <button className="bg-eye" onClick={switchThemeGates} />
+          <button className="bg-eye" onClick={switchThemeNOGates} />
         </div>
       </div>
       <Particlesview particleColor={particleColor} />
