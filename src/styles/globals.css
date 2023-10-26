@@ -553,7 +553,8 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    background: var(--black);
+    background: url("/static/images/bgs/2215323.webp");
+    background-size: cover;
   }
 }
 
