@@ -4,6 +4,8 @@ import useLocalStorage from "use-local-storage";
 import Particlesview from "@/components/Particles";
 import { Fab } from "@mui/material";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import Tooltip from "@mui/material/Tooltip";
+import Switch from "@mui/material/Switch";
 
 function Theme() {
   const [particleColor, setParticleColor] = useState("#ffffff");
@@ -148,30 +150,83 @@ function Theme() {
     <section>
       <div className="reveal-eye">
         <div className="fab-container">
-          <button className="bg-eye" onClick={switchThemeBG} />
-          <button className="bg-eye" onClick={switchThemeNOBG} />
+          <Tooltip title="Wallpaper ON / OFF" placement="top" arrow>
+            <Switch
+              onChange={bg === "bg" ? switchThemeNOBG : switchThemeBG}
+              defaultChecked
+            />
+          </Tooltip>
+          {/* <Tooltip title="Wallpaper ON" placement="top" arrow>
+            <button className="bg-eye" onClick={switchThemeBG} />
+          </Tooltip>
+          <Tooltip title="Wallpaper OFF" placement="top" arrow>
+            <button className="bg-eye" onClick={switchThemeNOBG} />
+          </Tooltip> */}
           <Fab className="fab-reveal" size="medium" aria-label="add">
             <DarkModeIcon />
             <div className="theme-buttons">
-              <button className="white-eye eye" onClick={switchThemeWhite} />
-              <button className="yellow-eye eye" onClick={switchThemeYellow} />
-              <button className="blood-eye eye" onClick={switchThemeBlood} />
-              <button className="red-eye eye" onClick={switchThemeRed} />
-              <button
-                className="magenta-eye eye"
-                onClick={switchThemeMagenta}
-              />
-              <button className="purple-eye eye" onClick={switchThemePurple} />
-              <button className="violet-eye eye" onClick={switchThemeViolet} />
-              <button className="navy-eye eye" onClick={switchThemeNavy} />
-              <button className="blue-eye eye" onClick={switchThemeBlue} />
-              <button className="ocean-eye eye" onClick={switchThemeOcean} />
-              <button className="green-eye eye" onClick={switchThemeGreen} />
-              <button className="epic-eye eye" onClick={switchThemeEpic} />
+              <Tooltip title="Aquarius" placement="top" arrow>
+                <button className="white-eye eye" onClick={switchThemeWhite} />
+              </Tooltip>
+              <Tooltip title="Pisces" placement="top" arrow>
+                <button
+                  className="yellow-eye eye"
+                  onClick={switchThemeYellow}
+                />
+              </Tooltip>
+              <Tooltip title="Taurus" placement="top" arrow>
+                <button className="blood-eye eye" onClick={switchThemeBlood} />
+              </Tooltip>
+              <Tooltip title="Aries" placement="top" arrow>
+                <button className="red-eye eye" onClick={switchThemeRed} />
+              </Tooltip>
+              <Tooltip title="Gemini" placement="top" arrow>
+                <button
+                  className="magenta-eye eye"
+                  onClick={switchThemeMagenta}
+                />
+              </Tooltip>
+              <Tooltip title="Cancer" placement="top" arrow>
+                <button
+                  className="purple-eye eye"
+                  onClick={switchThemePurple}
+                />
+              </Tooltip>
+              <Tooltip title="Leo" placement="top" arrow>
+                <button
+                  className="violet-eye eye"
+                  onClick={switchThemeViolet}
+                />
+              </Tooltip>
+              <Tooltip title="Libra" placement="top" arrow>
+                <button className="navy-eye eye" onClick={switchThemeNavy} />
+              </Tooltip>
+              <Tooltip title="Virgo" placement="top" arrow>
+                <button className="blue-eye eye" onClick={switchThemeBlue} />
+              </Tooltip>
+              <Tooltip title="Scorpio" placement="top" arrow>
+                <button className="ocean-eye eye" onClick={switchThemeOcean} />
+              </Tooltip>
+              <Tooltip title="Sagittarious" placement="top" arrow>
+                <button className="green-eye eye" onClick={switchThemeGreen} />
+              </Tooltip>
+              <Tooltip title="Capricorn" placement="top" arrow>
+                <button className="epic-eye eye" onClick={switchThemeEpic} />
+              </Tooltip>
             </div>
           </Fab>
-          <button className="bg-eye" onClick={switchThemeGates} />
-          <button className="bg-eye" onClick={switchThemeNOGates} />
+          {/* <Tooltip title="Gate ON" placement="top" arrow>
+            <button className="bg-eye" onClick={switchThemeGates} />
+          </Tooltip>
+          <Tooltip title="Gate OFF" placement="top" arrow>
+            <button className="bg-eye" onClick={switchThemeNOGates} />
+          </Tooltip> */}
+          <Tooltip title="Gate ON / OFF" placement="top" arrow>
+            <Switch
+              onChange={gate === "gate" ? switchThemeNOGates : switchThemeGates}
+              defaultChecked
+            />
+          </Tooltip>
         </div>
       </div>
       <Particlesview particleColor={particleColor} />
