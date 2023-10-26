@@ -544,9 +544,25 @@ body {
   background-repeat: no-repeat;
 }
 
+[data-bg="bg"] {
+  --to-bg: url("/static/images/bgs/2215323.webp");
+}
+
+[data-bg="nobg"] {
+  --to-bg: #00000000;
+}
+
+.bg-eye {
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 0.5px solid var(--black);
+  margin: 0.4rem 0.25rem;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    background: url("/static/images/bgs/stars.webp");
+    background: var(--to-bg);
     background-color: #000000;
     background-size: cover;
     background-position: center;
@@ -555,7 +571,7 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    background: url("/static/images/bgs/2215323.webp");
+    background: var(--to-bg);
     background-color: #000000;
     background-size: cover;
     background-position: center;
@@ -596,12 +612,17 @@ body {
   filter: drop-shadow(0px -1px 1px var(--background));
   transition: all 1s ease-in-out;
 }
-
-.fab-reveal {
+.fab-container {
   position: fixed;
+  display: flex;
+  gap: 1rem;
   left: 50%;
   transform: translate(-50%);
-  bottom: -3.5rem;
+  align-items: center;
+  bottom: 1rem;
+}
+
+.fab-reveal {
   background: var(--accent-sub) !important;
   transition: all 1s ease-in-out;
 }

@@ -13,6 +13,8 @@ function Theme() {
     defaultDark ? "dark" : "light"
   );
 
+  const [bg, setBG] = useLocalStorage("bg", defaultDark ? "dark" : "light");
+
   const switchThemeYellow = () => {
     const newTheme = "yellow";
     setTheme(newTheme);
@@ -109,32 +111,50 @@ function Theme() {
     console.log({ newColor });
   };
 
+  const switchThemeBG = () => {
+    const newBG = "bg";
+    setBG(newBG);
+  };
+
+  const switchThemeNOBG = () => {
+    const newBG = "nobg";
+    setBG(newBG);
+  };
+
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
+    document.documentElement.setAttribute("data-bg", bg);
+  }, [theme, bg]);
 
   console.log({ theme });
 
   return (
     <section>
       <div className="reveal-eye">
-        <Fab className="fab-reveal" size="medium" aria-label="add">
-          <DarkModeIcon />
-          <div className="theme-buttons">
-            <button className="white-eye eye" onClick={switchThemeWhite} />
-            <button className="yellow-eye eye" onClick={switchThemeYellow} />
-            <button className="blood-eye eye" onClick={switchThemeBlood} />
-            <button className="red-eye eye" onClick={switchThemeRed} />
-            <button className="magenta-eye eye" onClick={switchThemeMagenta} />
-            <button className="purple-eye eye" onClick={switchThemePurple} />
-            <button className="violet-eye eye" onClick={switchThemeViolet} />
-            <button className="navy-eye eye" onClick={switchThemeNavy} />
-            <button className="blue-eye eye" onClick={switchThemeBlue} />
-            <button className="ocean-eye eye" onClick={switchThemeOcean} />
-            <button className="green-eye eye" onClick={switchThemeGreen} />
-            <button className="epic-eye eye" onClick={switchThemeEpic} />
-          </div>
-        </Fab>
+        <div className="fab-container">
+          <button className="bg-eye" onClick={switchThemeBG} />
+          <Fab className="fab-reveal" size="medium" aria-label="add">
+            <DarkModeIcon />
+            <div className="theme-buttons">
+              <button className="white-eye eye" onClick={switchThemeWhite} />
+              <button className="yellow-eye eye" onClick={switchThemeYellow} />
+              <button className="blood-eye eye" onClick={switchThemeBlood} />
+              <button className="red-eye eye" onClick={switchThemeRed} />
+              <button
+                className="magenta-eye eye"
+                onClick={switchThemeMagenta}
+              />
+              <button className="purple-eye eye" onClick={switchThemePurple} />
+              <button className="violet-eye eye" onClick={switchThemeViolet} />
+              <button className="navy-eye eye" onClick={switchThemeNavy} />
+              <button className="blue-eye eye" onClick={switchThemeBlue} />
+              <button className="ocean-eye eye" onClick={switchThemeOcean} />
+              <button className="green-eye eye" onClick={switchThemeGreen} />
+              <button className="epic-eye eye" onClick={switchThemeEpic} />
+            </div>
+          </Fab>
+          <button className="bg-eye" onClick={switchThemeNOBG} />
+        </div>
       </div>
       <Particlesview particleColor={particleColor} />
     </section>
