@@ -1053,7 +1053,11 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(at bottom, var(--accent-sub-ter), transparent),
+  background: radial-gradient(
+      at bottom,
+      var(--accent-sub-ter),
+      var(--transparent)
+    ),
     #00000090;
   /* background: #00000090; */
 }
