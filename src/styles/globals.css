@@ -25,6 +25,7 @@ body {
   --background-ter: url("/static/images/bgs/white-surf.svg");
   --cloud: url("/static/images/bgs/white-cloud.svg");
   --content: "♒︎";
+  --theme-name: "Aquarius (♒︎)";
 
   --text-primary: white;
   --text-secondary: grey;
@@ -142,6 +143,7 @@ body {
   --background-ter: url("/static/images/bgs/white-surf.svg");
   --cloud: url("/static/images/bgs/white-cloud.svg");
   --content: "♒︎";
+  --theme-name: "Aquarius (♒︎)";
 }
 
 [data-theme="yellow"] {
@@ -160,6 +162,7 @@ body {
   --background-ter: url("/static/images/bgs/yellow-surf.svg");
   --cloud: url("/static/images/bgs/yellow-cloud.svg");
   --content: "♓︎";
+  --theme-name: "Pisces (♓︎)";
 }
 
 [data-theme="red"] {
@@ -176,6 +179,7 @@ body {
   --background-ter: url("/static/images/bgs/red-surf.svg");
   --cloud: url("/static/images/bgs/red-cloud.svg");
   --content: "♈︎";
+  --theme-name: "Aries (♈︎)";
 }
 
 [data-theme="blood"] {
@@ -194,6 +198,7 @@ body {
   --background-ter: url("/static/images/bgs/blood-surf.svg");
   --cloud: url("/static/images/bgs/blood-cloud.svg");
   --content: "♉︎";
+  --theme-name: "Taurus (♉︎)";
 }
 
 [data-theme="magenta"] {
@@ -212,6 +217,7 @@ body {
   --background-ter: url("/static/images/bgs/magenta-surf.svg");
   --cloud: url("/static/images/bgs/magenta-cloud.svg");
   --content: "♊︎";
+  --theme-name: "Gemini (♊︎)";
 }
 
 [data-theme="purple"] {
@@ -230,6 +236,7 @@ body {
   --background-ter: url("/static/images/bgs/purple-surf.svg");
   --cloud: url("/static/images/bgs/purple-cloud.svg");
   --content: "♋︎";
+  --theme-name: "Cancer (♋︎)";
 }
 
 [data-theme="violet"] {
@@ -248,6 +255,7 @@ body {
   --background-ter: url("/static/images/bgs/violet-surf.svg");
   --cloud: url("/static/images/bgs/violet-cloud.svg");
   --content: "♌︎";
+  --theme-name: "Leo (♌︎)";
 }
 
 [data-theme="blue"] {
@@ -264,6 +272,7 @@ body {
   --background-ter: url("/static/images/bgs/blue-surf.svg");
   --cloud: url("/static/images/bgs/blue-cloud.svg");
   --content: "♍︎";
+  --theme-name: "Virgo (♍︎)";
 }
 
 [data-theme="navy"] {
@@ -280,6 +289,7 @@ body {
   --background-ter: url("/static/images/bgs/navy-surf.svg");
   --cloud: url("/static/images/bgs/navy-cloud.svg");
   --content: "♎︎";
+  --theme-name: "Libra (♎︎)";
 }
 
 [data-theme="ocean"] {
@@ -298,6 +308,7 @@ body {
   --background-ter: url("/static/images/bgs/ocean-surf.svg");
   --cloud: url("/static/images/bgs/ocean-cloud.svg");
   --content: "♏︎";
+  --theme-name: "Scorpio (♏︎)";
 }
 
 [data-theme="green"] {
@@ -316,6 +327,7 @@ body {
   --background-ter: url("/static/images/bgs/green-surf.svg");
   --cloud: url("/static/images/bgs/green-cloud.svg");
   --content: "♐︎";
+  --theme-name: "Sagittarious (♐︎)";
 }
 
 [data-theme="epic"] {
@@ -332,6 +344,7 @@ body {
   --background-ter: url("/static/images/bgs/epic-surf.svg");
   --cloud: url("/static/images/bgs/epic-cloud.svg");
   --content: "♑︎";
+  --theme-name: "Capricorn (♑︎)";
 }
 
 [data-theme="white"],
@@ -1200,4 +1213,17 @@ body {
   height: 0.1rem;
   background-color: var(--background);
   bottom: -3px;
+}
+
+.theme-picked {
+  position: fixed !important;
+  color: white;
+  bottom: 2rem;
+  left: 2rem;
+  filter: drop-shadow(1px 1px 1px var(--black));
+}
+
+.theme-picked::after {
+  content: var(--theme-name);
+  filter: drop-shadow(1px 1px 1px var(--black));
 }
