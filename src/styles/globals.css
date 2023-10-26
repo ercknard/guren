@@ -548,6 +548,7 @@ body {
   :root {
     background: url("/static/images/bgs/2215323.webp");
     background-size: cover;
+    background-position: center;
   }
 }
 
@@ -555,6 +556,7 @@ body {
   :root {
     background: url("/static/images/bgs/2215323.webp");
     background-size: cover;
+    background-position: center;
   }
 }
 
@@ -1056,11 +1058,10 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  animation: gate-anim 7s linear infinite;
+  /* animation: gate-anim 7s linear infinite; */
+  width: 15vw;
   height: 100vh;
   background: var(--accent);
-  /* -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-  clip-path: polygon(0 0, 0% 100%, 100% 0); */
   background-size: cover;
   background-position: left;
   border-right: 5px solid;
@@ -1074,6 +1075,9 @@ body {
   z-index: -1;
 }
 
+/* -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0); */
+
 .landing::before::after {
   content: var(--content);
   position: absolute;
@@ -1086,11 +1090,10 @@ body {
   content: "";
   position: absolute;
   right: 0;
-  animation: gate-anim 7s linear infinite;
+  /* animation: gate-anim 7s linear infinite; */
+  width: 15vw;
   height: 100vh;
   background: var(--accent);
-  /* -webkit-clip-path: polygon(100% 100%, 100% 0, 0% 100%);
-  clip-path: polygon(100% 100%, 100% 0, 0% 100%); */
   background-size: cover;
   background-position: right;
   border-left: 5px solid;
@@ -1103,6 +1106,9 @@ body {
     1;
   z-index: -1;
 }
+
+/* -webkit-clip-path: polygon(100% 100%, 100% 0, 0% 100%);
+  clip-path: polygon(100% 100%, 100% 0, 0% 100%); */
 
 @keyframes gate-anim {
   0% {
