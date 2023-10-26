@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import App from "@/app/page";
+import Layout from "@/layout/Layout";
+import Head from "next/head";
 
 type Props = {};
 
@@ -9,6 +10,18 @@ export default class Experiences extends Component<Props, State> {
   state = {};
 
   render() {
-    return <App />;
+    return (
+      <>
+        <Head>
+          <title>Ercknard | Experiences</title>
+        </Head>
+        <Layout>
+          <div>
+            <div className="text-motion icon-text to-hide"> ⚔ </div>
+            <div className="main-title text-effect"> This is Experiences </div>
+          </div>
+        </Layout>
+      </>
+    );
   }
 }

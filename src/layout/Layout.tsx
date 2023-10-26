@@ -1,13 +1,32 @@
-import React, { Component } from "react";
+import "@fontsource/ysabeau";
+import "@fontsource/ysabeau/400.css";
+import "@fontsource/ysabeau/400-italic.css";
+import "@/styles/globals.css";
+import "@/styles/App.css";
+import React, { ReactNode } from "react";
 import Navigation from "./Navigation";
+import dynamic from "next/dynamic";
 
-export default function Layout(props: { children: JSX.Element }): JSX.Element {
-  {
-    return (
-      <section>
-        <Navigation />
-        <div>{props.children}</div>
-      </section>
-    );
-  }
+interface LayoutProps {
+  children: ReactNode;
 }
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const DynamicComponent = dynamic(() => import("@/components/Theme"), {
+    ssr: false,
+  });
+
+  return (
+    <main className="App">
+      <DynamicComponent />
+      <Navigation />
+      <div className="landing-container">
+        <div className="landing">
+          <section className="to-width">{children}</section>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Layout;

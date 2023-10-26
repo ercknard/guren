@@ -52,13 +52,13 @@ export default function Navigation() {
                 EXPERIENCES
               </Link>
             </div>
-            <Link className={`${pathname === "/" ? "active" : ""}`} href="/">
+            <Link href="/">
               <span className="to-flex navigation-text-logo to-hide">
                 {/* <Image
                   className="navigation-logo"
                   src="/static/images/bgs/ercknard-head.webp"
                 />{" "} */}
-                <b className="to-font-color text-motion">Ercknard Guren</b>
+                <b className="to-font-color text-effect navi-icon">⚔</b>
               </span>
             </Link>
             <div className="the-links up-to">
@@ -74,7 +74,7 @@ export default function Navigation() {
                 className={`${pathname === "/feedback" ? "active" : ""}`}
                 href="/feedback"
               >
-                FEEDBACKS
+                FEEDBACK
               </Link>
             </div>
             <div className="the-links">
