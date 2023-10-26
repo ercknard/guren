@@ -1133,7 +1133,12 @@ body {
   font-size: var(--special-font);
   filter: drop-shadow(5px 5px 1px var(--black));
   font-weight: 500;
-  background-color: #00000050;
+  background: linear-gradient(
+    to left,
+    var(--transparent),
+    var(--black-accent),
+    var(--transparent)
+  );
   border-top: 3px solid;
   padding: 1rem;
   border-image: linear-gradient(
