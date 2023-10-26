@@ -14,7 +14,7 @@ body {
   --accent: #ffffff50;
   --accent-sub: #ffffff75;
   --accent-sub-ter: #ffffff10;
-  --background-prime: url("/static/images/bgs/ercknard-white.webp"),
+  /* --background-prime: url("/static/images/bgs/ercknard-white.webp"),
     url("/static/images/bgs/white-sword.webp"),
     url("/static/images/bgs/white-surf.svg"),
     url("/static/images/bgs/moon.webp");
@@ -23,9 +23,9 @@ body {
     url("/static/images/bgs/white-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/white-surf.svg");
-  --cloud: url("/static/images/bgs/white-cloud.svg");
-  --content: "♒︎";
-  --theme-name: "Aquarius (♒︎)";
+  --cloud: url("/static/images/bgs/white-cloud.svg"); */
+  --content: "⚔";
+  --theme-name: "Please select a theme >";
 
   --text-primary: white;
   --text-secondary: grey;
@@ -1058,10 +1058,11 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  /* animation: gate-anim 7s linear infinite; */
+  animation: gate-anim 7s linear;
+  animation-iteration-count: 1;
   width: 15vw;
   height: 100vh;
-  background: var(--accent);
+  background: var(--accent-sub);
   background-size: cover;
   background-position: left;
   border-right: 5px solid;
@@ -1090,10 +1091,11 @@ body {
   content: "";
   position: absolute;
   right: 0;
-  /* animation: gate-anim 7s linear infinite; */
+  animation: gate-anim 7s linear;
+  animation-iteration-count: 1;
   width: 15vw;
   height: 100vh;
-  background: var(--accent);
+  background: var(--accent-sub);
   background-size: cover;
   background-position: right;
   border-left: 5px solid;
@@ -1115,12 +1117,8 @@ body {
     width: 30vw;
   }
 
-  50% {
-    width: 10vw;
-  }
-
   100% {
-    width: 30vw;
+    width: 15vw;
   }
 }
 
