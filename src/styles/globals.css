@@ -31,6 +31,8 @@ body {
     url("/static/images/bgs/yellow-surf.svg");
   --ercknard-red: url("/static/images/bgs/ercknard-red.webp"),
     url("/static/images/bgs/red-surf.svg");
+  --ercknard-blood: url("/static/images/bgs/ercknard-blood.webp"),
+    url("/static/images/bgs/blood-surf.svg");
   --ercknard-magenta: url("/static/images/bgs/ercknard-magenta.webp"),
     url("/static/images/bgs/magenta-surf.svg");
   --ercknard-purple: url("/static/images/bgs/ercknard-purple.webp"),
@@ -39,33 +41,43 @@ body {
     url("/static/images/bgs/violet-surf.svg");
   --ercknard-blue: url("/static/images/bgs/ercknard-blue.webp"),
     url("/static/images/bgs/blue-surf.svg");
+  --ercknard-navy: url("/static/images/bgs/ercknard-navy.webp"),
+    url("/static/images/bgs/navy-surf.svg");
   --ercknard-ocean: url("/static/images/bgs/ercknard-ocean.webp"),
     url("/static/images/bgs/ocean-surf.svg");
   --ercknard-green: url("/static/images/bgs/ercknard-green.webp"),
     url("/static/images/bgs/green-surf.svg");
+  --ercknard-epic: url("/static/images/bgs/ercknard-epic.webp"),
+    url("/static/images/bgs/epic-surf.svg");
 
   --transparent: rgba(0, 0, 0, 0);
   --white: #ffffff;
   --black: #000000;
   --yellow: #f0d056;
   --red: #ff5e5a;
+  --blood: #f58231;
   --magenta: #9b3a98;
   --purple: #b075f8;
   --violet: #7b8ffc;
   --blue: #4389ff;
+  --navy: #0000e7;
   --ocean: #5cc2e4;
   --green: #6ef0bc;
+  --epic: #bfef45;
 
   --white-accent: #ffffff75;
   --black-accent: #00000075;
   --yellow-accent: #f0d05675;
   --red-accent: #ff5e5a75;
+  --blood-accent: #f5823175;
   --magenta-accent: #9b3a9875;
   --purple-accent: #b075f875;
   --violet-accent: #7b8ffc75;
   --blue-accent: #4389ff75;
+  --navy-accent: #0000e775;
   --ocean-accent: #5cc2e475;
   --green-accent: #6ef0bc75;
+  --epic-accent: #bfef4575;
 
   --gifted-font: 5em;
   --primary-font: 4em;
@@ -142,6 +154,23 @@ body {
   --cloud: url("/static/images/bgs/red-cloud.svg");
 }
 
+[data-theme="blood"] {
+  --background: var(--blood);
+  --accent: #f5823150;
+  --accent-sub: #f5823175;
+  --accent-sub-ter: #f5823110;
+  --background-prime: url("/static/images/bgs/ercknard-blood.webp"),
+    url("/static/images/bgs/blood-sword.webp"),
+    url("/static/images/bgs/blood-surf.svg"),
+    url("/static/images/bgs/moon.webp");
+  --background-second: url("/static/images/bgs/ercknard-blood-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
+    url("/static/images/bgs/blood-surf.svg"),
+    url("/static/images/bgs/moon.webp");
+  --background-ter: url("/static/images/bgs/blood-surf.svg");
+  --cloud: url("/static/images/bgs/blood-cloud.svg");
+}
+
 [data-theme="magenta"] {
   --background: var(--magenta);
   --accent: #9b3a9850;
@@ -208,6 +237,21 @@ body {
   --cloud: url("/static/images/bgs/blue-cloud.svg");
 }
 
+[data-theme="navy"] {
+  --background: var(--navy);
+  --accent: #0000e750;
+  --accent-sub: #0000e775;
+  --accent-sub-ter: #0000e710;
+  --background-prime: url("/static/images/bgs/ercknard-navy.webp"),
+    url("/static/images/bgs/navy-sword.webp"),
+    url("/static/images/bgs/navy-surf.svg"), url("/static/images/bgs/moon.webp");
+  --background-second: url("/static/images/bgs/ercknard-navy-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
+    url("/static/images/bgs/navy-surf.svg"), url("/static/images/bgs/moon.webp");
+  --background-ter: url("/static/images/bgs/navy-surf.svg");
+  --cloud: url("/static/images/bgs/navy-cloud.svg");
+}
+
 [data-theme="ocean"] {
   --background: var(--ocean);
   --accent: #5cc2e450;
@@ -242,16 +286,34 @@ body {
   --cloud: url("/static/images/bgs/green-cloud.svg");
 }
 
+[data-theme="epic"] {
+  --background: var(--epic);
+  --accent: #bfef4550;
+  --accent-sub: #bfef4575;
+  --accent-sub-ter: #bfef4510;
+  --background-prime: url("/static/images/bgs/ercknard-epic.webp"),
+    url("/static/images/bgs/epic-sword.webp"),
+    url("/static/images/bgs/epic-surf.svg"), url("/static/images/bgs/moon.webp");
+  --background-second: url("/static/images/bgs/ercknard-epic-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
+    url("/static/images/bgs/epic-surf.svg"), url("/static/images/bgs/moon.webp");
+  --background-ter: url("/static/images/bgs/epic-surf.svg");
+  --cloud: url("/static/images/bgs/epic-cloud.svg");
+}
+
 [data-theme="white"],
 [data-theme="black"],
 [data-theme="yellow"],
 [data-theme="red"],
+[data-theme="blood"],
 [data-theme="magenta"],
 [data-theme="purple"],
 [data-theme="violet"],
-[data-theme="blue"],
 [data-theme="ocean"],
-[data-theme="green"] {
+[data-theme="navy"],
+[data-theme="ocean"],
+[data-theme="green"],
+[data-theme="epic"] {
   background-repeat: no-repeat;
   background-position: center, center;
   background-size: contain, cover;
@@ -300,6 +362,16 @@ body {
     );
 }
 
+.blood-eye {
+  background: var(--ercknard-blood),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--blood-accent)
+    );
+}
+
 .magenta-eye {
   background: var(--ercknard-magenta),
     linear-gradient(
@@ -340,6 +412,16 @@ body {
     );
 }
 
+.navy-eye {
+  background: var(--ercknard-navy),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--navy-accent)
+    );
+}
+
 .ocean-eye {
   background: var(--ercknard-ocean),
     linear-gradient(
@@ -360,16 +442,29 @@ body {
     );
 }
 
+.epic-eye {
+  background: var(--ercknard-epic),
+    linear-gradient(
+      to bottom,
+      var(--transparent),
+      var(--transparent),
+      var(--epic-accent)
+    );
+}
+
 .white-eye,
 .black-eye,
 .yellow-eye,
 .red-eye,
+.blood-eye,
 .magenta-eye,
 .purple-eye,
 .violet-eye,
 .blue-eye,
+.navy-eye,
 .ocean-eye,
-.green-eye {
+.green-eye,
+.epic-eye {
   background-size: contain, cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -527,6 +622,23 @@ body {
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .white-eye,
+  .black-eye,
+  .yellow-eye,
+  .red-eye,
+  .blood-eye,
+  .magenta-eye,
+  .purple-eye,
+  .violet-eye,
+  .blue-eye,
+  .navy-eye,
+  .ocean-eye,
+  .green-eye,
+  .epic-eye {
+    margin: 0.5rem 0.4rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   .white-eye {
     background: var(--white);
@@ -542,6 +654,10 @@ body {
 
   .red-eye {
     background: var(--red);
+  }
+
+  .blood-eye {
+    background: var(--blood);
   }
 
   .magenta-eye {
@@ -560,6 +676,10 @@ body {
     background: var(--blue);
   }
 
+  .navy-eye {
+    background: var(--navy);
+  }
+
   .ocean-eye {
     background: var(--ocean);
   }
@@ -568,21 +688,28 @@ body {
     background: var(--green);
   }
 
+  .epic-eye {
+    background: var(--epic);
+  }
+
   .white-eye,
   .black-eye,
   .yellow-eye,
   .red-eye,
+  .blood-eye,
   .magenta-eye,
   .purple-eye,
   .violet-eye,
   .blue-eye,
+  .navy-eye,
   .ocean-eye,
-  .green-eye {
+  .green-eye,
+  .epic-eye {
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid var(--black);
-    margin: 0.4rem 0.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 0.5px solid var(--black);
+    margin: 0.4rem 0.25rem;
   }
 
   .eye:hover,

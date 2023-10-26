@@ -29,6 +29,14 @@ function Theme() {
     console.log({ newColor });
   };
 
+  const switchThemeBlood = () => {
+    const newTheme = "blood";
+    setTheme(newTheme);
+    const newColor = "#f58231";
+    setParticleColor(newColor);
+    console.log({ newColor });
+  };
+
   const switchThemeMagenta = () => {
     const newTheme = "magenta";
     setTheme(newTheme);
@@ -69,6 +77,14 @@ function Theme() {
     console.log({ newColor });
   };
 
+  const switchThemeNavy = () => {
+    const newTheme = "navy";
+    setTheme(newTheme);
+    const newColor = "#0000e7";
+    setParticleColor(newColor);
+    console.log({ newColor });
+  };
+
   const switchThemeOcean = () => {
     const newTheme = "ocean";
     setTheme(newTheme);
@@ -85,6 +101,14 @@ function Theme() {
     console.log({ newColor });
   };
 
+  const switchThemeEpic = () => {
+    const newTheme = "epic";
+    setTheme(newTheme);
+    const newColor = "#bfef45";
+    setParticleColor(newColor);
+    console.log({ newColor });
+  };
+
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
@@ -97,15 +121,18 @@ function Theme() {
         <Fab className="fab-reveal" size="medium" aria-label="add">
           <DarkModeIcon />
           <div className="theme-buttons">
+            <button className="white-eye eye" onClick={switchThemeWhite} />
             <button className="yellow-eye eye" onClick={switchThemeYellow} />
+            <button className="blood-eye eye" onClick={switchThemeBlood} />
             <button className="red-eye eye" onClick={switchThemeRed} />
             <button className="magenta-eye eye" onClick={switchThemeMagenta} />
             <button className="purple-eye eye" onClick={switchThemePurple} />
-            <button className="white-eye eye" onClick={switchThemeWhite} />
             <button className="violet-eye eye" onClick={switchThemeViolet} />
+            <button className="navy-eye eye" onClick={switchThemeNavy} />
             <button className="blue-eye eye" onClick={switchThemeBlue} />
             <button className="ocean-eye eye" onClick={switchThemeOcean} />
             <button className="green-eye eye" onClick={switchThemeGreen} />
+            <button className="epic-eye eye" onClick={switchThemeEpic} />
           </div>
         </Fab>
       </div>
