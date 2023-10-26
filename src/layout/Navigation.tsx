@@ -58,7 +58,8 @@ export default function Navigation() {
                   className="navigation-logo"
                   src="/static/images/bgs/ercknard-head.webp"
                 />{" "} */}
-                <b className="to-font-color text-effect navi-icon">⚔</b>
+                <b className="to-font-color text-effect icon-text navi-icon"></b>
+                {/* <b className="to-font-color text-effect navi-icon">⚔</b> */}
               </span>
             </Link>
             <div className="the-links up-to">

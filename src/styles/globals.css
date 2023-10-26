@@ -24,6 +24,7 @@ body {
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/white-surf.svg");
   --cloud: url("/static/images/bgs/white-cloud.svg");
+  --content: "♒︎";
 
   --ercknard-white: url("/static/images/bgs/ercknard-white.webp"),
     url("/static/images/bgs/white-surf.svg");
@@ -137,6 +138,7 @@ body {
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/yellow-surf.svg");
   --cloud: url("/static/images/bgs/yellow-cloud.svg");
+  --content: "♓︎";
 }
 
 [data-theme="red"] {
@@ -152,6 +154,7 @@ body {
     url("/static/images/bgs/red-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/red-surf.svg");
   --cloud: url("/static/images/bgs/red-cloud.svg");
+  --content: "♈︎";
 }
 
 [data-theme="blood"] {
@@ -169,6 +172,7 @@ body {
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/blood-surf.svg");
   --cloud: url("/static/images/bgs/blood-cloud.svg");
+  --content: "♉︎";
 }
 
 [data-theme="magenta"] {
@@ -186,6 +190,7 @@ body {
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/magenta-surf.svg");
   --cloud: url("/static/images/bgs/magenta-cloud.svg");
+  --content: "♊︎";
 }
 
 [data-theme="purple"] {
@@ -203,6 +208,7 @@ body {
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/purple-surf.svg");
   --cloud: url("/static/images/bgs/purple-cloud.svg");
+  --content: "♋︎";
 }
 
 [data-theme="violet"] {
@@ -220,6 +226,7 @@ body {
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/violet-surf.svg");
   --cloud: url("/static/images/bgs/violet-cloud.svg");
+  --content: "♌︎";
 }
 
 [data-theme="blue"] {
@@ -235,6 +242,7 @@ body {
     url("/static/images/bgs/blue-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/blue-surf.svg");
   --cloud: url("/static/images/bgs/blue-cloud.svg");
+  --content: "♍︎";
 }
 
 [data-theme="navy"] {
@@ -250,6 +258,7 @@ body {
     url("/static/images/bgs/navy-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/navy-surf.svg");
   --cloud: url("/static/images/bgs/navy-cloud.svg");
+  --content: "♎︎";
 }
 
 [data-theme="ocean"] {
@@ -267,6 +276,7 @@ body {
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/ocean-surf.svg");
   --cloud: url("/static/images/bgs/ocean-cloud.svg");
+  --content: "♏︎";
 }
 
 [data-theme="green"] {
@@ -284,6 +294,7 @@ body {
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/green-surf.svg");
   --cloud: url("/static/images/bgs/green-cloud.svg");
+  --content: "♐︎";
 }
 
 [data-theme="epic"] {
@@ -299,6 +310,7 @@ body {
     url("/static/images/bgs/epic-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/epic-surf.svg");
   --cloud: url("/static/images/bgs/epic-cloud.svg");
+  --content: "♑︎";
 }
 
 [data-theme="white"],
@@ -804,11 +816,20 @@ body {
   margin-top: 5px;
 }
 
-.navi-icon {
+/* .navi-icon {
   font-size: 2.5em;
   padding-left: 1rem;
   padding-right: 1rem;
+} */
+
+.navi-icon {
+  font-size: 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  filter: drop-shadow(3px 3px 20px var(--background));
 }
+
 .navigation-logo {
   display: flex;
   justify-content: center;
@@ -1085,8 +1106,15 @@ body {
 }
 
 .icon-text {
+  position: relative;
+}
+
+.icon-text::before {
+  content: var(--content);
+  display: flex;
+  justify-content: center;
   text-align: center;
-  font-size: var(--prim-secon-font);
+  font-size: var(--secondary-font);
   font-weight: 500;
   margin-bottom: -1.5rem;
 }
