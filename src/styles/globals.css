@@ -14,17 +14,9 @@ body {
   --accent: #ffffff50;
   --accent-sub: #ffffff75;
   --accent-sub-ter: #ffffff10;
-  --background-prime: url("/static/images/bgs/ercknard-white.webp"),
-    url("/static/images/bgs/white-sword.webp"),
-    url("/static/images/bgs/white-surf.svg"),
-    url("/static/images/bgs/moon.webp");
-  --background-second: url("/static/images/bgs/ercknard-white-closed-clean.webp"),
-    url("/static/images/bgs/blank-sword.webp"),
-    url("/static/images/bgs/white-surf.svg"),
-    url("/static/images/bgs/moon.webp");
-  --background-ter: url("/static/images/bgs/white-surf.svg");
-  --cloud: url("/static/images/bgs/white-cloud.svg");
-  --content: "♒︎";
+
+  --text-primary: white;
+  --text-secondary: grey;
 
   --ercknard-white: url("/static/images/bgs/ercknard-white.webp"),
     url("/static/images/bgs/white-surf.svg");
@@ -121,6 +113,24 @@ body {
     --quaternary-font: 1em;
     --quinary-font: 1em;
   }
+}
+
+[data-theme="white"] {
+  --background: #ffffff;
+  --accent: #ffffff50;
+  --accent-sub: #ffffff75;
+  --accent-sub-ter: #ffffff10;
+  --background-prime: url("/static/images/bgs/ercknard-white.webp"),
+    url("/static/images/bgs/white-sword.webp"),
+    url("/static/images/bgs/white-surf.svg"),
+    url("/static/images/bgs/moon.webp");
+  --background-second: url("/static/images/bgs/ercknard-white-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp"),
+    url("/static/images/bgs/white-surf.svg"),
+    url("/static/images/bgs/moon.webp");
+  --background-ter: url("/static/images/bgs/white-surf.svg");
+  --cloud: url("/static/images/bgs/white-cloud.svg");
+  --content: "♒︎";
 }
 
 [data-theme="yellow"] {
@@ -791,7 +801,7 @@ body {
   display: flex;
   gap: 2rem;
   font-size: var(--ter-spec-font);
-  filter: drop-shadow(1px 1px 1px var(--black));
+  filter: drop-shadow(2px 2px 1px var(--black));
   justify-content: center;
 }
 
