@@ -21,9 +21,9 @@ body {
   --background-second: url("/static/images/bgs/ercknard-white-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/white-surf.svg"),
-    url("/static/images/bgs/moon.webp");
+    url("/static/images/bgs/moon.webp"); */
   --background-ter: url("/static/images/bgs/white-surf.svg");
-  --cloud: url("/static/images/bgs/white-cloud.svg"); */
+  --cloud: url("/static/images/bgs/white-cloud.svg");
   --content: "⚔";
   --theme-name: "(NONE), Please select a theme ⚔";
 
