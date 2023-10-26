@@ -546,7 +546,8 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background: url("/static/images/bgs/2215323.webp");
+    background: url("/static/images/bgs/stars.webp");
+    background-color: #000000;
     background-size: cover;
     background-position: center;
   }
@@ -555,6 +556,7 @@ body {
 @media (prefers-color-scheme: light) {
   :root {
     background: url("/static/images/bgs/2215323.webp");
+    background-color: #000000;
     background-size: cover;
     background-position: center;
   }
@@ -1068,7 +1070,7 @@ body {
   left: 0;
   animation: gate-anim 7s linear;
   animation-iteration-count: 1;
-  width: 10vw;
+  width: 0vw;
   height: 100vh;
   background: var(--accent);
   background-size: cover;
@@ -1093,7 +1095,7 @@ body {
   right: 0;
   animation: gate-anim 7s linear;
   animation-iteration-count: 1;
-  width: 10vw;
+  width: 0vw;
   height: 100vh;
   background: var(--accent);
   background-size: cover;
@@ -1118,7 +1120,7 @@ body {
   }
 
   100% {
-    width: 10vw;
+    width: 0vw;
   }
 }
 
