@@ -1287,7 +1287,8 @@ body {
   filter: drop-shadow(1px 1px 1px var(--black));
 }
 
-.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked,
+.css-1nr2wod.Mui-checked {
   color: var(--background) !important;
 }
 
@@ -1296,6 +1297,7 @@ body {
   background-color: var(--accent) !important;
 }
 
-.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase:hover {
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase:hover,
+.css-19gndve {
   background-color: var(--accent-sub-ter) !important;
 }
