@@ -7,10 +7,13 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Tooltip from "@mui/material/Tooltip";
 import Switch from "@mui/material/Switch";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-import Button from "@mui/material/Button";
 import Snackbar from "@mui/material/Snackbar";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
+import Checkbox from "@mui/material/Checkbox";
+import FullscreenIcon from "@mui/icons-material/Fullscreen";
+import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
+import ViewInArIcon from "@mui/icons-material/ViewInAr";
 
 function Theme() {
   const [openDB, setOpenDB] = React.useState(false);
@@ -32,6 +35,8 @@ function Theme() {
   const [surf, setSurf] = useState("surf");
 
   const [dark, setDark] = useState("dark");
+
+  const [full, setFull] = useState("full");
 
   const switchThemeYellow = () => {
     const newTheme = "yellow";
@@ -169,15 +174,26 @@ function Theme() {
     setDark(newdark);
   };
 
+  const switchThemeFull = () => {
+    const newfull = "full";
+    setFull(newfull);
+  };
+
+  const switchThemeNOFull = () => {
+    const newfull = "nofull";
+    setFull(newfull);
+  };
+
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     document.documentElement.setAttribute("data-bg", bg);
     document.documentElement.setAttribute("data-gate", gate);
     document.documentElement.setAttribute("data-surf", surf);
     document.documentElement.setAttribute("data-dark", dark);
-  }, [theme, bg, gate, surf, dark]);
+    document.documentElement.setAttribute("data-full", full);
+  }, [theme, bg, gate, surf, dark, full]);
 
-  console.log({ theme });
+  console.log({ theme, bg, gate, surf, dark, full });
 
   const handleClickDB = () => {
     setOpenDB(true);
@@ -352,6 +368,17 @@ function Theme() {
             </div>
           </Fab>{" "}
           Current theme :{" "}
+        </div>
+        <div className="theme-picked-fullscreen to-hide">
+          <Tooltip title="Toggle View" placement="top" arrow>
+            <Checkbox
+              size="medium"
+              icon={<FullscreenExitIcon fontSize="large" />}
+              checkedIcon={<FullscreenIcon fontSize="large" />}
+              checked={full === "full"}
+              onChange={full === "full" ? switchThemeNOFull : switchThemeFull}
+            />
+          </Tooltip>
         </div>
       </div>
       <Particlesview particleColor={particleColor} />

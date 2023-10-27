@@ -616,6 +616,14 @@ body {
   );
 }
 
+[data-full="full"] {
+  --visibility-full: visible !important;
+}
+
+[data-full="nofull"] {
+  --visibility-full: hidden !important;
+}
+
 [data-bg="bg"] {
   --to-bg: url("/static/images/bgs/2215323.webp");
   transition: 1s linear;
@@ -790,6 +798,7 @@ body {
   transform: translate(-50%);
   align-items: center;
   bottom: 1rem;
+  visibility: var(--visibility-full);
 }
 
 .fab-reveal {
@@ -1022,6 +1031,10 @@ body {
   margin-left: 20px;
   margin-top: 20px;
   color: var(--white);
+}
+
+.the-links {
+  visibility: var(--visibility-full);
 }
 
 /* .the-links {
@@ -1482,6 +1495,18 @@ body {
   color: white;
   bottom: 1.2rem;
   left: 1.6rem;
+  visibility: var(--visibility-full);
+}
+
+.theme-picked-fullscreen {
+  position: fixed !important;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center !important;
+  color: white !important;
+  bottom: 1rem;
+  right: 1.6rem;
+  cursor: pointer;
 }
 
 .theme-picked::after {
@@ -1529,4 +1554,9 @@ body {
   min-width: 10rem !important;
   filter: drop-shadow(1px 1px 1px var(--black)) !important;
   background: var(--accent-sub) !important;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: var(--background) !important;
 }
