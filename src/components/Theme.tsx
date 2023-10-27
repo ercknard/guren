@@ -185,12 +185,14 @@ function Theme() {
         <div className="fab-container">
           <Tooltip title="Dark background ON / OFF" placement="top" arrow>
             <Switch
+              checked={dark === "dark"}
               onChange={dark === "dark" ? switchThemeNODark : switchThemeDark}
               defaultChecked
             />
           </Tooltip>
           <Tooltip title="Wallpaper ON / OFF" placement="top" arrow>
             <Switch
+              checked={bg === "bg"}
               onChange={bg === "bg" ? switchThemeNOBG : switchThemeBG}
               defaultChecked
             />
@@ -262,12 +264,14 @@ function Theme() {
           </Tooltip> */}
           <Tooltip title="Gate ON / OFF" placement="top" arrow>
             <Switch
+              checked={gate === "gate"}
               onChange={gate === "gate" ? switchThemeNOGates : switchThemeGates}
               defaultChecked
             />
           </Tooltip>
           <Tooltip title="Surf ON / OFF" placement="top" arrow>
             <Switch
+              checked={surf === "surf"}
               onChange={surf === "surf" ? switchThemeNOSurf : switchThemeSurf}
               defaultChecked
             />
