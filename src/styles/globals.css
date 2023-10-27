@@ -980,16 +980,18 @@ body {
   .epic-eye {
     border-radius: 50% !important;
     min-width: 1.6rem !important;
+    max-width: 1.6rem !important;
     height: 1.6rem !important;
+    max-height: 1.6rem !important;
     border: 0.5px solid var(--black) !important;
-    margin: 0.4rem 0.2rem !important;
+    margin: 0.4rem 0.25rem !important;
   }
 
   .eye:hover,
   .eye:active {
     transform: unset !important;
-    margin-left: 0.2rem !important;
-    margin-right: 0.2rem !important;
+    margin-left: 0.25rem !important;
+    margin-right: 0.25rem !important;
   }
 
   .theme-buttons {
