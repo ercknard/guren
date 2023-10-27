@@ -1364,10 +1364,6 @@ body {
 
 @keyframes gate-anim-on {
   0% {
-    width: 30vw;
-  }
-
-  50% {
     width: 0vw;
   }
 
