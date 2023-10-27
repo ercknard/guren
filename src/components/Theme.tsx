@@ -244,9 +244,7 @@ function Theme() {
         open={openDB}
         autoHideDuration={1000}
         onClose={handleClose}
-        message={
-          dark === "dark" ? "Dark Background is ON" : "Dark Background is OFF"
-        }
+        message={dark === "dark" ? "Dark Filter is ON" : "Dark Filter is OFF"}
         action={action}
       />
       <Snackbar
@@ -274,7 +272,7 @@ function Theme() {
       />
       <div className="reveal-eye">
         <div className="fab-container">
-          <Tooltip title="Dark background ON / OFF" placement="top" arrow>
+          <Tooltip title="Dark Filter ON / OFF" placement="top" arrow>
             <Switch
               onClick={handleClickDB}
               checked={dark === "dark"}
@@ -361,7 +359,7 @@ function Theme() {
           <Fab className="theme-details" size="small" aria-label="add">
             <QuestionMarkIcon className="to-mask-icon" />
             <div className="theme-details-buttons">
-              <div className="DB">Dark Background (Pages only) : </div>
+              <div className="DB">Dark Filter (For Pages only) : </div>
               <div className="CW">Cosmic Wallpaper : </div>
               <div className="TG">Theme Gates : </div>
               <div className="TS">Theme Surf : </div>
