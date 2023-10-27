@@ -9,6 +9,11 @@ body {
 }
 
 :root {
+  --after-theme-cw: "Select a theme first";
+  --after-theme-tg: "Select a theme first";
+  --after-theme-db: "Select a theme first";
+  --after-theme-ts: "Select a theme first";
+
   --moon: url("/static/images/bgs/moon.webp");
   --background: #ffffff;
   --accent: #ffffff50;
