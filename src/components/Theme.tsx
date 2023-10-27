@@ -21,6 +21,7 @@ function Theme() {
   const [openCW, setOpenCW] = React.useState(false);
   const [openTG, setOpenTG] = React.useState(false);
   const [openTS, setOpenTS] = React.useState(false);
+  const [openFS, setOpenFS] = React.useState(false);
 
   const [particleColor, setParticleColor] = useState("#ffffff");
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -212,6 +213,9 @@ function Theme() {
     setOpenTS(true);
   };
 
+  const handleClickFS = () => {
+    setOpenFS(true);
+  };
   const handleClose = (
     event: React.SyntheticEvent | Event,
     reason?: string
@@ -224,6 +228,7 @@ function Theme() {
     setOpenCW(false);
     setOpenTG(false);
     setOpenTS(false);
+    setOpenFS(false);
   };
 
   const action = (
@@ -269,6 +274,13 @@ function Theme() {
         autoHideDuration={1000}
         onClose={handleClose}
         message={surf === "surf" ? "Theme Surf is ON" : "Theme Surf is OFF"}
+        action={action}
+      />
+      <Snackbar
+        open={openFS}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={full === "full" ? "View mode is OFF" : "View mode is ON"}
         action={action}
       />
       <div className="reveal-eye">
@@ -372,6 +384,7 @@ function Theme() {
           <Tooltip title="Toggle View" placement="top" arrow>
             <Checkbox
               size="medium"
+              onClick={handleClickFS}
               icon={<FullscreenExitIcon fontSize="large" />}
               checkedIcon={<FullscreenIcon fontSize="large" />}
               checked={full === "full"}
