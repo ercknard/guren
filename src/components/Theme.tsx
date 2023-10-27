@@ -265,7 +265,7 @@ function Theme() {
               onChange={dark === "dark" ? switchThemeNODark : switchThemeDark}
             />
           </Tooltip>
-          <Tooltip title="Wallpaper ON / OFF" placement="top" arrow>
+          <Tooltip title="Cosmic Wallpaper ON / OFF" placement="top" arrow>
             <Switch
               onClick={handleClickCW}
               checked={bg === "bg"}
@@ -325,14 +325,14 @@ function Theme() {
               </Tooltip>
             </div>
           </Fab>
-          <Tooltip title="Gate ON / OFF" placement="top" arrow>
+          <Tooltip title="Theme Gates ON / OFF" placement="top" arrow>
             <Switch
               onClick={handleClickTG}
               checked={gate === "gate"}
               onChange={gate === "gate" ? switchThemeNOGates : switchThemeGates}
             />
           </Tooltip>
-          <Tooltip title="Surf ON / OFF" placement="top" arrow>
+          <Tooltip title="Theme Surf ON / OFF" placement="top" arrow>
             <Switch
               onClick={handleClickTS}
               checked={surf === "surf"}
