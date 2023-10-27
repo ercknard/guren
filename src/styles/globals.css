@@ -141,6 +141,10 @@ body {
     url("/static/images/bgs/white-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/white-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-white.webp"),
+    url("/static/images/bgs/white-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-white-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/white-cloud.svg");
   --content: "♒︎";
   --theme-name: "Aquarius (♒︎)";
@@ -160,6 +164,10 @@ body {
     url("/static/images/bgs/yellow-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/yellow-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-yellow.webp"),
+    url("/static/images/bgs/yellow-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-yellow-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/yellow-cloud.svg");
   --content: "♓︎";
   --theme-name: "Pisces (♓︎)";
@@ -177,6 +185,10 @@ body {
     url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/red-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/red-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-red.webp"),
+    url("/static/images/bgs/red-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-red-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/red-cloud.svg");
   --content: "♈︎";
   --theme-name: "Aries (♈︎)";
@@ -196,6 +208,10 @@ body {
     url("/static/images/bgs/blood-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/blood-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-blood.webp"),
+    url("/static/images/bgs/blood-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-blood-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/blood-cloud.svg");
   --content: "♉︎";
   --theme-name: "Taurus (♉︎)";
@@ -215,6 +231,10 @@ body {
     url("/static/images/bgs/magenta-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/magenta-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-magenta.webp"),
+    url("/static/images/bgs/magenta-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-magenta-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/magenta-cloud.svg");
   --content: "♊︎";
   --theme-name: "Gemini (♊︎)";
@@ -234,6 +254,10 @@ body {
     url("/static/images/bgs/purple-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/purple-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-purple.webp"),
+    url("/static/images/bgs/purple-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-purple-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/purple-cloud.svg");
   --content: "♋︎";
   --theme-name: "Cancer (♋︎)";
@@ -253,6 +277,10 @@ body {
     url("/static/images/bgs/violet-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/violet-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-violet.webp"),
+    url("/static/images/bgs/violet-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-violet-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/violet-cloud.svg");
   --content: "♌︎";
   --theme-name: "Leo (♌︎)";
@@ -270,6 +298,10 @@ body {
     url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/blue-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/blue-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-blue.webp"),
+    url("/static/images/bgs/blue-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-blue-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/blue-cloud.svg");
   --content: "♍︎";
   --theme-name: "Virgo (♍︎)";
@@ -287,6 +319,10 @@ body {
     url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/navy-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/navy-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-navy.webp"),
+    url("/static/images/bgs/navy-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-navy-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/navy-cloud.svg");
   --content: "♎︎";
   --theme-name: "Libra (♎︎)";
@@ -306,6 +342,10 @@ body {
     url("/static/images/bgs/ocean-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/ocean-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-ocean.webp"),
+    url("/static/images/bgs/ocean-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-ocean-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/ocean-cloud.svg");
   --content: "♏︎";
   --theme-name: "Scorpio (♏︎)";
@@ -325,6 +365,10 @@ body {
     url("/static/images/bgs/green-surf.svg"),
     url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/green-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-green.webp"),
+    url("/static/images/bgs/green-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-green-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/green-cloud.svg");
   --content: "♐︎";
   --theme-name: "Sagittarious (♐︎)";
@@ -342,6 +386,10 @@ body {
     url("/static/images/bgs/blank-sword.webp"),
     url("/static/images/bgs/epic-surf.svg"), url("/static/images/bgs/moon.webp");
   --background-ter: url("/static/images/bgs/epic-surf.svg");
+  --background-for: url("/static/images/bgs/ercknard-epic.webp"),
+    url("/static/images/bgs/epic-sword.webp");
+  --background-fifth: url("/static/images/bgs/ercknard-epic-closed-clean.webp"),
+    url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/epic-cloud.svg");
   --content: "♑︎";
   --theme-name: "Capricorn (♑︎)";
@@ -561,6 +609,12 @@ body {
 
 [data-gate="nogate"] {
   --to-gate: 0vw;
+  --background-prime: var(--background-for),
+    url("/static/images/bgs/blank-surf.svg"),
+    url("/static/images/bgs/moon.webp");
+  --background-second: var(--background-fifth),
+    url("/static/images/bgs/blank-surf.svg"),
+    url("/static/images/bgs/moon.webp");
   transition: 1s linear;
 }
 
