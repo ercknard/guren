@@ -28,13 +28,13 @@ function Theme() {
     defaultDark ? "dark" : "light"
   );
 
-  const [bg, setBG] = useState("bg");
+  const [bg, setBG] = useLocalStorage("bg", "bg");
 
-  const [gate, setGate] = useState("gate");
+  const [gate, setGate] = useLocalStorage("gate", "gate");
 
-  const [surf, setSurf] = useState("surf");
+  const [surf, setSurf] = useLocalStorage("surf", "surf");
 
-  const [dark, setDark] = useState("dark");
+  const [dark, setDark] = useLocalStorage("dark", "dark");
 
   const [full, setFull] = useState("full");
 
