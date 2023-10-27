@@ -1293,11 +1293,11 @@ body {
 }
 
 .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
-  + .MuiSwitch-track {
+  + .MuiSwitch-track,
+.css-19gndve {
   background-color: var(--accent) !important;
 }
 
-.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase:hover,
-.css-19gndve {
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase:hover {
   background-color: var(--accent-sub-ter) !important;
 }
