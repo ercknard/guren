@@ -16,22 +16,13 @@ function Theme() {
     defaultDark ? "dark" : "light"
   );
 
-  const [bg, setBG] = useLocalStorage("bg", defaultDark ? "dark" : "light");
+  const [bg, setBG] = useState("bg");
 
-  const [gate, setGate] = useLocalStorage(
-    "gate",
-    defaultDark ? "dark" : "light"
-  );
+  const [gate, setGate] = useState("gate");
 
-  const [surf, setSurf] = useLocalStorage(
-    "surf",
-    defaultDark ? "dark" : "light"
-  );
+  const [surf, setSurf] = useState("surf");
 
-  const [dark, setDark] = useLocalStorage(
-    "dark",
-    defaultDark ? "dark" : "light"
-  );
+  const [dark, setDark] = useState("dark");
 
   const switchThemeYellow = () => {
     const newTheme = "yellow";
@@ -187,14 +178,12 @@ function Theme() {
             <Switch
               checked={dark === "dark"}
               onChange={dark === "dark" ? switchThemeNODark : switchThemeDark}
-              defaultChecked={true}
             />
           </Tooltip>
           <Tooltip title="Wallpaper ON / OFF" placement="top" arrow>
             <Switch
               checked={bg === "bg"}
               onChange={bg === "bg" ? switchThemeNOBG : switchThemeBG}
-              defaultChecked={true}
             />
           </Tooltip>
           {/* <Tooltip title="Wallpaper ON" placement="top" arrow>
@@ -266,14 +255,12 @@ function Theme() {
             <Switch
               checked={gate === "gate"}
               onChange={gate === "gate" ? switchThemeNOGates : switchThemeGates}
-              defaultChecked={true}
             />
           </Tooltip>
           <Tooltip title="Surf ON / OFF" placement="top" arrow>
             <Switch
               checked={surf === "surf"}
               onChange={surf === "surf" ? switchThemeNOSurf : switchThemeSurf}
-              defaultChecked={true}
             />
           </Tooltip>
         </div>
