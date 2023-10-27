@@ -1147,12 +1147,12 @@ body {
   transition: 0.5s linear !important;
 }
 
-.navigation-buttons a:hover,
-.navigation-buttons a:active {
+.navigation-buttons .nomo:hover,
+.navigation-buttons .nomo:active {
   color: var(--background) !important;
 }
 
-.navigation-buttons a:hover::after {
+.navigation-buttons .nomo:hover::after {
   content: "";
   position: absolute;
   width: 100%;

@@ -30,7 +30,7 @@ export default function Navigation() {
             {/* <div className="cover"></div> */}
             <div className="the-links">
               <Link
-                className={`${pathname === "/about" ? "active" : ""}`}
+                className={`nomo ${pathname === "/about" ? "active" : ""}`}
                 href="/about"
               >
                 ABOUT
@@ -38,7 +38,7 @@ export default function Navigation() {
             </div>
             <div className="the-links">
               <Link
-                className={`${pathname === "/skills" ? "active" : ""}`}
+                className={`nomo ${pathname === "/skills" ? "active" : ""}`}
                 href="/skills"
               >
                 SKILLS
@@ -46,7 +46,9 @@ export default function Navigation() {
             </div>
             <div className="the-links">
               <Link
-                className={`${pathname === "/experiences" ? "active" : ""}`}
+                className={`nomo ${
+                  pathname === "/experiences" ? "active" : ""
+                }`}
                 href="/experiences"
               >
                 EXPERIENCES
@@ -64,7 +66,7 @@ export default function Navigation() {
             </Link>
             <div className="the-links up-to">
               <Link
-                className={`${pathname === "/projects" ? "active" : ""}`}
+                className={`nomo ${pathname === "/projects" ? "active" : ""}`}
                 href="/projects"
               >
                 PROJECTS
@@ -72,7 +74,7 @@ export default function Navigation() {
             </div>
             <div className="the-links">
               <Link
-                className={`${pathname === "/feedback" ? "active" : ""}`}
+                className={`nomo ${pathname === "/feedback" ? "active" : ""}`}
                 href="/feedback"
               >
                 FEEDBACK
@@ -80,7 +82,7 @@ export default function Navigation() {
             </div>
             <div className="the-links">
               <Link
-                className={`${pathname === "/contact" ? "active" : ""}`}
+                className={`nomo ${pathname === "/contact" ? "active" : ""}`}
                 href="/contact"
               >
                 CONTACT
