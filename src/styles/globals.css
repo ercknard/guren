@@ -1557,6 +1557,8 @@ body {
 }
 
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
-.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate,
+.css-zun73v.Mui-checked,
+.css-zun73v.MuiCheckbox-indeterminate {
   color: var(--background) !important;
 }
