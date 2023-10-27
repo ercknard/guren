@@ -428,7 +428,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--white-accent)
-    );
+    ) !important;
 }
 
 .black-eye {
@@ -438,7 +438,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--black-accent)
-    );
+    ) !important;
 }
 
 .yellow-eye {
@@ -448,7 +448,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--yellow-accent)
-    );
+    ) !important;
 }
 
 .red-eye {
@@ -458,7 +458,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--red-accent)
-    );
+    ) !important;
 }
 
 .blood-eye {
@@ -468,7 +468,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--blood-accent)
-    );
+    ) !important;
 }
 
 .magenta-eye {
@@ -478,7 +478,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--magenta-accent)
-    );
+    ) !important;
 }
 
 .purple-eye {
@@ -488,7 +488,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--purple-accent)
-    );
+    ) !important;
 }
 
 .violet-eye {
@@ -498,7 +498,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--violet-accent)
-    );
+    ) !important;
 }
 
 .blue-eye {
@@ -508,7 +508,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--blue-accent)
-    );
+    ) !important;
 }
 
 .navy-eye {
@@ -518,7 +518,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--navy-accent)
-    );
+    ) !important;
 }
 
 .ocean-eye {
@@ -528,7 +528,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--ocean-accent)
-    );
+    ) !important;
 }
 
 .green-eye {
@@ -538,7 +538,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--green-accent)
-    );
+    ) !important;
 }
 
 .epic-eye {
@@ -548,7 +548,7 @@ body {
       var(--transparent),
       var(--transparent),
       var(--epic-accent)
-    );
+    ) !important;
 }
 
 .white-eye,
@@ -564,38 +564,38 @@ body {
 .ocean-eye,
 .green-eye,
 .epic-eye {
-  background-size: contain, cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 8rem;
-  height: 10rem;
-  cursor: pointer;
-  margin: 0.5rem 1rem;
-  border-top: none;
-  border: 2px solid;
+  background-size: contain, cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  width: 8rem !important;
+  height: 10rem !important;
+  cursor: pointer !important;
+  margin: 0.5rem 1rem !important;
+  border-top: none !important;
+  border: 2px solid !important;
   border-image: linear-gradient(
       to top,
       var(--black),
       var(--transparent),
       var(--transparent)
     )
-    1;
+    1 !important;
 }
 
 .eye {
-  filter: drop-shadow(1px 1px 1px black);
+  filter: drop-shadow(1px 1px 1px black) !important;
 }
 
 .eye:hover,
 .eye:active {
-  transform: translateY(-2px) scale(1.1);
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  transform: translateY(-2px) scale(1.1) !important;
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
   /* background: var(--ercknard-white);
   background-size: contain, cover;
   background-position: center;
   background-repeat: no-repeat; */
-  filter: drop-shadow(0 0 1px var(--background));
+  filter: drop-shadow(0 0 1px var(--background)) !important;
 }
 
 .to-background {
@@ -909,60 +909,60 @@ body {
   .ocean-eye,
   .green-eye,
   .epic-eye {
-    margin: 0.5rem 0.4rem;
+    margin: 0.5rem 0.4rem !important;
   }
 }
 @media screen and (max-width: 1024px) {
   .white-eye {
-    background: var(--white);
+    background: var(--white) !important;
   }
 
   .black-eye {
-    background: var(--black);
+    background: var(--black) !important;
   }
 
   .yellow-eye {
-    background: var(--yellow);
+    background: var(--yellow) !important;
   }
 
   .red-eye {
-    background: var(--red);
+    background: var(--red) !important;
   }
 
   .blood-eye {
-    background: var(--blood);
+    background: var(--blood) !important;
   }
 
   .magenta-eye {
-    background: var(--magenta);
+    background: var(--magenta) !important;
   }
 
   .purple-eye {
-    background: var(--purple);
+    background: var(--purple) !important;
   }
 
   .violet-eye {
-    background: var(--violet);
+    background: var(--violet) !important;
   }
 
   .blue-eye {
-    background: var(--blue);
+    background: var(--blue) !important;
   }
 
   .navy-eye {
-    background: var(--navy);
+    background: var(--navy) !important;
   }
 
   .ocean-eye {
-    background: var(--ocean);
+    background: var(--ocean) !important;
   }
 
   .green-eye {
-    background: var(--green);
+    background: var(--green) !important;
   }
 
   .epic-eye {
-    background: var(--epic);
+    background: var(--epic) !important;
   }
 
   .white-eye,
@@ -978,18 +978,18 @@ body {
   .ocean-eye,
   .green-eye,
   .epic-eye {
-    border-radius: 50%;
-    width: 1.6rem;
-    height: 1.6rem;
-    border: 0.5px solid var(--black);
-    margin: 0.4rem 0.25rem;
+    border-radius: 50% !important;
+    min-width: 1.6rem !important;
+    height: 1.6rem !important;
+    border: 0.5px solid var(--black) !important;
+    margin: 0.4rem 0.2rem !important;
   }
 
   .eye:hover,
   .eye:active {
-    transform: unset;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    transform: unset !important;
+    margin-left: 0.2rem !important;
+    margin-right: 0.2rem !important;
   }
 
   .theme-buttons {

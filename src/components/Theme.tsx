@@ -13,6 +13,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Checkbox from "@mui/material/Checkbox";
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
+import Button from "@mui/material/Button";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 
 function Theme() {
@@ -290,52 +291,52 @@ function Theme() {
             <DarkModeIcon />
             <div className="theme-buttons">
               <Tooltip title="Aquarius" placement="top" arrow>
-                <button className="white-eye eye" onClick={switchThemeWhite} />
+                <Button className="white-eye eye" onClick={switchThemeWhite} />
               </Tooltip>
               <Tooltip title="Pisces" placement="top" arrow>
-                <button
+                <Button
                   className="yellow-eye eye"
                   onClick={switchThemeYellow}
                 />
               </Tooltip>
               <Tooltip title="Taurus" placement="top" arrow>
-                <button className="blood-eye eye" onClick={switchThemeBlood} />
+                <Button className="blood-eye eye" onClick={switchThemeBlood} />
               </Tooltip>
               <Tooltip title="Aries" placement="top" arrow>
-                <button className="red-eye eye" onClick={switchThemeRed} />
+                <Button className="red-eye eye" onClick={switchThemeRed} />
               </Tooltip>
               <Tooltip title="Gemini" placement="top" arrow>
-                <button
+                <Button
                   className="magenta-eye eye"
                   onClick={switchThemeMagenta}
                 />
               </Tooltip>
               <Tooltip title="Cancer" placement="top" arrow>
-                <button
+                <Button
                   className="purple-eye eye"
                   onClick={switchThemePurple}
                 />
               </Tooltip>
               <Tooltip title="Leo" placement="top" arrow>
-                <button
+                <Button
                   className="violet-eye eye"
                   onClick={switchThemeViolet}
                 />
               </Tooltip>
               <Tooltip title="Libra" placement="top" arrow>
-                <button className="navy-eye eye" onClick={switchThemeNavy} />
+                <Button className="navy-eye eye" onClick={switchThemeNavy} />
               </Tooltip>
               <Tooltip title="Virgo" placement="top" arrow>
-                <button className="blue-eye eye" onClick={switchThemeBlue} />
+                <Button className="blue-eye eye" onClick={switchThemeBlue} />
               </Tooltip>
               <Tooltip title="Scorpio" placement="top" arrow>
-                <button className="ocean-eye eye" onClick={switchThemeOcean} />
+                <Button className="ocean-eye eye" onClick={switchThemeOcean} />
               </Tooltip>
               <Tooltip title="Sagittarious" placement="top" arrow>
-                <button className="green-eye eye" onClick={switchThemeGreen} />
+                <Button className="green-eye eye" onClick={switchThemeGreen} />
               </Tooltip>
               <Tooltip title="Capricorn" placement="top" arrow>
-                <button className="epic-eye eye" onClick={switchThemeEpic} />
+                <Button className="epic-eye eye" onClick={switchThemeEpic} />
               </Tooltip>
             </div>
           </Fab>
