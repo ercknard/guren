@@ -1511,3 +1511,25 @@ body {
 .css-1nr2wod.Mui-checked + .MuiSwitch-track {
   background-color: var(--accent) !important;
 }
+
+.css-cpgvjg-MuiSnackbar-root {
+  position: absolute !important;
+  bottom: 85vh !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100vw !important;
+  justify-content: center !important;
+}
+
+.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root {
+  min-width: 10rem !important;
+  filter: drop-shadow(1px 1px 1px var(--black)) !important;
+  background: var(--accent-sub) !important;
+}
+
+.snackbar {
+  position: absolute !important;
+  top: 1rem !important;
+}

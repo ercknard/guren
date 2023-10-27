@@ -7,8 +7,17 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Tooltip from "@mui/material/Tooltip";
 import Switch from "@mui/material/Switch";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import Button from "@mui/material/Button";
+import Snackbar from "@mui/material/Snackbar";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 
 function Theme() {
+  const [openDB, setOpenDB] = React.useState(false);
+  const [openCW, setOpenCW] = React.useState(false);
+  const [openTG, setOpenTG] = React.useState(false);
+  const [openTS, setOpenTS] = React.useState(false);
+
   const [particleColor, setParticleColor] = useState("#ffffff");
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useLocalStorage(
@@ -170,28 +179,99 @@ function Theme() {
 
   console.log({ theme });
 
+  const handleClickDB = () => {
+    setOpenDB(true);
+  };
+
+  const handleClickCW = () => {
+    setOpenCW(true);
+  };
+
+  const handleClickTG = () => {
+    setOpenTG(true);
+  };
+
+  const handleClickTS = () => {
+    setOpenTS(true);
+  };
+
+  const handleClose = (
+    event: React.SyntheticEvent | Event,
+    reason?: string
+  ) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpenDB(false);
+    setOpenCW(false);
+    setOpenTG(false);
+    setOpenTS(false);
+  };
+
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
+
   return (
     <section>
+      <Snackbar
+        open={openDB}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={
+          dark === "dark" ? "Dark Background is ON" : "Dark Background is OFF"
+        }
+        action={action}
+      />
+      <Snackbar
+        open={openCW}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={
+          bg === "bg" ? "Cosmic Wallpaper is ON" : "Cosmic Wallpaper is OFF"
+        }
+        action={action}
+      />
+      <Snackbar
+        open={openTG}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={gate === "gate" ? "Theme Gates are ON" : "Theme Gates are OFF"}
+        action={action}
+      />
+      <Snackbar
+        open={openTS}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={surf === "surf" ? "Theme Surf is ON" : "Theme Surf is OFF"}
+        action={action}
+      />
       <div className="reveal-eye">
         <div className="fab-container">
           <Tooltip title="Dark background ON / OFF" placement="top" arrow>
             <Switch
+              onClick={handleClickDB}
               checked={dark === "dark"}
               onChange={dark === "dark" ? switchThemeNODark : switchThemeDark}
             />
           </Tooltip>
           <Tooltip title="Wallpaper ON / OFF" placement="top" arrow>
             <Switch
+              onClick={handleClickCW}
               checked={bg === "bg"}
               onChange={bg === "bg" ? switchThemeNOBG : switchThemeBG}
             />
           </Tooltip>
-          {/* <Tooltip title="Wallpaper ON" placement="top" arrow>
-            <button className="bg-eye" onClick={switchThemeBG} />
-          </Tooltip>
-          <Tooltip title="Wallpaper OFF" placement="top" arrow>
-            <button className="bg-eye" onClick={switchThemeNOBG} />
-          </Tooltip> */}
           <Fab className="fab-reveal" size="medium" aria-label="add">
             <DarkModeIcon />
             <div className="theme-buttons">
@@ -245,20 +325,16 @@ function Theme() {
               </Tooltip>
             </div>
           </Fab>
-          {/* <Tooltip title="Gate ON" placement="top" arrow>
-            <button className="bg-eye" onClick={switchThemeGates} />
-          </Tooltip>
-          <Tooltip title="Gate OFF" placement="top" arrow>
-            <button className="bg-eye" onClick={switchThemeNOGates} />
-          </Tooltip> */}
           <Tooltip title="Gate ON / OFF" placement="top" arrow>
             <Switch
+              onClick={handleClickTG}
               checked={gate === "gate"}
               onChange={gate === "gate" ? switchThemeNOGates : switchThemeGates}
             />
           </Tooltip>
           <Tooltip title="Surf ON / OFF" placement="top" arrow>
             <Switch
+              onClick={handleClickTS}
               checked={surf === "surf"}
               onChange={surf === "surf" ? switchThemeNOSurf : switchThemeSurf}
             />
