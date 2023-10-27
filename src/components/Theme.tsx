@@ -6,6 +6,7 @@ import { Fab } from "@mui/material";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Tooltip from "@mui/material/Tooltip";
 import Switch from "@mui/material/Switch";
+import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 
 function Theme() {
   const [particleColor, setParticleColor] = useState("#ffffff");
@@ -255,6 +256,13 @@ function Theme() {
               defaultChecked
             />
           </Tooltip>
+        </div>
+        <div className="theme-picked to-hide">
+          {" "}
+          <Fab className="theme-details" size="small" aria-label="add">
+            <QuestionMarkIcon />
+          </Fab>{" "}
+          Theme selected :{" "}
         </div>
       </div>
       <Particlesview particleColor={particleColor} />

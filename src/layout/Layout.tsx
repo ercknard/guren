@@ -6,6 +6,8 @@ import "@/styles/App.css";
 import React, { ReactNode } from "react";
 import Navigation from "./Navigation";
 import dynamic from "next/dynamic";
+import { Fab } from "@mui/material";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 interface LayoutProps {
   children: ReactNode;
@@ -23,7 +25,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div className="landing-container">
         <div className="landing">
           <section>{children}</section>
-          <div className="theme-picked to-hide">Theme selected : </div>
         </div>
       </div>
     </main>

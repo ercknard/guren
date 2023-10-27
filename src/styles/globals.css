@@ -726,6 +726,14 @@ body {
   transition: all 1s ease-in-out;
 }
 
+.theme-details {
+  position: relative;
+  background: var(--accent-sub) !important;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  z-index: 1001 !important;
+}
+
 .fab-reveal:hover {
   background: var(--accent) !important;
 }
@@ -1375,10 +1383,12 @@ body {
 
 .theme-picked {
   position: fixed !important;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center !important;
   color: white;
-  bottom: 2rem;
-  left: 2rem;
-  filter: drop-shadow(1px 1px 1px var(--black));
+  bottom: 1.2rem;
+  left: 1.6rem;
 }
 
 .theme-picked::after {
@@ -1403,4 +1413,8 @@ body {
 .css-19gndve {
   color: var(--background) !important;
   margin-top: -0.075rem !important;
+}
+
+.css-1nr2wod.Mui-checked + .MuiSwitch-track {
+  background-color: var(--accent) !important;
 }
