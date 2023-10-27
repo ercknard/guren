@@ -28,6 +28,11 @@ function Theme() {
     defaultDark ? "dark" : "light"
   );
 
+  const [dark, setDark] = useLocalStorage(
+    "dark",
+    defaultDark ? "dark" : "light"
+  );
+
   const switchThemeYellow = () => {
     const newTheme = "yellow";
     setTheme(newTheme);
@@ -154,12 +159,23 @@ function Theme() {
     setSurf(newsurf);
   };
 
+  const switchThemeDark = () => {
+    const newdark = "dark";
+    setDark(newdark);
+  };
+
+  const switchThemeNODark = () => {
+    const newdark = "nodark";
+    setDark(newdark);
+  };
+
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     document.documentElement.setAttribute("data-bg", bg);
     document.documentElement.setAttribute("data-gate", gate);
     document.documentElement.setAttribute("data-surf", surf);
-  }, [theme, bg, gate, surf]);
+    document.documentElement.setAttribute("data-dark", dark);
+  }, [theme, bg, gate, surf, dark]);
 
   console.log({ theme });
 
@@ -167,9 +183,9 @@ function Theme() {
     <section>
       <div className="reveal-eye">
         <div className="fab-container">
-          <Tooltip title="Wallpaper ON / OFF" placement="top" arrow>
+          <Tooltip title="Dark background ON / OFF" placement="top" arrow>
             <Switch
-              onChange={bg === "bg" ? switchThemeNOBG : switchThemeBG}
+              onChange={dark === "dark" ? switchThemeNODark : switchThemeDark}
               defaultChecked
             />
           </Tooltip>
@@ -261,6 +277,12 @@ function Theme() {
           {" "}
           <Fab className="theme-details" size="small" aria-label="add">
             <QuestionMarkIcon />
+            <div className="theme-details-buttons">
+              <div className="DB">Dark Background (Pages only) : </div>
+              <div className="CW">Cosmic Wallpaper : </div>
+              <div className="TG">Theme Gates : </div>
+              <div className="TS">Theme Surf : </div>
+            </div>
           </Fab>{" "}
           Theme selected :{" "}
         </div>

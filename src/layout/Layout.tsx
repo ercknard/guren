@@ -6,8 +6,6 @@ import "@/styles/App.css";
 import React, { ReactNode } from "react";
 import Navigation from "./Navigation";
 import dynamic from "next/dynamic";
-import { Fab } from "@mui/material";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 interface LayoutProps {
   children: ReactNode;
