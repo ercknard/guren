@@ -276,7 +276,7 @@ function Theme() {
         <div className="theme-picked to-hide">
           {" "}
           <Fab className="theme-details" size="small" aria-label="add">
-            <QuestionMarkIcon />
+            <QuestionMarkIcon className="to-mask-icon" />
             <div className="theme-details-buttons">
               <div className="DB">Dark Background (Pages only) : </div>
               <div className="CW">Cosmic Wallpaper : </div>
@@ -284,7 +284,7 @@ function Theme() {
               <div className="TS">Theme Surf : </div>
             </div>
           </Fab>{" "}
-          Theme selected :{" "}
+          Theme applied :{" "}
         </div>
       </div>
       <Particlesview particleColor={particleColor} />
