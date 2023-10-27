@@ -187,14 +187,14 @@ function Theme() {
             <Switch
               checked={dark === "dark"}
               onChange={dark === "dark" ? switchThemeNODark : switchThemeDark}
-              defaultChecked
+              defaultChecked={true}
             />
           </Tooltip>
           <Tooltip title="Wallpaper ON / OFF" placement="top" arrow>
             <Switch
               checked={bg === "bg"}
               onChange={bg === "bg" ? switchThemeNOBG : switchThemeBG}
-              defaultChecked
+              defaultChecked={true}
             />
           </Tooltip>
           {/* <Tooltip title="Wallpaper ON" placement="top" arrow>
@@ -266,14 +266,14 @@ function Theme() {
             <Switch
               checked={gate === "gate"}
               onChange={gate === "gate" ? switchThemeNOGates : switchThemeGates}
-              defaultChecked
+              defaultChecked={true}
             />
           </Tooltip>
           <Tooltip title="Surf ON / OFF" placement="top" arrow>
             <Switch
               checked={surf === "surf"}
               onChange={surf === "surf" ? switchThemeNOSurf : switchThemeSurf}
-              defaultChecked
+              defaultChecked={true}
             />
           </Tooltip>
         </div>
