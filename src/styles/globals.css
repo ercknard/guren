@@ -912,6 +912,43 @@ body {
     margin: 0.5rem 0.4rem !important;
   }
 }
+
+@media screen and (max-width: 1367px) {
+  .white-eye,
+  .black-eye,
+  .yellow-eye,
+  .red-eye,
+  .blood-eye,
+  .magenta-eye,
+  .purple-eye,
+  .violet-eye,
+  .blue-eye,
+  .navy-eye,
+  .ocean-eye,
+  .green-eye,
+  .epic-eye {
+    margin: 0.5rem 0.15rem !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .white-eye,
+  .black-eye,
+  .yellow-eye,
+  .red-eye,
+  .blood-eye,
+  .magenta-eye,
+  .purple-eye,
+  .violet-eye,
+  .blue-eye,
+  .navy-eye,
+  .ocean-eye,
+  .green-eye,
+  .epic-eye {
+    height: 8.5rem !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .white-eye {
     background: var(--white) !important;
