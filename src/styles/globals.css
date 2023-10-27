@@ -1512,7 +1512,8 @@ body {
   background-color: var(--accent) !important;
 }
 
-.css-cpgvjg-MuiSnackbar-root {
+.css-cpgvjg-MuiSnackbar-root,
+.css-qwe366 {
   position: absolute !important;
   bottom: 85vh !important;
   left: 0 !important;
@@ -1523,13 +1524,9 @@ body {
   justify-content: center !important;
 }
 
-.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root {
+.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root,
+.css-1gz1y6s {
   min-width: 10rem !important;
   filter: drop-shadow(1px 1px 1px var(--black)) !important;
   background: var(--accent-sub) !important;
-}
-
-.snackbar {
-  position: absolute !important;
-  top: 1rem !important;
 }
