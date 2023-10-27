@@ -22,7 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Navigation />
       <div className="landing-container">
         <div className="landing">
-          <section className="to-width">{children}</section>
+          <section>{children}</section>
           <div className="theme-picked to-hide">Theme selected : </div>
         </div>
       </div>

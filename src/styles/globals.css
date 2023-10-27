@@ -592,6 +592,24 @@ body {
   background-repeat: no-repeat;
 }
 
+.to-background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background: linear-gradient(
+    to left,
+    var(--transparent),
+    var(--black-accent),
+    var(--transparent)
+  );
+}
+
 [data-bg="bg"] {
   --to-bg: url("/static/images/bgs/2215323.webp");
   transition: 1s linear;
@@ -609,6 +627,14 @@ body {
 
 [data-gate="nogate"] {
   --to-gate: 0vw;
+  transition: 1s linear;
+}
+
+[data-surf="surf"] {
+  transition: 1s linear;
+}
+
+[data-surf="nosurf"] {
   --background-prime: var(--background-for),
     url("/static/images/bgs/blank-surf.svg"),
     url("/static/images/bgs/moon.webp");
@@ -682,7 +708,9 @@ body {
     1;
   filter: drop-shadow(0px -1px 1px var(--background));
   transition: all 1s ease-in-out;
+  z-index: 100;
 }
+
 .fab-container {
   position: fixed;
   display: flex;
@@ -1153,6 +1181,23 @@ body {
       var(--transparent)
     ),
     #00000090;
+  /* background: #00000090; */
+}
+
+.landing-for-down {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+      at bottom,
+      var(--accent-sub-ter),
+      var(--transparent)
+    ),
+    rgba(0, 0, 0, 0.5);
+  transition: all 1s linear;
   /* background: #00000090; */
 }
 

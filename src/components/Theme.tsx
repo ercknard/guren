@@ -22,6 +22,11 @@ function Theme() {
     defaultDark ? "dark" : "light"
   );
 
+  const [surf, setSurf] = useLocalStorage(
+    "surf",
+    defaultDark ? "dark" : "light"
+  );
+
   const switchThemeYellow = () => {
     const newTheme = "yellow";
     setTheme(newTheme);
@@ -138,11 +143,22 @@ function Theme() {
     setGate(newgate);
   };
 
+  const switchThemeSurf = () => {
+    const newsurf = "surf";
+    setSurf(newsurf);
+  };
+
+  const switchThemeNOSurf = () => {
+    const newsurf = "nosurf";
+    setSurf(newsurf);
+  };
+
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     document.documentElement.setAttribute("data-bg", bg);
     document.documentElement.setAttribute("data-gate", gate);
-  }, [theme, bg, gate]);
+    document.documentElement.setAttribute("data-surf", surf);
+  }, [theme, bg, gate, surf]);
 
   console.log({ theme });
 
@@ -150,6 +166,12 @@ function Theme() {
     <section>
       <div className="reveal-eye">
         <div className="fab-container">
+          <Tooltip title="Wallpaper ON / OFF" placement="top" arrow>
+            <Switch
+              onChange={bg === "bg" ? switchThemeNOBG : switchThemeBG}
+              defaultChecked
+            />
+          </Tooltip>
           <Tooltip title="Wallpaper ON / OFF" placement="top" arrow>
             <Switch
               onChange={bg === "bg" ? switchThemeNOBG : switchThemeBG}
@@ -224,6 +246,12 @@ function Theme() {
           <Tooltip title="Gate ON / OFF" placement="top" arrow>
             <Switch
               onChange={gate === "gate" ? switchThemeNOGates : switchThemeGates}
+              defaultChecked
+            />
+          </Tooltip>
+          <Tooltip title="Surf ON / OFF" placement="top" arrow>
+            <Switch
+              onChange={surf === "surf" ? switchThemeNOSurf : switchThemeSurf}
               defaultChecked
             />
           </Tooltip>

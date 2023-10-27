@@ -16,10 +16,13 @@ export default class Feedbacks extends Component<Props, State> {
           <title>Ercknard | Feedbacks</title>
         </Head>
         <Layout>
-          <div>
-            <div className="text-motion icon-text to-hide"></div>
-            <div className="main-title text-effect"> This is Feedback </div>
-          </div>
+          <section className="landing-for-down">
+            <div className="to-background">
+              <div className="to-width">
+                <div className="main-title text-effect"> Feedback </div>
+              </div>
+            </div>
+          </section>
         </Layout>
       </>
     );

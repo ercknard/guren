@@ -16,10 +16,13 @@ export default class Experiences extends Component<Props, State> {
           <title>Ercknard | Experiences</title>
         </Head>
         <Layout>
-          <div>
-            <div className="text-motion icon-text to-hide"></div>
-            <div className="main-title text-effect"> This is Experiences </div>
-          </div>
+          <section className="landing-for-down">
+            <div className="to-background">
+              <div className="to-width">
+                <div className="main-title text-effect"> Experiences </div>
+              </div>
+            </div>
+          </section>
         </Layout>
       </>
     );
