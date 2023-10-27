@@ -275,7 +275,7 @@ function Theme() {
               <div className="TS">Theme Surf : </div>
             </div>
           </Fab>{" "}
-          Theme applied :{" "}
+          Current theme :{" "}
         </div>
       </div>
       <Particlesview particleColor={particleColor} />
