@@ -235,7 +235,7 @@ function Theme() {
       />
       <Snackbar
         open={openCW}
-        autoHideDuration={1000}
+        autoHideDuration={60000}
         onClose={handleClose}
         message={
           bg === "bg" ? "Cosmic Wallpaper is ON" : "Cosmic Wallpaper is OFF"
