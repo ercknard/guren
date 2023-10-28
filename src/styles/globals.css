@@ -1132,6 +1132,8 @@ body {
   padding-right: 5rem;
   padding-top: 0.5rem;
   padding-bottom: 2.5rem;
+  margin-left: -3rem;
+  margin-right: -3rem;
   background: linear-gradient(
     to bottom,
     var(--accent-sub),
