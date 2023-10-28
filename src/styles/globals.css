@@ -1630,29 +1630,43 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  animation: cover-anim 1s linear 1;
+  animation: var(--to-gate-anim);
+  width: var(--to-gate);
   height: 100vh;
-  background: var(--accent-sub-ter);
-  -webkit-clip-path: polygon(100% 0, 50% 50%, 100% 100%, 0 100%, 0 0);
-  clip-path: polygon(100% 0, 50% 50%, 100% 100%, 0 100%, 0 0);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  -webkit-clip-path: polygon(50% 50%, 0 100%, 0 0);
+  clip-path: polygon(50% 50%, 0 100%, 0 0);
+  z-index: -1;
 }
 
 .modes::after {
   content: "";
   position: absolute;
   right: 0;
-  animation: cover-anim 1s linear 1;
+  animation: var(--to-gate-anim);
+  width: var(--to-gate);
   height: 100vh;
-  background: var(--accent-sub-ter);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  -webkit-clip-path: polygon(50% 50%, 100% 100%, 100% 0);
+  clip-path: polygon(50% 50%, 100% 100%, 100% 0);
+  z-index: -1;
 }
 
-@keyframes cover-anim {
+/* @keyframes cover-anim {
   0% {
     width: 50vw;
   }
   100% {
     width: 0vw;
   }
-}
+} */
