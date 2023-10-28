@@ -1600,3 +1600,28 @@ body {
 .css-zun73v.MuiCheckbox-indeterminate {
   color: var(--background) !important;
 }
+
+.to-front {
+  position: fixed !important;
+  z-index: 100000000;
+}
+
+.equalizer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh; /* Adjust the height of the equalizer container */
+}
+
+.equalizer.active .bar {
+  background-color: blue; /* Adjust the active bar color */
+  transition: height 0.3s; /* Add a smooth transition effect */
+}
+
+.bar {
+  width: 20px; /* Adjust the width of the bars */
+  height: 20px; /* Minimum height for the bars */
+  background-color: #ccc; /* Default bar color */
+  margin: 0 5px; /* Adjust the margin between bars */
+}
