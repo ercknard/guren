@@ -273,7 +273,11 @@ function Theme() {
         open={openTG}
         autoHideDuration={1000}
         onClose={handleClose}
-        message={gate === "gate" ? "Theme Gates are ON" : "Theme Gates are OFF"}
+        message={
+          gate === "gate"
+            ? "Theme Gates/Moon are ON"
+            : "Theme Gates/Moon are OFF"
+        }
         action={action}
       />
       <Snackbar
@@ -359,7 +363,7 @@ function Theme() {
               </Tooltip>
             </div>
           </Fab>
-          <Tooltip title="Theme Gates ON / OFF" placement="top" arrow>
+          <Tooltip title="Theme Gates/Moon ON / OFF" placement="top" arrow>
             <Switch
               onClick={handleClickTG}
               checked={gate === "gate"}
@@ -381,7 +385,7 @@ function Theme() {
             <div className="theme-details-buttons">
               <div className="DB">Dark Filter (For Pages only) : </div>
               <div className="CW">Cosmic Wallpaper : </div>
-              <div className="TG">Theme Gates : </div>
+              <div className="TG">Theme Gates/Moon : </div>
               <div className="TS">Theme Surf : </div>
             </div>
           </Fab>{" "}
