@@ -1625,3 +1625,34 @@ body {
   background-color: #ccc; /* Default bar color */
   margin: 0 5px; /* Adjust the margin between bars */
 }
+
+.modes::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  animation: cover-anim 1s linear 1;
+  height: 100vh;
+  background: var(--accent-sub-ter);
+  -webkit-clip-path: polygon(100% 0, 50% 50%, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 50% 50%, 100% 100%, 0 100%, 0 0);
+}
+
+.modes::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  animation: cover-anim 1s linear 1;
+  height: 100vh;
+  background: var(--accent-sub-ter);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
+}
+
+@keyframes cover-anim {
+  0% {
+    width: 50vw;
+  }
+  100% {
+    width: 0vw;
+  }
+}

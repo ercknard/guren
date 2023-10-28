@@ -24,11 +24,15 @@ function Theme() {
   const [openTS, setOpenTS] = React.useState(false);
   const [openFS, setOpenFS] = React.useState(false);
 
-  const [particleColor, setParticleColor] = useState("#ffffff");
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useLocalStorage(
     "theme",
     defaultDark ? "dark" : "light"
+  );
+
+  const [particleColor, setParticleColor] = useLocalStorage(
+    "particleColor",
+    "particleColor"
   );
 
   const [bg, setBG] = useLocalStorage("bg", "bg");
@@ -247,6 +251,7 @@ function Theme() {
 
   return (
     <section>
+      <div className="modes" />
       <Snackbar
         open={openDB}
         autoHideDuration={1000}
