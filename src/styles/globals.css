@@ -14,7 +14,7 @@ body {
   --after-theme-db: "Select a theme first";
   --after-theme-ts: "Select a theme first";
 
-  --moon: url("/static/images/bgs/moon.webp");
+  --moon: url("/static/images/bgs/moon-frak.webp");
   --background: #ffffff;
   --accent: #ffffff50;
   --accent-sub: #ffffff75;
@@ -1734,11 +1734,22 @@ body {
   z-index: -1;
 }
 
-/* @keyframes cover-anim {
+.moon {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: var(--moon);
+  animation: moon-anim 7.9s linear 1;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+@keyframes moon-anim {
   0% {
-    width: 50vw;
+    background-position: top;
   }
   100% {
-    width: 0vw;
+    background-position: center;
   }
-} */
+}

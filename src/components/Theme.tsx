@@ -14,7 +14,6 @@ import Checkbox from "@mui/material/Checkbox";
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
 import Button from "@mui/material/Button";
-import Equalizer from "./equalizer";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 
 function Theme() {
