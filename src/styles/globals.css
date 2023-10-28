@@ -1662,6 +1662,78 @@ body {
   z-index: -1;
 }
 
+.modes-two::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  animation: var(--to-gate-anim);
+  width: var(--to-gate);
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
+  clip-path: polygon(0 0, 0 50%, 100% 0);
+  z-index: -1;
+}
+
+.modes-two::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  animation: var(--to-gate-anim);
+  width: var(--to-gate);
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  -webkit-clip-path: polygon(0 0, 100% 50%, 100% 0);
+  clip-path: polygon(0 0, 100% 50%, 100% 0);
+  z-index: -1;
+}
+
+.modes-three::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  animation: var(--to-gate-anim);
+  width: var(--to-gate);
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 0);
+  clip-path: polygon(50% 0, 100% 25%, 100% 0);
+  z-index: -1;
+}
+
+.modes-three::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  animation: var(--to-gate-anim);
+  width: var(--to-gate);
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  -webkit-clip-path: polygon(50% 0, 0 25%, 0 0);
+  clip-path: polygon(50% 0, 0 25%, 0 0);
+  z-index: -1;
+}
+
 /* @keyframes cover-anim {
   0% {
     width: 50vw;

@@ -252,6 +252,8 @@ function Theme() {
   return (
     <section>
       <div className="modes" />
+      <div className="modes-two" />
+      <div className="modes-three" />
       <Snackbar
         open={openDB}
         autoHideDuration={1000}
