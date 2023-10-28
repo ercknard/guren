@@ -70,7 +70,7 @@ body {
   --purple: #b075f8;
   --violet: #7b8ffc;
   --blue: #4389ff;
-  --navy: #0000e7;
+  --navy: #110aff;
   --ocean: #5cc2e4;
   --green: #6ef0bc;
   --epic: #bfef45;
@@ -84,7 +84,7 @@ body {
   --purple-accent: #b075f875;
   --violet-accent: #7b8ffc75;
   --blue-accent: #4389ff75;
-  --navy-accent: #0000e775;
+  --navy-accent: #110aff75;
   --ocean-accent: #5cc2e475;
   --green-accent: #6ef0bc75;
   --epic-accent: #bfef4575;
@@ -314,9 +314,9 @@ body {
 
 [data-theme="navy"] {
   --background: var(--navy);
-  --accent: #0000e750;
-  --accent-sub: #0000e775;
-  --accent-sub-ter: #0000e710;
+  --accent: #110aff50;
+  --accent-sub: #110aff75;
+  --accent-sub-ter: #110aff10;
   --background-prime: url("/static/images/bgs/ercknard-navy.webp"),
     url("/static/images/bgs/navy-sword.webp"),
     url("/static/images/bgs/navy-surf.svg"), url("/static/images/bgs/moon.webp");
