@@ -1794,7 +1794,7 @@ body {
 .forms-contact {
   position: relative;
   color: var(--white) !important;
-  width: 100%;
+  width: 100% !important;
 }
 
 .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
