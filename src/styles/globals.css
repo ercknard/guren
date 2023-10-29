@@ -1802,7 +1802,7 @@ body {
 .css-mnn31,
 .css-mqt2s5 {
   color: var(--white) !important;
-  min-width: 50% !important;
+  min-width: 34rem !important;
   text-align: left;
   margin-top: 0.5rem !important;
   font-size: 1rem !important;
@@ -2012,6 +2012,6 @@ body {
   .css-mnn31,
   .css-mqt2s5,
   .css-10oer18 {
-    min-width: 95% !important;
+    min-width: 21.5rem !important;
   }
 }
