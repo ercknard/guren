@@ -17,16 +17,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   });
 
   return (
-    <main className="App">
-      <DynamicComponent />
-      <Navigation />
-      <div className="landing-container">
-        <div className="moon" />
-        <div className="landing">
-          <section>{children}</section>
+    <>
+      <main className="App">
+        <DynamicComponent />
+        <Navigation />
+        <div className="landing-container">
+          <div className="moon" />
+          <div className="landing">
+            <section>{children}</section>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 };
 
