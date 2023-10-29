@@ -16,10 +16,13 @@ export default class About extends Component<Props, State> {
           <title>Ercknard | About</title>
         </Head>
         <Layout>
-          <section className="landing-for-down">
-            <div className="to-background">
-              <div className="to-width">
-                <div className="main-title text-effect"> About </div>
+          <section>
+            <div className="landing-for-down" />
+            <div className="to-background" />
+            <div className="to-big to-width">
+              <div className="content-pages">
+                <div className="main-title text-effect">About</div>
+                <div className="normal-text"></div>
               </div>
             </div>
           </section>

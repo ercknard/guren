@@ -127,9 +127,9 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
   try {
     // send mail with defined transport object
     const info = await sgMail.send({
-      from: `${process.env.SMTP_USERNAME}`, // sender address
-      to: "inquiries@cryptech.services", // list of receivers
-      subject: `[CT Services] : ${req.body.subject}`, // Subject line
+      from: `micbajamonde@gmail.com`, // sender address
+      to: "micbajamonde@gmail.com", // list of receivers
+      subject: `[Ercknard Web Portfolio] : ${req.body.subject}`, // Subject line
       // text: `${req.body.message}`, // plain text body
       html: `<html>
       <head>
@@ -285,7 +285,7 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
 
     // send mail to user with defined transport object
     const infotoUser = await sgMail.send({
-      from: `${process.env.SMTP_USERNAME}`, // sender address
+      from: `micbajamonde@gmail.com`, // sender address
       to: `${req.body.email}`, // list of receivers
       subject: `Receipt Confirmation: Your Inquiry to Cryptech Services`, // Subject line
       // text: `${req.body.message}`, // plain text body

@@ -16,10 +16,13 @@ export default class Feedbacks extends Component<Props, State> {
           <title>Ercknard | Feedbacks</title>
         </Head>
         <Layout>
-          <section className="landing-for-down">
-            <div className="to-background">
-              <div className="to-width">
-                <div className="main-title text-effect"> Feedback </div>
+          <section>
+            <div className="landing-for-down" />
+            <div className="to-background" />
+            <div className="to-big to-width">
+              <div className="content-pages">
+                <div className="main-title text-effect">Feedback</div>
+                <div className="normal-text"></div>
               </div>
             </div>
           </section>
