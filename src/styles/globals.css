@@ -1959,12 +1959,14 @@ body {
 
 .css-v4u5dn-MuiInputBase-root-MuiInput-root:after,
 .css-1rb63tl-MuiInputBase-root-MuiInput-root:after,
+.css-repss6:after,
 .css-repss6:after {
   border-bottom: 1px solid var(--background) !important;
 }
 
 .css-v4u5dn-MuiInputBase-root-MuiInput-root:before,
 .css-1rb63tl-MuiInputBase-root-MuiInput-root:before,
+.css-repss6:before,
 .css-repss6:before {
   border-bottom: 1px solid var(--white) !important;
 }
