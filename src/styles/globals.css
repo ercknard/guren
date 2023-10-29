@@ -811,13 +811,14 @@ body {
   opacity: var(--visibility-full);
 }
 
-.fab-container::before {
+/* .fab-container::before {
   content: "";
   position: absolute;
   bottom: 0;
   background: linear-gradient(
     to top,
-    var(--accent-sub-ter),
+    var(--background),
+    transparent,
     transparent,
     transparent
   ) !important;
@@ -828,7 +829,7 @@ body {
   transform: translate(-50%);
   -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-}
+} */
 
 .fab-reveal {
   background: var(--accent-sub) !important;
@@ -1634,35 +1635,29 @@ body {
 
 .theme-picked::after {
   content: var(--theme-name);
-  filter: drop-shadow(1px 1px 1px var(--black));
 }
 
 .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked,
 .css-1nr2wod.Mui-checked {
   color: var(--background) !important;
-  filter: drop-shadow(0px 0px 5px var(--black));
 }
 
 .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
   + .MuiSwitch-track {
   background-color: var(--accent) !important;
-  filter: drop-shadow(0px 0px 5px var(--black));
 }
 
 .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase:hover {
   background-color: var(--accent-sub-ter) !important;
-  filter: drop-shadow(0px 0px 5px var(--black));
 }
 
 .css-19gndve {
   color: var(--accent-sub) !important;
   margin-top: -0.075rem !important;
-  filter: drop-shadow(0px 0px 5px var(--black));
 }
 
 .css-1nr2wod.Mui-checked + .MuiSwitch-track {
   background-color: var(--accent) !important;
-  filter: drop-shadow(0px 0px 5px var(--black));
 }
 
 .css-cpgvjg-MuiSnackbar-root,
