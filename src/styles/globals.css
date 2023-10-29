@@ -665,7 +665,7 @@ body {
       var(--accent-sub-ter),
       var(--transparent)
     ),
-    rgba(0, 0, 0, 0.5);
+    rgba(0, 0, 0, 0.6);
   --after-theme-db: "ON";
 
   --to-darker: linear-gradient(
