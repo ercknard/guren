@@ -1814,6 +1814,7 @@ body {
 .css-mnn31 {
   color: var(--white) !important;
   text-align: left;
+  min-width: 50% !important;
   margin-top: 0.25rem !important;
   background-color: var(--accent) !important;
   padding: 1rem !important;
@@ -2009,7 +2010,8 @@ body {
   .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
   .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
   .css-mnn31,
-  .css-mqt2s5 {
+  .css-mqt2s5,
+  .css-10oer18 {
     min-width: 95% !important;
   }
 }
