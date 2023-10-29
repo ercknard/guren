@@ -13,21 +13,7 @@ export default function Navigation() {
         <input type="checkbox" id="responsive-menu" />
         <label></label>
         <div className="main-sec-nav to-width">
-          {/* <Link className="the-links" href="/" passHref>
-            <span className="to-flex navigation-text-logo">
-              {" "}
-              <Image
-                className="navigation-logo to-left to-hide to-seryo"
-                src="/static/images/logos/ad-mrx-pyro.png"
-              />{" "}
-              <span className="highlight">
-                {" "}
-                <b className="to-wheat">Ercknard Guren</b>{" "}
-              </span>{" "}
-            </span>
-          </Link> */}
           <div className="navigation-buttons">
-            {/* <div className="cover"></div> */}
             <div className="the-links">
               <Link
                 className={`nomo ${pathname === "/about" ? "active" : ""}`}
@@ -56,10 +42,6 @@ export default function Navigation() {
             </div>
             <Link href="/">
               <span className="to-flex navigation-text-logo to-hide">
-                {/* <Image
-                  className="navigation-logo"
-                  src="/static/images/bgs/ercknard-head.webp"
-                />{" "} */}
                 <b className="to-font-color icon-text navi-icon"></b>
                 {/* <b className="to-font-color text-effect navi-icon">⚔</b> */}
               </span>

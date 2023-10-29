@@ -178,7 +178,7 @@ export default function ContactUs() {
                   </p>
                 )}
                 {showFailureMessage && (
-                  <p className="text-red-500">
+                  <p className="text-red-500 font-semibold text-sm my-2">
                     Oops! Something went wrong, please try again.
                   </p>
                 )}
