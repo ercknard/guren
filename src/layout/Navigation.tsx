@@ -33,7 +33,7 @@ export default function Navigation() {
                 className={`nomo ${pathname === "/about" ? "active" : ""}`}
                 href="/about"
               >
-                ABOUT
+                ABOUT ME
               </Link>
             </div>
             <div className="the-links">
