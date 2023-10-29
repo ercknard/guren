@@ -135,7 +135,7 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cryptech Services</title>
+        <title>Ercknard Guren</title>
         <style>
     @media only screen and (max-width: 620px) {
       table.body h1 {
@@ -268,7 +268,7 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
                     <tr>
                       <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; color: #999999; font-size: 12px; text-align: center;" valign="top" align="center">
-                        <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">Cryptech Services 2023</span>
+                        <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">Ercknard Guren 2023</span>
                       </td>
                     </tr>
                   </table>
@@ -287,13 +287,13 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
     const infotoUser = await sgMail.send({
       from: `micbajamonde@gmail.com`, // sender address
       to: `${req.body.email}`, // list of receivers
-      subject: `Receipt Confirmation: Your Inquiry to Cryptech Services`, // Subject line
+      subject: `Receipt Confirmation: Your Inquiry to Ercknard Web Portfolio`, // Subject line
       // text: `${req.body.message}`, // plain text body
       html: `<html>
           <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-            <title>Cryptech Services</title>
+            <title>Ercknard Guren</title>
             <style>
         @media only screen and (max-width: 620px) {
           table.body h1 {
@@ -403,15 +403,15 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
                             <tr>
                               <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
                                 <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Hi <b>${req.body.fullname}</b>,</p>
-                                <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">This is an automated message to confirm that we have received your inquiry submitted through the <b>Cryptech Services</b> website.</p>
+                                <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">This is an automated message to confirm that we have received your inquiry submitted through the <b>Ercknard</b> website.</p>
                                 <hr>
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: border-box; width: 100%;" width="100%">
                               <tbody>
                                 <tr>
                                   <td align="left" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;" valign="top">
                             <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Please note that this email address is not monitored for replies. Your inquiry has been registered and will be reviewed by our team promptly. If necessary, we will be in touch with you using the contact details you provided.</p>
-                            <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">If you need further assistance or have any updates related to your inquiry, please contact us at <a href="mailto:inquiries@cryptech.services."><b>inquiries@cryptech.services</b>.</a></p>
-                            <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Thank you for considering Cryptech Services.</p>
+                            <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">If you need further assistance or have any updates related to your inquiry, please contact us at <a href="mailto:ercknardguren@gmail.com."><b>ercknardguren@gmail.com</b>.</a></p>
+                            <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Thank you for considering Ercknard Guren.</p>
                           </td>
                         </tr>
                       </table>
@@ -427,7 +427,7 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
                       <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
                         <tr>
                           <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; color: #999999; font-size: 12px; text-align: center;" valign="top" align="center">
-                            <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">Cryptech Services 2023</span>
+                            <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">Ercknard Guren Web Portfolio 2023</span>
                           </td>
                         </tr>
                       </table>
