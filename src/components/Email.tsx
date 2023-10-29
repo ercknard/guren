@@ -170,7 +170,7 @@ export default function ContactUs() {
               {buttonText} <SendIcon className="send-icon" />
             </button>
             <div className="text-lg text-center">
-              Alert message :{" "}
+              {/* Alert message :{" "} */}
               <span>
                 {showSuccessMessage && (
                   <p className="text-green-500 font-semibold text-sm my-2">

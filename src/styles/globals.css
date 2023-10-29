@@ -1242,135 +1242,6 @@ body {
   bottom: -3px;
 }
 
-@media screen and (max-width: 1024px) {
-  .main-navigation {
-    position: absolute;
-    height: 4.5rem;
-    background: var(--black);
-    background-size: contain;
-    filter: drop-shadow(0px 1px 1px var(--background));
-  }
-
-  .navigation-logo {
-    display: flex;
-    margin-left: unset !important;
-    width: 50px;
-  }
-
-  #menu {
-    position: relative;
-  }
-
-  #menu .main-sec-nav {
-    background: var(--background-ter), var(--black);
-    background-size: cover;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    z-index: 3;
-    height: auto;
-    display: none;
-    width: 100vw !important;
-    min-height: 100vh;
-  }
-
-  .navigation-text-logo {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
-    margin-left: 1rem !important;
-  }
-
-  .up-to {
-    margin-top: -1rem !important;
-  }
-
-  .navigation-buttons {
-    flex-direction: column;
-    margin-top: 2rem !important;
-    margin-bottom: 2.5rem !important;
-    gap: 1rem !important;
-  }
-
-  /* .cover {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000;
-    z-index: -10;
-  } */
-
-  .the-links {
-    display: block;
-    float: none;
-    width: auto;
-    padding: 1rem;
-    width: 98% !important;
-    margin-top: unset;
-  }
-
-  .the-links:hover {
-    background-color: var(--accent);
-  }
-
-  #menu input,
-  #menu label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-  }
-  #menu input {
-    z-index: 4;
-  }
-  #menu input:checked + label {
-    color: white;
-  }
-  #menu input:checked + label::before {
-    display: flex;
-    content: "✕";
-    margin-top: -0.1rem !important;
-    width: 2.5em;
-    height: 2.5em;
-  }
-  #menu input:checked ~ .main-sec-nav {
-    display: block !important;
-  }
-
-  .to-fifty {
-    width: 100% !important;
-  }
-
-  .to-left {
-    display: flex;
-    margin-left: -10rem !important;
-  }
-
-  .zodiac {
-    margin-top: 0.5rem;
-    display: flex;
-    gap: 1rem;
-    font-size: var(--special-font);
-    display: none;
-  }
-
-  .zodiac-main {
-    margin-top: 0.5rem;
-    display: flex;
-    gap: 1rem;
-    font-size: var(--special-font);
-    display: none;
-  }
-
-  .page-title {
-    color: var(--background);
-    font-size: var(--gifted-font) !important;
-    filter: drop-shadow(5px 5px 1px var(--black));
-    font-weight: 800;
-    text-align: center;
-  }
-}
-
 .landing {
   display: flex;
   flex-direction: column;
@@ -1923,6 +1794,7 @@ body {
 .forms-contact {
   position: relative;
   color: var(--white) !important;
+  width: 100%;
 }
 
 .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
@@ -1930,7 +1802,7 @@ body {
 .css-mnn31,
 .css-mqt2s5 {
   color: var(--white) !important;
-  min-width: 40rem !important;
+  min-width: 50% !important;
   text-align: left;
   margin-top: 0.5rem !important;
   font-size: 1rem !important;
@@ -1941,7 +1813,6 @@ body {
 .css-10oer18,
 .css-mnn31 {
   color: var(--white) !important;
-  min-width: 40rem !important;
   text-align: left;
   margin-top: 0.25rem !important;
   background-color: var(--accent) !important;
@@ -1993,7 +1864,9 @@ body {
 .to-notif {
   align-items: center;
   gap: 1rem;
+  flex-direction: column;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 .to-flick {
@@ -2003,4 +1876,140 @@ body {
 .css-i44wyl,
 .css-mnn31 {
   margin-top: 0.4rem !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-navigation {
+    position: absolute;
+    height: 4.5rem;
+    background: var(--black);
+    background-size: contain;
+    filter: drop-shadow(0px 1px 1px var(--background));
+  }
+
+  .navigation-logo {
+    display: flex;
+    margin-left: unset !important;
+    width: 50px;
+  }
+
+  #menu {
+    position: relative;
+  }
+
+  #menu .main-sec-nav {
+    background: var(--background-ter), var(--black);
+    background-size: cover;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    height: auto;
+    display: none;
+    width: 100vw !important;
+    min-height: 100vh;
+  }
+
+  .navigation-text-logo {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    margin-left: 1rem !important;
+  }
+
+  .up-to {
+    margin-top: -1rem !important;
+  }
+
+  .navigation-buttons {
+    flex-direction: column;
+    margin-top: 2rem !important;
+    margin-bottom: 2.5rem !important;
+    gap: 1rem !important;
+  }
+
+  /* .cover {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: -10;
+  } */
+
+  .the-links {
+    display: block;
+    float: none;
+    width: auto;
+    padding: 1rem;
+    width: 98% !important;
+    margin-top: unset;
+  }
+
+  .the-links:hover {
+    background-color: var(--accent);
+  }
+
+  #menu input,
+  #menu label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  #menu input {
+    z-index: 4;
+  }
+  #menu input:checked + label {
+    color: white;
+  }
+  #menu input:checked + label::before {
+    display: flex;
+    content: "✕";
+    margin-top: -0.1rem !important;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  #menu input:checked ~ .main-sec-nav {
+    display: block !important;
+  }
+
+  .to-fifty {
+    width: 100% !important;
+  }
+
+  .to-left {
+    display: flex;
+    margin-left: -10rem !important;
+  }
+
+  .zodiac {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    font-size: var(--special-font);
+    display: none;
+  }
+
+  .zodiac-main {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    font-size: var(--special-font);
+    display: none;
+  }
+
+  .page-title {
+    color: var(--background);
+    font-size: var(--gifted-font) !important;
+    filter: drop-shadow(5px 5px 1px var(--black));
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
+  .css-mnn31,
+  .css-mqt2s5 {
+    min-width: 95% !important;
+  }
 }
