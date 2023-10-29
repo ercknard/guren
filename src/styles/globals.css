@@ -1975,6 +1975,8 @@ body {
 .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
 .css-mqt2s5 {
   margin-left: 7.5px !important;
+  margin-top: 7.5px !important;
+  color: var(--white) !important;
 }
 
 .project-button {
