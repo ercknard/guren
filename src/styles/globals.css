@@ -1104,6 +1104,15 @@ body {
   margin-top: 0.5rem;
   display: flex;
   gap: 2rem;
+  font-size: var(--special-font);
+  filter: drop-shadow(2px 2px 1px var(--black));
+  justify-content: center;
+}
+
+.zodiac-main {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 2rem;
   font-size: var(--ter-spec-font);
   filter: drop-shadow(2px 2px 1px var(--black));
   justify-content: center;
@@ -1146,7 +1155,7 @@ body {
   margin-right: -3rem;
   background: linear-gradient(
     to bottom,
-    var(--accent-sub),
+    var(--black),
     var(--accent)
   ) !important;
   -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
@@ -1166,7 +1175,8 @@ body {
 .navigation-text-logo {
   align-items: center;
   gap: 1rem;
-  opacity: var(--visibility-full);
+  /* opacity: var(--visibility-full); */
+  z-index: -1;
 }
 
 .navigation-text-logo:hover {
@@ -1323,6 +1333,22 @@ body {
     font-size: var(--special-font);
     display: none;
   }
+
+  .zodiac-main {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    font-size: var(--special-font);
+    display: none;
+  }
+
+  .page-title {
+    color: var(--background);
+    font-size: var(--gifted-font) !important;
+    filter: drop-shadow(5px 5px 1px var(--black));
+    font-weight: 800;
+    text-align: center;
+  }
 }
 
 .landing {
@@ -1470,14 +1496,22 @@ body {
     1;
 }
 
+.page-title {
+  color: var(--background);
+  font-size: var(--prim-secon-font);
+  filter: drop-shadow(5px 5px 1px var(--black));
+  font-weight: 800;
+  text-align: center;
+}
+
 .normal-text {
   text-align: center;
   color: var(--white);
   font-size: var(--special-font);
   filter: drop-shadow(5px 5px 1px var(--black));
   font-weight: 500;
-  border-top: 3px solid;
   padding: 1rem;
+  /* border-top: 3px solid;
   border-image: linear-gradient(
       to left,
       var(--transparent),
@@ -1485,7 +1519,7 @@ body {
       var(--background),
       var(--transparent)
     )
-    1;
+    1; */
 }
 
 .icon-text {
@@ -1817,6 +1851,34 @@ body {
 .to-cover-pages {
   width: 100%;
 }
+
+/* .pages-banner::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30vw;
+  height: 25vh;
+  background: linear-gradient(to bottom, transparent, var(--accent-sub));
+  -webkit-clip-path: polygon(0 0, 10% 0, 10% 85%, 0% 100%);
+  clip-path: polygon(0 0, 10% 0, 10% 85%, 0% 100%);
+  z-index: 1;
+  opacity: var(--visibility-full);
+}
+
+.pages-banner::after {
+  content: "";
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 30vw;
+  height: 25vh;
+  background: linear-gradient(to bottom, transparent, var(--accent-sub));
+  -webkit-clip-path: polygon(90% 0, 100% 0, 100% 100%, 90% 85%);
+  clip-path: polygon(90% 0, 100% 0, 100% 100%, 90% 85%);
+  z-index: 1;
+  opacity: var(--visibility-full);
+} */
 
 /* width */
 ::-webkit-scrollbar {

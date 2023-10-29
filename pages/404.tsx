@@ -19,9 +19,26 @@ export default class Custom404 extends Component<Props, State> {
           <section>
             <div className="landing-for-down" />
             <div className="to-background" />
+            <div className="pages-banner" />
             <div className="to-big to-width">
               <div className="content-pages">
-                <div className="main-title text-effect">Error:404</div>
+                <div className="page-title text-effect">
+                  Error 404: Not found
+                </div>
+                <div className="text-motion zodiac">
+                  <span>♒︎</span>
+                  <span>♓︎</span>
+                  <span>♈︎</span>
+                  <span>♉︎</span>
+                  <span>♊︎</span>
+                  <span>♋︎</span>
+                  <span>♌︎</span>
+                  <span>♍︎</span>
+                  <span>♎︎</span>
+                  <span>♏︎</span>
+                  <span>♐︎</span>
+                  <span>♑︎</span>
+                </div>
                 <div className="normal-text"></div>
               </div>
             </div>

@@ -18,7 +18,7 @@ export default class Home extends Component<Props, State> {
             Ercknard web portfolio is a digital exhibit of my creative journey.
             Explore my projects, designs, and achievements all in one place.{" "}
           </div>
-          <div className="text-motion zodiac">
+          <div className="text-motion zodiac-main">
             <span>♒︎</span>
             <span>♓︎</span>
             <span>♈︎</span>
