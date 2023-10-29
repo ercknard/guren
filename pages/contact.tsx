@@ -39,7 +39,7 @@ export default class Contact extends Component<Props, State> {
                   <span>♑︎</span>
                 </div>
                 <div className="normal-text">
-                  &quot;Thank you for WEB visiting my portfolio. I&apos;m
+                  &quot;Thank you for visiting my WEB Portfolio. I&apos;m
                   excited to hear from you and discuss how we can work together
                   to bring your ideas to life. Got any inquries? Please
                   don&apos;t hesitate to get in touch by filling out the form
