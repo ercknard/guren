@@ -1926,7 +1926,8 @@ body {
 }
 
 .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
-.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
+.css-mqt2s5 {
   color: var(--white) !important;
   min-width: 40rem !important;
   text-align: left;
@@ -1936,7 +1937,8 @@ body {
 
 .css-1x51dt5-MuiInputBase-input-MuiInput-input,
 .css-66dh3a-MuiInputBase-input-MuiInput-input,
-.css-10oer18 {
+.css-10oer18,
+.css-mnn31 {
   color: var(--white) !important;
   min-width: 40rem !important;
   text-align: left;
