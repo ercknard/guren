@@ -602,7 +602,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: calc(100vw - 5px);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -754,7 +754,7 @@ body {
   bottom: 3rem !important;
   justify-content: center;
   z-index: 1 !important;
-  width: 100vw;
+  width: calc(100vw - 5px);
   display: none;
   padding: 0.5rem;
   transition: all 1s ease-in-out;
@@ -768,7 +768,7 @@ body {
   bottom: 3rem !important;
   justify-content: center;
   z-index: 1 !important;
-  width: 100vw;
+  width: calc(100vw - 5px);
   display: none;
   padding: 0.5rem;
   transition: all 1s ease-in-out;
@@ -779,7 +779,7 @@ body {
 }
 
 .reveal-eye {
-  width: 100vw;
+  width: calc(100vw - 5px);
   height: 8rem;
   position: fixed;
   display: flex;
@@ -1142,7 +1142,7 @@ body {
   position: fixed !important;
   display: flex;
   justify-content: space-around;
-  width: 100vw;
+  width: calc(100vw - 5px);
   top: 0 !important;
   background: linear-gradient(to bottom, black, transparent);
   height: 5rem;
@@ -1213,7 +1213,7 @@ body {
 }
 
 .navigation-buttons {
-  width: 100vw !important;
+  width: calc(100vw - 5px);
   margin-left: auto !important;
   margin-right: auto !important;
   align-items: center;
@@ -1264,7 +1264,7 @@ body {
   display: flex;
   left: 0;
   top: 0;
-  width: 100vw;
+  width: calc(100vw - 5px);
   height: 100vh;
   background: var(--to-dark);
   background-attachment: fixed;
@@ -1539,7 +1539,7 @@ body {
   right: 0 !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  width: 100vw !important;
+  width: calc(100vw - 5px) !important;
   justify-content: center !important;
 }
 
@@ -1692,7 +1692,7 @@ body {
 
 .moon {
   position: absolute;
-  width: 100vw;
+  width: calc(100vw - 5px);
   height: 100vh;
   background: var(--moon);
   animation: var(--to-moon-anim);
@@ -1777,7 +1777,6 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  display: none;
 }
 
 /* Track */
@@ -1921,7 +1920,7 @@ body {
     z-index: 3;
     height: auto;
     display: none;
-    width: 100vw !important;
+    width: calc(100vw - 5px) !important;
     min-height: 100vh;
   }
 
