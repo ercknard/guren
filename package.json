@@ -14,6 +14,7 @@
     "@fontsource/ysabeau": "^5.0.8",
     "@mui/icons-material": "^5.14.15",
     "@mui/material": "^5.14.15",
+    "@sendgrid/mail": "^7.7.0",
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
