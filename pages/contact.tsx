@@ -168,7 +168,7 @@ export default class Contact extends Component<Props, State> {
                   dictum sit amet justo donec enim diam. Habitant morbi
                   tristique senectus et netus et. Magnis dis parturient montes
                   nascetur ridiculus mus. Mi quis hendrerit dolor magna eget. */}
-                  {/* <ContactUs /> */}
+                  <ContactUs />
                 </div>
               </div>
             </div>

@@ -1525,10 +1525,10 @@ body {
 }
 
 .normal-text {
+  width: 100%;
   text-align: center;
   color: var(--white);
   font-size: var(--special-font);
-  filter: drop-shadow(5px 5px 1px var(--black));
   font-weight: 500;
   padding: 1rem;
   /* border-top: 3px solid;
@@ -1859,7 +1859,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
   padding-top: 7rem;
 }
 
@@ -1918,4 +1918,71 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--background);
   border-radius: 10px;
+}
+
+.forms-contact {
+  position: relative;
+  color: var(--white) !important;
+}
+
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  color: var(--white) !important;
+  min-width: 40rem !important;
+  text-align: left;
+  margin-top: 0.5rem !important;
+  font-size: 1rem !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input,
+.css-66dh3a-MuiInputBase-input-MuiInput-input {
+  color: var(--white) !important;
+  min-width: 40rem !important;
+  text-align: left;
+  margin-top: 0.25rem !important;
+  background-color: var(--accent) !important;
+  padding: 1rem !important;
+  border-radius: 5px !important;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+  color: var(--background) !important;
+}
+
+.css-1d1r5q-MuiFormHelperText-root {
+  color: #b2b2b2 !important;
+}
+
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:after,
+.css-1rb63tl-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 1px solid var(--background) !important;
+}
+
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:before,
+.css-1rb63tl-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid var(--white) !important;
+}
+
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+  margin-left: 7.5px !important;
+}
+
+.project-button {
+  background: var(--accent) !important;
+  padding: 0.25rem 3rem !important;
+  border-radius: 5px;
+}
+
+.send-icon {
+  margin-top: -0.5rem;
+}
+
+.to-notif {
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.to-flick {
+  right: 0;
 }

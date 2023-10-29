@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import SendIcon from "@mui/icons-material/Send";
+import TextField from "@mui/material/TextField";
 import Image from "next/image";
 
 export default function ContactUs() {
@@ -90,112 +91,99 @@ export default function ContactUs() {
   return (
     <section className="to-cover-pages">
       <div>
-        <form onSubmit={handleSubmit}>
-          <h1>Send us a message.</h1>
-
-          <label htmlFor="fullname">
-            Full Name
-            <span> *</span>
-          </label>
-          <input
+        <form className="forms-contact" onSubmit={handleSubmit}>
+          <TextField
+            id="standard-basic"
+            helperText="Please enter your name"
+            label="Full Name"
+            variant="standard"
             type="text"
+            name="fullname"
             value={fullname}
             onChange={(e) => {
               setFullname(e.target.value);
             }}
-            name="fullname"
           />
           {errors?.fullname && (
-            <p className="text-red-500">Fullname cannot be empty.</p>
+            <p className="text-red-500 text-lg absolute to-flick">
+              Fullname cannot be empty.
+            </p>
           )}
-
-          <label
-            htmlFor="email"
-            className="text-gray-500 font-light mt-4 dark:text-gray-50"
-          >
-            E-mail<span className="text-red-500"> *</span>
-          </label>
-          <input
+          <br />
+          <TextField
+            id="standard-basic"
+            helperText="Please enter your E-mail Address"
+            label="E-mail"
+            variant="standard"
             type="email"
             name="email"
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-white font-light text-black-500"
           />
           {errors?.email && (
-            <p className="text-red-500">Email cannot be empty.</p>
+            <p className="text-red-500 text-lg absolute to-flick">
+              Email cannot be empty.
+            </p>
           )}
-
-          <label
-            htmlFor="subject"
-            className="text-gray-500 font-light mt-4 dark:text-gray-50"
-          >
-            Subject<span className="text-red-500"> *</span>
-          </label>
-          <input
+          <br />
+          <TextField
+            id="standard-basic"
+            helperText="Please enter message subject"
+            label="Subject"
+            variant="standard"
             type="text"
             name="subject"
             value={subject}
             onChange={(e) => {
               setSubject(e.target.value);
             }}
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-white font-light text-black-500"
           />
           {errors?.subject && (
-            <p className="text-red-500">Subject cannot be empty.</p>
+            <p className="text-red-500 text-lg absolute to-flick">
+              Subject cannot be empty.
+            </p>
           )}
-          <label
-            htmlFor="message"
-            className="text-white-500 font-light mt-4 dark:text-gray-50"
-          >
-            Message<span className="text-red-500"> *</span>
-          </label>
-          <textarea
+          <br />
+          <TextField
+            id="standard-basic"
+            helperText="Type in your message"
+            label="Message"
+            variant="standard"
+            type="text"
             name="message"
+            multiline
+            rows={4}
             value={message}
             onChange={(e) => {
               setMessage(e.target.value);
             }}
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-white font-light text-white-500"
-          ></textarea>
+          />
           {errors?.message && (
-            <p className="text-red-500">Message body cannot be empty.</p>
+            <p className="text-red-500 text-lg absolute to-flick">
+              Message body cannot be empty.
+            </p>
           )}
-          <div className="flex flex-row items-center justify-start">
-            <button
-              type="submit"
-              // className="px-10 mt-8 py-2 bg-blue-500 text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
-              className="project-button"
-            >
-              {buttonText}
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className=" ml-2"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <SendIcon />
-              </svg>
+          <div className="flex to-notif">
+            <button type="submit" className="project-button">
+              {buttonText} <SendIcon className="send-icon" />
             </button>
-          </div>
-          <div className="text-left to-space-above">
-            Alert message :{" "}
-            <span>
-              {showSuccessMessage && (
-                <p className="text-green-500 font-semibold text-sm my-2">
-                  Thankyou! Your Message has been delivered.
-                </p>
-              )}
-              {showFailureMessage && (
-                <p className="text-red-500">
-                  Oops! Something went wrong, please try again.
-                </p>
-              )}
-            </span>
+            <div className="text-lg text-center">
+              Alert message :{" "}
+              <span>
+                {showSuccessMessage && (
+                  <p className="text-green-500 font-semibold text-sm my-2">
+                    Thankyou! Your Message has been delivered.
+                  </p>
+                )}
+                {showFailureMessage && (
+                  <p className="text-red-500">
+                    Oops! Something went wrong, please try again.
+                  </p>
+                )}
+              </span>
+            </div>
           </div>
         </form>
       </div>
