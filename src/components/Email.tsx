@@ -92,6 +92,11 @@ export default function ContactUs() {
     <section className="to-cover-pages">
       <div>
         <form className="forms-contact" onSubmit={handleSubmit}>
+          {errors?.fullname && (
+            <p className="text-red-500 text-lg absolute to-flick">
+              Fullname cannot be empty.
+            </p>
+          )}
           <TextField
             id="standard-basic"
             helperText="Please enter your name"
@@ -104,12 +109,12 @@ export default function ContactUs() {
               setFullname(e.target.value);
             }}
           />
-          {errors?.fullname && (
+          <br />
+          {errors?.email && (
             <p className="text-red-500 text-lg absolute to-flick">
-              Fullname cannot be empty.
+              Email cannot be empty.
             </p>
           )}
-          <br />
           <TextField
             id="standard-basic"
             helperText="Please enter your E-mail Address"
@@ -122,12 +127,12 @@ export default function ContactUs() {
               setEmail(e.target.value);
             }}
           />
-          {errors?.email && (
+          <br />
+          {errors?.subject && (
             <p className="text-red-500 text-lg absolute to-flick">
-              Email cannot be empty.
+              Subject cannot be empty.
             </p>
           )}
-          <br />
           <TextField
             id="standard-basic"
             helperText="Please enter message subject"
@@ -140,12 +145,12 @@ export default function ContactUs() {
               setSubject(e.target.value);
             }}
           />
-          {errors?.subject && (
+          <br />
+          {errors?.message && (
             <p className="text-red-500 text-lg absolute to-flick">
-              Subject cannot be empty.
+              Message body cannot be empty.
             </p>
           )}
-          <br />
           <TextField
             id="standard-basic"
             helperText="Type in your message"
@@ -160,11 +165,6 @@ export default function ContactUs() {
               setMessage(e.target.value);
             }}
           />
-          {errors?.message && (
-            <p className="text-red-500 text-lg absolute to-flick">
-              Message body cannot be empty.
-            </p>
-          )}
           <div className="flex to-notif">
             <button type="submit" className="project-button">
               {buttonText} <SendIcon className="send-icon" />
