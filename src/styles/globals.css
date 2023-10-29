@@ -642,6 +642,7 @@ body {
   transition: 1s linear;
   --to-gate-anim: gate-anim-on 7s linear;
   --to-moon-anim: moon-anim-on 7s linear 1;
+  --opa-moon: 100%;
   --after-theme-tg: "ON";
 }
 
@@ -651,6 +652,7 @@ body {
   transition: 1s linear;
   --to-gate-anim: gate-anim 7s linear;
   --to-moon-anim: moon-anim-off 7s linear 1;
+  --opa-moon: 0%;
   --after-theme-tg: "OFF";
 }
 
@@ -1746,23 +1748,28 @@ body {
   animation: var(--to-moon-anim);
   background-size: cover;
   background-position: var(--to-moon);
+  opacity: var(--opa-moon);
   z-index: -1;
 }
 
 @keyframes moon-anim-on {
   0% {
     background-position: top;
+    opacity: 0%;
   }
   100% {
     background-position: center;
+    opacity: 100%;
   }
 }
 
 @keyframes moon-anim-off {
   0% {
     background-position: center;
+    opacity: 100%;
   }
   100% {
     background-position: top;
+    opacity: 0%;
   }
 }
