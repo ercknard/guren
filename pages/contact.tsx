@@ -14,7 +14,7 @@ export default class Contact extends Component<Props, State> {
     return (
       <>
         <Head>
-          <title>Ercknard | Contact</title>
+          <title>Ercknard | Contact Me</title>
         </Head>
         <Layout>
           <section>
