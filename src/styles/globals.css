@@ -1861,10 +1861,14 @@ body {
   border-radius: 5px;
 }
 
-.project-button:hover,
-.project-button:active {
+.project-button:hover {
   background: var(--accent-sub) !important;
   transform: translateY(-2px);
+}
+
+.project-button:active {
+  background: var(--accent-sub) !important;
+  transform: translateY(2px);
 }
 
 .send-icon {
