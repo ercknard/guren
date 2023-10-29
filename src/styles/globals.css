@@ -1794,7 +1794,10 @@ body {
 .forms-contact {
   position: relative;
   color: var(--white) !important;
-  width: 100% !important;
+  max-width: 36rem !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
 }
 
 .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
@@ -2009,6 +2012,8 @@ body {
 
   .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
   .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
+  .css-1x51dt5-MuiInputBase-input-MuiInput-input,
+  .css-66dh3a-MuiInputBase-input-MuiInput-input,
   .css-mnn31,
   .css-mqt2s5,
   .css-10oer18 {
