@@ -1818,7 +1818,8 @@ body {
   text-align: left;
   min-width: 34rem !important;
   margin-top: 0.25rem !important;
-  background: var(--accent) !important;
+  background: linear-gradient(to bottom, var(--accent), var(--accent)),
+    rgba(0, 0, 0, 0.5) !important;
   padding: 1rem !important;
   border-radius: 5px !important;
 }
@@ -1852,6 +1853,7 @@ body {
   margin-left: 7.5px !important;
   margin-top: 10px !important;
   color: var(--white) !important;
+  z-index: 1;
 }
 
 .project-button {
