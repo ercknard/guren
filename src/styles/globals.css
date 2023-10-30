@@ -2081,7 +2081,7 @@ body {
 
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
-  /* display: none; */
+  display: none;
 }
 
 /* .slider-controler {
