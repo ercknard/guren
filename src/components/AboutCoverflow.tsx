@@ -39,6 +39,7 @@ function AboutCoverflow() {
       >
         <SwiperSlide>
           <Image
+            className="white-about"
             src="/static/images/covers/web-1.jpeg"
             alt="slide_image"
             width={1325}
@@ -47,6 +48,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="yellow-about"
             src="/static/images/covers/web-2.jpeg"
             alt="slide_image"
             width={1325}
@@ -55,6 +57,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="blood-about"
             src="/static/images/covers/web-3.jpeg"
             alt="slide_image"
             width={1325}
@@ -63,6 +66,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="red-about"
             src="/static/images/covers/web-4.jpeg"
             alt="slide_image"
             width={1325}
@@ -71,6 +75,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="magenta-about"
             src="/static/images/covers/web-5.jpeg"
             alt="slide_image"
             width={1325}
@@ -79,6 +84,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="purple-about"
             src="/static/images/covers/web-6.jpeg"
             alt="slide_image"
             width={1325}
@@ -87,6 +93,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="violet-about"
             src="/static/images/covers/web-7.jpeg"
             alt="slide_image"
             width={1325}
@@ -95,6 +102,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="navy-about"
             src="/static/images/covers/web-8.jpeg"
             alt="slide_image"
             width={1325}
@@ -103,6 +111,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="blue-about"
             src="/static/images/covers/web-9.jpeg"
             alt="slide_image"
             width={1325}
@@ -111,6 +120,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="ocean-about"
             src="/static/images/covers/web-10.jpeg"
             alt="slide_image"
             width={1325}
@@ -119,6 +129,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="green-about"
             src="/static/images/covers/web-11.jpeg"
             alt="slide_image"
             width={1325}
@@ -127,6 +138,7 @@ function AboutCoverflow() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="epic-about"
             src="/static/images/covers/web-12.jpeg"
             alt="slide_image"
             width={1325}

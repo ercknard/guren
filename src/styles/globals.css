@@ -2055,6 +2055,7 @@ body {
   height: 100% !important;
   position: relative;
   margin-top: 2.5rem;
+  padding-bottom: 1.5rem !important;
 }
 
 @media (max-width: 1024px) {
@@ -2165,4 +2166,70 @@ body {
 .swiper-button-next {
   color: var(--background) !important;
   filter: drop-shadow(0px 0px 5px var(--black));
+  /* background: radial-gradient(at center, var(--accent-sub), black); */
+  font-size: var(--tertiary-font) !important;
+  padding: 2rem !important;
+  border-radius: 5px;
+}
+
+.white-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--white), var(--transparent)) 1 !important;
+}
+
+.yellow-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--yellow), var(--transparent)) 1 !important;
+}
+.blood-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--blood), var(--transparent)) 1 !important;
+}
+.red-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--red), var(--transparent)) 1 !important;
+}
+.magenta-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--magenta), var(--transparent)) 1 !important;
+}
+.purple-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--purple), var(--transparent)) 1 !important;
+}
+.violet-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--violet), var(--transparent)) 1 !important;
+}
+.navy-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--navy), var(--transparent)) 1 !important;
+}
+.blue-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--blue), var(--transparent)) 1 !important;
+}
+.ocean-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--ocean), var(--transparent)) 1 !important;
+}
+.green-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--green), var(--transparent)) 1 !important;
+}
+.epic-about {
+  border-top: none !important;
+  border: 2px solid !important;
+  border-image: linear-gradient(to top, var(--epic), var(--transparent)) 1 !important;
 }
