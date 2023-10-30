@@ -35,7 +35,8 @@ function AboutCoverflow() {
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
-        autoplay={{ delay: 3000 }}
+
+        // autoplay={{ delay: 3000 }}
       >
         <SwiperSlide>
           <Image
