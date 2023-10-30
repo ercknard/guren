@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Head from "next/head";
 import Layout from "@/layout/Layout";
+import AboutCoverflow from "@/components/AboutCoverflow";
 
 type Props = {};
 
@@ -37,7 +38,9 @@ export default class About extends Component<Props, State> {
                   <span>♐︎</span>
                   <span>♑︎</span>
                 </div>
-                <div className="normal-text"></div>
+                <div className="normal-text">
+                  <AboutCoverflow />
+                </div>
               </div>
             </div>
           </section>
