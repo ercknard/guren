@@ -2043,6 +2043,7 @@ body {
   height: 100% !important;
   position: relative;
   margin-top: 2.5rem;
+  padding-bottom: 2.5rem !important;
 }
 
 @media (max-width: 1024px) {
