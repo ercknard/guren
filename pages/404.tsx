@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Head from "next/head";
 import Layout from "@/layout/Layout";
+import PageSigns from "@/components/PageSigns";
 
 type Props = {};
 
@@ -22,24 +23,19 @@ export default class Custom404 extends Component<Props, State> {
             <div className="pages-banner" />
             <div className="to-big to-width">
               <div className="content-pages">
-                <div className="page-title text-effect">
+                <div
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  className="page-title text-effect"
+                >
                   Error 404: Not found
                 </div>
-                <div className="text-motion zodiac">
-                  <span>♒︎</span>
-                  <span>♓︎</span>
-                  <span>♈︎</span>
-                  <span>♉︎</span>
-                  <span>♊︎</span>
-                  <span>♋︎</span>
-                  <span>♌︎</span>
-                  <span>♍︎</span>
-                  <span>♎︎</span>
-                  <span>♏︎</span>
-                  <span>♐︎</span>
-                  <span>♑︎</span>
-                </div>
-                <div className="normal-text"></div>
+                <PageSigns />
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  className="normal-text"
+                ></div>
               </div>
             </div>
           </section>

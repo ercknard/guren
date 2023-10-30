@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Layout from "@/layout/Layout";
 import Head from "next/head";
+import PageSigns from "@/components/PageSigns";
 
 type Props = {};
 
@@ -22,22 +23,19 @@ export default class Skills extends Component<Props, State> {
             <div className="pages-banner" />
             <div className="to-big to-width">
               <div className="content-pages">
-                <div className="page-title text-effect">My Skills</div>
-                <div className="text-motion zodiac">
-                  <span>♒︎</span>
-                  <span>♓︎</span>
-                  <span>♈︎</span>
-                  <span>♉︎</span>
-                  <span>♊︎</span>
-                  <span>♋︎</span>
-                  <span>♌︎</span>
-                  <span>♍︎</span>
-                  <span>♎︎</span>
-                  <span>♏︎</span>
-                  <span>♐︎</span>
-                  <span>♑︎</span>
+                <div
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  className="page-title text-effect"
+                >
+                  My Skills
                 </div>
-                <div className="normal-text"></div>
+                <PageSigns />
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  className="normal-text"
+                ></div>
               </div>
             </div>
           </section>

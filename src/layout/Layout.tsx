@@ -6,6 +6,7 @@ import "@/styles/App.css";
 import React, { ReactNode } from "react";
 import Navigation from "./Navigation";
 import dynamic from "next/dynamic";
+import AOScall from "@/components/Aos";
 
 interface LayoutProps {
   children: ReactNode;
@@ -20,6 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <main className="App">
         <DynamicComponent />
+        <AOScall />
         <Navigation />
         <div className="landing-container">
           <div className="moon" />

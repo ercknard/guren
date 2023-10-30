@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Layout from "@/layout/Layout";
 import Head from "next/head";
 import ContactUs from "@/components/Email";
+import PageSigns from "@/components/PageSigns";
 
 type Props = {};
 
@@ -23,22 +24,19 @@ export default class Contact extends Component<Props, State> {
             <div className="pages-banner" />
             <div className="to-big to-width">
               <div className="content-pages">
-                <div className="page-title text-effect">Contact me</div>
-                <div className="text-motion zodiac">
-                  <span>♒︎</span>
-                  <span>♓︎</span>
-                  <span>♈︎</span>
-                  <span>♉︎</span>
-                  <span>♊︎</span>
-                  <span>♋︎</span>
-                  <span>♌︎</span>
-                  <span>♍︎</span>
-                  <span>♎︎</span>
-                  <span>♏︎</span>
-                  <span>♐︎</span>
-                  <span>♑︎</span>
+                <div
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  className="page-title text-effect"
+                >
+                  Contact me
                 </div>
-                <div className="normal-text">
+                <PageSigns />
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  className="normal-text"
+                >
                   &quot;Thank you for visiting my WEB Portfolio. I&apos;m
                   excited to hear from you and discuss how we can work together
                   to bring your ideas to life. Got any inquries? Please
