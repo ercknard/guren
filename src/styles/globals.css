@@ -2148,7 +2148,6 @@ body {
 .swiper-pagination {
   position: relative;
   width: 100% !important;
-  bottom: 3rem !important;
   justify-content: center;
 }
 
