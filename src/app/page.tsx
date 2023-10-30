@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Layout from "@/layout/Layout";
-import Home from "@/components/home";
+import Home from "@/components/HomeLanding";
 
 function App() {
   return (
