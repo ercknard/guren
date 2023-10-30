@@ -23,10 +23,10 @@ function AboutCoverflow() {
         loop={true}
         slidesPerView={"auto"}
         coverflowEffect={{
-          rotate: 0,
+          rotate: 100,
           stretch: 0,
           depth: 100,
-          modifier: 2.5,
+          modifier: 5,
         }}
         pagination={{ el: ".swiper-pagination", clickable: true }}
         navigation={{
