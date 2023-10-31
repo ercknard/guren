@@ -29,7 +29,7 @@ export default class ProjectSelection extends Component<Props, State> {
                   >
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
-                      <span>Read more</span>
+                      <span> Read more</span>
                     </div>
                   </Link>
                 </span>
@@ -49,7 +49,7 @@ export default class ProjectSelection extends Component<Props, State> {
                   <Link href="/projects/aercynet" rel="noopener noreferrer">
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
-                      <span>Read more</span>
+                      <span> Read more</span>
                     </div>
                   </Link>
                 </span>
@@ -74,7 +74,7 @@ export default class ProjectSelection extends Component<Props, State> {
                   >
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
-                      <span>Read more</span>
+                      <span> Read more</span>
                     </div>
                   </Link>
                 </span>
@@ -94,7 +94,7 @@ export default class ProjectSelection extends Component<Props, State> {
                   <Link href="/projects/metrix-place" rel="noopener noreferrer">
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
-                      <span>Read more</span>
+                      <span> Read more</span>
                     </div>
                   </Link>
                 </span>
@@ -119,7 +119,7 @@ export default class ProjectSelection extends Component<Props, State> {
                   >
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
-                      <span>Read more</span>
+                      <span> Read more</span>
                     </div>
                   </Link>
                 </span>
@@ -144,7 +144,7 @@ export default class ProjectSelection extends Component<Props, State> {
                   >
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
-                      <span>Read more</span>
+                      <span> Read more</span>
                     </div>
                   </Link>
                 </span>
@@ -169,7 +169,7 @@ export default class ProjectSelection extends Component<Props, State> {
                   >
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
-                      <span>Read more</span>
+                      <span> Read more</span>
                     </div>
                   </Link>
                 </span>
@@ -194,7 +194,7 @@ export default class ProjectSelection extends Component<Props, State> {
                   >
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
-                      <span>Read more</span>
+                      <span> Read more</span>
                     </div>
                   </Link>
                 </span>
