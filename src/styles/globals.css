@@ -2110,11 +2110,13 @@ body {
   align-items: center !important;
 }
 
-.social-icons:hover {
+.social-icons:hover,
+.read-more:hover {
   transform: translateY(-1px);
 }
 
-.social-icons:active {
+.social-icons:active,
+.read-more:active {
   transform: translateY(1px);
 }
 
@@ -2167,6 +2169,9 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.project-name {
+  font-weight: 700;
+}
 .project-logo::before {
   content: var(--content);
   position: absolute;
@@ -2219,6 +2224,14 @@ body {
       var(--black)
     )
     1 !important;
+}
+
+.read-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem !important;
+  margin-top: 0.5rem;
 }
 
 @media screen and (max-width: 1024px) {
