@@ -2165,7 +2165,7 @@ body {
 }
 
 .to-gap-project {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
 }
 
@@ -2433,7 +2433,6 @@ body {
   .socials {
     gap: 2rem !important;
     justify-content: center;
-    margin-bottom: 0.5rem;
   }
 
   .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
