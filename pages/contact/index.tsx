@@ -40,7 +40,7 @@ export default class Contact extends Component<Props, State> {
                 <PageSigns />
                 <div
                   data-aos="fade"
-                  data-aos-duration="1200"
+                  data-aos-duration="1500"
                   className="head-profile"
                 />
                 <div
