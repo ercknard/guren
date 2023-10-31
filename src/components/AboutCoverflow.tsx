@@ -11,11 +11,7 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 function AboutCoverflow() {
   return (
-    <div className="container">
-      &quot;Thank you for visiting my WEB Portfolio. I&apos;m excited to hear
-      from you and discuss how we can work together to bring your ideas to life.
-      Got any inquries? Please don&apos;t hesitate to get in touch by filling
-      out the form below.&quot;
+    <div data-aos="fade-up" data-aos-duration="1200" className="container">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

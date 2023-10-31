@@ -32,11 +32,15 @@ export default class About extends Component<Props, State> {
                   About me
                 </div>
                 <PageSigns />
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  className="normal-text"
-                >
+                <div className="normal-text">
+                  <span data-aos="fade-up" data-aos-duration="1200">
+                    &quot;Thank you for visiting my{" "}
+                    <span className="text-effect">WEB Portfolio</span>. I&apos;m
+                    excited to hear from you and discuss how we can work
+                    together to bring your ideas to life. Got any inquries?
+                    Please don&apos;t hesitate to get in touch by filling out
+                    the form below.&quot;
+                  </span>
                   <AboutCoverflow />
                 </div>
               </div>

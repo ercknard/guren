@@ -1912,6 +1912,12 @@ body {
   position: relative;
 } */
 
+.container {
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .swiper-slide {
   width: 50rem !important;
   height: 100% !important;
