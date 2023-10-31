@@ -89,7 +89,11 @@ export default function ContactUs() {
     console.log(fullname, email, subject, message);
   };
   return (
-    <section className="to-cover-pages">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      className="to-cover-pages"
+    >
       <div>
         <form className="forms-contact" onSubmit={handleSubmit}>
           {errors?.fullname && (
