@@ -1293,19 +1293,21 @@ body {
   animation: var(--to-gate-anim);
   animation-iteration-count: 1;
   width: var(--to-gate);
-  height: 100vh;
+  height: 120vh;
   background: var(--accent);
   background-size: cover;
   background-position: left;
-  border-right: 5px solid;
+  border: 5px solid;
+  border-left: none;
   border-image: linear-gradient(
-      to top,
+      45deg,
       var(--transparent),
       var(--background),
       var(--transparent)
     )
     1;
   z-index: -1;
+  transform: skewY(30deg);
 }
 
 /* -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
@@ -1319,19 +1321,21 @@ body {
   animation: var(--to-gate-anim);
   animation-iteration-count: 1;
   width: var(--to-gate);
-  height: 100vh;
+  height: 120vh;
   background: var(--accent);
   background-size: cover;
   background-position: right;
-  border-left: 5px solid;
+  border: 5px solid;
+  border-right: none;
   border-image: linear-gradient(
-      to top,
+      135deg,
       var(--transparent),
       var(--background),
       var(--transparent)
     )
     1;
   z-index: -1;
+  transform: skewY(-30deg);
 }
 
 /* -webkit-clip-path: polygon(100% 100%, 100% 0, 0% 100%);
@@ -1611,6 +1615,7 @@ body {
   -webkit-clip-path: polygon(50% 50%, 0 100%, 0 0);
   clip-path: polygon(50% 50%, 0 100%, 0 0);
   z-index: -1;
+  transform: skewY(30deg);
 }
 
 .modes::after {
@@ -1629,6 +1634,7 @@ body {
   -webkit-clip-path: polygon(50% 50%, 100% 100%, 100% 0);
   clip-path: polygon(50% 50%, 100% 100%, 100% 0);
   z-index: -1;
+  transform: skewY(-30deg);
 }
 
 .modes-two::before {
@@ -1647,6 +1653,7 @@ body {
   -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
   clip-path: polygon(0 0, 0 50%, 100% 0);
   z-index: -1;
+  transform: skewY(30deg);
 }
 
 .modes-two::after {
@@ -1665,6 +1672,7 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 50%, 100% 0);
   clip-path: polygon(0 0, 100% 50%, 100% 0);
   z-index: -1;
+  transform: skewY(-30deg);
 }
 
 .modes-three::before {
@@ -1683,6 +1691,7 @@ body {
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 0);
   clip-path: polygon(50% 0, 100% 25%, 100% 0);
   z-index: -1;
+  transform: skewY(30deg);
 }
 
 .modes-three::after {
@@ -1701,6 +1710,7 @@ body {
   -webkit-clip-path: polygon(50% 0, 0 25%, 0 0);
   clip-path: polygon(50% 0, 0 25%, 0 0);
   z-index: -1;
+  transform: skewY(-30deg);
 }
 
 .moon {
