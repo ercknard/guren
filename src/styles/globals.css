@@ -1309,6 +1309,8 @@ body {
   animation-iteration-count: 1;
   width: var(--to-gate);
   height: 120vh;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   background: linear-gradient(to top, var(--black), var(--accent));
   background-size: cover;
   background-position: left;
@@ -1337,6 +1339,8 @@ body {
   animation-iteration-count: 1;
   width: var(--to-gate);
   height: 120vh;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   background: linear-gradient(to top, var(--black), var(--accent));
   background-size: cover;
   background-position: right;
