@@ -100,6 +100,7 @@ body {
   --quaternary-font: 1.25em;
   --quinary-font: 1em;
   --sixth-font: 0.2em;
+  --seventh-font: 0.05em;
 }
 
 @media (max-width: 1920px) {
@@ -1411,7 +1412,7 @@ body {
   width: 100%;
   text-align: center;
   color: var(--white);
-  font-size: var(--special-font);
+  font-size: calc(var(--special-font) - var(--seventh-font));
   font-weight: 500;
   padding: 1rem;
   /* border-top: 3px solid;
@@ -1819,7 +1820,7 @@ body {
   min-width: 34rem !important;
   text-align: left;
   margin-top: 0.5rem !important;
-  font-size: 1rem !important;
+  font-size: 0.8em !important;
 }
 
 .css-1x51dt5-MuiInputBase-input-MuiInput-input,
@@ -2235,5 +2236,12 @@ body {
     gap: 2rem !important;
     justify-content: center;
     margin-bottom: 0.5rem;
+  }
+
+  .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
+  .css-mnn31,
+  .css-mqt2s5 {
+    font-size: 1rem !important;
   }
 }
