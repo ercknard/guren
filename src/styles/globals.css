@@ -1820,7 +1820,7 @@ body {
   min-width: 34rem !important;
   text-align: left;
   margin-top: 0.5rem !important;
-  font-size: 0.8em !important;
+  font-size: 1rem !important;
 }
 
 .css-1x51dt5-MuiInputBase-input-MuiInput-input,
@@ -2242,6 +2242,6 @@ body {
   .css-1u3bzj6-MuiFormControl-root-MuiTextField-root,
   .css-mnn31,
   .css-mqt2s5 {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
   }
 }
