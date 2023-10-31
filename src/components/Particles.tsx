@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
+import { useEffect } from "react";
 
 interface ParticleAnimationProps {
   particleColor: string;
@@ -34,6 +35,7 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({
         loaded={particlesLoaded}
         options={{
           fpsLimit: 120,
+          delay: 1,
           fullScreen: {
             enable: false,
             zIndex: -1,
