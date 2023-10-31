@@ -2129,7 +2129,8 @@ body {
 .project-section {
   width: 100%;
   justify-content: center;
-  gap: 1.5rem;
+  row-gap: 2.5rem;
+  column-gap: 2.5rem;
   flex-wrap: wrap;
 }
 
@@ -2214,7 +2215,7 @@ body {
   border-image: linear-gradient(
       to left,
       var(--black),
-      var(--background),
+      var(--accent),
       var(--black)
     )
     1 !important;
