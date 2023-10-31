@@ -34,12 +34,11 @@ export default class Projects extends Component<Props, State> {
                 <PageSigns />
                 <div className="normal-text">
                   <span data-aos="fade-up" data-aos-duration="1200">
-                    &quot;Thank you for visiting my{" "}
-                    <span className="text-effect">WEB Portfolio</span>. I&apos;m
-                    excited to hear from you and discuss how we can work
-                    together to bring your ideas to life. Got any inquries?
-                    Please don&apos;t hesitate to get in touch by filling out
-                    the form below.&quot;
+                    &quot;Welcome to projects gallery, where you&apos;ll find a
+                    curated selection of my/Cryptech services latest work.
+                    Explore a diverse range of projects that showcase my skills
+                    and passion for creativity, spanning across web development,
+                    design, and more.&quot;
                   </span>
                   <ProjectSelection />
                 </div>

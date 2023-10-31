@@ -34,8 +34,7 @@ export default class About extends Component<Props, State> {
                 <PageSigns />
                 <div className="normal-text">
                   <span data-aos="fade-up" data-aos-duration="1200">
-                    &quot;Thank you for visiting my{" "}
-                    <span className="text-effect">WEB Portfolio</span>. I&apos;m
+                    &quot;Thank you for visiting my WEB Portfolio. I&apos;m
                     excited to hear from you and discuss how we can work
                     together to bring your ideas to life. Got any inquries?
                     Please don&apos;t hesitate to get in touch by filling out
