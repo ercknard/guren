@@ -22,7 +22,7 @@ export default class About extends Component<Props, State> {
             <div className="landing-for-down" />
             <div className="to-background" />
             <div className="pages-banner" />
-            <div className="to-big to-width">
+            <div className="to-big">
               <div className="content-pages">
                 <div
                   data-aos="fade-down"

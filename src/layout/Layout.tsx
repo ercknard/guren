@@ -26,7 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="landing-container">
           <div className="moon" />
           <div className="landing">
-            <section>{children}</section>
+            <section className="to-width">{children}</section>
           </div>
         </div>
       </main>
