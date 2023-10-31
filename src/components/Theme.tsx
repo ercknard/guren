@@ -33,6 +33,8 @@ function Theme() {
     "particleColor"
   );
 
+  const [particleSize, setParticleSize] = useState<number>(0.1);
+
   const [bg, setBG] = useLocalStorage("bg", "bg");
 
   const [gate, setGate] = useLocalStorage("gate", "gate");
@@ -172,11 +174,15 @@ function Theme() {
   const switchThemeDark = () => {
     const newdark = "dark";
     setDark(newdark);
+    const newpartSize: number = 0.1;
+    setParticleSize(newpartSize);
   };
 
   const switchThemeNODark = () => {
     const newdark = "nodark";
     setDark(newdark);
+    const newpartSize: number = 3;
+    setParticleSize(newpartSize);
   };
 
   const switchThemeFull = () => {
@@ -403,7 +409,10 @@ function Theme() {
           </Tooltip>
         </div>
       </div>
-      <Particlesview particleColor={particleColor} />
+      <Particlesview
+        particleColor={particleColor}
+        particleSize={particleSize}
+      />
       {/* <Equalizer /> */}
     </section>
   );

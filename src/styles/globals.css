@@ -155,6 +155,7 @@ body {
   --head-open: url("/static/images/head/ercknard-white-head-open.webp");
   --content: "♒︎";
   --theme-name: "Aquarius (♒︎)";
+  --to-cosmic: url("/static/images/comics/white.webp");
 }
 
 [data-theme="yellow"] {
@@ -179,6 +180,7 @@ body {
   --head-open: url("/static/images/head/ercknard-yellow-head-open.webp");
   --content: "♓︎";
   --theme-name: "Pisces (♓︎)";
+  --to-cosmic: url("/static/images/comics/yellow.webp");
 }
 
 [data-theme="red"] {
@@ -201,6 +203,7 @@ body {
   --head-open: url("/static/images/head/ercknard-red-head-open.webp");
   --content: "♈︎";
   --theme-name: "Aries (♈︎)";
+  --to-cosmic: url("/static/images/comics/red.webp");
 }
 
 [data-theme="blood"] {
@@ -225,6 +228,7 @@ body {
   --head-open: url("/static/images/head/ercknard-blood-head-open.webp");
   --content: "♉︎";
   --theme-name: "Taurus (♉︎)";
+  --to-cosmic: url("/static/images/comics/blood.webp");
 }
 
 [data-theme="magenta"] {
@@ -249,6 +253,7 @@ body {
   --head-open: url("/static/images/head/ercknard-magenta-head-open.webp");
   --content: "♊︎";
   --theme-name: "Gemini (♊︎)";
+  --to-cosmic: url("/static/images/comics/magenta.webp");
 }
 
 [data-theme="purple"] {
@@ -273,6 +278,7 @@ body {
   --head-open: url("/static/images/head/ercknard-purple-head-open.webp");
   --content: "♋︎";
   --theme-name: "Cancer (♋︎)";
+  --to-cosmic: url("/static/images/comics/purple.webp");
 }
 
 [data-theme="violet"] {
@@ -297,6 +303,7 @@ body {
   --head-open: url("/static/images/head/ercknard-violet-head-open.webp");
   --content: "♌︎";
   --theme-name: "Leo (♌︎)";
+  --to-cosmic: url("/static/images/comics/violet.webp");
 }
 
 [data-theme="blue"] {
@@ -319,6 +326,7 @@ body {
   --head-open: url("/static/images/head/ercknard-blue-head-open.webp");
   --content: "♍︎";
   --theme-name: "Virgo (♍︎)";
+  --to-cosmic: url("/static/images/comics/blue.webp");
 }
 
 [data-theme="navy"] {
@@ -341,6 +349,7 @@ body {
   --head-open: url("/static/images/head/ercknard-navy-head-open.webp");
   --content: "♎︎";
   --theme-name: "Libra (♎︎)";
+  --to-cosmic: url("/static/images/comics/navy.webp");
 }
 
 [data-theme="ocean"] {
@@ -365,6 +374,7 @@ body {
   --head-open: url("/static/images/head/ercknard-ocean-head-open.webp");
   --content: "♏︎";
   --theme-name: "Scorpio (♏︎)";
+  --to-cosmic: url("/static/images/comics/ocean.webp");
 }
 
 [data-theme="green"] {
@@ -389,6 +399,7 @@ body {
   --head-open: url("/static/images/head/ercknard-green-head-open.webp");
   --content: "♐︎";
   --theme-name: "Sagittarious (♐︎)";
+  --to-cosmic: url("/static/images/comics/green.webp");
 }
 
 [data-theme="epic"] {
@@ -411,6 +422,7 @@ body {
   --head-open: url("/static/images/head/ercknard-epic-head-open.webp");
   --content: "♑︎";
   --theme-name: "Capricorn (♑︎)";
+  --to-cosmic: url("/static/images/comics/epic.webp");
 }
 
 [data-theme="white"],
@@ -640,7 +652,7 @@ body {
 }
 
 [data-bg="bg"] {
-  --to-bg: url("/static/images/bgs/2215323.webp");
+  --to-bg: var(--to-cosmic);
   transition: 1s linear;
   --after-theme-cw: "ON";
 }
@@ -687,11 +699,14 @@ body {
     var(--black-accent),
     var(--transparent)
   );
+
+  --to-z-index: 1;
 }
 
 [data-dark="nodark"] {
   transition: 1s linear;
   --after-theme-db: "OFF";
+  --to-z-index: -1;
 }
 
 [data-surf="surf"] {
@@ -881,7 +896,7 @@ body {
 
 .canvas-container {
   position: relative !important;
-  z-index: -1 !important;
+  z-index: var(--to-z-index) !important;
 }
 
 #tsparticles {
@@ -1759,6 +1774,8 @@ body {
 
 .content-pages {
   top: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .to-cover-pages {

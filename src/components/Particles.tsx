@@ -5,9 +5,13 @@ import { loadSlim } from "tsparticles-slim";
 
 interface ParticleAnimationProps {
   particleColor: string;
+  particleSize: number;
 }
 
-const Particlesview: React.FC<ParticleAnimationProps> = ({ particleColor }) => {
+const Particlesview: React.FC<ParticleAnimationProps> = ({
+  particleColor,
+  particleSize,
+}) => {
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
     await loadSlim(engine);
@@ -20,7 +24,7 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({ particleColor }) => {
     []
   );
 
-  console.log({ particleColor });
+  console.log({ particleColor, particleSize });
 
   return (
     <div className="canvas-container">
@@ -46,7 +50,7 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({ particleColor }) => {
               value: particleColor,
             },
             shape: {
-              type: "star",
+              type: "circle",
               stroke: {
                 width: 0,
                 color: "#000000",
@@ -71,7 +75,7 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({ particleColor }) => {
               },
             },
             size: {
-              value: 1.5,
+              value: particleSize,
               random: true,
               anim: {
                 enable: false,
