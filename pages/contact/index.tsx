@@ -124,7 +124,7 @@ export default class Contact extends Component<Props, State> {
                   </Link>
                 </div>
                 <div className="normal-text">
-                  <span data-aos="fade-up" data-aos-duration="1200">
+                  <span data-aos="fade" data-aos-duration="1200">
                     &quot;Thank you for visiting my Web Portfolio. I&apos;m
                     excited to hear from you and discuss how we can work
                     together to bring your ideas to life. Got any inquries?

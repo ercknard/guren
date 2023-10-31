@@ -33,12 +33,12 @@ export default class Projects extends Component<Props, State> {
                 </div>
                 <PageSigns />
                 <div className="normal-text">
-                  <span data-aos="fade-up" data-aos-duration="1200">
-                    &quot;Welcome to projects gallery, where you&apos;ll find a
-                    curated selection of my/Cryptech services latest work.
-                    Explore a diverse range of projects that showcase my skills
-                    and passion for creativity, spanning across web development,
-                    design, and more.&quot;
+                  <span data-aos="fade" data-aos-duration="1200">
+                    &quot;Welcome to project&apos;s gallery, where you&apos;ll
+                    find a curated selection of my/Cryptech services latest
+                    work. Explore a diverse range of projects that showcase my
+                    skills and passion for creativity, spanning across web
+                    development, design, and more.&quot;
                   </span>
                   <ProjectSelection />
                 </div>
