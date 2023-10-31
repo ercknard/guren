@@ -48,20 +48,25 @@ export default class Contact extends Component<Props, State> {
                   data-aos-duration="3000"
                   className="to-flex socials"
                 >
-                  <div>
-                    <FacebookIcon className="to-color" /> Facebook
+                  <div className="social-icons">
+                    <FacebookIcon className="to-color" />{" "}
+                    <span className="to-hide">Facebook</span>
                   </div>
-                  <div>
-                    <TwitterIcon className="to-color" /> Twitter
+                  <div className="social-icons">
+                    <TwitterIcon className="to-color" />{" "}
+                    <span className="to-hide">Twitter</span>
                   </div>
-                  <div>
-                    <DiscFullIcon className="to-color" /> Discord
+                  <div className="social-icons">
+                    <DiscFullIcon className="to-color" />{" "}
+                    <span className="to-hide">Discord</span>
                   </div>
-                  <div>
-                    <AlternateEmailIcon className="to-color" /> Email
+                  <div className="social-icons">
+                    <AlternateEmailIcon className="to-color" />{" "}
+                    <span className="to-hide">Email</span>
                   </div>
-                  <div>
-                    <GitHubIcon className="to-color" /> Github
+                  <div className="social-icons">
+                    <GitHubIcon className="to-color" />{" "}
+                    <span className="to-hide">Github</span>
                   </div>
                 </div>
                 <div
