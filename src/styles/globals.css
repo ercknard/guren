@@ -1865,7 +1865,6 @@ body {
   margin-left: 7.5px !important;
   margin-top: 10px !important;
   color: var(--white) !important;
-  z-index: 1;
 }
 
 .project-button {
