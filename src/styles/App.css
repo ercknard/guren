@@ -31,6 +31,10 @@ button {
   margin-right: auto;
 }
 
+.to-hide-pc {
+  display: none;
+}
+
 @media screen and (max-width: 1920px) {
   .to-width {
     width: 90% !important;
@@ -46,6 +50,10 @@ button {
 @media screen and (max-width: 1024px) {
   .to-hide {
     display: none;
+  }
+
+  .to-hide-pc {
+    display: block;
   }
 }
 

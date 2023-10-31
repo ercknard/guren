@@ -15,6 +15,14 @@ export default function Navigation() {
         <div className="nav-blur" />
         <div className="main-sec-nav to-width">
           <div className="navigation-buttons">
+            <div className="to-hide-pc">
+              <Link href="/">
+                <span className="to-flex navigation-text-logo">
+                  <b className="to-font-color icon-text navi-icon"></b>
+                  {/* <b className="to-font-color text-effect navi-icon">⚔</b> */}
+                </span>
+              </Link>
+            </div>
             <div className="the-links">
               <Link
                 className={`nomo ${pathname === "/about" ? "active" : ""}`}
