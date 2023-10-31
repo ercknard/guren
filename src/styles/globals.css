@@ -1294,7 +1294,7 @@ body {
   animation-iteration-count: 1;
   width: var(--to-gate);
   height: 120vh;
-  background: var(--accent);
+  background: linear-gradient(to top, var(--black), var(--accent));
   background-size: cover;
   background-position: left;
   border: 5px solid;
@@ -1322,7 +1322,7 @@ body {
   animation-iteration-count: 1;
   width: var(--to-gate);
   height: 120vh;
-  background: var(--accent);
+  background: linear-gradient(to top, var(--black), var(--accent));
   background-size: cover;
   background-position: right;
   border: 5px solid;
@@ -1685,7 +1685,7 @@ body {
   background: linear-gradient(
     to bottom,
     transparent,
-    var(--accent),
+    var(--accent-sub),
     transparent
   );
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 0);
@@ -1704,7 +1704,7 @@ body {
   background: linear-gradient(
     to bottom,
     transparent,
-    var(--accent),
+    var(--accent-sub),
     transparent
   );
   -webkit-clip-path: polygon(50% 0, 0 25%, 0 0);
