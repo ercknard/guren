@@ -48,7 +48,7 @@ export default class ProjectSelection extends Component<Props, State> {
                   <span className="text-effect project-name">
                     Aercrypt.net¹
                   </span>
-                  <Link href="/projects/aercynet" rel="noopener noreferrer">
+                  <Link href="/projects/aercrypnet" rel="noopener noreferrer">
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
                       <span> Read more</span>
