@@ -1813,18 +1813,6 @@ body {
   border-radius: 10px;
 }
 
-.css-cpgvjg-MuiSnackbar-root,
-.css-qwe366 {
-  position: absolute !important;
-  bottom: 75vh !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  width: 80vw !important;
-  justify-content: center !important;
-}
-
 .forms-contact {
   position: relative;
   color: var(--white) !important;
@@ -2289,5 +2277,17 @@ body {
   .css-mnn31,
   .css-mqt2s5 {
     font-size: 0.8rem !important;
+  }
+
+  .css-cpgvjg-MuiSnackbar-root,
+  .css-qwe366 {
+    position: absolute !important;
+    bottom: 75vh !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 80vw !important;
+    justify-content: center !important;
   }
 }
