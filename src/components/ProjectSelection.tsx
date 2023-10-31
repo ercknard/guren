@@ -45,7 +45,9 @@ export default class ProjectSelection extends Component<Props, State> {
                 <span className="project-logo" />
                 <span className="project-description-bg" />
                 <span className="project-description">
-                  <span className="text-effect project-name">Aercrypt.net</span>
+                  <span className="text-effect project-name">
+                    Aercrypt.net¹
+                  </span>
                   <Link href="/projects/aercynet" rel="noopener noreferrer">
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
@@ -90,7 +92,9 @@ export default class ProjectSelection extends Component<Props, State> {
                 <span className="project-logo" />
                 <span className="project-description-bg" />
                 <span className="project-description">
-                  <span className="text-effect project-name">Metrix.place</span>
+                  <span className="text-effect project-name">
+                    Metrix.place¹
+                  </span>
                   <Link href="/projects/metrix-place" rel="noopener noreferrer">
                     <div className="read-more">
                       <OpenInNewIcon className="to-color" />{" "}
