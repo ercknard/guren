@@ -2245,6 +2245,29 @@ body {
   margin-top: 0.5rem;
 }
 
+@media screen and (max-width: 1367px) {
+  .project-section {
+    width: 100%;
+    justify-content: center;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .project-portrait {
+    position: relative;
+    width: 22.5%;
+  }
+
+  .project-portrait,
+  .project-description-bg::after,
+  .project-description-bg::before,
+  .project-description-bg::before,
+  .project-selection-image {
+    height: 22.5rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .main-navigation {
     position: absolute;
@@ -2430,5 +2453,28 @@ body {
     margin-right: auto !important;
     width: 80vw !important;
     justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-section {
+    width: 100%;
+    justify-content: center;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .project-portrait {
+    position: relative;
+    width: 100%;
+  }
+
+  .project-portrait,
+  .project-description-bg::after,
+  .project-description-bg::before,
+  .project-description-bg::before,
+  .project-selection-image {
+    height: 25rem;
   }
 }
