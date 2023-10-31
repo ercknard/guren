@@ -12,6 +12,7 @@ export default function Navigation() {
       <nav id="menu" className="main-navigation">
         <input type="checkbox" id="responsive-menu" />
         <label></label>
+        <div className="nav-blur" />
         <div className="main-sec-nav to-width">
           <div className="navigation-buttons">
             <div className="the-links">

@@ -2108,9 +2108,7 @@ body {
   .main-navigation {
     position: absolute;
     height: 4.5rem;
-    background: var(--black);
     background-size: contain;
-    filter: drop-shadow(0px 1px 1px var(--background));
   }
 
   .navigation-logo {
@@ -2127,14 +2125,23 @@ body {
     background: var(--background-ter), var(--black);
     background-size: cover;
     position: absolute;
-    top: 100%;
-    right: 0;
     left: 0;
     z-index: 3;
     height: auto;
     display: none;
-    width: calc(100vw - 5px) !important;
+    width: 75vw !important;
     min-height: 100vh;
+    animation: nav-bar 1s linear 1;
+    opacity: 100;
+  }
+
+  @keyframes nav-bar {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
   }
 
   .navigation-text-logo {
@@ -2149,9 +2156,15 @@ body {
 
   .navigation-buttons {
     flex-direction: column;
-    margin-top: 2rem !important;
+    margin-top: 5rem !important;
     margin-bottom: 2.5rem !important;
+    width: 50vw !important;
     gap: 1rem !important;
+  }
+
+  .navigation-buttons,
+  .navigation-buttons a {
+    justify-content: left;
   }
 
   /* .cover {
@@ -2164,10 +2177,9 @@ body {
 
   .the-links {
     display: block;
-    float: none;
-    width: auto;
+    left: 0;
     padding: 1rem;
-    width: 98% !important;
+    width: 50vw !important;
     margin-top: unset;
   }
 
@@ -2183,10 +2195,11 @@ body {
     display: block;
   }
   #menu input {
-    z-index: 4;
+    z-index: 7;
   }
   #menu input:checked + label {
     color: white;
+    z-index: 6;
   }
   #menu input:checked + label::before {
     display: flex;
@@ -2196,6 +2209,17 @@ body {
     height: 2.5em;
   }
   #menu input:checked ~ .main-sec-nav {
+    display: block !important;
+  }
+
+  .nav-blur {
+    display: none;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #menu input:checked ~ .nav-blur {
     display: block !important;
   }
 
