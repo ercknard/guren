@@ -151,6 +151,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-white-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/white-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-white-head-open.webp");
   --content: "♒︎";
   --theme-name: "Aquarius (♒︎)";
 }
@@ -174,6 +175,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-yellow-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/yellow-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-yellow-head-open.webp");
   --content: "♓︎";
   --theme-name: "Pisces (♓︎)";
 }
@@ -195,6 +197,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-red-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/red-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-red-head-open.webp");
   --content: "♈︎";
   --theme-name: "Aries (♈︎)";
 }
@@ -218,6 +221,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-blood-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/blood-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-blood-head-open.webp");
   --content: "♉︎";
   --theme-name: "Taurus (♉︎)";
 }
@@ -241,6 +245,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-magenta-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/magenta-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-magenta-head-open.webp");
   --content: "♊︎";
   --theme-name: "Gemini (♊︎)";
 }
@@ -264,6 +269,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-purple-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/purple-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-purple-head-open.webp");
   --content: "♋︎";
   --theme-name: "Cancer (♋︎)";
 }
@@ -287,6 +293,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-violet-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/violet-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-violet-head-open.webp");
   --content: "♌︎";
   --theme-name: "Leo (♌︎)";
 }
@@ -308,6 +315,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-blue-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/blue-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-blue-head-open.webp");
   --content: "♍︎";
   --theme-name: "Virgo (♍︎)";
 }
@@ -329,6 +337,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-navy-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/navy-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-navy-head-open.webp");
   --content: "♎︎";
   --theme-name: "Libra (♎︎)";
 }
@@ -352,6 +361,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-ocean-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/ocean-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-ocean-head-open.webp");
   --content: "♏︎";
   --theme-name: "Scorpio (♏︎)";
 }
@@ -375,6 +385,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-green-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/green-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-green-head-open.webp");
   --content: "♐︎";
   --theme-name: "Sagittarious (♐︎)";
 }
@@ -396,6 +407,7 @@ body {
   --background-fifth: url("/static/images/bgs/ercknard-epic-closed-clean.webp"),
     url("/static/images/bgs/blank-sword.webp");
   --cloud: url("/static/images/bgs/epic-cloud.svg");
+  --head-open: url("/static/images/head/ercknard-epic-head-open.webp");
   --content: "♑︎";
   --theme-name: "Capricorn (♑︎)";
 }
@@ -2159,4 +2171,35 @@ body {
   border-top: none !important;
   border: 2px solid !important;
   border-image: linear-gradient(to top, var(--epic), var(--transparent)) 1 !important;
+}
+
+.head-profile {
+  content: var(--head-open);
+  width: 10rem;
+  height: 10rem;
+  border-bottom: 2px solid !important;
+  border-image: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--background),
+      var(--transparent)
+    )
+    1 !important;
+  filter: drop-shadow(0px 0px 1px var(--background));
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.socials {
+  gap: 1rem !important;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.to-color {
+  color: var(--background);
 }

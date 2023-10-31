@@ -3,6 +3,12 @@ import Layout from "@/layout/Layout";
 import Head from "next/head";
 import ContactUs from "@/components/Email";
 import PageSigns from "@/components/PageSigns";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import DiscFullIcon from "@mui/icons-material/DiscFull";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import Image from "next/image";
 
 type Props = {};
 
@@ -33,11 +39,38 @@ export default class Contact extends Component<Props, State> {
                 </div>
                 <PageSigns />
                 <div
+                  data-aos="fade"
+                  data-aos-duration="1200"
+                  className="head-profile"
+                />
+                <div
+                  data-aos="fade"
+                  data-aos-duration="3000"
+                  className="to-flex socials"
+                >
+                  <div>
+                    <FacebookIcon className="to-color" /> Facebook
+                  </div>
+                  <div>
+                    <TwitterIcon className="to-color" /> Twitter
+                  </div>
+                  <div>
+                    <DiscFullIcon className="to-color" /> Discord
+                  </div>
+                  <div>
+                    <AlternateEmailIcon className="to-color" /> Email
+                  </div>
+                  <div>
+                    <GitHubIcon className="to-color" /> Github
+                  </div>
+                </div>
+                <div
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   className="normal-text"
                 >
-                  &quot;Thank you for visiting my WEB Portfolio. I&apos;m
+                  &quot;Thank you for visiting my{" "}
+                  <span className="text-effect">WEB Portfolio</span>. I&apos;m
                   excited to hear from you and discuss how we can work together
                   to bring your ideas to life. Got any inquries? Please
                   don&apos;t hesitate to get in touch by filling out the form
