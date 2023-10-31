@@ -2227,12 +2227,12 @@ body {
   left: 0;
   /* -webkit-clip-path: polygon(50% 55%, 100% 75%, 100% 100%, 0 100%, 0 75%);
   clip-path: polygon(50% 55%, 100% 75%, 100% 100%, 0 100%, 0 75%); */
-  border: 5px solid;
+  border: 2.5px solid;
   border-image: linear-gradient(
       to left,
-      var(--black),
+      var(--accent-sub-ter),
       var(--accent),
-      var(--black)
+      var(--accent-sub-ter)
     )
     1 !important;
 }
