@@ -50,23 +50,23 @@ export default class Contact extends Component<Props, State> {
                 >
                   <div className="social-icons">
                     <FacebookIcon className="to-color" />{" "}
-                    <span className="to-hide">Facebook</span>
+                    <span className="to-hide  social-links">Facebook</span>
                   </div>
                   <div className="social-icons">
                     <TwitterIcon className="to-color" />{" "}
-                    <span className="to-hide">Twitter</span>
+                    <span className="to-hide  social-links">Twitter</span>
                   </div>
                   <div className="social-icons">
                     <DiscFullIcon className="to-color" />{" "}
-                    <span className="to-hide">Discord</span>
+                    <span className="to-hide social-links">Discord</span>
                   </div>
                   <div className="social-icons">
                     <AlternateEmailIcon className="to-color" />{" "}
-                    <span className="to-hide">Email</span>
+                    <span className="to-hide  social-links">Email</span>
                   </div>
                   <div className="social-icons">
                     <GitHubIcon className="to-color" />{" "}
-                    <span className="to-hide">Github</span>
+                    <span className="to-hide  social-links">Github</span>
                   </div>
                 </div>
                 <div

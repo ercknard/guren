@@ -1866,6 +1866,7 @@ body {
   margin-top: 10px !important;
   color: var(--white) !important;
   z-index: 1;
+  font-size: var(--quinary-font) !important;
 }
 
 .project-button {
@@ -2066,7 +2067,10 @@ body {
 }
 
 .social-icons {
+  display: flex;
+  gap: 0.3rem;
   cursor: pointer;
+  align-items: center !important;
 }
 
 .social-icons:hover {
@@ -2079,6 +2083,10 @@ body {
 
 .social-icons:hover .to-color {
   color: var(--accent-sub);
+}
+
+.social-links {
+  font-size: var(--quaternary-font) !important;
 }
 
 @media screen and (max-width: 1024px) {
