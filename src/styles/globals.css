@@ -2181,8 +2181,8 @@ body {
   content: "";
   position: absolute;
   background: linear-gradient(120deg, var(--black), var(--background));
-  width: 50%;
-  height: 40%;
+  width: 7.5rem;
+  height: 7.5rem;
   z-index: 1;
   top: 0;
   left: 0;
