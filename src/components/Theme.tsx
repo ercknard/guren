@@ -382,7 +382,7 @@ function Theme() {
           <Fab className="theme-details" size="small" aria-label="add">
             <QuestionMarkIcon className="to-mask-icon" />
             <div className="theme-details-buttons">
-              <div className="DB">Dark Filter (For Pages only) : </div>
+              <div className="DB">Dark Filter : </div>
               <div className="CW">Cosmic Wallpaper : </div>
               <div className="TG">Theme Gates/Moon : </div>
               <div className="TS">Theme Surf : </div>

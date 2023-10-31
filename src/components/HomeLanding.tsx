@@ -11,6 +11,7 @@ export default class Home extends Component<Props, State> {
     return (
       <>
         <div>
+          <div className="landing-for-down" />
           <div
             data-aos="fade-down"
             data-aos-duration="1200"
