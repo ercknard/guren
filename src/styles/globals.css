@@ -2129,27 +2129,66 @@ body {
 .project-section {
   width: 100%;
   justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-portrait {
+  position: relative;
+  width: 20%;
+  height: 25rem;
 }
 
 .project-selection-image {
   object-fit: cover;
-  width: 8%;
+  width: 100%;
   height: 25rem;
   transition: 1s;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
-  clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
   cursor: pointer;
+  border: 2.5px solid !important;
+  border-image: linear-gradient(
+      to top,
+      var(--accent-sub),
+      var(--transparent),
+      var(--transparent),
+      var(--accent-sub)
+    )
+    1 !important;
 }
 
 .project-selection-image:hover {
   object-fit: cover;
-  width: 100%;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  z-index: 10;
+}
+
+.to-gap-project {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-logo::before {
+  content: var(--content);
+  position: absolute;
+  color: var(--background);
+  font-size: 2rem;
+  z-index: 1;
+  top: 0.25rem;
+  left: 1rem;
+  filter: drop-shadow(1px 1px 5px var(--black)) !important;
+}
+
+.project-logo::after {
+  content: "";
+  position: absolute;
+  background: var(--accent-sub);
+  width: 50%;
+  height: 40%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  border: 3px solid var(--background);
 }
 
 @media screen and (max-width: 1024px) {
