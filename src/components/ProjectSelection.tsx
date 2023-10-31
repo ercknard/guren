@@ -18,7 +18,7 @@ export default class ProjectSelection extends Component<Props, State> {
                 <span className="project-logo" />
                 <Image
                   className="project-selection-image"
-                  src="/static/images/projects/erckportfolio.jpeg"
+                  src="/static/images/projects/erckportfolio.webp"
                   alt="slide_image"
                   width={1325}
                   height={851}
@@ -28,7 +28,7 @@ export default class ProjectSelection extends Component<Props, State> {
                 <span className="project-logo" />
                 <Image
                   className="project-selection-image"
-                  src="/static/images/projects/aercrypt.jpeg"
+                  src="/static/images/projects/aercrypt.webp"
                   alt="slide_image"
                   width={1325}
                   height={851}
@@ -38,7 +38,7 @@ export default class ProjectSelection extends Component<Props, State> {
                 <span className="project-logo" />
                 <Image
                   className="project-selection-image"
-                  src="/static/images/projects/cryptechservices.PNG"
+                  src="/static/images/projects/cryptechservices.webp"
                   alt="slide_image"
                   width={1325}
                   height={851}
@@ -48,7 +48,7 @@ export default class ProjectSelection extends Component<Props, State> {
                 <span className="project-logo" />
                 <Image
                   className="project-selection-image"
-                  src="/static/images/projects/metrixplace.jpeg"
+                  src="/static/images/projects/metrixplace.webp"
                   alt="slide_image"
                   width={1325}
                   height={851}
@@ -58,7 +58,7 @@ export default class ProjectSelection extends Component<Props, State> {
                 <span className="project-logo" />
                 <Image
                   className="project-selection-image"
-                  src="/static/images/projects/cryptechtest.PNG"
+                  src="/static/images/projects/cryptechtest.webp"
                   alt="slide_image"
                   width={1325}
                   height={851}
@@ -68,7 +68,7 @@ export default class ProjectSelection extends Component<Props, State> {
                 <span className="project-logo" />
                 <Image
                   className="project-selection-image"
-                  src="/static/images/projects/cryptechcraft.PNG"
+                  src="/static/images/projects/cryptechcraft.webp"
                   alt="slide_image"
                   width={1325}
                   height={851}
@@ -78,7 +78,7 @@ export default class ProjectSelection extends Component<Props, State> {
                 <span className="project-logo" />
                 <Image
                   className="project-selection-image"
-                  src="/static/images/projects/minecraftgallery.PNG"
+                  src="/static/images/projects/minecraftgallery.webp"
                   alt="slide_image"
                   width={1325}
                   height={851}
@@ -88,7 +88,7 @@ export default class ProjectSelection extends Component<Props, State> {
                 <span className="project-logo" />
                 <Image
                   className="project-selection-image"
-                  src="/static/images/projects/maysilo.PNG"
+                  src="/static/images/projects/maysilo.webp"
                   alt="slide_image"
                   width={1325}
                   height={851}
