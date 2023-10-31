@@ -1952,7 +1952,6 @@ body {
 
 .swiper-slide {
   width: 50rem !important;
-  height: 100% !important;
   position: relative;
   margin-top: 2.5rem;
   padding-bottom: 2.5rem !important;
@@ -2125,6 +2124,32 @@ body {
 
 .social-links {
   font-size: var(--quaternary-font) !important;
+}
+
+.project-section {
+  width: 100%;
+  justify-content: center;
+}
+
+.project-selection-image {
+  object-fit: cover;
+  width: 8%;
+  height: 25rem;
+  transition: 1s;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+  clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+  cursor: pointer;
+}
+
+.project-selection-image:hover {
+  object-fit: cover;
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 @media screen and (max-width: 1024px) {
