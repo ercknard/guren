@@ -3,6 +3,7 @@ import "@fontsource/ysabeau/400.css";
 import "@fontsource/ysabeau/400-italic.css";
 import "@/styles/globals.css";
 import "@/styles/App.css";
+import { Analytics } from "@vercel/analytics/react";
 import React, { ReactNode } from "react";
 import Navigation from "./Navigation";
 import dynamic from "next/dynamic";
@@ -20,6 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <main className="App">
+        <Analytics />
         <DynamicComponent />
         <AOScall />
         <Navigation />
