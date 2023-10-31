@@ -36,9 +36,10 @@ export default class Projects extends Component<Props, State> {
                   <span data-aos="fade" data-aos-duration="1200">
                     &quot;Welcome to my projects page, where I showcase a
                     collection of my diverse and creative endeavors. Explore a
-                    range of my /Cryptech Services¹ work, from web development
-                    to design, as I share the passion and dedication I bring to
-                    each project.&quot;
+                    range of{" "}
+                    <span className="text-effect">my /Cryptech Services¹</span>{" "}
+                    work , from web development to design, as I share the
+                    passion and dedication I bring to each project.&quot;
                   </span>
                   <ProjectSelection />
                 </div>
