@@ -1311,7 +1311,7 @@ body {
   height: 120vh;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
-  background: var(--cloud), linear-gradient(to top, var(--black), var(--accent));
+  background: linear-gradient(to top, var(--black), var(--accent));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -1342,7 +1342,7 @@ body {
   height: 120vh;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
-  background: var(--cloud), linear-gradient(to top, var(--black), var(--accent));
+  background: linear-gradient(to top, var(--black), var(--accent));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
