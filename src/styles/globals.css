@@ -2438,6 +2438,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 90vh;
+  padding-left: 7.5rem;
 }
 
 .spies {
