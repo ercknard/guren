@@ -2116,6 +2116,54 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.main-avatar {
+  position: relative;
+  width: 100%;
+}
+
+.to-about-with {
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.to-blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.main-head-profile {
+  content: var(--head-open);
+  width: 75%;
+  height: 75%;
+  border-bottom: 2px solid !important;
+  border-image: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--background),
+      var(--transparent)
+    )
+    1 !important;
+  filter: drop-shadow(0px 0px 1px var(--background));
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .socials {
   gap: 2rem !important;
   justify-content: center;
@@ -2343,9 +2391,51 @@ body {
   justify-content: space-between;
 }
 
+.to-align {
+  align-items: center;
+}
 .teams-end-btn {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.main-about {
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+}
+
+.spies {
+  font-weight: 800;
+  color: var(--background);
+}
+
+.to-gap {
+  gap: 1rem;
+}
+
+.greeting-main-name {
+  font-size: var(--tertiary-font);
+}
+
+.greeting-main-name:after {
+  content: " " var(--content) ",";
+  color: var(--accent);
+}
+.animated-text {
+  font-size: var(--prim-secon-font);
+}
+
+.about-main-name {
+  font-size: var(--primary-font);
+  font-weight: 700;
+}
+
+.about-sub-text {
+  font-size: calc(var(--special-font) - var(--seventh-font));
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 2.25rem;
 }
 
 @media screen and (max-width: 1367px) {
@@ -2559,6 +2649,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .main-about {
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    flex-direction: column-reverse;
+  }
   .project-button {
     background: var(--accent) !important;
     padding: 0.25rem 1.5rem !important;
