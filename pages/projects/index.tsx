@@ -3,6 +3,7 @@ import Layout from "@/layout/Layout";
 import Head from "next/head";
 import PageSigns from "@/components/PageSigns";
 import ProjectSelection from "@/components/ProjectSelection";
+import CustomizedTimeline from "@/components/ProjectTImeline";
 
 type Props = {};
 
@@ -25,6 +26,7 @@ export default class Projects extends Component<Props, State> {
             <div className="to-big">
               <div className="content-pages">
                 <ProjectSelection />
+                <CustomizedTimeline />
               </div>
             </div>
           </section>
