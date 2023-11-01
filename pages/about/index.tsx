@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Head from "next/head";
 import Layout from "@/layout/Layout";
+import TypingAnimation from "@/components/AboutTextAnimation";
 import AboutCoverflow from "@/components/AboutCoverflow";
 import PageSigns from "@/components/PageSigns";
 import CryptechTeam from "@/components/CryptechTeam";
@@ -25,6 +26,25 @@ export default class About extends Component<Props, State> {
             <div className="pages-banner" />
             <div className="to-big">
               <div className="content-pages">
+                <div className="to-flex">
+                  <div className="">
+                    <div className="">___ HELLO,</div>
+                    <div className="">I&apos;m Ercknard.</div>
+                    <div className="">
+                      {" "}
+                      <TypingAnimation />
+                      Web Designer | Developer | Graphic Designer
+                    </div>
+                    <div className="">
+                      {" "}
+                      I am a versatile creative professional with a passion for
+                      web designing, web development, and graphic design. With a
+                      keen eye for aesthetics and a knack for turning ideas into
+                      stunning digital experiences, I bring innovation and flair
+                      to every project I undertake.
+                    </div>
+                  </div>
+                </div>
                 {/* <div
                   data-aos="fade-down"
                   data-aos-duration="1200"

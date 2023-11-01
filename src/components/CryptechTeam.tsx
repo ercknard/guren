@@ -14,6 +14,7 @@ export default class CryptechTeam extends Component<Props, State> {
   render() {
     return (
       <>
+        {/* <div className="to-divide"> */}
         <div
           data-aos="fade-down"
           data-aos-duration="1200"
@@ -188,6 +189,7 @@ export default class CryptechTeam extends Component<Props, State> {
             </div>
           </section>
         </div>
+        {/* </div> */}
       </>
     );
   }
