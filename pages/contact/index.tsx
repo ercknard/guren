@@ -123,17 +123,7 @@ export default class Contact extends Component<Props, State> {
                     </div>
                   </Link>
                 </div>
-                <div className="normal-text">
-                  <span data-aos="fade" data-aos-duration="1200">
-                    &quot;Thank you for visiting my{" "}
-                    <span className="text-effect">Web Portfolio</span>. I&apos;m
-                    excited to hear from you and discuss how we can work
-                    together to bring your ideas to life. Got any inquries?
-                    Please don&apos;t hesitate to get in touch by filling out
-                    the form below.&quot;
-                  </span>
-                  <ContactUs />
-                </div>
+                <ContactUs />
               </div>
             </div>
           </section>

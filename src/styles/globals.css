@@ -2130,9 +2130,9 @@ body {
 
 .project-section {
   width: 100%;
-  justify-content: space-evenly;
-  row-gap: 2.5rem;
-  column-gap: 2.5rem;
+  justify-content: center;
+  row-gap: 3rem;
+  column-gap: 3rem;
   flex-wrap: wrap;
 }
 
@@ -2156,6 +2156,7 @@ body {
       var(--accent-sub)
     )
     1 !important;
+  background: linear-gradient(to top, var(--black), var(--accent));
 }
 
 .project-selection-image:hover {

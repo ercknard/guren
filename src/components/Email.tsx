@@ -89,108 +89,117 @@ export default function ContactUs() {
     console.log(fullname, email, subject, message);
   };
   return (
-    <section
-      data-aos="fade-up"
-      data-aos-duration="1200"
-      className="to-cover-pages"
-    >
-      <div>
-        <form className="forms-contact" onSubmit={handleSubmit}>
-          {errors?.fullname && (
-            <p className="text-red-500 text-lg absolute to-flick">
-              Fullname cannot be empty.
-            </p>
-          )}
-          <TextField
-            id="standard-basic"
-            helperText="Please enter your name"
-            label="Full Name"
-            variant="standard"
-            type="text"
-            name="fullname"
-            value={fullname}
-            onChange={(e) => {
-              setFullname(e.target.value);
-            }}
-          />
-          <br />
-          {errors?.email && (
-            <p className="text-red-500 text-lg absolute to-flick">
-              Email cannot be empty.
-            </p>
-          )}
-          <TextField
-            id="standard-basic"
-            helperText="Please enter your E-mail Address"
-            label="E-mail"
-            variant="standard"
-            type="email"
-            name="email"
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-          <br />
-          {errors?.subject && (
-            <p className="text-red-500 text-lg absolute to-flick">
-              Subject cannot be empty.
-            </p>
-          )}
-          <TextField
-            id="standard-basic"
-            helperText="Please enter message subject"
-            label="Subject"
-            variant="standard"
-            type="text"
-            name="subject"
-            value={subject}
-            onChange={(e) => {
-              setSubject(e.target.value);
-            }}
-          />
-          <br />
-          {errors?.message && (
-            <p className="text-red-500 text-lg absolute to-flick">
-              Message body cannot be empty.
-            </p>
-          )}
-          <TextField
-            id="standard-basic"
-            helperText="Type in your message"
-            label="Message"
-            variant="standard"
-            type="text"
-            name="message"
-            multiline
-            rows={4}
-            value={message}
-            onChange={(e) => {
-              setMessage(e.target.value);
-            }}
-          />
-          <div className="flex to-notif">
-            <button type="submit" className="project-button">
-              {buttonText} <SendIcon className="send-icon" />
-            </button>
-            <div className="text-lg text-center">
-              {/* Alert message :{" "} */}
-              <span>
-                {showSuccessMessage && (
-                  <p className="text-green-500 font-semibold text-sm my-2">
-                    Thankyou! Your Message has been delivered.
-                  </p>
-                )}
-                {showFailureMessage && (
-                  <p className="text-red-500 font-semibold text-sm my-2">
-                    Oops! Something went wrong, please try again.
-                  </p>
-                )}
-              </span>
+    <div className="normal-text">
+      <span data-aos="fade" data-aos-duration="1200">
+        &quot;Thank you for visiting my{" "}
+        <span className="text-effect">Web Portfolio</span>. I&apos;m excited to
+        hear from you and discuss how we can work together to bring your ideas
+        to life. Got any inquries? Please don&apos;t hesitate to get in touch by
+        filling out the form below.&quot;
+      </span>
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        className="to-cover-pages"
+      >
+        <div>
+          <form className="forms-contact" onSubmit={handleSubmit}>
+            {errors?.fullname && (
+              <p className="text-red-500 text-lg absolute to-flick">
+                Fullname cannot be empty.
+              </p>
+            )}
+            <TextField
+              id="standard-basic"
+              helperText="Please enter your name"
+              label="Full Name"
+              variant="standard"
+              type="text"
+              name="fullname"
+              value={fullname}
+              onChange={(e) => {
+                setFullname(e.target.value);
+              }}
+            />
+            <br />
+            {errors?.email && (
+              <p className="text-red-500 text-lg absolute to-flick">
+                Email cannot be empty.
+              </p>
+            )}
+            <TextField
+              id="standard-basic"
+              helperText="Please enter your E-mail Address"
+              label="E-mail"
+              variant="standard"
+              type="email"
+              name="email"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
+            <br />
+            {errors?.subject && (
+              <p className="text-red-500 text-lg absolute to-flick">
+                Subject cannot be empty.
+              </p>
+            )}
+            <TextField
+              id="standard-basic"
+              helperText="Please enter message subject"
+              label="Subject"
+              variant="standard"
+              type="text"
+              name="subject"
+              value={subject}
+              onChange={(e) => {
+                setSubject(e.target.value);
+              }}
+            />
+            <br />
+            {errors?.message && (
+              <p className="text-red-500 text-lg absolute to-flick">
+                Message body cannot be empty.
+              </p>
+            )}
+            <TextField
+              id="standard-basic"
+              helperText="Type in your message"
+              label="Message"
+              variant="standard"
+              type="text"
+              name="message"
+              multiline
+              rows={4}
+              value={message}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
+            />
+            <div className="flex to-notif">
+              <button type="submit" className="project-button">
+                {buttonText} <SendIcon className="send-icon" />
+              </button>
+              <div className="text-lg text-center">
+                {/* Alert message :{" "} */}
+                <span>
+                  {showSuccessMessage && (
+                    <p className="text-green-500 font-semibold text-sm my-2">
+                      Thankyou! Your Message has been delivered.
+                    </p>
+                  )}
+                  {showFailureMessage && (
+                    <p className="text-red-500 font-semibold text-sm my-2">
+                      Oops! Something went wrong, please try again.
+                    </p>
+                  )}
+                </span>
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
-    </section>
+          </form>
+        </div>
+      </section>
+    </div>
   );
 }
