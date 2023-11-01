@@ -2130,7 +2130,7 @@ body {
 
 .project-section {
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   row-gap: 2.5rem;
   column-gap: 2.5rem;
   flex-wrap: wrap;
@@ -2139,13 +2139,12 @@ body {
 .project-portrait {
   position: relative;
   width: 20%;
-  height: 25rem;
+  filter: drop-shadow(3px 3px 3px var(--white-accent));
 }
 
 .project-selection-image {
   object-fit: cover;
   width: 100%;
-  height: 25rem;
   transition: 1s;
   cursor: pointer;
   border: 2.5px solid !important;
@@ -2212,7 +2211,6 @@ body {
   position: absolute;
   background: linear-gradient(to bottom, var(--accent-sub-ter), var(--black));
   width: 100%;
-  height: 25rem;
   top: 0;
   left: 0;
 }
@@ -2243,6 +2241,14 @@ body {
   align-items: center;
   font-size: 1.25rem !important;
   margin-top: 0.5rem;
+}
+
+.project-portrait,
+.project-description-bg::after,
+.project-description-bg::before,
+.project-description-bg::before,
+.project-selection-image {
+  height: 450px;
 }
 
 @media screen and (max-width: 1367px) {
