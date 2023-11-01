@@ -1427,7 +1427,7 @@ body {
 
 .page-title {
   color: var(--background);
-  font-size: var(--prim-secon-font);
+  font-size: var(--secondary-font);
   filter: drop-shadow(5px 5px 1px var(--black));
   font-weight: 800;
   text-align: center;
