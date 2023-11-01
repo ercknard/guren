@@ -1927,7 +1927,7 @@ body {
 }
 
 .project-button span {
-  font-size: 1.25rem;
+  font-size: 1.1rem !important;
 }
 
 .project-button:hover {
