@@ -1,15 +1,36 @@
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
 import React from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function Navigation() {
+  const [scrolling, setScrolling] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   {
     return (
-      <nav id="menu" className="main-navigation">
+      <nav
+        id="menu"
+        className={`main-navigation ${scrolling ? "scrolling" : ""}`}
+      >
         <input type="checkbox" id="responsive-menu" />
         <label></label>
         <div className="nav-blur" />

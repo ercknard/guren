@@ -34,7 +34,11 @@ export default class CryptechTeam extends Component<Props, State> {
           <section data-aos="fade-up" data-aos-duration="1200">
             <div className="to-gap-project">
               <div className="to-flex team-section">
-                <div className="team-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  className="team-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -53,7 +57,11 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="team-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1100"
+                  className="team-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -72,7 +80,11 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="team-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="900"
+                  className="team-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -91,7 +103,11 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="team-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                  className="team-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -110,7 +126,11 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="team-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="700"
+                  className="team-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -127,7 +147,11 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="team-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="600"
+                  className="team-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -146,7 +170,11 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="team-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                  className="team-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -165,7 +193,11 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="team-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="400"
+                  className="team-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
