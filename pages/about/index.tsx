@@ -182,7 +182,7 @@ export default class About extends Component<Props, State> {
                   </span>
                   <AboutCoverflow />
                 </div> */}
-                {/* <CryptechTeam /> */}
+                <CryptechTeam />
               </div>
             </div>
           </section>

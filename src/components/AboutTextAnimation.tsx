@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 const TypingAnimation: React.FC = () => {
-  const textToTypes = ["Web Designer.", "Developer.", "Graphic Designer."];
+  const textToTypes = [
+    "Web Designer.",
+    ".",
+    "Developer.",
+    ".",
+    "Graphic Designer.",
+  ];
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
@@ -25,7 +31,7 @@ const TypingAnimation: React.FC = () => {
           setCurrentTextIndex(
             (prevTextIndex) => (prevTextIndex + 1) % textToTypes.length
           );
-        }, 3000); // You can adjust the delay before moving to the next sentence
+        }, 1000); // You can adjust the delay before moving to the next sentence
       }
     };
 
