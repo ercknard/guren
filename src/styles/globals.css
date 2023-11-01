@@ -2138,7 +2138,7 @@ body {
 
 .project-portrait {
   position: relative;
-  width: 20%;
+  width: 23%;
   filter: drop-shadow(3px 3px 3px var(--white-accent));
 }
 
