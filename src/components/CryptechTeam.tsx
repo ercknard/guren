@@ -186,6 +186,27 @@ export default class CryptechTeam extends Component<Props, State> {
                   />
                 </div>
               </div>
+              <div className="to-flex to-space-between teams-end-btn">
+                <Link
+                  target="_blank"
+                  href="https://cryptech.services/"
+                  rel="noopener noreferrer"
+                >
+                  <div className="project-button">
+                    <OpenInNewIcon className="to-color send-icon" />{" "}
+                    <span> Visit</span>
+                  </div>
+                </Link>
+                <Link
+                  href="/projects/cryptech-services"
+                  rel="noopener noreferrer"
+                >
+                  <div className="project-button">
+                    <OpenInNewIcon className="to-color send-icon" />{" "}
+                    <span> View</span>
+                  </div>
+                </Link>
+              </div>
             </div>
           </section>
         </div>
