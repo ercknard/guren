@@ -194,7 +194,7 @@ export default class CryptechTeam extends Component<Props, State> {
                 >
                   <div className="project-button">
                     <OpenInNewIcon className="to-color send-icon" />{" "}
-                    <span> Visit</span>
+                    <span> Official site</span>
                   </div>
                 </Link>
                 <Link
@@ -203,7 +203,7 @@ export default class CryptechTeam extends Component<Props, State> {
                 >
                   <div className="project-button">
                     <OpenInNewIcon className="to-color send-icon" />{" "}
-                    <span> View</span>
+                    <span> Read more</span>
                   </div>
                 </Link>
               </div>

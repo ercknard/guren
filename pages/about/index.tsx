@@ -26,7 +26,7 @@ export default class About extends Component<Props, State> {
             <div className="pages-banner" />
             <div className="to-big">
               <div className="content-pages">
-                <div className="to-flex">
+                {/* <div className="to-flex">
                   <div className="">
                     <div className="">___ HELLO,</div>
                     <div className="">I&apos;m Ercknard.</div>
@@ -44,7 +44,7 @@ export default class About extends Component<Props, State> {
                       to every project I undertake.
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* <div
                   data-aos="fade-down"
                   data-aos-duration="1200"

@@ -1919,9 +1919,15 @@ body {
 }
 
 .project-button {
+  display: flex !important;
   background: var(--accent) !important;
-  padding: 0.25rem 3rem !important;
+  padding: 0.5rem 3rem !important;
   border-radius: 5px;
+  align-items: center;
+}
+
+.project-button span {
+  font-size: 1.25rem;
 }
 
 .project-button:hover {
@@ -1934,9 +1940,9 @@ body {
   transform: translateY(2px);
 }
 
-.send-icon {
+/* .send-icon {
   margin-top: -0.5rem;
-}
+} */
 
 .to-notif {
   align-items: center;
@@ -2338,8 +2344,8 @@ body {
 }
 
 .teams-end-btn {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 1367px) {
@@ -2553,6 +2559,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .project-button {
+    background: var(--accent) !important;
+    padding: 0.25rem 1.5rem !important;
+    border-radius: 5px;
+  }
   .project-section {
     width: 100%;
     justify-content: center;
