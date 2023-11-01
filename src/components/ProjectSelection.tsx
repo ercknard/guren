@@ -135,7 +135,7 @@ export default class ProjectSelection extends Component<Props, State> {
                   <span className="project-description-bg" />
                   <span className="project-description">
                     <span className="text-effect project-name">
-                      CryptechTest Website
+                      CryptechTest
                     </span>
                     <Link
                       href="/projects/cryptechtest-website"
