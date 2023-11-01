@@ -59,7 +59,7 @@ export default class About extends Component<Props, State> {
                     <div
                       data-aos="fade"
                       data-aos-duration="3000"
-                      className="to-flex socials"
+                      className="to-flex main-links"
                     >
                       <Link
                         target="_blank"

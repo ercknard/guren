@@ -2123,8 +2123,6 @@ body {
 
 .to-about-with {
   width: 100%;
-  padding-right: 2rem;
-  padding-left: 2rem;
 }
 
 .to-blink {
@@ -2167,6 +2165,13 @@ body {
 .socials {
   gap: 2rem !important;
   justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.main-links {
+  gap: 1.5rem !important;
+  justify-content: left;
+  flex-wrap: wrap;
   margin-bottom: 1rem;
 }
 
