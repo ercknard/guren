@@ -104,7 +104,7 @@ export default class CryptechTeam extends Component<Props, State> {
                   </span>
                   <Image
                     className="project-selection-image"
-                    src="/static/images/team/loma3-nobg.webp"
+                    src="/static/images/team/loma1-nobg.webp"
                     alt="slide_image"
                     width={1325}
                     height={851}
