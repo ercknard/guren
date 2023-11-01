@@ -2138,7 +2138,7 @@ body {
 
 .project-portrait {
   position: relative;
-  width: 23%;
+  width: 21%;
   filter: drop-shadow(3px 3px 3px var(--white-accent));
 }
 
@@ -2169,7 +2169,8 @@ body {
 }
 
 .project-name {
-  font-weight: 700;
+  font-size: var(--special-font) !important;
+  font-weight: 700 !important;
 }
 .project-logo::before {
   content: var(--content);

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Layout from "@/layout/Layout";
 import AboutCoverflow from "@/components/AboutCoverflow";
 import PageSigns from "@/components/PageSigns";
+import CryptechTeam from "@/components/CryptechTeam";
 
 type Props = {};
 
@@ -41,6 +42,25 @@ export default class About extends Component<Props, State> {
                     the form below.&quot;
                   </span>
                   <AboutCoverflow />
+                </div>
+                <div
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                  className="page-title text-effect"
+                >
+                  Cryptech Services Team
+                </div>
+                <PageSigns />
+                <div className="normal-text">
+                  <span data-aos="fade-up" data-aos-duration="1200">
+                    &quot;We specialize in providing robust web3 and fullstack
+                    development services, with a primary focus on
+                    cryptocurrency, blockchain technology, and web design.
+                    Additionally, we offer expert services in the realms of
+                    cybersecurity , as well as technical support and
+                    consultation.&quot;
+                  </span>
+                  <CryptechTeam />
                 </div>
               </div>
             </div>
