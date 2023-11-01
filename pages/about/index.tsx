@@ -25,7 +25,7 @@ export default class About extends Component<Props, State> {
             <div className="pages-banner" />
             <div className="to-big">
               <div className="content-pages">
-                <div
+                {/* <div
                   data-aos="fade-down"
                   data-aos-duration="1200"
                   className="page-title text-effect"
@@ -42,7 +42,7 @@ export default class About extends Component<Props, State> {
                     the form below.&quot;
                   </span>
                   <AboutCoverflow />
-                </div>
+                </div> */}
                 <CryptechTeam />
               </div>
             </div>
