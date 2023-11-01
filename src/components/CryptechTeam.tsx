@@ -33,13 +33,15 @@ export default class CryptechTeam extends Component<Props, State> {
           </span>
           <section data-aos="fade-up" data-aos-duration="1200">
             <div className="to-gap-project">
-              <div className="to-flex project-section">
-                <div className="project-portrait">
+              <div className="to-flex team-section">
+                <div className="team-portrait">
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
-                    <span className="text-effect project-name">Vanikoro</span>
-                    <div className="read-more">
+                    <span className="text-effect team-project-name">
+                      Vanikoro
+                    </span>
+                    <div className="team-read-more">
                       <span> Developer</span>
                     </div>
                   </span>
@@ -51,12 +53,14 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div className="team-portrait">
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
-                    <span className="text-effect project-name">RasalGhul</span>
-                    <div className="read-more">
+                    <span className="text-effect team-project-name">
+                      RasalGhul
+                    </span>
+                    <div className="team-read-more">
                       <span> Developer</span>
                     </div>
                   </span>
@@ -68,12 +72,14 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div className="team-portrait">
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
-                    <span className="text-effect project-name">Boehmerang</span>
-                    <div className="read-more">
+                    <span className="text-effect team-project-name">
+                      Boehmerang
+                    </span>
+                    <div className="team-read-more">
                       <span> Developer</span>
                     </div>
                   </span>
@@ -85,12 +91,14 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div className="team-portrait">
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
-                    <span className="text-effect project-name">Baydroid</span>
-                    <div className="read-more">
+                    <span className="text-effect team-project-name">
+                      Baydroid
+                    </span>
+                    <div className="team-read-more">
                       <span> Developer</span>
                     </div>
                   </span>
@@ -102,12 +110,12 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div className="team-portrait">
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
-                    <span className="text-effect project-name">Jekz</span>
-                    <div className="read-more">
+                    <span className="text-effect team-project-name">Jekz</span>
+                    <div className="team-read-more">
                       <span> Security Researcher</span>
                     </div>
                   </span>
@@ -119,12 +127,14 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div className="team-portrait">
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
-                    <span className="text-effect project-name">Squidicuz</span>
-                    <div className="read-more">
+                    <span className="text-effect team-project-name">
+                      Squidicuz
+                    </span>
+                    <div className="team-read-more">
                       <span> Admin</span>
                     </div>
                   </span>
@@ -136,12 +146,14 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div className="team-portrait">
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
-                    <span className="text-effect project-name">SeqSee</span>
-                    <div className="read-more">
+                    <span className="text-effect team-project-name">
+                      SeqSee
+                    </span>
+                    <div className="team-read-more">
                       <span> Admin</span>
                     </div>
                   </span>
@@ -153,12 +165,14 @@ export default class CryptechTeam extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div className="team-portrait">
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
-                    <span className="text-effect project-name">Ercknard</span>
-                    <div className="read-more">
+                    <span className="text-effect team-project-name">
+                      Ercknard
+                    </span>
+                    <div className="team-read-more">
                       <span> Developer</span>
                     </div>
                   </span>
