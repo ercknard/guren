@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Layout from "@/layout/Layout";
 import Head from "next/head";
 import PageSigns from "@/components/PageSigns";
+import CryptechTeam from "@/components/CryptechTeam";
+import AboutCoverflow from "@/components/AboutCoverflow";
 
 type Props = {};
 
@@ -23,19 +25,21 @@ export default class Skills extends Component<Props, State> {
             <div className="pages-banner" />
             <div className="to-big">
               <div className="content-pages">
-                <div
+                {/* <div
                   data-aos="fade-down"
                   data-aos-duration="1200"
                   className="page-title text-effect"
                 >
                   My Skills
                 </div>
-                <PageSigns />
-                <div
+                <PageSigns /> */}
+                {/* <div
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   className="normal-text"
-                ></div>
+                > */}
+                <CryptechTeam />
+                {/* </div> */}
               </div>
             </div>
           </section>

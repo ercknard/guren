@@ -2463,7 +2463,7 @@ body {
   position: relative;
   width: 10%;
   overflow: hidden;
-  transition: 1s;
+  transition: 1s !important;
   cursor: pointer;
   overflow: hidden;
 }
