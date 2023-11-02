@@ -25,7 +25,7 @@ export default class AboutMeSubTer extends Component<Props, State> {
     return (
       <div className="to-flex to-align main-about">
         <div className="to-about-with">
-          <div className="greeting-main-name text-effect">What do I do?</div>
+          <div className="greeting-sub-name text-effect">What do I do?</div>
           <div className="about-sub-text">
             {" "}
             Every project is a canvas for my{" "}

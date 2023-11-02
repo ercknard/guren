@@ -25,7 +25,7 @@ export default class AboutMeSub extends Component<Props, State> {
     return (
       <div className="to-flex to-align sub-about to-switch">
         <div className="to-about-with">
-          <div className="greeting-main-name text-effect">Who am i?</div>
+          <div className="greeting-sub-name text-effect">Who am i?</div>
           <div className="about-sub-text">
             {" "}
             This is <span className="spies">Ercknard Guren</span>, versatile

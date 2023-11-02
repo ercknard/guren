@@ -2540,6 +2540,16 @@ body {
   gap: 1rem;
 }
 
+.greeting-sub-name {
+  font-size: var(--secon-ter-font) !important;
+  font-weight: 800;
+}
+
+.greeting-sub-name:before {
+  content: " " var(--content) " ";
+  color: var(--accent);
+}
+
 .greeting-main-name {
   font-size: var(--ter-spec-font) !important;
 }
