@@ -156,6 +156,7 @@ body {
   --head-open: url("/static/images/head/ercknard-white-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-white.webp");
+  --bag: url("/static/images/divider/bag-white.webp");
   --content: "♒︎";
   --theme-name: "Aquarius (♒︎)";
   --to-cosmic: url("/static/images/comics/white.webp");
@@ -184,6 +185,7 @@ body {
   --head-open: url("/static/images/head/ercknard-yellow-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-yellow.webp");
+  --bag: url("/static/images/divider/bag-yellow.webp");
   --content: "♓︎";
   --theme-name: "Pisces (♓︎)";
   --to-cosmic: url("/static/images/comics/yellow.webp");
@@ -210,6 +212,7 @@ body {
   --head-open: url("/static/images/head/ercknard-red-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-red.webp");
+  --bag: url("/static/images/divider/bag-red.webp");
   --content: "♈︎";
   --theme-name: "Aries (♈︎)";
   --to-cosmic: url("/static/images/comics/red.webp");
@@ -238,6 +241,7 @@ body {
   --head-open: url("/static/images/head/ercknard-blood-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-blood.webp");
+  --bag: url("/static/images/divider/bag-blood.webp");
   --content: "♉︎";
   --theme-name: "Taurus (♉︎)";
   --to-cosmic: url("/static/images/comics/blood.webp");
@@ -266,6 +270,7 @@ body {
   --head-open: url("/static/images/head/ercknard-magenta-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-magenta.webp");
+  --bag: url("/static/images/divider/bag-magenta.webp");
   --content: "♊︎";
   --theme-name: "Gemini (♊︎)";
   --to-cosmic: url("/static/images/comics/magenta.webp");
@@ -294,6 +299,7 @@ body {
   --head-open: url("/static/images/head/ercknard-purple-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-purple.webp");
+  --bag: url("/static/images/divider/bag-purple.webp");
   --content: "♋︎";
   --theme-name: "Cancer (♋︎)";
   --to-cosmic: url("/static/images/comics/purple.webp");
@@ -322,6 +328,7 @@ body {
   --head-open: url("/static/images/head/ercknard-violet-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-violet.webp");
+  --bag: url("/static/images/divider/bag-violet.webp");
   --content: "♌︎";
   --theme-name: "Leo (♌︎)";
   --to-cosmic: url("/static/images/comics/violet.webp");
@@ -348,6 +355,7 @@ body {
   --head-open: url("/static/images/head/ercknard-blue-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-blue.webp");
+  --bag: url("/static/images/divider/bag-blue.webp");
   --content: "♍︎";
   --theme-name: "Virgo (♍︎)";
   --to-cosmic: url("/static/images/comics/blue.webp");
@@ -374,6 +382,7 @@ body {
   --head-open: url("/static/images/head/ercknard-navy-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-navy.webp");
+  --bag: url("/static/images/divider/bag-navy.webp");
   --content: "♎︎";
   --theme-name: "Libra (♎︎)";
   --to-cosmic: url("/static/images/comics/navy.webp");
@@ -402,6 +411,7 @@ body {
   --head-open: url("/static/images/head/ercknard-ocean-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-ocean.webp");
+  --bag: url("/static/images/divider/bag-ocean.webp");
   --content: "♏︎";
   --theme-name: "Scorpio (♏︎)";
   --to-cosmic: url("/static/images/comics/ocean.webp");
@@ -430,6 +440,7 @@ body {
   --head-open: url("/static/images/head/ercknard-green-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-green.webp");
+  --bag: url("/static/images/divider/bag-green.webp");
   --content: "♐︎";
   --theme-name: "Sagittarious (♐︎)";
   --to-cosmic: url("/static/images/comics/green.webp");
@@ -456,6 +467,7 @@ body {
   --head-open: url("/static/images/head/ercknard-epic-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
   --posture: url("/static/images/bgs/ercknard-epic.webp");
+  --bag: url("/static/images/divider/bag-epic.webp");
   --content: "♑︎";
   --theme-name: "Capricorn (♑︎)";
   --to-cosmic: url("/static/images/comics/epic.webp");
@@ -2200,19 +2212,51 @@ body {
   transform: scaleX(-1) !important;
 }
 
+.sub-effect {
+  position: relative;
+  background: linear-gradient(
+    to left,
+    var(--transparent),
+    var(--accent-sub-ter),
+    var(--transparent)
+  );
+}
+
 .main-head-profile-sub {
-  content: var(--posture);
+  content: var(--bag);
   object-fit: cover;
   width: 75%;
   height: 75%;
-  border-bottom: 2px solid !important;
+  /* border-bottom: 2px solid !important;
   border-image: linear-gradient(
       to left,
       var(--transparent),
       var(--background),
       var(--transparent)
     )
-    1 !important;
+    1 !important; */
+  filter: drop-shadow(0px 0px 2px var(--background));
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.main-head-profile-sub-ter {
+  content: var(--sword);
+  object-fit: cover;
+  width: 75%;
+  height: 75%;
+  /* border-bottom: 2px solid !important;
+  border-image: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--background),
+      var(--transparent)
+    )
+    1 !important; */
   filter: drop-shadow(0px 0px 1px var(--background));
   position: relative;
   display: flex;
@@ -2480,6 +2524,7 @@ body {
   position: relative;
   min-height: 90vh;
   width: 100%;
+  padding-right: 7.5rem;
 }
 
 .to-switch {
@@ -2496,7 +2541,7 @@ body {
 }
 
 .greeting-main-name {
-  font-size: var(--tertiary-font);
+  font-size: var(--ter-spec-font) !important;
 }
 
 .greeting-main-name:after {
@@ -2504,11 +2549,11 @@ body {
   color: var(--accent);
 }
 .animated-text {
-  font-size: var(--prim-secon-font);
+  font-size: var(--secondary-font);
 }
 
 .about-main-name {
-  font-size: var(--primary-font);
+  font-size: var(--primary-font) !important;
   font-weight: 700;
 }
 
@@ -2741,6 +2786,15 @@ body {
     padding-left: 0;
     flex-direction: column-reverse;
   }
+
+  .sub-about {
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    padding-right: 0;
+    flex-direction: column-reverse;
+  }
+
   .project-button {
     background: var(--accent) !important;
     padding: 0.25rem 1.5rem !important;

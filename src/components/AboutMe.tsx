@@ -33,11 +33,9 @@ export default class AboutMe extends Component<Props, State> {
           </div>
           <div className="about-sub-text">
             {" "}
-            This is <span className="spies">Ercknard Guren</span>, versatile
-            creative professional with a passion for web designing, web
-            development, and graphic design. With a keen eye for aesthetics and
-            a knack for turning ideas into stunning digital experiences, I bring
-            innovation and flair to every project I undertake.
+            In essence, I am <span className="spies">Ercknard Guren</span>, a
+            digital craftsman who transforms visions into realities, making the
+            web a more beautiful and functional place one project at a time.
           </div>
           <div
             data-aos="fade"

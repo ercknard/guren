@@ -18,28 +18,31 @@ type Props = {};
 
 type State = {};
 
-export default class AboutMeSub extends Component<Props, State> {
+export default class AboutMeSubTer extends Component<Props, State> {
   state = {};
 
   render() {
     return (
-      <div className="to-flex to-align sub-about to-switch">
+      <div className="to-flex to-align main-about">
         <div className="to-about-with">
-          <div className="greeting-main-name text-effect">Who am i?</div>
+          <div className="greeting-main-name text-effect">What do I do?</div>
           <div className="about-sub-text">
             {" "}
-            This is <span className="spies">Ercknard Guren</span>, versatile
-            creative professional with a passion for web designing, web
-            development, and graphic design. With a keen eye for aesthetics and
-            a knack for turning ideas into stunning digital experiences, I bring
-            innovation and flair to every project I undertake.
+            Every project is a canvas for my{" "}
+            <span className="spies">creativity</span>, an opportunity to turn
+            ordinary ideas into extraordinary digital experiences. My work is
+            not just a reflection of my skills; it&apos;s a reflection of my
+            dedication, my passion, and my commitment to excellence. Whether
+            it&apos;s a small website, a complex web application, or a stunning
+            graphic design piece, I approach each task with the same vigor and
+            determination to exceed expectations.
           </div>
         </div>
         <div className="main-avatar">
           <div
             data-aos="fade"
             data-aos-duration="1500"
-            className="main-head-profile-sub"
+            className="main-head-profile-sub-ter"
           />
         </div>
       </div>
