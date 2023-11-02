@@ -37,193 +37,194 @@ export default function CustomizedTimeline() {
           <LocalOfferIcon className="ongoing" /> = Project is still
           ongoing.&apos;
         </span>
-        <Timeline
-          data-aos="fade-up"
-          data-aos-duration="1200"
-          className="to-padding"
-          position="right"
-        >
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-            >
-              November, 2021 - January, 2022
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <CheckIcon className="done" />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Maysilo Meter
-              </Typography>
-              <Typography>
-                Porject (Flood Monitoring System) proposal for BRGY. Maysilo.
-              </Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-            >
-              October, 2022 - December, 2022
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <CheckIcon className="done" />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Ercknard Minecraft Gallery
-              </Typography>
-              <Typography>
-                My Personal Gallery Builds (CryptechCraft Server)
-              </Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-            >
-              February, 2023 - March, 2023
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <CheckIcon className="done" />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                CryptechCraft Website
-              </Typography>
-              <Typography>Sample website (Crptechcraft MC Server)</Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-            >
-              April, 2023 - August, 2023
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <CheckIcon className="done" />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                CryptechTest SMP Server Website
-              </Typography>
-              <Typography>CryptechTest Official website</Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-            >
-              June, 2023 - August, 2023
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <LocalOfferIcon className="ongoing" />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Metrix.place
-              </Typography>
-              <Typography>A communal graffiti board (MetrixCoin)</Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-            >
-              July, 2023 - September, 2023
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <CheckIcon className="done" />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Cryptech Services
-              </Typography>
-              <Typography>Cryptech Services Official website</Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-            >
-              September, 2023 - October, 2023
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <LocalOfferIcon className="ongoing" />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Aercrypt.net
-              </Typography>
-              <Typography>AerCrypt Official website</Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-            >
-              September, 2023 - Present
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <LocalOfferIcon className="ongoing" />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Ercknard Guren
-              </Typography>
-              <Typography>Web Portfolio</Typography>
-            </TimelineContent>
-          </TimelineItem>
-        </Timeline>
+        <div className="to-padding">
+          <Timeline
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            position="right"
+          >
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+              >
+                November, 2021 - January, 2022
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot>
+                  <CheckIcon className="done" />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                  Maysilo Meter
+                </Typography>
+                <Typography>
+                  Porject (Flood Monitoring System) proposal for BRGY. Maysilo.
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+              >
+                October, 2022 - December, 2022
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot>
+                  <CheckIcon className="done" />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                  Ercknard Minecraft Gallery
+                </Typography>
+                <Typography>
+                  My Personal Gallery Builds (CryptechCraft Server)
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+              >
+                February, 2023 - March, 2023
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot>
+                  <CheckIcon className="done" />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                  CryptechCraft Website
+                </Typography>
+                <Typography>Sample website (Crptechcraft MC Server)</Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+              >
+                April, 2023 - August, 2023
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot>
+                  <CheckIcon className="done" />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                  CryptechTest SMP Server Website
+                </Typography>
+                <Typography>CryptechTest Official website</Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+              >
+                June, 2023 - August, 2023
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot>
+                  <LocalOfferIcon className="ongoing" />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                  Metrix.place
+                </Typography>
+                <Typography>A communal graffiti board (MetrixCoin)</Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+              >
+                July, 2023 - September, 2023
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot>
+                  <CheckIcon className="done" />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                  Cryptech Services
+                </Typography>
+                <Typography>Cryptech Services Official website</Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+              >
+                September, 2023 - October, 2023
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot>
+                  <LocalOfferIcon className="ongoing" />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                  Aercrypt.net
+                </Typography>
+                <Typography>AerCrypt Official website</Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+              >
+                September, 2023 - Present
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot>
+                  <LocalOfferIcon className="ongoing" />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                  Ercknard Guren
+                </Typography>
+                <Typography>Web Portfolio</Typography>
+              </TimelineContent>
+            </TimelineItem>
+          </Timeline>
+        </div>
       </div>
     </>
   );
