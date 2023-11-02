@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import HomeTypingAnimation from "./HomeTextAnimation";
 
 type Props = {};
 
@@ -23,7 +24,7 @@ export default class Home extends Component<Props, State> {
             className="main-title text-effect"
           >
             {" "}
-            ERCKNARD GUREN{" "}
+            <HomeTypingAnimation />{" "}
           </div>
           <div className="sub-title">
             {""}
