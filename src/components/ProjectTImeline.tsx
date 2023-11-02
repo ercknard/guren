@@ -59,7 +59,11 @@ export default function CustomizedTimeline() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
+                <Typography
+                  className="text-effect"
+                  variant="h6"
+                  component="span"
+                >
                   Maysilo Meter
                 </Typography>
                 <Typography>
@@ -83,7 +87,11 @@ export default function CustomizedTimeline() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
+                <Typography
+                  className="text-effect"
+                  variant="h6"
+                  component="span"
+                >
                   Ercknard Minecraft Gallery
                 </Typography>
                 <Typography>
@@ -107,7 +115,11 @@ export default function CustomizedTimeline() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
+                <Typography
+                  className="text-effect"
+                  variant="h6"
+                  component="span"
+                >
                   CryptechCraft Website
                 </Typography>
                 <Typography>Sample website (Crptechcraft MC Server)</Typography>
@@ -129,7 +141,11 @@ export default function CustomizedTimeline() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
+                <Typography
+                  className="text-effect"
+                  variant="h6"
+                  component="span"
+                >
                   CryptechTest SMP Server Website
                 </Typography>
                 <Typography>CryptechTest Official website</Typography>
@@ -151,7 +167,11 @@ export default function CustomizedTimeline() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
+                <Typography
+                  className="text-effect"
+                  variant="h6"
+                  component="span"
+                >
                   Metrix.place
                 </Typography>
                 <Typography>A communal graffiti board (MetrixCoin)</Typography>
@@ -173,7 +193,11 @@ export default function CustomizedTimeline() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
+                <Typography
+                  className="text-effect"
+                  variant="h6"
+                  component="span"
+                >
                   Cryptech Services
                 </Typography>
                 <Typography>Cryptech Services Official website</Typography>
@@ -195,7 +219,11 @@ export default function CustomizedTimeline() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
+                <Typography
+                  className="text-effect"
+                  variant="h6"
+                  component="span"
+                >
                   Aercrypt.net
                 </Typography>
                 <Typography>AerCrypt Official website</Typography>
@@ -217,7 +245,11 @@ export default function CustomizedTimeline() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
-                <Typography variant="h6" component="span">
+                <Typography
+                  className="text-effect"
+                  variant="h6"
+                  component="span"
+                >
                   Ercknard Guren
                 </Typography>
                 <Typography>Web Portfolio</Typography>
