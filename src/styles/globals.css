@@ -2617,6 +2617,22 @@ body {
     background-size: contain;
   }
 
+  .main-navigation.scrolling {
+    background: unset;
+    border-bottom: unset;
+    border-image: linear-gradient(
+        to left,
+        var(--transparent),
+        var(--background),
+        var(--transparent),
+        var(--background),
+        var(--transparent)
+      )
+      1;
+    box-shadow: unset;
+    opacity: var(--visibility-full);
+  }
+
   .navigation-logo {
     display: flex;
     margin-left: unset !important;

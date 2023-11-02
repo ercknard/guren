@@ -30,10 +30,14 @@ export default class ProjectSelection extends Component<Props, State> {
             from web development to design, as I share the passion and
             dedication I bring to each project.&quot;
           </span>
-          <section data-aos="fade-up" data-aos-duration="1200">
+          <section>
             <div className="to-gap-project">
               <div className="to-flex project-section">
-                <div className="project-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  className="project-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -58,7 +62,11 @@ export default class ProjectSelection extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1100"
+                  className="project-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -80,7 +88,11 @@ export default class ProjectSelection extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  className="project-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -105,7 +117,11 @@ export default class ProjectSelection extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="900"
+                  className="project-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -130,7 +146,11 @@ export default class ProjectSelection extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                  className="project-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -155,7 +175,11 @@ export default class ProjectSelection extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="700"
+                  className="project-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -180,7 +204,11 @@ export default class ProjectSelection extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="600"
+                  className="project-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
@@ -205,7 +233,11 @@ export default class ProjectSelection extends Component<Props, State> {
                     height={851}
                   />
                 </div>
-                <div className="project-portrait">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                  className="project-portrait"
+                >
                   <span className="project-logo" />
                   <span className="project-description-bg" />
                   <span className="project-description">
