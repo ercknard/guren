@@ -24,7 +24,11 @@ export default class AboutMe extends Component<Props, State> {
   render() {
     return (
       <div className="to-flex to-align main-about">
-        <div className="to-about-with">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className="to-about-with"
+        >
           <div className="greeting-main-name">---HELLO</div>
           <div className="about-main-name text-effect">I&apos;m ERCKNARD.</div>
           <div className="animated-text">
@@ -37,11 +41,7 @@ export default class AboutMe extends Component<Props, State> {
             digital craftsman who transforms visions into realities, making the
             web a more beautiful and functional place one project at a time.
           </div>
-          <div
-            data-aos="fade"
-            data-aos-duration="3000"
-            className="to-flex main-links"
-          >
+          <div className="to-flex main-links">
             <Link
               target="_blank"
               href="https://fb.com"
@@ -132,12 +132,12 @@ export default class AboutMe extends Component<Props, State> {
             </Link>
           </div>
         </div>
-        <div className="main-avatar">
-          <div
-            data-aos="fade"
-            data-aos-duration="1500"
-            className="main-head-profile"
-          />
+        <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          className="main-avatar"
+        >
+          <div className="main-head-profile" />
         </div>
       </div>
     );

@@ -23,7 +23,11 @@ export default class AboutMeSub extends Component<Props, State> {
 
   render() {
     return (
-      <div className="to-flex to-align sub-about to-switch">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="3000"
+        className="to-flex to-align sub-about to-switch"
+      >
         <div className="to-about-with">
           <div className="greeting-sub-name text-effect">Who am i?</div>
           <div className="about-sub-text">
@@ -35,12 +39,12 @@ export default class AboutMeSub extends Component<Props, State> {
             innovation and flair to every project I undertake.
           </div>
         </div>
-        <div className="main-avatar">
-          <div
-            data-aos="fade"
-            data-aos-duration="1500"
-            className="main-head-profile-sub"
-          />
+        <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className="main-avatar"
+        >
+          <div className="main-head-profile-sub" />
         </div>
       </div>
     );

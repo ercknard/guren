@@ -23,7 +23,11 @@ export default class AboutMeSubTer extends Component<Props, State> {
 
   render() {
     return (
-      <div className="to-flex to-align main-about">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="3000"
+        className="to-flex to-align main-about"
+      >
         <div className="to-about-with">
           <div className="greeting-sub-name text-effect">What do I do?</div>
           <div className="about-sub-text">
@@ -38,12 +42,12 @@ export default class AboutMeSubTer extends Component<Props, State> {
             determination to exceed expectations.
           </div>
         </div>
-        <div className="main-avatar">
-          <div
-            data-aos="fade"
-            data-aos-duration="1500"
-            className="main-head-profile-sub-ter"
-          />
+        <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          className="main-avatar"
+        >
+          <div className="main-head-profile-sub-ter" />
         </div>
       </div>
     );
