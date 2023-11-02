@@ -183,6 +183,7 @@ body {
   --sword: url("/static/images/bgs/yellow-sword.webp");
   --head-open: url("/static/images/head/ercknard-yellow-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-yellow.webp");
   --content: "♓︎";
   --theme-name: "Pisces (♓︎)";
   --to-cosmic: url("/static/images/comics/yellow.webp");
@@ -208,6 +209,7 @@ body {
   --sword: url("/static/images/bgs/red-sword.webp");
   --head-open: url("/static/images/head/ercknard-red-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-red.webp");
   --content: "♈︎";
   --theme-name: "Aries (♈︎)";
   --to-cosmic: url("/static/images/comics/red.webp");
@@ -235,6 +237,7 @@ body {
   --sword: url("/static/images/bgs/blood-sword.webp");
   --head-open: url("/static/images/head/ercknard-blood-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-blood.webp");
   --content: "♉︎";
   --theme-name: "Taurus (♉︎)";
   --to-cosmic: url("/static/images/comics/blood.webp");
@@ -262,6 +265,7 @@ body {
   --sword: url("/static/images/bgs/magenta-sword.webp");
   --head-open: url("/static/images/head/ercknard-magenta-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-magenta.webp");
   --content: "♊︎";
   --theme-name: "Gemini (♊︎)";
   --to-cosmic: url("/static/images/comics/magenta.webp");
@@ -289,6 +293,7 @@ body {
   --sword: url("/static/images/bgs/purple-sword.webp");
   --head-open: url("/static/images/head/ercknard-purple-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-purple.webp");
   --content: "♋︎";
   --theme-name: "Cancer (♋︎)";
   --to-cosmic: url("/static/images/comics/purple.webp");
@@ -316,6 +321,7 @@ body {
   --sword: url("/static/images/bgs/violet-sword.webp");
   --head-open: url("/static/images/head/ercknard-violet-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-violet.webp");
   --content: "♌︎";
   --theme-name: "Leo (♌︎)";
   --to-cosmic: url("/static/images/comics/violet.webp");
@@ -341,6 +347,7 @@ body {
   --sword: url("/static/images/bgs/blue-sword.webp");
   --head-open: url("/static/images/head/ercknard-blue-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-blue.webp");
   --content: "♍︎";
   --theme-name: "Virgo (♍︎)";
   --to-cosmic: url("/static/images/comics/blue.webp");
@@ -366,6 +373,7 @@ body {
   --sword: url("/static/images/bgs/navy-sword.webp");
   --head-open: url("/static/images/head/ercknard-navy-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-navy.webp");
   --content: "♎︎";
   --theme-name: "Libra (♎︎)";
   --to-cosmic: url("/static/images/comics/navy.webp");
@@ -393,6 +401,7 @@ body {
   --sword: url("/static/images/bgs/ocean-sword.webp");
   --head-open: url("/static/images/head/ercknard-ocean-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-ocean.webp");
   --content: "♏︎";
   --theme-name: "Scorpio (♏︎)";
   --to-cosmic: url("/static/images/comics/ocean.webp");
@@ -420,6 +429,7 @@ body {
   --sword: url("/static/images/bgs/green-sword.webp");
   --head-open: url("/static/images/head/ercknard-green-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-green.webp");
   --content: "♐︎";
   --theme-name: "Sagittarious (♐︎)";
   --to-cosmic: url("/static/images/comics/green.webp");
@@ -445,6 +455,7 @@ body {
   --sword: url("/static/images/bgs/epic-sword.webp");
   --head-open: url("/static/images/head/ercknard-epic-head-open.webp");
   --head-close: url("/static/images/head/ercknard-white-head-open.webp");
+  --posture: url("/static/images/bgs/ercknard-epic.webp");
   --content: "♑︎";
   --theme-name: "Capricorn (♑︎)";
   --to-cosmic: url("/static/images/comics/epic.webp");
