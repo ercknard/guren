@@ -89,7 +89,7 @@ export default function ContactUs() {
   };
   return (
     <div className="normal-text">
-      <span data-aos="fade" data-aos-duration="1200">
+      <span>
         &quot;Thank you for visiting my{" "}
         <span className="text-effect">Web Portfolio</span>. I&apos;m excited to
         hear from you and discuss how we can work together to bring your ideas
@@ -109,6 +109,8 @@ export default function ContactUs() {
               </p>
             )}
             <TextField
+              data-aos="fade-left"
+              data-aos-duration="500"
               id="standard-basic"
               helperText="Please enter your name"
               label="Full Name"
@@ -127,6 +129,8 @@ export default function ContactUs() {
               </p>
             )}
             <TextField
+              data-aos="fade-left"
+              data-aos-duration="700"
               id="standard-basic"
               helperText="Please enter your E-mail Address"
               label="E-mail"
@@ -145,6 +149,8 @@ export default function ContactUs() {
               </p>
             )}
             <TextField
+              data-aos="fade-left"
+              data-aos-duration="900"
               id="standard-basic"
               helperText="Please enter message subject"
               label="Subject"
@@ -163,6 +169,8 @@ export default function ContactUs() {
               </p>
             )}
             <TextField
+              data-aos="fade-left"
+              data-aos-duration="1100"
               id="standard-basic"
               helperText="Type in your message"
               label="Message"
@@ -176,7 +184,11 @@ export default function ContactUs() {
                 setMessage(e.target.value);
               }}
             />
-            <div className="flex to-notif">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1300"
+              className="flex to-notif"
+            >
               <button type="submit" className="project-button">
                 <span> {buttonText} </span> <SendIcon className="send-icon" />
               </button>
