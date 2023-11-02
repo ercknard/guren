@@ -9,12 +9,12 @@ export default class AboutMeSubTer extends Component<Props, State> {
 
   render() {
     return (
-      <div
-        data-aos="fade-right"
-        data-aos-duration="3000"
-        className="to-flex to-align main-about"
-      >
-        <div className="to-about-with">
+      <div className="to-flex to-align main-about">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          className="to-about-with"
+        >
           <div className="greeting-sub-name text-effect">What do I do?</div>
           <div className="about-sub-text">
             {" "}

@@ -9,12 +9,12 @@ export default class AboutMeSub extends Component<Props, State> {
 
   render() {
     return (
-      <div
-        data-aos="fade-left"
-        data-aos-duration="3000"
-        className="to-flex to-align sub-about to-switch"
-      >
-        <div className="to-about-with">
+      <div className="to-flex to-align sub-about to-switch">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          className="to-about-with"
+        >
           <div className="greeting-sub-name text-effect">Who am i?</div>
           <div className="about-sub-text">
             {" "}
