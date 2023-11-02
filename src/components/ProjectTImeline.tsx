@@ -32,11 +32,17 @@ export default function CustomizedTimeline() {
           of <span className="text-effect">my /Cryptech Services¹ </span>
           projects.&quot;
           <br />
-          <CheckIcon className="done" /> = Project considered done.
-          <br />
-          <LocalOfferIcon className="ongoing" /> = Project is still ongoing.
+          &apos;
+          <CheckIcon className="done" /> = Project is considered done,{" "}
+          <LocalOfferIcon className="ongoing" /> = Project is still
+          ongoing.&apos;
         </span>
-        <Timeline className="to-padding" position="right">
+        <Timeline
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          className="to-padding"
+          position="right"
+        >
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
