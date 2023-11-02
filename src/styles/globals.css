@@ -2531,9 +2531,22 @@ body {
   flex-direction: row-reverse;
 }
 
+.to-padding {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .spies {
   font-weight: 800;
   color: var(--background);
+}
+
+.ongoing {
+  color: red;
+}
+
+.done {
+  color: green;
 }
 
 .to-gap {

@@ -12,6 +12,8 @@ import HotelIcon from "@mui/icons-material/Hotel";
 import RepeatIcon from "@mui/icons-material/Repeat";
 import Typography from "@mui/material/Typography";
 import PageSigns from "./PageSigns";
+import CheckIcon from "@mui/icons-material/Check";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 
 export default function CustomizedTimeline() {
   return (
@@ -26,86 +28,193 @@ export default function CustomizedTimeline() {
       <PageSigns />
       <div className="normal-text">
         <span data-aos="fade" data-aos-duration="1200">
-          &quot;Welcome to my projects page, where I showcase a collection of my
-          diverse and creative endeavors. Explore a range of{" "}
-          <span className="text-effect">my /Cryptech Services¹</span> work ,
-          from web development to design, as I share the passion and dedication
-          I bring to each project.&quot;
+          &quot;Here is the timeline representation of plan and actual progress
+          of <span className="text-effect">my /Cryptech Services¹ </span>
+          projects.&quot;
+          <br />
+          <CheckIcon className="done" /> = Project considered done.
+          <br />
+          <LocalOfferIcon className="ongoing" /> = Project is still ongoing.
         </span>
-        <Timeline position="alternate">
+        <Timeline className="to-padding" position="right">
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="text.secondary"
             >
-              9:30 am
+              November, 2021 - January, 2022
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
               <TimelineDot>
-                <FastfoodIcon />
+                <CheckIcon className="done" />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant="h6" component="span">
-                Eat
+                Maysilo Meter
               </Typography>
-              <Typography>Because you need strength</Typography>
+              <Typography>
+                Porject (Flood Monitoring System) proposal for BRGY. Maysilo.
+              </Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
+              align="right"
               variant="body2"
-              color="text.secondary"
             >
-              10:00 am
+              October, 2022 - December, 2022
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color="primary">
-                <LaptopMacIcon />
+              <TimelineDot>
+                <CheckIcon className="done" />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant="h6" component="span">
-                Code
+                Ercknard Minecraft Gallery
               </Typography>
-              <Typography>Because it&apos;s awesome!</Typography>
+              <Typography>
+                My Personal Gallery Builds (CryptechCraft Server)
+              </Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              align="right"
+              variant="body2"
+            >
+              February, 2023 - March, 2023
+            </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color="primary" variant="outlined">
-                <HotelIcon />
+              <TimelineDot>
+                <CheckIcon className="done" />
               </TimelineDot>
-              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+              <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant="h6" component="span">
-                Sleep
+                CryptechCraft Website
               </Typography>
-              <Typography>Because you need rest</Typography>
+              <Typography>Sample website (Crptechcraft MC Server)</Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              align="right"
+              variant="body2"
+            >
+              April, 2023 - August, 2023
+            </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-              <TimelineDot color="secondary">
-                <RepeatIcon />
+              <TimelineConnector />
+              <TimelineDot>
+                <CheckIcon className="done" />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant="h6" component="span">
-                Repeat
+                CryptechTest SMP Server Website
               </Typography>
-              <Typography>Because this is the life you love!</Typography>
+              <Typography>CryptechTest Official website</Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              align="right"
+              variant="body2"
+            >
+              June, 2023 - August, 2023
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot>
+                <LocalOfferIcon className="ongoing" />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant="h6" component="span">
+                Metrix.place
+              </Typography>
+              <Typography>A communal graffiti board (MetrixCoin)</Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              align="right"
+              variant="body2"
+            >
+              July, 2023 - September, 2023
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot>
+                <CheckIcon className="done" />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant="h6" component="span">
+                Cryptech Services
+              </Typography>
+              <Typography>Cryptech Services Official website</Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              align="right"
+              variant="body2"
+            >
+              September, 2023 - October, 2023
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot>
+                <LocalOfferIcon className="ongoing" />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant="h6" component="span">
+                Aercrypt.net
+              </Typography>
+              <Typography>AerCrypt Official website</Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              align="right"
+              variant="body2"
+            >
+              September, 2023 - Present
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot>
+                <LocalOfferIcon className="ongoing" />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant="h6" component="span">
+                Ercknard Guren
+              </Typography>
+              <Typography>Web Portfolio</Typography>
             </TimelineContent>
           </TimelineItem>
         </Timeline>
