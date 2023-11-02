@@ -39,6 +39,7 @@ export default class Skills extends Component<Props, State> {
                   className="normal-text"
                 > */}
                 <CryptechTeam />
+                <AboutCoverflow />
                 {/* </div> */}
               </div>
             </div>
