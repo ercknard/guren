@@ -1,18 +1,4 @@
 import React, { Component } from "react";
-import TypingAnimation from "@/components/AboutTextAnimation";
-import Link from "next/link";
-import FileDownloadIcon from "@mui/icons-material/FileDownload";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import DeviceHubIcon from "@mui/icons-material/DeviceHub";
-import Image from "next/image";
-import AboutCoverflow from "@/components/AboutCoverflow";
-import PageSigns from "@/components/PageSigns";
 
 type Props = {};
 

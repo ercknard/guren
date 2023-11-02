@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import SendIcon from "@mui/icons-material/Send";
 import TextField from "@mui/material/TextField";
-import Image from "next/image";
 
 export default function ContactUs() {
   const [fullname, setFullname] = useState("");

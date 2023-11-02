@@ -6,13 +6,11 @@ import PageSigns from "@/components/PageSigns";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import DiscFullIcon from "@mui/icons-material/DiscFull";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DeviceHubIcon from "@mui/icons-material/DeviceHub";
 import Link from "next/link";
-import Image from "next/image";
 
 type Props = {};
 

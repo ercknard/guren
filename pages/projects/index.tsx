@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Layout from "@/layout/Layout";
 import Head from "next/head";
-import PageSigns from "@/components/PageSigns";
 import ProjectSelection from "@/components/ProjectSelection";
 import CustomizedTimeline from "@/components/ProjectTImeline";
 

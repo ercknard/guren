@@ -2,7 +2,6 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
-import { useEffect } from "react";
 
 interface ParticleAnimationProps {
   particleColor: string;

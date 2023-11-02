@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Head from "next/head";
 import Layout from "@/layout/Layout";
-import CryptechTeam from "@/components/CryptechTeam";
 import AboutMe from "@/components/AboutMe";
 import AboutMeSub from "@/components/AboutMeSub";
 import AboutMeSubTer from "@/components/AboutMeTer";

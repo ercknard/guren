@@ -10,9 +10,6 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DeviceHubIcon from "@mui/icons-material/DeviceHub";
-import Image from "next/image";
-import AboutCoverflow from "@/components/AboutCoverflow";
-import PageSigns from "@/components/PageSigns";
 
 type Props = {};
 
