@@ -6,6 +6,7 @@
 
 body {
   font-family: "Ysabeau", sans-serif !important;
+  overflow-x: hidden;
 }
 
 :root {
