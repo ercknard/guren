@@ -3,6 +3,7 @@ import Head from "next/head";
 import Layout from "@/layout/Layout";
 import CryptechTeam from "@/components/CryptechTeam";
 import AboutMe from "@/components/AboutMe";
+import AboutMeSub from "@/components/AboutMeSub";
 
 type Props = {};
 
@@ -25,7 +26,8 @@ export default class About extends Component<Props, State> {
             <div className="to-big">
               <div className="content-pages">
                 <AboutMe />
-                <CryptechTeam />
+                <AboutMeSub />
+                {/* <CryptechTeam /> */}
               </div>
             </div>
           </section>

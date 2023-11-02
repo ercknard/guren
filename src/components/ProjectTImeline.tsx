@@ -21,7 +21,7 @@ export default function CustomizedTimeline() {
         data-aos-duration="1200"
         className="page-title text-effect"
       >
-        Project Timelines
+        Projects Timeline
       </div>
       <PageSigns />
       <div className="normal-text">
