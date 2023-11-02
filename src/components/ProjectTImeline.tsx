@@ -38,13 +38,11 @@ export default function CustomizedTimeline() {
           ongoing.&apos;
         </span>
         <div className="to-padding">
-          <Timeline
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            position="right"
-          >
+          <Timeline position="right">
             <TimelineItem>
               <TimelineOppositeContent
+                data-aos="fade-left"
+                data-aos-duration="500"
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
@@ -58,7 +56,11 @@ export default function CustomizedTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <TimelineContent
+                data-aos="fade-right"
+                data-aos-duration="500"
+                sx={{ py: "12px", px: 2 }}
+              >
                 <Typography
                   className="text-effect"
                   variant="h6"
@@ -73,6 +75,8 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent
+                data-aos="fade-left"
+                data-aos-duration="600"
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
@@ -86,7 +90,11 @@ export default function CustomizedTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <TimelineContent
+                data-aos="fade-right"
+                data-aos-duration="600"
+                sx={{ py: "12px", px: 2 }}
+              >
                 <Typography
                   className="text-effect"
                   variant="h6"
@@ -101,6 +109,8 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent
+                data-aos="fade-left"
+                data-aos-duration="700"
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
@@ -114,7 +124,11 @@ export default function CustomizedTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <TimelineContent
+                data-aos="fade-right"
+                data-aos-duration="700"
+                sx={{ py: "12px", px: 2 }}
+              >
                 <Typography
                   className="text-effect"
                   variant="h6"
@@ -127,6 +141,8 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent
+                data-aos="fade-left"
+                data-aos-duration="800"
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
@@ -140,7 +156,11 @@ export default function CustomizedTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <TimelineContent
+                data-aos="fade-right"
+                data-aos-duration="800"
+                sx={{ py: "12px", px: 2 }}
+              >
                 <Typography
                   className="text-effect"
                   variant="h6"
@@ -153,6 +173,8 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent
+                data-aos="fade-left"
+                data-aos-duration="900"
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
@@ -166,7 +188,11 @@ export default function CustomizedTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <TimelineContent
+                data-aos="fade-right"
+                data-aos-duration="900"
+                sx={{ py: "12px", px: 2 }}
+              >
                 <Typography
                   className="text-effect"
                   variant="h6"
@@ -179,6 +205,8 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent
+                data-aos="fade-left"
+                data-aos-duration="1000"
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
@@ -192,7 +220,11 @@ export default function CustomizedTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <TimelineContent
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                sx={{ py: "12px", px: 2 }}
+              >
                 <Typography
                   className="text-effect"
                   variant="h6"
@@ -205,6 +237,8 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent
+                data-aos="fade-left"
+                data-aos-duration="1100"
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
@@ -218,7 +252,11 @@ export default function CustomizedTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <TimelineContent
+                data-aos="fade-right"
+                data-aos-duration="1100"
+                sx={{ py: "12px", px: 2 }}
+              >
                 <Typography
                   className="text-effect"
                   variant="h6"
@@ -231,6 +269,8 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent
+                data-aos="fade-left"
+                data-aos-duration="1200"
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
@@ -244,7 +284,11 @@ export default function CustomizedTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <TimelineContent
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                sx={{ py: "12px", px: 2 }}
+              >
                 <Typography
                   className="text-effect"
                   variant="h6"
