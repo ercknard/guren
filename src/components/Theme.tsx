@@ -254,7 +254,7 @@ function Theme() {
   );
 
   return (
-    <section>
+    <div>
       <div className="modes" />
       <div className="modes-two" />
       <div className="modes-three" />
@@ -414,7 +414,7 @@ function Theme() {
         particleSize={particleSize}
       />
       {/* <Equalizer /> */}
-    </section>
+    </div>
   );
 }
 

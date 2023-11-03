@@ -30,7 +30,7 @@ export default class ProjectSelection extends Component<Props, State> {
             from web development to design, as I share the passion and
             dedication I bring to each project.&quot;
           </span>
-          <section>
+          <div>
             <div className="to-gap-project">
               <div className="to-flex project-section">
                 <div
@@ -264,7 +264,7 @@ export default class ProjectSelection extends Component<Props, State> {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </>
     );

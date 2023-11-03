@@ -35,7 +35,7 @@ export default class CryptechTeam extends Component<Props, State> {
               realms of cybersecurity , as well as technical support and
               consultation.&quot;
             </span>
-            <section data-aos="fade-up" data-aos-duration="1200">
+            <div data-aos="fade-up" data-aos-duration="1200">
               <div className="to-gap-project">
                 <div className="to-flex team-section">
                   <div
@@ -245,7 +245,7 @@ export default class CryptechTeam extends Component<Props, State> {
                   </Link>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
         </div>
       </>

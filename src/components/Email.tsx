@@ -96,7 +96,7 @@ export default function ContactUs() {
         to life. Got any inquries? Please don&apos;t hesitate to get in touch by
         filling out the form below.&quot;
       </span>
-      <section
+      <div
         data-aos="fade-up"
         data-aos-duration="1200"
         className="to-cover-pages"
@@ -210,7 +210,7 @@ export default function ContactUs() {
             </div>
           </form>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
