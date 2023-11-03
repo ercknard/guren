@@ -26,7 +26,7 @@ export default class SkillSet extends Component<Props, State> {
           className="normal-text"
         >
           <span data-aos="fade" data-aos-duration="1200">
-            &quot;The list of things that I good at.&quot;
+            &quot;List of things that I good at.&quot;
           </span>
           <div className="to-skill-gap skillset to-padding">
             <Skills skillName="HTML" skillPercent="95%" />

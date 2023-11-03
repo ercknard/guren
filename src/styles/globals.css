@@ -3028,15 +3028,9 @@ section {
 }
 
 .skills {
-  background: var(--accent);
+  position: relative;
+  background: var(--accent-sub);
   height: 10px;
   width: attr(skillPercent) !important;
   border-radius: 5px;
-}
-
-.skills::before {
-  position: relative;
-  content: attr(skillname);
-  font-size: 1rem;
-  color: var(--background);
 }
