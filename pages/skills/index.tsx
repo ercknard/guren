@@ -4,6 +4,7 @@ import Head from "next/head";
 import PageSigns from "@/components/PageSigns";
 import CryptechTeam from "@/components/CryptechTeam";
 import AboutCoverflow from "@/components/AboutCoverflow";
+import ZodiacDivider from "@/components/ZodiacDivider";
 
 type Props = {};
 
@@ -39,6 +40,7 @@ export default class Skills extends Component<Props, State> {
                   className="normal-text"
                 > */}
                 <CryptechTeam />
+                <ZodiacDivider />
                 <AboutCoverflow />
                 {/* </div> */}
               </div>
