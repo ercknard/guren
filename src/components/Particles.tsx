@@ -33,8 +33,17 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fpsLimit: 120,
+          fpsLimit: 60,
           delay: 1,
+          modes: {
+            connect: {
+              distance: 80,
+              links: {
+                opacity: 0.5,
+              },
+              radius: 60,
+            },
+          },
           fullScreen: {
             enable: false,
             zIndex: -1,
@@ -86,10 +95,10 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({
               },
             },
             line_linked: {
-              enable: false,
+              enable: true,
               distance: 1,
               color: "#ffffff",
-              opacity: 0.4,
+              opacity: 1,
               width: 1,
             },
             move: {
