@@ -132,7 +132,7 @@ export default function CustomizedTimeline() {
                 >
                   CryptechCraft Website
                 </Typography>
-                <Typography>Sample website (Crptechcraft MC Server)</Typography>
+                <Typography>Sample website (Cryptechcraft MC Server)</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>

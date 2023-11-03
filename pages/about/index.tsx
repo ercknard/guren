@@ -4,6 +4,7 @@ import Layout from "@/layout/Layout";
 import AboutMe from "@/components/AboutMe";
 import AboutMeSub from "@/components/AboutMeSub";
 import AboutMeSubTer from "@/components/AboutMeTer";
+import ZodiacDivider from "@/components/ZodiacDivider";
 
 type Props = {};
 
@@ -26,7 +27,9 @@ export default class About extends Component<Props, State> {
             <div className="to-big">
               <div className="content-pages">
                 <AboutMe />
+                <ZodiacDivider />
                 <AboutMeSub />
+                <ZodiacDivider />
                 <AboutMeSubTer />
                 {/* <CryptechTeam /> */}
               </div>
