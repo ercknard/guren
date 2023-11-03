@@ -12,6 +12,7 @@ button {
 }
 
 .to-width {
+  position: relative;
   width: 55% !important;
 }
 

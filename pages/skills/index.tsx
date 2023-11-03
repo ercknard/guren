@@ -5,6 +5,7 @@ import PageSigns from "@/components/PageSigns";
 import CryptechTeam from "@/components/CryptechTeam";
 import AboutCoverflow from "@/components/AboutCoverflow";
 import ZodiacDivider from "@/components/ZodiacDivider";
+import SkillSet from "@/components/SkillSet";
 
 type Props = {};
 
@@ -26,23 +27,10 @@ export default class Skills extends Component<Props, State> {
             <div className="pages-banner" />
             <div className="to-big">
               <div className="content-pages">
-                {/* <div
-                  data-aos="fade-down"
-                  data-aos-duration="1200"
-                  className="page-title text-effect"
-                >
-                  My Skills
-                </div>
-                <PageSigns /> */}
-                {/* <div
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  className="normal-text"
-                > */}
-                <CryptechTeam />
-                <ZodiacDivider />
-                <AboutCoverflow />
-                {/* </div> */}
+                <SkillSet />
+                {/* <CryptechTeam /> */}
+                {/* <ZodiacDivider /> */}
+                {/* <AboutCoverflow /> */}
               </div>
             </div>
           </section>
