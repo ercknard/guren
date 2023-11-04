@@ -3042,7 +3042,7 @@ section {
 }
 
 .loader {
-  --p: 0 !important;
+  --p: 0;
   display: grid;
   place-content: center;
   transform: scale(0.5);
@@ -3090,9 +3090,9 @@ section {
   content: counter(p) "%";
 }
 
-@keyframes p {
+/* @keyframes p {
   90%,
   100% {
     --p: 0;
   }
-}
+} */

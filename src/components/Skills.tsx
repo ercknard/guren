@@ -6,9 +6,9 @@ interface SkillsProps {
 }
 
 const Skills = ({ skillName, skillPercent }: SkillsProps): ReactElement => {
-  const skillStyle: React.CSSProperties = {};
+  const skillStyle: { [key: string]: string } = {};
 
-  skillStyle["--p"] = skillPercent; // Assign the skillPercent value to the --p custom property
+  skillStyle["--p"] = skillPercent;
 
   return (
     <div className="loader" style={skillStyle}>
