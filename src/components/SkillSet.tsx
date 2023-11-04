@@ -29,9 +29,9 @@ export default class SkillSet extends Component<Props, State> {
             &quot;List of things that I good at.&quot;
           </span>
           <div className="to-skill-gap skillset to-padding">
-            <Skills skillName="HTML" skillPercent="95%" />
-            <Skills skillName="CSS" skillPercent="90%" />
-            <Skills skillName="JavaScript" skillPercent="75%" />
+            <Skills skillName="HTML" skillPercent="95" />
+            <Skills skillName="CSS" skillPercent="90" />
+            <Skills skillName="JavaScript" skillPercent="75" />
           </div>
         </div>
       </>
