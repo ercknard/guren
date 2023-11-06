@@ -3210,7 +3210,6 @@ section {
 .to-skillname-text {
   margin-top: -10px;
   margin-left: 1rem;
-  animation: skills-percent 7.5s steps(100) 1;
 }
 
 .to-linear-skill::after {
@@ -3231,15 +3230,6 @@ section {
 }
 
 @keyframes skills-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: "var(--p)%";
-  }
-}
-
-@keyframes skills-percent {
   0% {
     width: 0%;
   }
