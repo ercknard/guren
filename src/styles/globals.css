@@ -3177,7 +3177,7 @@ section {
   position: relative;
   height: 1rem;
   background: var(--accent-sub);
-  transform: skewX(-10deg);
+  transform: skewX(-20deg);
   overflow: visible;
   animation: skills-bar 7.5s linear 1;
 }
@@ -3188,7 +3188,7 @@ section {
   height: 1rem !important;
   background: var(--background);
   border-right: 3px solid var(--accent-sub);
-  transform: skewX(-10deg);
+  transform: skewX(-20deg);
   margin-left: 0.25rem;
 }
 
@@ -3198,7 +3198,7 @@ section {
   height: 1rem !important;
   background: var(--background);
   border-right: 3px solid var(--accent-sub);
-  transform: skewX(-10deg);
+  transform: skewX(-20deg);
   margin-left: 0.5rem;
 }
 
@@ -3210,6 +3210,7 @@ section {
 .to-skillname-text {
   margin-top: -10px;
   margin-left: 1rem;
+  animation: skills-percent 7.5s steps(100) 1;
 }
 
 .to-linear-skill::after {
@@ -3230,6 +3231,15 @@ section {
 }
 
 @keyframes skills-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: "var(--p)%";
+  }
+}
+
+@keyframes skills-percent {
   0% {
     width: 0%;
   }
