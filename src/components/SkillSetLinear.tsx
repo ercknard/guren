@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import PageSigns from "./PageSigns";
 import Skills from "./Skills";
 import Link from "next/link";
-import LinearScaleIcon from "@mui/icons-material/LinearScale";
+import AdjustIcon from "@mui/icons-material/Adjust";
 
 type Props = {};
 
 type State = {};
 
-export default class SkillSet extends Component<Props, State> {
+export default class SkillSetLinear extends Component<Props, State> {
   state = {};
 
   render() {
@@ -30,10 +30,9 @@ export default class SkillSet extends Component<Props, State> {
           <span data-aos="fade" data-aos-duration="1200">
             &quot;List of things that I good at.&quot;
           </span>
-          <Link href="/skills/linear" rel="noopener noreferrer">
+          <Link href="/skills" rel="noopener noreferrer">
             <div className="project-button linear">
-              <LinearScaleIcon className="to-color send-icon" />{" "}
-              <span> Linear</span>
+              <AdjustIcon className="to-color send-icon" /> <span> Radial</span>
             </div>
           </Link>
           <div className="skillset">

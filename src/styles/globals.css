@@ -3107,3 +3107,12 @@ section {
     --p: 75;
   }
 }
+
+.linear {
+  width: 10rem;
+  justify-content: center !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
