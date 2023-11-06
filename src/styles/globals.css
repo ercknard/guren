@@ -2937,6 +2937,11 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  .canvas-container {
+    position: relative !important;
+    z-index: var(--to-z-index) !important;
+    display: none;
+  }
   [data-dark="dark"] {
     transition: 1s linear;
     --to-dark: radial-gradient(
@@ -3069,6 +3074,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   overflow-y: hidden;
+  margin-top: 3rem;
 }
 
 .skills {
@@ -3171,9 +3177,39 @@ section {
   position: relative;
   height: 1rem;
   background: var(--accent-sub);
-  -webkit-clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+  transform: skewX(-10deg);
   overflow: visible;
+  animation: skills-bar 7.5s linear 1;
+}
+
+.to-skill-design {
+  position: relative;
+  width: 1rem !important;
+  height: 1rem !important;
+  background: var(--background);
+  border-right: 3px solid var(--accent-sub);
+  transform: skewX(-10deg);
+  margin-left: 0.25rem;
+}
+
+.to-skill-design-2 {
+  position: relative;
+  width: 0.25rem !important;
+  height: 1rem !important;
+  background: var(--background);
+  border-right: 3px solid var(--accent-sub);
+  transform: skewX(-10deg);
+  margin-left: 0.5rem;
+}
+
+.to-skillpersent-text {
+  margin-top: -10px;
+  margin-left: 1rem;
+}
+
+.to-skillname-text {
+  margin-top: -10px;
+  margin-left: 1rem;
 }
 
 .to-linear-skill::after {
@@ -3184,11 +3220,20 @@ section {
   width: 75%;
   height: 1rem;
   background: var(--accent-sub-ter);
-  border-right: 3px solid var(--accent-sub);
+  border-right: 5px solid var(--accent-sub);
 }
 
 .to-linear-skill {
   position: relative;
   width: 100%;
   padding-left: 25%;
+}
+
+@keyframes skills-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: "var(--p)%";
+  }
 }

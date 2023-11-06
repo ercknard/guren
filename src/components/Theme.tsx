@@ -300,7 +300,7 @@ function Theme() {
         action={action}
       />
       <div className="reveal-eye">
-        <div className="fab-container">
+        <div className="fab-container to-hide">
           <Tooltip title="Dark Filter ON / OFF" placement="top" arrow>
             <Switch
               onClick={handleClickDB}
