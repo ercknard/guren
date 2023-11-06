@@ -2937,6 +2937,31 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  [data-dark="dark"] {
+    transition: 1s linear;
+    --to-dark: radial-gradient(
+        at bottom,
+        var(--accent-sub-ter),
+        var(--transparent)
+      ),
+      rgba(0, 0, 0, 1);
+    --after-theme-db: "ON";
+
+    --to-darker: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--black),
+      var(--transparent)
+    );
+
+    --to-z-index: 1;
+  }
+
+  [data-dark="nodark"] {
+    transition: 1s linear;
+    --after-theme-db: "OFF";
+    --to-z-index: -1;
+  }
   .to-switch {
     flex-direction: column;
   }
