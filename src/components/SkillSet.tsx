@@ -28,10 +28,87 @@ export default class SkillSet extends Component<Props, State> {
           <span data-aos="fade" data-aos-duration="1200">
             &quot;List of things that I good at.&quot;
           </span>
-          <div className="to-skill-gap skillset to-padding">
-            <Skills skillName="HTML" skillPercent="95" />
-            <Skills skillName="CSS" skillPercent="90" />
-            <Skills skillName="JavaScript" skillPercent="75" />
+          <div className="skillset">
+            <div>
+              <Skills
+                skillName="HTML"
+                skillPercent="100"
+                skillRound="1"
+                skillSpace="0"
+              />
+              <Skills
+                skillName="CSS"
+                skillPercent="100"
+                skillRound="1"
+                skillSpace="0"
+              />
+              <Skills
+                skillName="JavaScript"
+                skillPercent="100"
+                skillRound="1"
+                skillSpace="0"
+              />
+            </div>
+            <div>
+              <Skills
+                skillName="HTML"
+                skillPercent="80"
+                skillRound="1"
+                skillSpace="0"
+              />
+              <Skills
+                skillName="CSS"
+                skillPercent="80"
+                skillRound="1"
+                skillSpace="0"
+              />
+              <Skills
+                skillName="JavaScript"
+                skillPercent="80"
+                skillRound="1"
+                skillSpace="0"
+              />
+            </div>
+            <div>
+              <Skills
+                skillName="HTML"
+                skillPercent="60"
+                skillRound="1"
+                skillSpace="0"
+              />
+              <Skills
+                skillName="CSS"
+                skillPercent="60"
+                skillRound="1"
+                skillSpace="0"
+              />
+              <Skills
+                skillName="JavaScript"
+                skillPercent="60"
+                skillRound="1"
+                skillSpace="0"
+              />
+            </div>
+            <div>
+              <Skills
+                skillName="HTML"
+                skillPercent="40"
+                skillRound="1"
+                skillSpace="0"
+              />
+              <Skills
+                skillName="CSS"
+                skillPercent="40"
+                skillRound="1"
+                skillSpace="0"
+              />
+              <Skills
+                skillName="JavaScript"
+                skillPercent="40"
+                skillRound="1"
+                skillSpace="0"
+              />
+            </div>
           </div>
         </div>
       </>
