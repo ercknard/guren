@@ -29,7 +29,7 @@ export default class SkillSet extends Component<Props, State> {
             &quot;List of things that I good at.&quot;
           </span>
           <div className="skillset">
-            <div>
+            <div className="to-flex">
               <Skills
                 skillName="HTML"
                 skillPercent="100"
@@ -49,7 +49,7 @@ export default class SkillSet extends Component<Props, State> {
                 skillSpace="0"
               />
             </div>
-            <div>
+            <div className="to-flex">
               <Skills
                 skillName="HTML"
                 skillPercent="80"
@@ -69,7 +69,7 @@ export default class SkillSet extends Component<Props, State> {
                 skillSpace="0"
               />
             </div>
-            <div>
+            <div className="to-flex">
               <Skills
                 skillName="HTML"
                 skillPercent="60"
@@ -89,7 +89,7 @@ export default class SkillSet extends Component<Props, State> {
                 skillSpace="0"
               />
             </div>
-            <div>
+            <div className="to-flex">
               <Skills
                 skillName="HTML"
                 skillPercent="40"

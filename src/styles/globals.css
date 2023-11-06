@@ -3017,6 +3017,10 @@ section {
   }
 }
 
+.full-round-skill {
+  margin: -2.5rem;
+}
+
 .to-skill-gap {
   display: flex;
 }
@@ -3043,12 +3047,11 @@ section {
 }
 
 .loader {
-  --p: 0;
   display: grid;
   place-content: center;
   transform: scale(0.4);
   clip-path: circle(49%);
-  animation: p 7.5s steps(100) 1;
+  animation: p 3s steps(100) 1;
   color: HSL(calc(var(--p) * 2), 100%, 65%);
 }
 .loader:before,
@@ -3060,7 +3063,7 @@ section {
   border: solid 1em transparent;
   padding: 6em;
   border-radius: 50%;
-  box-shadow: inset 0 0 0 0.5em currentcolor;
+  box-shadow: inset 0 0 0 0.5em currentColor;
   --slice: calc(360deg / var(--n));
   --s-gap: calc(var(--f) * var(--slice));
   --solid: calc((1 - var(--f)) * var(--slice));
@@ -3093,12 +3096,14 @@ section {
   margin-top: -25px !important;
   /* font: 3.75em consolas, monaco, ubuntu mono, monospace; */
   content: counter(p) "%";
-  color: var(--background);
+  color: var(--white);
 }
 
 @keyframes p {
-  90%,
-  100% {
+  0% {
     --p: 0;
+  }
+  100% {
+    --p: 75;
   }
 }

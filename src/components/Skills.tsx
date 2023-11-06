@@ -21,8 +21,9 @@ const Skills = ({
 
   return (
     <>
-      <div className="loader" style={skillStyle} />
-      <span>{skillName}</span>
+      <div className="full-round-skill">
+        <div className="loader" style={skillStyle} />
+      </div>
     </>
   );
 };
