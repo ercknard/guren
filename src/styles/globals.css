@@ -3027,9 +3027,23 @@ section {
 
 .skillset {
   position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  overflow-y: hidden;
+}
+
+.skillset-linear {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: hidden;
 }
 
 .skills {
@@ -3115,4 +3129,41 @@ section {
   margin-right: auto;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.full-round-skill {
+  position: relative;
+  width: 100%;
+}
+
+@property --linear {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: true;
+}
+
+.linear-bar {
+  position: relative;
+  height: 1rem;
+  background: var(--accent-sub);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+  overflow: visible;
+}
+
+.to-linear-skill::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 75%;
+  height: 1rem;
+  background: var(--accent-sub-ter);
+  border-right: 3px solid var(--accent-sub);
+}
+
+.to-linear-skill {
+  position: relative;
+  width: 100%;
+  padding-left: 25%;
 }

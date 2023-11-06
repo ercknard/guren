@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PageSigns from "./PageSigns";
-import Skills from "./Skills";
+import SkillsLinear from "./SkillsLinear";
 import Link from "next/link";
 import AdjustIcon from "@mui/icons-material/Adjust";
 
@@ -35,86 +35,42 @@ export default class SkillSetLinear extends Component<Props, State> {
               <AdjustIcon className="to-color send-icon" /> <span> Radial</span>
             </div>
           </Link>
-          <div className="skillset">
-            <div className="to-flex">
-              <Skills
-                skillName="HTML"
-                skillPercent="100"
-                skillRound="1"
-                skillSpace="0"
-              />
-              <Skills
-                skillName="CSS"
-                skillPercent="100"
-                skillRound="1"
-                skillSpace="0"
-              />
-              <Skills
-                skillName="JavaScript"
-                skillPercent="100"
-                skillRound="1"
-                skillSpace="0"
-              />
+          <div className="skillset-linear">
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="HTML" skillPercent="80%" />{" "}
             </div>
-            <div className="to-flex">
-              <Skills
-                skillName="HTML"
-                skillPercent="80"
-                skillRound="1"
-                skillSpace="0"
-              />
-              <Skills
-                skillName="CSS"
-                skillPercent="80"
-                skillRound="1"
-                skillSpace="0"
-              />
-              <Skills
-                skillName="JavaScript"
-                skillPercent="80"
-                skillRound="1"
-                skillSpace="0"
-              />
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="CSS" skillPercent="75%" />
             </div>
-            <div className="to-flex">
-              <Skills
-                skillName="HTML"
-                skillPercent="60"
-                skillRound="1"
-                skillSpace="0"
-              />
-              <Skills
-                skillName="CSS"
-                skillPercent="60"
-                skillRound="1"
-                skillSpace="0"
-              />
-              <Skills
-                skillName="JavaScript"
-                skillPercent="60"
-                skillRound="1"
-                skillSpace="0"
-              />
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="JavaScript" skillPercent="60%" />
             </div>
-            <div className="to-flex">
-              <Skills
-                skillName="HTML"
-                skillPercent="40"
-                skillRound="1"
-                skillSpace="0"
-              />
-              <Skills
-                skillName="CSS"
-                skillPercent="40"
-                skillRound="1"
-                skillSpace="0"
-              />
-              <Skills
-                skillName="JavaScript"
-                skillPercent="40"
-                skillRound="1"
-                skillSpace="0"
-              />
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="HTML" skillPercent="80%" />
+            </div>
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="CSS" skillPercent="80%" />
+            </div>
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="JavaScript" skillPercent="80%" />
+            </div>
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="HTML" skillPercent="60%" />
+            </div>
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="CSS" skillPercent="60%" />
+            </div>
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="JavaScript" skillPercent="60%" />
+            </div>
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="HTML" skillPercent="40%" />
+            </div>
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="CSS" skillPercent="40%" />
+            </div>
+            <div className="to-linear-skill">
+              <SkillsLinear skillName="JavaScript" skillPercent="40%" />
             </div>
           </div>
         </div>
