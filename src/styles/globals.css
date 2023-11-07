@@ -759,7 +759,7 @@ section {
       var(--accent-sub-ter),
       var(--transparent)
     ),
-    rgba(0, 0, 0, 0.6);
+    rgba(0, 0, 0, 0.75);
   --after-theme-db: "ON";
 
   --to-darker: linear-gradient(
@@ -3208,25 +3208,36 @@ section {
 }
 
 .to-skillname-text {
+  position: absolute;
   margin-top: -10px;
-  margin-left: 1rem;
+  margin-left: -10rem;
 }
 
 .to-linear-skill::after {
   content: "";
   position: absolute;
   right: 0;
+  left: 55%;
+  transform: translate(-50%);
   top: 0;
-  width: 75%;
+  width: 60%;
   height: 1rem;
   background: var(--accent-sub-ter);
   border-right: 5px solid var(--accent-sub);
+}
+
+.skills-title {
+  font-weight: 600;
+  font-size: var(--quaternary-font);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .to-linear-skill {
   position: relative;
   width: 100%;
   padding-left: 25%;
+  padding-right: 15%;
 }
 
 @keyframes skills-bar {

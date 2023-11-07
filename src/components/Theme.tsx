@@ -33,7 +33,7 @@ function Theme() {
     "particleColor"
   );
 
-  const [particleSize, setParticleSize] = useState<number>(0.5);
+  const [particleSize, setParticleSize] = useState<number>(0.25);
 
   const [bg, setBG] = useLocalStorage("bg", "bg");
 
@@ -174,7 +174,7 @@ function Theme() {
   const switchThemeDark = () => {
     const newdark = "dark";
     setDark(newdark);
-    const newpartSize: number = 0.5;
+    const newpartSize: number = 0.25;
     setParticleSize(newpartSize);
   };
 

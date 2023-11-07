@@ -50,7 +50,7 @@ const Particlesview: React.FC<ParticleAnimationProps> = ({
           },
           particles: {
             number: {
-              value: 50,
+              value: 25,
               density: {
                 enable: true,
                 value_area: 800,
