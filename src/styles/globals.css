@@ -3235,6 +3235,12 @@ section {
   font-size: var(--quaternary-font);
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  text-align: left;
+  margin-left: 12%;
+}
+
+.skills-title::before {
+  content: var(--content) " ";
 }
 
 .to-linear-skill {
