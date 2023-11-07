@@ -30,12 +30,14 @@ export default class SkillSet extends Component<Props, State> {
           <span data-aos="fade" data-aos-duration="1200">
             &quot;List of things that I good at.&quot;
           </span>
-          <Link href="/skills/linear" rel="noopener noreferrer">
-            <div className="project-button linear">
-              <LinearScaleIcon className="to-color send-icon" />{" "}
-              <span> Linear</span>
-            </div>
-          </Link>
+          <div className="project-button linear">
+            <Link href="/skills/linear" rel="noopener noreferrer">
+              <div className="to-flex to-align btn-gap">
+                <LinearScaleIcon className="to-color send-icon" />{" "}
+                <span> Development</span>
+              </div>
+            </Link>
+          </div>
           <div className="skillset">
             <div className="to-flex">
               <Skills
