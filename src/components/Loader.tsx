@@ -7,15 +7,17 @@ const Loader: React.FC = () => {
   return (
     <div className="landing-container">
       <div className="moon" />
-      <div className="landing loader-bg">
+      <div className="landing-loader loader-bg">
         <div
           data-aos="fade-down"
           data-aos-duration="1200"
-          className="main-title text-effect"
+          className="main-title text-effect loader-title"
         >
           Ercknard Guren
         </div>
-        <PageSigns />
+        <div className="loader-title">
+          <PageSigns />
+        </div>
       </div>
     </div>
   );
