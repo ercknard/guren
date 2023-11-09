@@ -3281,11 +3281,13 @@ section {
   width: 100vw;
   height: 100vh;
   animation: loader-bar 3s linear 1;
+
   z-index: 5;
 }
 
 .loader-title {
   animation: title-loader-bar 2.25s linear 1;
+  opacity: 0;
 }
 
 @keyframes loader-bar {
