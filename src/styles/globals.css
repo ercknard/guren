@@ -3286,7 +3286,8 @@ section {
 }
 
 .loader-title {
-  animation: title-loader-bar 2.25s linear 1;
+  opacity: 0;
+  animation: title-loader-bar 2s linear 1;
   opacity: 0;
 }
 
