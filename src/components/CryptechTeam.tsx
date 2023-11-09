@@ -23,7 +23,7 @@ export default class CryptechTeam extends Component<Props, State> {
         </div>
         <PageSigns />
         <div className="normal-text">
-          <span data-aos="fade-up" data-aos-duration="1200">
+          <span data-aos="fade" data-aos-duration="1200">
             &quot;We specialize in providing robust{" "}
             <span className="text-effect">web3</span> and{" "}
             <span className="text-effect">fullstack development services</span>,

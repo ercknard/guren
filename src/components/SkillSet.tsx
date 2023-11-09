@@ -23,11 +23,7 @@ export default class SkillSet extends Component<Props, State> {
           My Skills
         </div>
         <PageSigns />
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1200"
-          className="normal-text"
-        >
+        <div className="normal-text">
           <span data-aos="fade" data-aos-duration="1200">
             &quot;List of things that I good at.&quot;
           </span>

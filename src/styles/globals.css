@@ -3278,7 +3278,7 @@ section {
 
 .loader-bg {
   position: relative;
-  width: calc(100vw - 5px);
+  width: 100vw;
   height: 100vh;
   animation: loader-bar 3s linear 1;
 

@@ -89,7 +89,7 @@ export default function ContactUs() {
   };
   return (
     <div className="normal-text">
-      <span>
+      <span data-aos="fade" data-aos-duration="1200">
         &quot;Thank you for visiting my{" "}
         <span className="text-effect">Web Portfolio</span>. I&apos;m excited to
         hear from you and discuss how we can work together to bring your ideas
