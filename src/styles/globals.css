@@ -3278,7 +3278,7 @@ section {
 
 .loader-bg {
   position: relative;
-  width: 100vw;
+  width: calc(100vw - 5px);
   height: 100vh;
   animation: loader-bar 3s linear 1;
 
@@ -3287,7 +3287,7 @@ section {
 
 .loader-title {
   opacity: 0;
-  animation: title-loader-bar 2s linear 1;
+  animation: title-loader-bar 3s linear 1;
   opacity: 0;
 }
 
@@ -3311,10 +3311,10 @@ section {
   }
 
   80% {
-    opacity: 100%;
+    opacity: 0%;
   }
 
   100% {
-    opacity: 0;
+    opacity: 0%;
   }
 }
