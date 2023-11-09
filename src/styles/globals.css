@@ -112,7 +112,7 @@ section {
   --seventh-font: 0.05em;
 }
 
-/* @media (max-width: 1920px) {
+@media (max-width: 1600px) {
   :root {
     --gifted-font: 4em;
     --primary-font: 3.75em;
@@ -125,7 +125,7 @@ section {
     --quaternary-font: 1em;
     --quinary-font: 1em;
   }
-} */
+}
 
 @media (max-width: 1024px) {
   :root {
