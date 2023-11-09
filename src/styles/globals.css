@@ -3183,7 +3183,7 @@ section {
   background: var(--accent-sub);
   transform: skewX(-20deg);
   overflow: visible;
-  animation: skills-bar 7.5s linear 1;
+  animation: skills-bar 4s ease 1;
 }
 
 .to-skill-design {

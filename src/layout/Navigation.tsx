@@ -86,10 +86,10 @@ export default function Navigation() {
             </div>
             <div className="the-links">
               <Link
-                className={`nomo ${pathname === "/feedback" ? "active" : ""}`}
-                href="/feedback"
+                className={`nomo ${pathname === "/cryptech" ? "active" : ""}`}
+                href="/cryptech"
               >
-                FEEDBACK
+                CRYPTECH
               </Link>
             </div>
             <div className="the-links">

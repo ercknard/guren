@@ -2,19 +2,20 @@ import React, { Component } from "react";
 import Layout from "@/layout/Layout";
 import Head from "next/head";
 import PageSigns from "@/components/PageSigns";
+import CryptechTeam from "@/components/CryptechTeam";
 
 type Props = {};
 
 type State = {};
 
-export default class Feedbacks extends Component<Props, State> {
+export default class Cryptech extends Component<Props, State> {
   state = {};
 
   render() {
     return (
       <>
         <Head>
-          <title>Ercknard | Feedbacks</title>
+          <title>Ercknard | Cryptech</title>
         </Head>
         <Layout>
           <section>
@@ -23,19 +24,15 @@ export default class Feedbacks extends Component<Props, State> {
             <div className="pages-banner" />
             <div className="to-big">
               <div className="content-pages">
-                <div
+                {/* <div
                   data-aos="fade-down"
                   data-aos-duration="1200"
                   className="page-title text-effect"
                 >
-                  Feedbacks
+                  Cryptech Services
                 </div>
-                <PageSigns />
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  className="normal-text"
-                ></div>
+                <PageSigns /> */}
+                <CryptechTeam />
               </div>
             </div>
           </section>
