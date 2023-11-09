@@ -11,7 +11,7 @@ export default class Home extends Component<Props, State> {
   render() {
     return (
       <>
-        <div>
+        <div className="to-animate-home">
           <div className="landing-for-down" />
           <div
             data-aos="fade-down"

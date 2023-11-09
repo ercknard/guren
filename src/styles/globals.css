@@ -3291,6 +3291,10 @@ section {
   opacity: 0;
 }
 
+.to-animate-home {
+  animation: title-home-bar 2.5s linear 1;
+}
+
 @keyframes loader-bar {
   0% {
     background: rgba(0, 0, 0, 1);
@@ -3316,5 +3320,15 @@ section {
 
   100% {
     opacity: 0%;
+  }
+}
+
+@keyframes title-home-bar {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
   }
 }
