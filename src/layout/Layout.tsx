@@ -4,10 +4,11 @@ import "@fontsource/ysabeau/400-italic.css";
 import "@/styles/globals.css";
 import "@/styles/App.css";
 import { Analytics } from "@vercel/analytics/react";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState, useEffect } from "react";
 import Navigation from "./Navigation";
 import dynamic from "next/dynamic";
 import AOScall from "@/components/Aos";
+import Loader from "@/components/Loader";
 
 interface LayoutProps {
   children: ReactNode;
@@ -17,6 +18,17 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const DynamicComponent = dynamic(() => import("@/components/Theme"), {
     ssr: false,
   });
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fakeAsyncOperation = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
+      setIsLoading(false);
+    };
+
+    fakeAsyncOperation();
+  }, []);
 
   return (
     <>
@@ -25,12 +37,17 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <DynamicComponent />
         <AOScall />
         <Navigation />
-        <div className="landing-container">
-          <div className="moon" />
-          <div className="landing">
-            <section className="to-width">{children}</section>
+
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <div className="landing-container">
+            <div className="moon" />
+            <div className="landing">
+              <section className="to-width">{children}</section>
+            </div>
           </div>
-        </div>
+        )}
       </main>
     </>
   );

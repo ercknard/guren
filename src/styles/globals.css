@@ -759,7 +759,7 @@ section {
       var(--accent-sub-ter),
       var(--transparent)
     ),
-    rgba(0, 0, 0, 0.75);
+    rgba(0, 0, 0, 0.6);
   --after-theme-db: "ON";
 
   --to-darker: linear-gradient(
@@ -3256,5 +3256,21 @@ section {
   }
   100% {
     width: "var(--p)%";
+  }
+}
+
+.loader-bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  animation: loader-bar 2.5s linear 1;
+}
+
+@keyframes loader-bar {
+  0% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.6);
   }
 }
