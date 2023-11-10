@@ -27,7 +27,7 @@ export default class ThemeSelection extends Component<Props, State> {
         </Head>
         <section>
           <div className="landing-container-cosmic" />
-          <div className="landing-container-theme" />
+          {/* <div className="landing-container-theme" /> */}
           <div className="landing">
             <div className="landing-for-down" />
             <div className="to-background" />
