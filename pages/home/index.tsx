@@ -4,13 +4,8 @@ import "@fontsource/ysabeau/400-italic.css";
 import "@/styles/globals.css";
 import "@/styles/App.css";
 import React, { Component } from "react";
-import Link from "next/link";
-import AdjustIcon from "@mui/icons-material/Adjust";
 import Head from "next/head";
-import PageSigns from "@/components/PageSigns";
 import AboutCoverflow from "@/components/AboutCoverflow";
-import { Fab } from "@mui/material";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 
 type Props = {};
 
@@ -33,34 +28,7 @@ export default class ThemeSelection extends Component<Props, State> {
             <div className="to-background" />
             <div className="to-big">
               <div className="content-pages">
-                <div
-                  data-aos="fade-down"
-                  data-aos-duration="1200"
-                  className="page-title text-effect"
-                >
-                  Please select a theme
-                </div>
-                <PageSigns />
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  className="normal-text"
-                >
-                  <AboutCoverflow />
-
-                  <div className="project-button linear">
-                    <Link href="/" rel="noopener noreferrer">
-                      <div className="to-flex to-align btn-gap">
-                        <span> Select </span>
-                      </div>
-                    </Link>
-                  </div>
-
-                  <div className="theme-picked-themes to-hide">
-                    {" "}
-                    Selected theme :{" "}
-                  </div>
-                </div>
+                <AboutCoverflow />
               </div>
             </div>
           </div>

@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import Layout from "@/layout/Layout";
 import Head from "next/head";
-import PageSigns from "@/components/PageSigns";
-import CryptechTeam from "@/components/CryptechTeam";
-import AboutCoverflow from "@/components/AboutCoverflow";
-import ZodiacDivider from "@/components/ZodiacDivider";
 import SkillSet from "@/components/SkillSet";
 
 type Props = {};
@@ -28,9 +24,6 @@ export default class Skills extends Component<Props, State> {
             <div className="to-big">
               <div className="content-pages">
                 <SkillSet />
-                {/* <CryptechTeam /> */}
-                {/* <ZodiacDivider /> */}
-                {/* <AboutCoverflow /> */}
               </div>
             </div>
           </section>

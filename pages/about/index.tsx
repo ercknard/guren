@@ -31,7 +31,6 @@ export default class About extends Component<Props, State> {
                 <AboutMeSub />
                 <ZodiacDivider />
                 <AboutMeSubTer />
-                {/* <CryptechTeam /> */}
               </div>
             </div>
           </section>

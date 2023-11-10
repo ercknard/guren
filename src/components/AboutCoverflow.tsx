@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import useLocalStorage from "use-local-storage";
+import PageSigns from "@/components/PageSigns";
+import Link from "next/link";
 import "@fontsource/ysabeau";
 import "@fontsource/ysabeau/400.css";
 import "@fontsource/ysabeau/400-italic.css";
@@ -168,164 +170,185 @@ function AboutCoverflow() {
   };
 
   return (
-    <div data-aos="fade-up" data-aos-duration="1200" className="container">
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={false}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={"auto"}
-        noSwiping={true}
-        coverflowEffect={{
-          rotate: 100,
-          stretch: 0,
-          depth: 100,
-          modifier: 5,
-        }}
-        pagination={{ el: ".swiper-pagination", clickable: false }}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
-
-        // autoplay={{ delay: 3000 }}
+    <>
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1200"
+        className="page-title text-effect"
       >
-        <SwiperSlide>
-          <Image
-            className="white-about"
-            src="/static/images/covers/web-1.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeWhite}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="yellow-about"
-            src="/static/images/covers/web-2.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeYellow}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="blood-about"
-            src="/static/images/covers/web-3.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeBlood}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="red-about"
-            src="/static/images/covers/web-4.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeRed}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="magenta-about"
-            src="/static/images/covers/web-5.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeMagenta}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="purple-about"
-            src="/static/images/covers/web-6.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemePurple}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="violet-about"
-            src="/static/images/covers/web-7.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeViolet}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="navy-about"
-            src="/static/images/covers/web-8.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeNavy}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="blue-about"
-            src="/static/images/covers/web-9.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeBlue}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="ocean-about"
-            src="/static/images/covers/web-10.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeOcean}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="green-about"
-            src="/static/images/covers/web-11.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeGreen}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="epic-about"
-            src="/static/images/covers/web-12.webp"
-            alt="slide_image"
-            width={1325}
-            height={851}
-            // onClick={switchThemeEpic}
-          />
-        </SwiperSlide>
+        Please select a theme
+      </div>
+      <PageSigns />
+      <div data-aos="fade-up" data-aos-duration="1200" className="normal-text">
+        <div data-aos="fade-up" data-aos-duration="1200" className="container">
+          <Swiper
+            effect={"coverflow"}
+            grabCursor={false}
+            centeredSlides={true}
+            loop={true}
+            slidesPerView={"auto"}
+            noSwiping={true}
+            coverflowEffect={{
+              rotate: 100,
+              stretch: 0,
+              depth: 100,
+              modifier: 5,
+            }}
+            pagination={{ el: ".swiper-pagination", clickable: false }}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            className="swiper_container"
 
-        <div className="slider-controler">
-          {/* <div
+            // autoplay={{ delay: 3000 }}
+          >
+            <SwiperSlide>
+              <Image
+                className="white-about"
+                src="/static/images/covers/web-1.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeWhite}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="yellow-about"
+                src="/static/images/covers/web-2.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeYellow}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="blood-about"
+                src="/static/images/covers/web-3.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeBlood}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="red-about"
+                src="/static/images/covers/web-4.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeRed}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="magenta-about"
+                src="/static/images/covers/web-5.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeMagenta}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="purple-about"
+                src="/static/images/covers/web-6.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemePurple}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="violet-about"
+                src="/static/images/covers/web-7.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeViolet}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="navy-about"
+                src="/static/images/covers/web-8.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeNavy}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="blue-about"
+                src="/static/images/covers/web-9.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeBlue}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="ocean-about"
+                src="/static/images/covers/web-10.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeOcean}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="green-about"
+                src="/static/images/covers/web-11.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeGreen}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="epic-about"
+                src="/static/images/covers/web-12.webp"
+                alt="slide_image"
+                width={1325}
+                height={851}
+                // onClick={switchThemeEpic}
+              />
+            </SwiperSlide>
+
+            <div className="slider-controler">
+              {/* <div
             className="swiper-button-prev slider-arrow"
             onClick={handleThemeChangePrev}
           ></div> */}
-          <div
-            className="swiper-button-next slider-arrow"
-            onClick={handleThemeChangeNext}
-          ></div>
-          <div className="swiper-pagination"></div>
+              <div
+                className="swiper-button-next slider-arrow"
+                onClick={handleThemeChangeNext}
+              ></div>
+              <div className="swiper-pagination"></div>
+            </div>
+          </Swiper>
+          <div className="project-button linear">
+            <Link href="/" rel="noopener noreferrer">
+              <div className="to-flex to-align btn-gap">
+                <span> Select </span>
+              </div>
+            </Link>
+          </div>
+
+          <div className="theme-picked-themes to-hide"> Selected theme : </div>
         </div>
-      </Swiper>
-    </div>
+      </div>
+    </>
   );
 }
 
