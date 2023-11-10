@@ -24,7 +24,7 @@ function Theme() {
   const setThemeFromQueryParam = () => {
     const themeFromQueryParam = getQueryParam("theme");
     if (themeFromQueryParam) {
-      if (themeFromQueryParam === "Pisces") {
+      if (themeFromQueryParam.toLowerCase() === "pisces") {
         switchThemeYellow();
       } else if (themeFromQueryParam.toLowerCase() === "aries") {
         switchThemeRed();
