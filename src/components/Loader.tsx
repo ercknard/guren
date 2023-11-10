@@ -11,12 +11,12 @@ const Loader: React.FC = () => {
         <div
           data-aos="fade"
           data-aos-duration="1500"
-          className="head-profile loader-title"
+          className="head-profile-loader loader-title"
         />
         <div
           data-aos="fade-left"
           data-aos-duration="1200"
-          className="main-title text-effect loader-title"
+          className="page-title text-effect loader-title"
         >
           Ercknard Guren
         </div>
