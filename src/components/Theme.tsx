@@ -26,27 +26,27 @@ function Theme() {
     if (themeFromQueryParam) {
       if (themeFromQueryParam === "Pisces") {
         switchThemeYellow();
-      } else if (themeFromQueryParam === "Aries") {
+      } else if (themeFromQueryParam.toLowerCase() === "aries") {
         switchThemeRed();
-      } else if (themeFromQueryParam === "Taurus") {
+      } else if (themeFromQueryParam.toLowerCase() === "Taurus") {
         switchThemeBlood();
-      } else if (themeFromQueryParam === "Gemini") {
+      } else if (themeFromQueryParam.toLowerCase() === "Gemini") {
         switchThemeMagenta();
-      } else if (themeFromQueryParam === "Cancer") {
+      } else if (themeFromQueryParam.toLowerCase() === "Cancer") {
         switchThemePurple();
-      } else if (themeFromQueryParam === "Aquarius") {
+      } else if (themeFromQueryParam.toLowerCase() === "Aquarius") {
         switchThemeWhite();
-      } else if (themeFromQueryParam === "Leo") {
+      } else if (themeFromQueryParam.toLowerCase() === "Leo") {
         switchThemeViolet();
-      } else if (themeFromQueryParam === "Virgo") {
+      } else if (themeFromQueryParam.toLowerCase() === "Virgo") {
         switchThemeBlue();
-      } else if (themeFromQueryParam === "Libra") {
+      } else if (themeFromQueryParam.toLowerCase() === "Libra") {
         switchThemeNavy();
-      } else if (themeFromQueryParam === "Scorpio") {
+      } else if (themeFromQueryParam.toLowerCase() === "Scorpio") {
         switchThemeOcean();
-      } else if (themeFromQueryParam === "Sagittarius") {
+      } else if (themeFromQueryParam.toLowerCase() === "Sagittarius") {
         switchThemeGreen();
-      } else if (themeFromQueryParam === "Capricorn") {
+      } else if (themeFromQueryParam.toLowerCase() === "Capricorn") {
         switchThemeEpic();
       }
     }
