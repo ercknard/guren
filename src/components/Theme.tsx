@@ -16,6 +16,50 @@ import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
 import Button from "@mui/material/Button";
 
 function Theme() {
+  const getQueryParam = (name: string): string | null => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    return urlSearchParams.get(name);
+  };
+
+  const setThemeFromQueryParam = () => {
+    const themeFromQueryParam = getQueryParam("theme");
+    if (themeFromQueryParam) {
+      // Check the theme and call the corresponding switch function
+      if (themeFromQueryParam === "Pisces") {
+        switchThemeYellow();
+      } else if (themeFromQueryParam === "Aries") {
+        switchThemeRed();
+      } else if (themeFromQueryParam === "Taurus") {
+        switchThemeBlood();
+      } else if (themeFromQueryParam === "Gemini") {
+        switchThemeMagenta();
+      } else if (themeFromQueryParam === "Cancer") {
+        switchThemePurple();
+      } else if (themeFromQueryParam === "Aquarius") {
+        switchThemeWhite();
+      } else if (themeFromQueryParam === "Leo") {
+        switchThemeViolet();
+      } else if (themeFromQueryParam === "Virgo") {
+        switchThemeBlue();
+      } else if (themeFromQueryParam === "Libra") {
+        switchThemeNavy();
+      } else if (themeFromQueryParam === "Scorpio") {
+        switchThemeOcean();
+      } else if (themeFromQueryParam === "Sagittarius") {
+        switchThemeGreen();
+      } else if (themeFromQueryParam === "Capricorn") {
+        switchThemeEpic();
+      }
+
+      // You may want to set particle color and perform other theme-related actions here
+    }
+  };
+
+  // Call setThemeFromQueryParam when the component mounts
+  useEffect(() => {
+    setThemeFromQueryParam();
+  }, []);
+
   let themeName = "";
 
   const addQueryParam = () => {
