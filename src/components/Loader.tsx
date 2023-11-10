@@ -8,11 +8,11 @@ const Loader: React.FC = () => {
     <div className="landing-container">
       <div className="moon" />
       <div className="landing-loader loader-bg">
-        <div
+        {/* <div
           data-aos="fade"
           data-aos-duration="1200"
           className="head-profile-loader loader-title"
-        />
+        /> */}
         <div className="to-flex to-gap">
           <span
             data-aos="fade"
