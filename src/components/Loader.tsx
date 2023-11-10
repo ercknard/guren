@@ -10,7 +10,7 @@ const Loader: React.FC = () => {
       <div className="landing-loader loader-bg">
         <div
           data-aos="fade-right"
-          data-aos-duration="1500"
+          data-aos-duration="1200"
           className="head-profile-loader loader-title"
         />
         <div
