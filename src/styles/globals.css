@@ -168,6 +168,7 @@ section {
   --bag: url("/static/images/divider/bag-white.webp");
   --content: "♒︎";
   --theme-name: "Aquarius (♒︎)";
+  --conste: "Aquarius";
   --to-cosmic: url("/static/images/comics/white.webp");
   --particles: particles 3s linear 1;
 }
@@ -198,6 +199,7 @@ section {
   --bag: url("/static/images/divider/bag-yellow.webp");
   --content: "♓︎";
   --theme-name: "Pisces (♓︎)";
+  --conste: "Pisces";
   --to-cosmic: url("/static/images/comics/yellow.webp");
   --particles: particles 3s linear 1;
 }
@@ -226,6 +228,7 @@ section {
   --bag: url("/static/images/divider/bag-red.webp");
   --content: "♈︎";
   --theme-name: "Aries (♈︎)";
+  --conste: "Aries";
   --to-cosmic: url("/static/images/comics/red.webp");
   --particles: particles 3s linear 1;
 }
@@ -256,6 +259,7 @@ section {
   --bag: url("/static/images/divider/bag-blood.webp");
   --content: "♉︎";
   --theme-name: "Taurus (♉︎)";
+  --conste: "Taurus";
   --to-cosmic: url("/static/images/comics/blood.webp");
   --particles: particles 3s linear 1;
 }
@@ -316,6 +320,7 @@ section {
   --bag: url("/static/images/divider/bag-purple.webp");
   --content: "♋︎";
   --theme-name: "Cancer (♋︎)";
+  --conste: "Cancer";
   --to-cosmic: url("/static/images/comics/purple.webp");
   --particles: particles 3s linear 1;
 }
@@ -346,6 +351,7 @@ section {
   --bag: url("/static/images/divider/bag-violet.webp");
   --content: "♌︎";
   --theme-name: "Leo (♌︎)";
+  --conste: "Leo";
   --to-cosmic: url("/static/images/comics/violet.webp");
   --particles: particles 3s linear 1;
 }
@@ -374,6 +380,7 @@ section {
   --bag: url("/static/images/divider/bag-blue.webp");
   --content: "♍︎";
   --theme-name: "Virgo (♍︎)";
+  --conste: "Virgo";
   --to-cosmic: url("/static/images/comics/blue.webp");
   --particles: particles 3s linear 1;
 }
@@ -402,6 +409,7 @@ section {
   --bag: url("/static/images/divider/bag-navy.webp");
   --content: "♎︎";
   --theme-name: "Libra (♎︎)";
+  --conste: "Libra";
   --to-cosmic: url("/static/images/comics/navy.webp");
   --particles: particles 3s linear 1;
 }
@@ -432,6 +440,7 @@ section {
   --bag: url("/static/images/divider/bag-ocean.webp");
   --content: "♏︎";
   --theme-name: "Scorpio (♏︎)";
+  --conste: "Scorpio";
   --to-cosmic: url("/static/images/comics/ocean.webp");
   --particles: particles 3s linear 1;
 }
@@ -462,6 +471,7 @@ section {
   --bag: url("/static/images/divider/bag-green.webp");
   --content: "♐︎";
   --theme-name: "Sagittarious (♐︎)";
+  --conste: "Sagittarious";
   --to-cosmic: url("/static/images/comics/green.webp");
   --particles: particles 3s linear 1;
 }
@@ -490,6 +500,7 @@ section {
   --bag: url("/static/images/divider/bag-epic.webp");
   --content: "♑︎";
   --theme-name: "Capricorn (♑︎)";
+  --conste: "Capricorn";
   --to-cosmic: url("/static/images/comics/epic.webp");
   --particles: particles 3s linear 1;
 }

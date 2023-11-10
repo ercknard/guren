@@ -24,7 +24,6 @@ function Theme() {
   const setThemeFromQueryParam = () => {
     const themeFromQueryParam = getQueryParam("theme");
     if (themeFromQueryParam) {
-      // Check the theme and call the corresponding switch function
       if (themeFromQueryParam === "Pisces") {
         switchThemeYellow();
       } else if (themeFromQueryParam === "Aries") {
@@ -50,37 +49,39 @@ function Theme() {
       } else if (themeFromQueryParam === "Capricorn") {
         switchThemeEpic();
       }
-
-      // You may want to set particle color and perform other theme-related actions here
     }
   };
 
-  // Call setThemeFromQueryParam when the component mounts
   useEffect(() => {
     setThemeFromQueryParam();
   }, []);
 
-  let themeName = "";
+  const root = document.documentElement;
+  const myVariableWithQuotes = getComputedStyle(root)
+    .getPropertyValue("--conste")
+    .trim();
+  const myVariable = myVariableWithQuotes.replace(/^"(.*)"$/, "$1");
 
-  const addQueryParam = () => {
-    // Get the current URL
+  let themeName = myVariable;
+
+  const addQueryParam = (themeName: string | undefined) => {
     let currentUrl = window.location.href;
 
-    // Check if the 'newParam' query parameter already exists
     const paramExists = currentUrl.includes("theme");
 
     if (paramExists) {
-      // Replace the value of 'newParam' if it already exists
       currentUrl = currentUrl.replace(/theme=[^&]*/, "theme=" + themeName);
     } else {
-      // Add a new query parameter
       currentUrl +=
         (currentUrl.includes("?") ? "&" : "?") + "theme=" + themeName;
     }
 
-    // Update the URL
     window.history.pushState({ path: currentUrl }, "", currentUrl);
   };
+
+  useEffect(() => {
+    addQueryParam(themeName);
+  }, []);
 
   const [openDB, setOpenDB] = React.useState(false);
   const [openCW, setOpenCW] = React.useState(false);
@@ -117,8 +118,8 @@ function Theme() {
     const newColor = "#f0d056";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Pisces";
-    addQueryParam();
+    const themeName = "Pisces";
+    addQueryParam(themeName);
   };
 
   const switchThemeRed = () => {
@@ -127,8 +128,8 @@ function Theme() {
     const newColor = "#ff5e5a";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Aries";
-    addQueryParam();
+    const themeName = "Aries";
+    addQueryParam(themeName);
   };
 
   const switchThemeBlood = () => {
@@ -137,8 +138,8 @@ function Theme() {
     const newColor = "#f58231";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Taurus";
-    addQueryParam();
+    const themeName = "Taurus";
+    addQueryParam(themeName);
   };
 
   const switchThemeMagenta = () => {
@@ -147,8 +148,8 @@ function Theme() {
     const newColor = "#9b3a98";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Gemini";
-    addQueryParam();
+    const themeName = "Gemini";
+    addQueryParam(themeName);
   };
 
   const switchThemePurple = () => {
@@ -157,8 +158,8 @@ function Theme() {
     const newColor = "#b075f8";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Cancer";
-    addQueryParam();
+    const themeName = "Cancer";
+    addQueryParam(themeName);
   };
 
   const switchThemeWhite = () => {
@@ -167,8 +168,8 @@ function Theme() {
     const newColor = "#ffffff";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Aquarius";
-    addQueryParam();
+    const themeName = "Aquarius";
+    addQueryParam(themeName);
   };
 
   const switchThemeViolet = () => {
@@ -177,8 +178,8 @@ function Theme() {
     const newColor = "#7b8ffc";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Leo";
-    addQueryParam();
+    const themeName = "Leo";
+    addQueryParam(themeName);
   };
 
   const switchThemeBlue = () => {
@@ -187,8 +188,8 @@ function Theme() {
     const newColor = "#4389ff";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Virgo";
-    addQueryParam();
+    const themeName = "Virgo";
+    addQueryParam(themeName);
   };
 
   const switchThemeNavy = () => {
@@ -197,8 +198,8 @@ function Theme() {
     const newColor = "#0000e7";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Libra";
-    addQueryParam();
+    const themeName = "Libra";
+    addQueryParam(themeName);
   };
 
   const switchThemeOcean = () => {
@@ -207,8 +208,8 @@ function Theme() {
     const newColor = "#5cc2e4";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Scorpio";
-    addQueryParam();
+    const themeName = "Scorpio";
+    addQueryParam(themeName);
   };
 
   const switchThemeGreen = () => {
@@ -217,8 +218,8 @@ function Theme() {
     const newColor = "#6ef0bc";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Sagittarius";
-    addQueryParam();
+    const themeName = "Sagittarius";
+    addQueryParam(themeName);
   };
 
   const switchThemeEpic = () => {
@@ -227,8 +228,8 @@ function Theme() {
     const newColor = "#bfef45";
     setParticleColor(newColor);
     console.log({ newColor });
-    themeName = "Capricorn";
-    addQueryParam();
+    const themeName = "Capricorn";
+    addQueryParam(themeName);
   };
 
   const switchThemeBG = () => {
