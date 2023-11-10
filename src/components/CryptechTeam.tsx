@@ -35,7 +35,7 @@ export default class CryptechTeam extends Component<Props, State> {
             <div className="to-gap-project">
               <div className="to-flex team-section">
                 <div
-                  data-aos="fade-left"
+                  data-aos="fade-right"
                   data-aos-duration="1200"
                   className="team-portrait"
                 >
@@ -58,7 +58,7 @@ export default class CryptechTeam extends Component<Props, State> {
                   />
                 </div>
                 <div
-                  data-aos="fade-left"
+                  data-aos="fade-right"
                   data-aos-duration="1100"
                   className="team-portrait"
                 >
@@ -81,7 +81,7 @@ export default class CryptechTeam extends Component<Props, State> {
                   />
                 </div>
                 <div
-                  data-aos="fade-left"
+                  data-aos="fade-right"
                   data-aos-duration="1000"
                   className="team-portrait"
                 >
@@ -104,7 +104,7 @@ export default class CryptechTeam extends Component<Props, State> {
                   />
                 </div>
                 <div
-                  data-aos="fade-left"
+                  data-aos="fade-right"
                   data-aos-duration="900"
                   className="team-portrait"
                 >
