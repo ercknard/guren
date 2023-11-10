@@ -15,14 +15,14 @@ const Loader: React.FC = () => {
         />
         <div className="to-flex to-gap">
           <span
-            data-aos="fade-right"
-            data-aos-duration="1200"
+            data-aos="fade"
+            data-aos-duration="750"
             className="page-title text-effect loader-title"
           >
             Ercknard
           </span>
           <span
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-duration="1200"
             className="page-title text-effect loader-title"
           >
