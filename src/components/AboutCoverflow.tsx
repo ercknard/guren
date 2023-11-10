@@ -195,7 +195,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="white-about"
-            src="/static/images/covers/web-1.jpeg"
+            src="/static/images/covers/web-1.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -205,7 +205,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="yellow-about"
-            src="/static/images/covers/web-2.jpeg"
+            src="/static/images/covers/web-2.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -215,7 +215,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="blood-about"
-            src="/static/images/covers/web-3.jpeg"
+            src="/static/images/covers/web-3.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -225,7 +225,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="red-about"
-            src="/static/images/covers/web-4.jpeg"
+            src="/static/images/covers/web-4.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -235,7 +235,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="magenta-about"
-            src="/static/images/covers/web-5.jpeg"
+            src="/static/images/covers/web-5.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -245,7 +245,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="purple-about"
-            src="/static/images/covers/web-6.jpeg"
+            src="/static/images/covers/web-6.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -255,7 +255,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="violet-about"
-            src="/static/images/covers/web-7.jpeg"
+            src="/static/images/covers/web-7.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -265,7 +265,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="navy-about"
-            src="/static/images/covers/web-8.jpeg"
+            src="/static/images/covers/web-8.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -275,7 +275,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="blue-about"
-            src="/static/images/covers/web-9.jpeg"
+            src="/static/images/covers/web-9.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -285,7 +285,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="ocean-about"
-            src="/static/images/covers/web-10.jpeg"
+            src="/static/images/covers/web-10.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -295,7 +295,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="green-about"
-            src="/static/images/covers/web-11.jpeg"
+            src="/static/images/covers/web-11.webp"
             alt="slide_image"
             width={1325}
             height={851}
@@ -305,7 +305,7 @@ function AboutCoverflow() {
         <SwiperSlide>
           <Image
             className="epic-about"
-            src="/static/images/covers/web-12.jpeg"
+            src="/static/images/covers/web-12.webp"
             alt="slide_image"
             width={1325}
             height={851}
