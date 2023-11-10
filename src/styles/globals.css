@@ -1042,6 +1042,7 @@ section {
   background-size: cover;
   background-attachment: fixed;
   z-index: -3;
+  transition: 1s !important;
 }
 
 .landing-container {
