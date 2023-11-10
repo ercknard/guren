@@ -21,24 +21,44 @@ export default class AboutMe extends Component<Props, State> {
   render() {
     return (
       <div className="to-flex to-align main-about">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="3000"
-          className="to-about-with"
-        >
-          <div className="greeting-main-name">---HELLO</div>
-          <div className="about-main-name text-effect">I&apos;m ERCKNARD.</div>
-          <div className="animated-text">
+        <div className="to-about-with">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="greeting-main-name"
+          >
+            ---HELLO
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className="about-main-name text-effect"
+          >
+            I&apos;m ERCKNARD.
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            className="animated-text"
+          >
             {" "}
             <TypingAnimation />
           </div>
-          <div className="about-sub-text">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            className="about-sub-text"
+          >
             {" "}
             In essence, I am <span className="spies">Ercknard Guren</span>, a
             digital craftsman who transforms visions into realities, making the
             web a more beautiful and functional place one project at a time.
           </div>
-          <div className="to-flex main-links">
+          <div
+            data-aos="fade"
+            data-aos-duration="3000"
+            className="to-flex main-links"
+          >
             <Link
               target="_blank"
               href="https://fb.com"
