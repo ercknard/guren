@@ -999,6 +999,51 @@ section {
   }
 }
 
+.landing-container-theme::after {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 3 !important;
+  background: var(--sword);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  z-index: 1;
+  opacity: 35%;
+}
+
+.landing-container-theme::before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 3 !important;
+  background: var(--sword);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  z-index: 1;
+  transform: scaleX(-1);
+  opacity: 35%;
+}
+
+.landing-container-cosmic {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 3 !important;
+  background: var(--to-cosmic);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -3;
+}
+
 .landing-container {
   width: 100%;
   min-height: 100vh;
