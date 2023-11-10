@@ -2052,6 +2052,7 @@ section {
   padding: 0.5rem 3rem !important;
   border-radius: 5px;
   align-items: center;
+  cursor: pointer;
 }
 
 .project-button span {

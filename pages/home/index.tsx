@@ -52,8 +52,7 @@ export default class ThemeSelection extends Component<Props, State> {
                   <div className="project-button linear">
                     <Link href="/" rel="noopener noreferrer">
                       <div className="to-flex to-align btn-gap">
-                        <AdjustIcon className="to-color send-icon" />{" "}
-                        <span> Home </span>
+                        <span> Select </span>
                       </div>
                     </Link>
                   </div>

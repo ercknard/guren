@@ -139,6 +139,36 @@ function AboutCoverflow() {
 
   console.log({ theme });
 
+  const themeColors = [
+    switchThemeWhite,
+    switchThemeYellow,
+    switchThemeBlood,
+    switchThemeRed,
+    switchThemeMagenta,
+    switchThemePurple,
+    switchThemeViolet,
+    switchThemeNavy,
+    switchThemeBlue,
+    switchThemeOcean,
+    switchThemeGreen,
+    switchThemeEpic,
+  ];
+
+  const [currentThemeIndex, setCurrentThemeIndex] = useState(0);
+
+  const handleThemeChangeNext = () => {
+    setCurrentThemeIndex((prevIndex) => (prevIndex + 1) % themeColors.length);
+    themeColors[currentThemeIndex]();
+  };
+
+  const handleThemeChangePrev = () => {
+    setCurrentThemeIndex((prevIndex) =>
+      prevIndex === 0 ? themeColors.length - 3 : prevIndex - 1
+    );
+
+    themeColors[currentThemeIndex]();
+  };
+
   return (
     <div data-aos="fade-up" data-aos-duration="1200" className="container">
       <Swiper
@@ -153,7 +183,7 @@ function AboutCoverflow() {
           depth: 100,
           modifier: 5,
         }}
-        pagination={{ el: ".swiper-pagination", clickable: true }}
+        pagination={{ el: ".swiper-pagination", clickable: false }}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -285,12 +315,14 @@ function AboutCoverflow() {
         </SwiperSlide>
 
         <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-            {/* <ion-icon name="arrow-back-outline"></ion-icon> */}
-          </div>
-          <div className="swiper-button-next slider-arrow">
-            {/* <ion-icon name="arrow-forward-outline"></ion-icon> */}
-          </div>
+          {/* <div
+            className="swiper-button-prev slider-arrow"
+            onClick={handleThemeChangePrev}
+          ></div> */}
+          <div
+            className="swiper-button-next slider-arrow"
+            onClick={handleThemeChangeNext}
+          ></div>
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
