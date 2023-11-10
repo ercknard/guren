@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import useLocalStorage from "use-local-storage";
 import Particlesview from "@/components/Particles";
-import { Fab } from "@mui/material";
+import { Fab, Link } from "@mui/material";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Tooltip from "@mui/material/Tooltip";
 import Switch from "@mui/material/Switch";
@@ -407,7 +407,9 @@ function Theme() {
             />
           </Tooltip>
           <Fab className="fab-reveal" size="medium" aria-label="add">
-            <DarkModeIcon />
+            <Link href="/home" rel="noopener noreferrer">
+              <DarkModeIcon className="to-black" />
+            </Link>
             <div className="theme-buttons">
               <Tooltip title="Aquarius" placement="top" arrow>
                 <Button className="white-eye eye" onClick={switchThemeWhite} />

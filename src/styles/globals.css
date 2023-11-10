@@ -2085,6 +2085,10 @@ section {
   right: 0;
 }
 
+.to-black {
+  color: var(--black) !important;
+}
+
 .css-i44wyl,
 .css-mnn31 {
   margin-top: 0.4rem !important;
