@@ -771,7 +771,7 @@ section {
       var(--accent-sub-ter),
       var(--transparent)
     ),
-    rgba(0, 0, 0, 0.6);
+    rgba(0, 0, 0, 0.75);
   --after-theme-db: "ON";
 
   --to-darker: linear-gradient(
