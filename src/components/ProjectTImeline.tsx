@@ -132,7 +132,9 @@ export default function CustomizedTimeline() {
                 >
                   CryptechCraft Website
                 </Typography>
-                <Typography>Sample website (Cryptechcraft MC Server)</Typography>
+                <Typography>
+                  Sample website (Cryptechcraft MC Server)
+                </Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -271,7 +273,7 @@ export default function CustomizedTimeline() {
                 align="right"
                 variant="body2"
               >
-                September, 2023 - Present
+                October, 2023 - Present
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
