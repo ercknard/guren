@@ -26,35 +26,39 @@ export default class ThemeSelection extends Component<Props, State> {
           <title>Ercknard | ThemeSelection</title>
         </Head>
         <section>
-          <div className="landing">
-            <div className="to-big">
-              <div className="content-pages">
-                <div
-                  data-aos="fade-down"
-                  data-aos-duration="1200"
-                  className="page-title text-effect"
-                >
-                  Please select a theme
-                </div>
-                <PageSigns />
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  className="normal-text"
-                >
-                  <AboutCoverflow />
-
-                  <div className="project-button linear">
-                    <Link href="/" rel="noopener noreferrer">
-                      <div className="to-flex to-align btn-gap">
-                        <span> Select </span>
-                      </div>
-                    </Link>
+          <div className="landing-container">
+            <div className="landing">
+              <div className="landing-for-down" />
+              <div className="to-background" />
+              <div className="to-big">
+                <div className="content-pages">
+                  <div
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    className="page-title text-effect"
+                  >
+                    Please select a theme
                   </div>
+                  <PageSigns />
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    className="normal-text"
+                  >
+                    <AboutCoverflow />
 
-                  <div className="theme-picked-themes to-hide">
-                    {" "}
-                    Selected theme :{" "}
+                    <div className="project-button linear">
+                      <Link href="/" rel="noopener noreferrer">
+                        <div className="to-flex to-align btn-gap">
+                          <span> Select </span>
+                        </div>
+                      </Link>
+                    </div>
+
+                    <div className="theme-picked-themes to-hide">
+                      {" "}
+                      Selected theme :{" "}
+                    </div>
                   </div>
                 </div>
               </div>

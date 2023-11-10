@@ -23,8 +23,6 @@ function AboutCoverflow() {
     "particleColor"
   );
 
-  const [particleSize, setParticleSize] = useState<number>(0.25);
-
   const switchThemeYellow = () => {
     const newTheme = "yellow";
     setTheme(newTheme);
@@ -173,10 +171,11 @@ function AboutCoverflow() {
     <div data-aos="fade-up" data-aos-duration="1200" className="container">
       <Swiper
         effect={"coverflow"}
-        grabCursor={true}
+        grabCursor={false}
         centeredSlides={true}
         loop={true}
         slidesPerView={"auto"}
+        noSwiping={true}
         coverflowEffect={{
           rotate: 100,
           stretch: 0,
@@ -200,7 +199,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeWhite}
+            // onClick={switchThemeWhite}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -210,7 +209,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeYellow}
+            // onClick={switchThemeYellow}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -220,7 +219,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeBlood}
+            // onClick={switchThemeBlood}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -230,7 +229,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeRed}
+            // onClick={switchThemeRed}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -240,7 +239,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeMagenta}
+            // onClick={switchThemeMagenta}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -250,7 +249,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemePurple}
+            // onClick={switchThemePurple}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -260,7 +259,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeViolet}
+            // onClick={switchThemeViolet}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -270,7 +269,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeNavy}
+            // onClick={switchThemeNavy}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -280,7 +279,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeBlue}
+            // onClick={switchThemeBlue}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -290,7 +289,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeOcean}
+            // onClick={switchThemeOcean}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -300,7 +299,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeGreen}
+            // onClick={switchThemeGreen}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -310,7 +309,7 @@ function AboutCoverflow() {
             alt="slide_image"
             width={1325}
             height={851}
-            onClick={switchThemeEpic}
+            // onClick={switchThemeEpic}
           />
         </SwiperSlide>
 
