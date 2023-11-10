@@ -130,7 +130,11 @@ export default class AboutMe extends Component<Props, State> {
               </div>
             </Link>
           </div>
-          <div className="to-flex teams-end-btn to-gap">
+          <div
+            data-aos="fade"
+            data-aos-duration="3000"
+            className="to-flex teams-end-btn to-gap"
+          >
             <Link
               target="_blank"
               href="https://cryptech.services/"
