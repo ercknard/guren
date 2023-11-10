@@ -39,6 +39,7 @@ section {
   --background-ter: url("/static/images/bgs/white-surf.svg");
   --cloud: url("/static/images/bgs/white-cloud.svg");
   --content: "⚔";
+  --conste: "None";
   --theme-name: "(NONE), Please select a theme ⚔";
 
   --text-primary: white;
@@ -470,8 +471,8 @@ section {
   --posture: url("/static/images/bgs/ercknard-green.webp");
   --bag: url("/static/images/divider/bag-green.webp");
   --content: "♐︎";
-  --theme-name: "Sagittarious (♐︎)";
-  --conste: "Sagittarious";
+  --theme-name: "Sagittarius (♐︎)";
+  --conste: "Sagittarius";
   --to-cosmic: url("/static/images/comics/green.webp");
   --particles: particles 3s linear 1;
 }
@@ -1658,6 +1659,18 @@ section {
   opacity: var(--visibility-full);
 }
 
+.theme-picked-themes {
+  position: fixed !important;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center !important;
+  color: white;
+  bottom: 1.2rem;
+  left: 1.6rem;
+  font: 1rem !important;
+  opacity: var(--visibility-full);
+}
+
 .theme-picked-fullscreen {
   position: fixed !important;
   display: flex;
@@ -1670,6 +1683,10 @@ section {
 }
 
 .theme-picked::after {
+  content: var(--theme-name);
+}
+
+.theme-picked-themes::after {
   content: var(--theme-name);
 }
 

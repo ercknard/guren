@@ -451,7 +451,7 @@ function Theme() {
               <Tooltip title="Scorpio" placement="top" arrow>
                 <Button className="ocean-eye eye" onClick={switchThemeOcean} />
               </Tooltip>
-              <Tooltip title="Sagittarious" placement="top" arrow>
+              <Tooltip title="Sagittarius" placement="top" arrow>
                 <Button className="green-eye eye" onClick={switchThemeGreen} />
               </Tooltip>
               <Tooltip title="Capricorn" placement="top" arrow>

@@ -9,6 +9,7 @@ import Navigation from "./Navigation";
 import dynamic from "next/dynamic";
 import AOScall from "@/components/Aos";
 import Loader from "@/components/Loader";
+import { useCookies } from "react-cookie";
 
 interface LayoutProps {
   children: ReactNode;
@@ -30,6 +31,20 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     fakeAsyncOperation();
   }, []);
 
+  const [cookies, setCookie] = useCookies(["visited"]);
+  const [showLandingPage, setShowLandingPage] = useState(true);
+
+  useEffect(() => {
+    console.log("Checking for visited cookie:", cookies.visited);
+    const hasVisitedBefore = cookies.visited === "true";
+
+    if (hasVisitedBefore) {
+      setShowLandingPage(false);
+    } else {
+      setCookie("visited", "true", { path: "/", maxAge: 60 * 60 * 24 * 365 });
+    }
+  }, [cookies.visited, setCookie]);
+
   return (
     <>
       <main className="App">
@@ -48,6 +63,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
           </div>
         )}
+
+        {/* {showLandingPage && <div>Welco</div>}
+
+        {!showLandingPage && <div>Welcome !</div>} */}
       </main>
     </>
   );
