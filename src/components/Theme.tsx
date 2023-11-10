@@ -88,6 +88,18 @@ function Theme() {
   const [openTG, setOpenTG] = React.useState(false);
   const [openTS, setOpenTS] = React.useState(false);
   const [openFS, setOpenFS] = React.useState(false);
+  const [openWhite, setOpenWhite] = React.useState(false);
+  const [openYellow, setOpenYellow] = React.useState(false);
+  const [openRed, setOpenRed] = React.useState(false);
+  const [openBlood, setOpenBlood] = React.useState(false);
+  const [openMagenta, setOpenMagenta] = React.useState(false);
+  const [openPurple, setOpenPurple] = React.useState(false);
+  const [openViolet, setOpenViolet] = React.useState(false);
+  const [openBlue, setOpenBlue] = React.useState(false);
+  const [openNavy, setOpenNavy] = React.useState(false);
+  const [openOcean, setOpenOcean] = React.useState(false);
+  const [openGreen, setOpenGreen] = React.useState(false);
+  const [openEpic, setOpenEpic] = React.useState(false);
 
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useLocalStorage(
@@ -120,6 +132,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Pisces";
     addQueryParam(themeName);
+    setOpenYellow(true);
   };
 
   const switchThemeRed = () => {
@@ -130,6 +143,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Aries";
     addQueryParam(themeName);
+    setOpenRed(true);
   };
 
   const switchThemeBlood = () => {
@@ -140,6 +154,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Taurus";
     addQueryParam(themeName);
+    setOpenBlood(true);
   };
 
   const switchThemeMagenta = () => {
@@ -150,6 +165,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Gemini";
     addQueryParam(themeName);
+    setOpenMagenta(true);
   };
 
   const switchThemePurple = () => {
@@ -160,6 +176,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Cancer";
     addQueryParam(themeName);
+    setOpenPurple(true);
   };
 
   const switchThemeWhite = () => {
@@ -170,6 +187,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Aquarius";
     addQueryParam(themeName);
+    setOpenWhite(true);
   };
 
   const switchThemeViolet = () => {
@@ -180,6 +198,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Leo";
     addQueryParam(themeName);
+    setOpenViolet(true);
   };
 
   const switchThemeBlue = () => {
@@ -190,6 +209,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Virgo";
     addQueryParam(themeName);
+    setOpenBlue(true);
   };
 
   const switchThemeNavy = () => {
@@ -200,6 +220,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Libra";
     addQueryParam(themeName);
+    setOpenNavy(true);
   };
 
   const switchThemeOcean = () => {
@@ -210,6 +231,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Scorpio";
     addQueryParam(themeName);
+    setOpenOcean(true);
   };
 
   const switchThemeGreen = () => {
@@ -220,6 +242,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Sagittarius";
     addQueryParam(themeName);
+    setOpenGreen(true);
   };
 
   const switchThemeEpic = () => {
@@ -230,6 +253,7 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Capricorn";
     addQueryParam(themeName);
+    setOpenEpic(true);
   };
 
   const switchThemeBG = () => {
@@ -329,6 +353,18 @@ function Theme() {
     setOpenTG(false);
     setOpenTS(false);
     setOpenFS(false);
+    setOpenWhite(false);
+    setOpenYellow(false);
+    setOpenRed(false);
+    setOpenBlood(false);
+    setOpenMagenta(false);
+    setOpenPurple(false);
+    setOpenViolet(false);
+    setOpenBlue(false);
+    setOpenNavy(false);
+    setOpenOcean(false);
+    setOpenGreen(false);
+    setOpenEpic(false);
   };
 
   const action = (
@@ -390,6 +426,103 @@ function Theme() {
         message={full === "full" ? "View mode is OFF" : "View mode is ON"}
         action={action}
       />
+
+      <Snackbar
+        open={openWhite}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Aquarius Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openYellow}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Pisces Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openRed}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Aries Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openBlood}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Taurus Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openMagenta}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Gemini Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openPurple}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Cancer Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openViolet}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Leo Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openBlue}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Virgo Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openNavy}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Libra Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openOcean}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Scorpio Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openGreen}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Sagittarius Theme Applied"}
+        action={action}
+      />
+
+      <Snackbar
+        open={openEpic}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        message={"Capricorn Theme Applied"}
+        action={action}
+      />
+
       <div className="reveal-eye">
         <div className="fab-container to-hide">
           <Tooltip title="Dark Filter ON / OFF" placement="top" arrow>
