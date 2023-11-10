@@ -17,7 +17,7 @@ const Loader: React.FC = () => {
           <span
             data-aos="fade"
             data-aos-duration="750"
-            className="page-title text-effect loader-title"
+            className="page-title text-effect "
           >
             Ercknard
           </span>
