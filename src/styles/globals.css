@@ -3325,6 +3325,16 @@ section {
 .to-skillpersent-text {
   margin-top: -10px;
   margin-left: 1rem;
+  animation: skillspersent-bar 4s linear 1;
+}
+
+@keyframes skillspersent-bar {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .to-skillname-text {
