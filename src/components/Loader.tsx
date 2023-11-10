@@ -9,16 +9,25 @@ const Loader: React.FC = () => {
       <div className="moon" />
       <div className="landing-loader loader-bg">
         <div
-          data-aos="fade-right"
+          data-aos="fade"
           data-aos-duration="1200"
           className="head-profile-loader loader-title"
         />
-        <div
-          data-aos="fade-left"
-          data-aos-duration="1200"
-          className="page-title text-effect loader-title"
-        >
-          Ercknard Guren
+        <div className="to-flex to-gap">
+          <span
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            className="page-title text-effect loader-title"
+          >
+            Ercknard
+          </span>
+          <span
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            className="page-title text-effect loader-title"
+          >
+            Guren
+          </span>
         </div>
         <div className="loader-title">
           <PageSigns />
