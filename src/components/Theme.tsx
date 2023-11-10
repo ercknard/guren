@@ -16,6 +16,28 @@ import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
 import Button from "@mui/material/Button";
 
 function Theme() {
+  let themeName = "";
+
+  const addQueryParam = () => {
+    // Get the current URL
+    let currentUrl = window.location.href;
+
+    // Check if the 'newParam' query parameter already exists
+    const paramExists = currentUrl.includes("theme");
+
+    if (paramExists) {
+      // Replace the value of 'newParam' if it already exists
+      currentUrl = currentUrl.replace(/theme=[^&]*/, "theme=" + themeName);
+    } else {
+      // Add a new query parameter
+      currentUrl +=
+        (currentUrl.includes("?") ? "&" : "?") + "theme=" + themeName;
+    }
+
+    // Update the URL
+    window.history.pushState({ path: currentUrl }, "", currentUrl);
+  };
+
   const [openDB, setOpenDB] = React.useState(false);
   const [openCW, setOpenCW] = React.useState(false);
   const [openTG, setOpenTG] = React.useState(false);
@@ -51,6 +73,8 @@ function Theme() {
     const newColor = "#f0d056";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Pisces";
+    addQueryParam();
   };
 
   const switchThemeRed = () => {
@@ -59,6 +83,8 @@ function Theme() {
     const newColor = "#ff5e5a";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Aries";
+    addQueryParam();
   };
 
   const switchThemeBlood = () => {
@@ -67,6 +93,8 @@ function Theme() {
     const newColor = "#f58231";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Taurus";
+    addQueryParam();
   };
 
   const switchThemeMagenta = () => {
@@ -75,6 +103,8 @@ function Theme() {
     const newColor = "#9b3a98";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Gemini";
+    addQueryParam();
   };
 
   const switchThemePurple = () => {
@@ -83,6 +113,8 @@ function Theme() {
     const newColor = "#b075f8";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Cancer";
+    addQueryParam();
   };
 
   const switchThemeWhite = () => {
@@ -91,6 +123,8 @@ function Theme() {
     const newColor = "#ffffff";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Aquarius";
+    addQueryParam();
   };
 
   const switchThemeViolet = () => {
@@ -99,6 +133,8 @@ function Theme() {
     const newColor = "#7b8ffc";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Leo";
+    addQueryParam();
   };
 
   const switchThemeBlue = () => {
@@ -107,6 +143,8 @@ function Theme() {
     const newColor = "#4389ff";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Virgo";
+    addQueryParam();
   };
 
   const switchThemeNavy = () => {
@@ -115,6 +153,8 @@ function Theme() {
     const newColor = "#0000e7";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Libra";
+    addQueryParam();
   };
 
   const switchThemeOcean = () => {
@@ -123,6 +163,8 @@ function Theme() {
     const newColor = "#5cc2e4";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Scorpio";
+    addQueryParam();
   };
 
   const switchThemeGreen = () => {
@@ -131,6 +173,8 @@ function Theme() {
     const newColor = "#6ef0bc";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Sagittarius";
+    addQueryParam();
   };
 
   const switchThemeEpic = () => {
@@ -139,6 +183,8 @@ function Theme() {
     const newColor = "#bfef45";
     setParticleColor(newColor);
     console.log({ newColor });
+    themeName = "Capricorn";
+    addQueryParam();
   };
 
   const switchThemeBG = () => {
