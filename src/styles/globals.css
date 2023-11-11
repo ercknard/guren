@@ -2088,6 +2088,7 @@ section {
 .css-repss6:after,
 .css-zrqpq1:after {
   border-bottom: 2px solid var(--background) !important;
+  z-index: 1 !important;
 }
 
 .css-v4u5dn-MuiInputBase-root-MuiInput-root:before,
