@@ -190,7 +190,8 @@ export default function ContactUs() {
               className="flex to-notif"
             >
               <button type="submit" className="project-button">
-                <span> {buttonText} </span> <SendIcon className="send-icon" />
+                <span> {buttonText} &nbsp;</span>{" "}
+                <SendIcon className="send-icon" />
               </button>
               <div className="text-lg text-center">
                 {/* Alert message :{" "} */}
