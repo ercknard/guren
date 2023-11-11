@@ -2071,7 +2071,6 @@ section {
     rgba(0, 0, 0, 1) !important;
   padding: 1rem !important;
   border-radius: 5px !important;
-  z-index: 1;
 }
 
 .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root,
@@ -2103,7 +2102,7 @@ section {
   margin-left: 10px !important;
   margin-top: 10px !important;
   color: gray !important;
-  z-index: 1;
+  z-index: 1 !important;
 }
 
 .project-button {
