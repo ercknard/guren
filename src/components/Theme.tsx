@@ -124,6 +124,66 @@ function Theme() {
 
   const [full, setFull] = useState("full");
 
+  const toclickYellow = () => {
+    switchThemeYellow();
+    setOpenYellow(true);
+  };
+
+  const toclickRed = () => {
+    switchThemeRed();
+    setOpenRed(true);
+  };
+
+  const toclickBlood = () => {
+    switchThemeBlood();
+    setOpenBlood(true);
+  };
+
+  const toclickMagenta = () => {
+    switchThemeMagenta();
+    setOpenMagenta(true);
+  };
+
+  const toclickPurple = () => {
+    switchThemePurple();
+    setOpenPurple(true);
+  };
+
+  const toclickWhite = () => {
+    switchThemeWhite();
+    setOpenWhite(true);
+  };
+
+  const toclickViolet = () => {
+    switchThemeViolet();
+    setOpenViolet(true);
+  };
+
+  const toclickBlue = () => {
+    switchThemeBlue();
+    setOpenBlue(true);
+  };
+
+  const toclickNavy = () => {
+    switchThemeNavy();
+    setOpenNavy(true);
+  };
+
+  const toclickOcean = () => {
+    switchThemeOcean();
+    setOpenOcean(true);
+  };
+
+  const toclickGreen = () => {
+    switchThemeGreen();
+    setOpenGreen(true);
+  };
+
+  const toclickEpic = () => {
+    switchThemeEpic();
+    setOpenEpic(true);
+  };
+
   const switchThemeYellow = () => {
     const newTheme = "yellow";
     setTheme(newTheme);
@@ -132,7 +192,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Pisces";
     addQueryParam(themeName);
-    setOpenYellow(true);
   };
 
   const switchThemeRed = () => {
@@ -143,7 +202,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Aries";
     addQueryParam(themeName);
-    setOpenRed(true);
   };
 
   const switchThemeBlood = () => {
@@ -154,7 +212,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Taurus";
     addQueryParam(themeName);
-    setOpenBlood(true);
   };
 
   const switchThemeMagenta = () => {
@@ -165,7 +222,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Gemini";
     addQueryParam(themeName);
-    setOpenMagenta(true);
   };
 
   const switchThemePurple = () => {
@@ -176,7 +232,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Cancer";
     addQueryParam(themeName);
-    setOpenPurple(true);
   };
 
   const switchThemeWhite = () => {
@@ -187,7 +242,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Aquarius";
     addQueryParam(themeName);
-    setOpenWhite(true);
   };
 
   const switchThemeViolet = () => {
@@ -198,7 +252,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Leo";
     addQueryParam(themeName);
-    setOpenViolet(true);
   };
 
   const switchThemeBlue = () => {
@@ -209,7 +262,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Virgo";
     addQueryParam(themeName);
-    setOpenBlue(true);
   };
 
   const switchThemeNavy = () => {
@@ -220,7 +272,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Libra";
     addQueryParam(themeName);
-    setOpenNavy(true);
   };
 
   const switchThemeOcean = () => {
@@ -231,7 +282,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Scorpio";
     addQueryParam(themeName);
-    setOpenOcean(true);
   };
 
   const switchThemeGreen = () => {
@@ -242,7 +292,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Sagittarius";
     addQueryParam(themeName);
-    setOpenGreen(true);
   };
 
   const switchThemeEpic = () => {
@@ -253,7 +302,6 @@ function Theme() {
     console.log({ newColor });
     const themeName = "Capricorn";
     addQueryParam(themeName);
-    setOpenEpic(true);
   };
 
   const switchThemeBG = () => {
@@ -545,52 +593,40 @@ function Theme() {
             </Link>
             <div className="theme-buttons">
               <Tooltip title="Aquarius" placement="top" arrow>
-                <Button className="white-eye eye" onClick={switchThemeWhite} />
+                <Button className="white-eye eye" onClick={toclickWhite} />
               </Tooltip>
               <Tooltip title="Pisces" placement="top" arrow>
-                <Button
-                  className="yellow-eye eye"
-                  onClick={switchThemeYellow}
-                />
+                <Button className="yellow-eye eye" onClick={toclickYellow} />
               </Tooltip>
               <Tooltip title="Taurus" placement="top" arrow>
-                <Button className="blood-eye eye" onClick={switchThemeBlood} />
+                <Button className="blood-eye eye" onClick={toclickBlood} />
               </Tooltip>
               <Tooltip title="Aries" placement="top" arrow>
-                <Button className="red-eye eye" onClick={switchThemeRed} />
+                <Button className="red-eye eye" onClick={toclickRed} />
               </Tooltip>
               <Tooltip title="Gemini" placement="top" arrow>
-                <Button
-                  className="magenta-eye eye"
-                  onClick={switchThemeMagenta}
-                />
+                <Button className="magenta-eye eye" onClick={toclickMagenta} />
               </Tooltip>
               <Tooltip title="Cancer" placement="top" arrow>
-                <Button
-                  className="purple-eye eye"
-                  onClick={switchThemePurple}
-                />
+                <Button className="purple-eye eye" onClick={toclickPurple} />
               </Tooltip>
               <Tooltip title="Leo" placement="top" arrow>
-                <Button
-                  className="violet-eye eye"
-                  onClick={switchThemeViolet}
-                />
+                <Button className="violet-eye eye" onClick={toclickViolet} />
               </Tooltip>
               <Tooltip title="Libra" placement="top" arrow>
-                <Button className="navy-eye eye" onClick={switchThemeNavy} />
+                <Button className="navy-eye eye" onClick={toclickNavy} />
               </Tooltip>
               <Tooltip title="Virgo" placement="top" arrow>
-                <Button className="blue-eye eye" onClick={switchThemeBlue} />
+                <Button className="blue-eye eye" onClick={toclickBlue} />
               </Tooltip>
               <Tooltip title="Scorpio" placement="top" arrow>
-                <Button className="ocean-eye eye" onClick={switchThemeOcean} />
+                <Button className="ocean-eye eye" onClick={toclickOcean} />
               </Tooltip>
               <Tooltip title="Sagittarius" placement="top" arrow>
-                <Button className="green-eye eye" onClick={switchThemeGreen} />
+                <Button className="green-eye eye" onClick={toclickGreen} />
               </Tooltip>
               <Tooltip title="Capricorn" placement="top" arrow>
-                <Button className="epic-eye eye" onClick={switchThemeEpic} />
+                <Button className="epic-eye eye" onClick={toclickEpic} />
               </Tooltip>
             </div>
           </Fab>
