@@ -57,16 +57,20 @@ export default function CustomizedTimeline() {
                 data-aos-duration="500"
                 sx={{ py: "12px", px: 2 }}
               >
-                <Typography
-                  className="text-effect"
-                  variant="h6"
-                  component="span"
-                >
-                  Maysilo Meter
-                </Typography>
-                <Typography>
-                  Porject (Flood Monitoring System) proposal for BRGY. Maysilo.
-                </Typography>
+                {" "}
+                <div className="project-timeline">
+                  <Typography
+                    className="text-effect"
+                    variant="h6"
+                    component="span"
+                  >
+                    Maysilo Meter
+                  </Typography>
+                  <Typography>
+                    Porject (Flood Monitoring System) proposal for BRGY.
+                    Maysilo.
+                  </Typography>
+                </div>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -91,16 +95,19 @@ export default function CustomizedTimeline() {
                 data-aos-duration="600"
                 sx={{ py: "12px", px: 2 }}
               >
-                <Typography
-                  className="text-effect"
-                  variant="h6"
-                  component="span"
-                >
-                  Ercknard Minecraft Gallery
-                </Typography>
-                <Typography>
-                  My Personal Gallery Builds (CryptechCraft Server)
-                </Typography>
+                {" "}
+                <div className="project-timeline">
+                  <Typography
+                    className="text-effect"
+                    variant="h6"
+                    component="span"
+                  >
+                    Ercknard Minecraft Gallery
+                  </Typography>
+                  <Typography>
+                    My Personal Gallery Builds (CryptechCraft Server)
+                  </Typography>
+                </div>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -125,16 +132,19 @@ export default function CustomizedTimeline() {
                 data-aos-duration="700"
                 sx={{ py: "12px", px: 2 }}
               >
-                <Typography
-                  className="text-effect"
-                  variant="h6"
-                  component="span"
-                >
-                  CryptechCraft Website
-                </Typography>
-                <Typography>
-                  Sample website (Cryptechcraft MC Server)
-                </Typography>
+                {" "}
+                <div className="project-timeline">
+                  <Typography
+                    className="text-effect"
+                    variant="h6"
+                    component="span"
+                  >
+                    CryptechCraft Website
+                  </Typography>
+                  <Typography>
+                    Sample website (Cryptechcraft MC Server)
+                  </Typography>
+                </div>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -159,14 +169,17 @@ export default function CustomizedTimeline() {
                 data-aos-duration="800"
                 sx={{ py: "12px", px: 2 }}
               >
-                <Typography
-                  className="text-effect"
-                  variant="h6"
-                  component="span"
-                >
-                  CryptechTest SMP Server Website
-                </Typography>
-                <Typography>CryptechTest Official website</Typography>
+                {" "}
+                <div className="project-timeline">
+                  <Typography
+                    className="text-effect"
+                    variant="h6"
+                    component="span"
+                  >
+                    CryptechTest SMP Server Website
+                  </Typography>
+                  <Typography>CryptechTest Official website</Typography>
+                </div>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -191,14 +204,19 @@ export default function CustomizedTimeline() {
                 data-aos-duration="900"
                 sx={{ py: "12px", px: 2 }}
               >
-                <Typography
-                  className="text-effect"
-                  variant="h6"
-                  component="span"
-                >
-                  Metrix.place
-                </Typography>
-                <Typography>A communal graffiti board (MetrixCoin)</Typography>
+                {" "}
+                <div className="project-timeline">
+                  <Typography
+                    className="text-effect"
+                    variant="h6"
+                    component="span"
+                  >
+                    Metrix.place
+                  </Typography>
+                  <Typography>
+                    A communal graffiti board (MetrixCoin)
+                  </Typography>
+                </div>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -223,14 +241,17 @@ export default function CustomizedTimeline() {
                 data-aos-duration="1000"
                 sx={{ py: "12px", px: 2 }}
               >
-                <Typography
-                  className="text-effect"
-                  variant="h6"
-                  component="span"
-                >
-                  Cryptech Services
-                </Typography>
-                <Typography>Cryptech Services Official website</Typography>
+                {" "}
+                <div className="project-timeline">
+                  <Typography
+                    className="text-effect"
+                    variant="h6"
+                    component="span"
+                  >
+                    Cryptech Services
+                  </Typography>
+                  <Typography>Cryptech Services Official website</Typography>
+                </div>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -255,14 +276,16 @@ export default function CustomizedTimeline() {
                 data-aos-duration="1100"
                 sx={{ py: "12px", px: 2 }}
               >
-                <Typography
-                  className="text-effect"
-                  variant="h6"
-                  component="span"
-                >
-                  Aercrypt.net
-                </Typography>
-                <Typography>AerCrypt Official website</Typography>
+                <div className="project-timeline">
+                  <Typography
+                    className="text-effect"
+                    variant="h6"
+                    component="span"
+                  >
+                    Aercrypt.net
+                  </Typography>
+                  <Typography>AerCrypt Official website</Typography>
+                </div>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -287,14 +310,16 @@ export default function CustomizedTimeline() {
                 data-aos-duration="1200"
                 sx={{ py: "12px", px: 2 }}
               >
-                <Typography
-                  className="text-effect"
-                  variant="h6"
-                  component="span"
-                >
-                  Ercknard Guren
-                </Typography>
-                <Typography>Web Portfolio</Typography>
+                <div className="project-timeline">
+                  <Typography
+                    className="text-effect"
+                    variant="h6"
+                    component="span"
+                  >
+                    Ercknard Guren
+                  </Typography>
+                  <Typography>Web Portfolio</Typography>
+                </div>
               </TimelineContent>
             </TimelineItem>
           </Timeline>

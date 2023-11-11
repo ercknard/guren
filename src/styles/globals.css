@@ -2488,7 +2488,8 @@ section {
 .project-portrait {
   position: relative;
   width: 21%;
-  filter: drop-shadow(3px 3px 3px var(--white-accent));
+  filter: drop-shadow(5px 5px 3px var(--black));
+  margin-bottom: 0.5rem;
 }
 
 .project-selection-image {
@@ -2629,6 +2630,8 @@ section {
   transition: 1s !important;
   cursor: pointer;
   overflow: hidden;
+  filter: drop-shadow(5px 5px 3px var(--black));
+  margin-bottom: 0.5rem;
 }
 
 .team-portrait:hover {
@@ -3464,8 +3467,24 @@ section {
   gap: 1rem;
   padding-top: 1rem;
   flex-direction: column;
+  border-right: 1px solid var(--accent);
   border-left: 5px solid var(--accent-sub);
   border-radius: 5px;
+  filter: drop-shadow(5px 5px 3px var(--black));
+  margin-bottom: 0.5rem;
+}
+
+.project-timeline {
+  position: relative;
+  background: linear-gradient(to left, var(--black), var(--accent-25)), black;
+  display: flex;
+  flex-direction: column;
+  border-left: 5px solid var(--accent-sub);
+  border-radius: 5px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  filter: drop-shadow(5px 5px 3px var(--black));
+  margin-bottom: 0.5rem;
 }
 
 /* .skillgroup::after {
@@ -3492,3 +3511,17 @@ section {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 } */
+
+.shadowpic {
+  -webkit-box-reflect: below 0px
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.4)
+    );
+}
+
+.shadowpic-1 {
+  -webkit-box-reflect: below -8rem linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+}

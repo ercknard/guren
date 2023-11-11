@@ -158,7 +158,7 @@ export default class AboutMe extends Component<Props, State> {
           data-aos-duration="3000"
           className="main-avatar"
         >
-          <div className="main-head-profile" />
+          <div className="main-head-profile shadowpic" />
         </div>
       </div>
     );

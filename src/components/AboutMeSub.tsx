@@ -30,7 +30,7 @@ export default class AboutMeSub extends Component<Props, State> {
           data-aos-duration="3000"
           className="main-avatar"
         >
-          <div className="main-head-profile-sub" />
+          <div className="main-head-profile-sub shadowpic-1" />
         </div>
       </div>
     );
