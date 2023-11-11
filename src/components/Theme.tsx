@@ -675,7 +675,6 @@ function Theme() {
         particleColor={particleColor}
         particleSize={particleSize}
       />
-      {/* <Equalizer /> */}
     </div>
   );
 }
