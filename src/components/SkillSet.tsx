@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import PageSigns from "./PageSigns";
-import Skills from "./Skills";
-import Link from "next/link";
-import LinearScaleIcon from "@mui/icons-material/LinearScale";
 import SkillsLinear from "./SkillsLinear";
 
 type Props = {};

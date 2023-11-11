@@ -1,6 +1,4 @@
 import React from "react";
-import HomeTypingAnimation from "./HomeTextAnimation";
-import ZodiacDivider from "./ZodiacDivider";
 import PageSigns from "./PageSigns";
 
 const Loader: React.FC = () => {

@@ -3,7 +3,6 @@ import PageSigns from "./PageSigns";
 import SkillsLinear from "./SkillsLinear";
 import Link from "next/link";
 import AdjustIcon from "@mui/icons-material/Adjust";
-import ZodiacDivider from "./ZodiacDivider";
 
 type Props = {};
 

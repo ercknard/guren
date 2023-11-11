@@ -7,6 +7,8 @@ const TypingAnimation: React.FC = () => {
     "Developer.",
     ".",
     "Graphic Designer.",
+    ".",
+    "Editor.",
   ];
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -14,7 +16,7 @@ const TypingAnimation: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const typingSpeed = 100; // Adjust the typing speed in milliseconds
+    const typingSpeed = 100;
 
     const typeNextCharacter = () => {
       if (currentIndex < textToTypes[currentTextIndex].length) {
@@ -24,14 +26,13 @@ const TypingAnimation: React.FC = () => {
         );
         setCurrentIndex((prevIndex) => prevIndex + 1);
       } else {
-        // Wait for a moment, then clear the text and move to the next sentence
         setTimeout(() => {
           setTypedText("");
           setCurrentIndex(0);
           setCurrentTextIndex(
             (prevTextIndex) => (prevTextIndex + 1) % textToTypes.length
           );
-        }, 1000); // You can adjust the delay before moving to the next sentence
+        }, 1000);
       }
     };
 

@@ -1,24 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import sgMail from "@sendgrid/mail";
 
-// smtp mailer
-// const transporter = sgMail.createTransport({
-//   host: `${process.env.SMTP_HOST}`,
-//   port: Number(process.env.SMTP_PORT),
-//   secure: false,
-//   requireTLS: true,
-//   auth: {
-//     user: `${process.env.SMTP_USERNAME}`,
-//     pass: `${process.env.SMTP_PASSWORD}`,
-//   },
-// });
-
-// const SENDGRID_API_KEY =
-//   "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";
-
 const sendgridApiKey = process.env.SENDGRID_API_KEY;
 
-// anti-dos agent tracking
 interface Agent {
   ip: string;
   req_count: number;
@@ -44,16 +28,13 @@ const agentPassSpamCheck = (
   req: NextApiRequest,
   res: NextApiResponse
 ): boolean => {
-  // clean agents
   cleanAgents();
-  // get agent from request headers
   const forwarded = req.headers["x-forwarded-for"] as string;
   const ip = forwarded
     ? forwarded.split(/, /)[0]
     : req.connection.remoteAddress;
   const fAgent = agents.find((a) => a.ip == ip);
   if (!fAgent) {
-    // add new agent
     if (ip != undefined) {
       const accessor: Agent = {
         ip,
@@ -63,7 +44,6 @@ const agentPassSpamCheck = (
       agents.push(accessor);
     }
   } else {
-    // decrement counter when valid req
     if (Date.now() > fAgent.stamp + 1000 * 10 && fAgent.req_count > 0) {
       fAgent.req_count -= 3;
     }
@@ -77,7 +57,6 @@ const agentPassSpamCheck = (
       fAgent.req_count -= 13;
     }
 
-    // increment counter if too often
     if (Date.now() - 400 < fAgent.stamp) {
       fAgent.req_count++;
     }
@@ -93,7 +72,6 @@ const agentPassSpamCheck = (
 
     fAgent.stamp = Date.now();
 
-    // rate error
     if (fAgent.req_count > 3) {
       res.status(200).json({
         statusCode: 218,
@@ -105,9 +83,6 @@ const agentPassSpamCheck = (
   return true;
 };
 
-// =========================
-
-// send email api function
 async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
   if (!agentPassSpamCheck(req, res)) {
     console.log(agents);
@@ -115,7 +90,6 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
   }
 
   if (!sendgridApiKey) {
-    // Handle the case where the API key is not set
     return res.status(500).json({
       statusCode: 500,
       message: "SendGrid API key is not configured",
@@ -125,7 +99,6 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
   sgMail.setApiKey(sendgridApiKey);
 
   try {
-    // send mail with defined transport object
     const info = await sgMail.send({
       from: `micbajamonde@gmail.com`, // sender address
       to: "micbajamonde@gmail.com", // list of receivers
