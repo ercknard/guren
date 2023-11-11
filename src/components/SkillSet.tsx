@@ -119,80 +119,89 @@ export default class SkillSet extends Component<Props, State> {
             data-aos-duration="1200"
             className="skillset-linear"
           >
-            <div className="skills-title text-effect">
-              {" "}
-              Front-End Development
+            <div className="skillgroup">
+              <div className="skills-title text-effect">
+                {" "}
+                Front-End Development
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="HTML5" skillPercent="85%" />{" "}
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="CSS3" skillPercent="80%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="JavaScript" skillPercent="75%" />
+              </div>
             </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="HTML5" skillPercent="85%" />{" "}
+            <div className="skillgroup">
+              <div className="skills-title text-effect"> CSS Preprocessors</div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="SASS" skillPercent="70%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="LESS" skillPercent="65%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="PostCSS" skillPercent="50%" />
+              </div>
             </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="CSS3" skillPercent="80%" />
+            <div className="skillgroup">
+              <div className="skills-title text-effect">
+                {" "}
+                Frameworks / Libraries
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="ReactJS" skillPercent="60%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="Bootstrap" skillPercent="75%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="Tailwind" skillPercent="75%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="MUI Core" skillPercent="60%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="Semantic UI" skillPercent="40%" />
+              </div>
             </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="JavaScript" skillPercent="75%" />
+            <div className="skillgroup">
+              <div className="skills-title text-effect">
+                {" "}
+                Server-Side Programming
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="Java" skillPercent="70%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="Python" skillPercent="70%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="C#" skillPercent="70%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="Node.js" skillPercent="60%" />
+              </div>
             </div>
-            <div className="skills-title text-effect"> CSS Preprocessors</div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="SASS" skillPercent="70%" />
+            <div className="skillgroup">
+              <div className="skills-title text-effect"> Databases</div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="MySql" skillPercent="75%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="MongoDB" skillPercent="70%" />
+              </div>
             </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="LESS" skillPercent="65%" />
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="PostCSS" skillPercent="50%" />
-            </div>
-            <div className="skills-title text-effect">
-              {" "}
-              Frameworks / Libraries
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="ReactJS" skillPercent="60%" />
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="Bootstrap" skillPercent="75%" />
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="Tailwind" skillPercent="75%" />
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="MUI Core" skillPercent="60%" />
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="Semantic UI" skillPercent="40%" />
-            </div>
-
-            <div className="skills-title text-effect">
-              {" "}
-              Server-Side Programming
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="Java" skillPercent="70%" />
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="Python" skillPercent="70%" />
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="C#" skillPercent="70%" />
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="Node.js" skillPercent="60%" />
-            </div>
-
-            <div className="skills-title text-effect"> Databases</div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="MySql" skillPercent="75%" />
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="MongoDB" skillPercent="70%" />
-            </div>
-
-            <div className="skills-title text-effect"> Version Control</div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="Git" skillPercent="50%" />
-            </div>
-            <div className="to-linear-skill">
-              <SkillsLinear skillName="GitHub" skillPercent="70%" />
+            <div className="skillgroup">
+              <div className="skills-title text-effect"> Version Control</div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="Git" skillPercent="50%" />
+              </div>
+              <div className="to-linear-skill">
+                <SkillsLinear skillName="GitHub" skillPercent="70%" />
+              </div>
             </div>
           </div>
         </div>

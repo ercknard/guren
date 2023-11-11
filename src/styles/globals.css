@@ -145,6 +145,7 @@ section {
 
 [data-theme="white"] {
   --background: #ffffff;
+  --accent-25: #ffffff25;
   --accent: #ffffff50;
   --accent-sub: #ffffff75;
   --accent-sub-ter: #ffffff10;
@@ -176,6 +177,7 @@ section {
 
 [data-theme="yellow"] {
   --background: var(--yellow);
+  --accent-25: #f0d05625;
   --accent: #f0d05650;
   --accent-sub: #f0d05675;
   --accent-sub-ter: #f0d05610;
@@ -207,6 +209,7 @@ section {
 
 [data-theme="red"] {
   --background: var(--red);
+  --accent-25: #ff5e5a25;
   --accent: #ff5e5a50;
   --accent-sub: #ff5e5a75;
   --accent-sub-ter: #ff5e5a10;
@@ -236,6 +239,7 @@ section {
 
 [data-theme="blood"] {
   --background: var(--blood);
+  --accent-25: #f5823125;
   --accent: #f5823150;
   --accent-sub: #f5823175;
   --accent-sub-ter: #f5823110;
@@ -267,6 +271,7 @@ section {
 
 [data-theme="magenta"] {
   --background: var(--magenta);
+  --accent-25: #9b3a9825;
   --accent: #9b3a9850;
   --accent-sub: #9b3a9875;
   --accent-sub-ter: #9b3a9810;
@@ -297,6 +302,7 @@ section {
 
 [data-theme="purple"] {
   --background: var(--purple);
+  --accent-25: #b075f825;
   --accent: #b075f850;
   --accent-sub: #b075f875;
   --accent-sub-ter: #b075f810;
@@ -328,6 +334,7 @@ section {
 
 [data-theme="violet"] {
   --background: var(--violet);
+  --accent-25: #7b8ffc25;
   --accent: #7b8ffc50;
   --accent-sub: #7b8ffc75;
   --accent-sub-ter: #7b8ffc10;
@@ -359,6 +366,7 @@ section {
 
 [data-theme="blue"] {
   --background: var(--blue);
+  --accent-25: #4389ff25;
   --accent: #4389ff50;
   --accent-sub: #4389ff75;
   --accent-sub-ter: #4389ff10;
@@ -388,6 +396,7 @@ section {
 
 [data-theme="navy"] {
   --background: var(--navy);
+  --accent-25: #5108ff25;
   --accent: #5108ff50;
   --accent-sub: #5108ff75;
   --accent-sub-ter: #5108ff10;
@@ -417,6 +426,7 @@ section {
 
 [data-theme="ocean"] {
   --background: var(--ocean);
+  --accent-25: #5cc2e425;
   --accent: #5cc2e450;
   --accent-sub: #5cc2e475;
   --accent-sub-ter: #5cc2e410;
@@ -448,6 +458,7 @@ section {
 
 [data-theme="green"] {
   --background: var(--green);
+  --accent-25: #6ef0bc25;
   --accent: #6ef0bc50;
   --accent-sub: #6ef0bc75;
   --accent-sub-ter: #6ef0bc10;
@@ -479,6 +490,7 @@ section {
 
 [data-theme="epic"] {
   --background: var(--epic);
+  --accent-25: #bfef4525;
   --accent: #bfef4550;
   --accent-sub: #bfef4575;
   --accent-sub-ter: #bfef4510;
@@ -2055,8 +2067,8 @@ section {
   text-align: left;
   min-width: 34rem !important;
   margin-top: 0.25rem !important;
-  background: linear-gradient(to bottom, var(--accent), var(--accent)),
-    rgba(0, 0, 0, 0.5) !important;
+  background: linear-gradient(to bottom, var(--accent-25), var(--accent)),
+    rgba(0, 0, 0, 1) !important;
   padding: 1rem !important;
   border-radius: 5px !important;
 }
@@ -2087,9 +2099,10 @@ section {
 
 .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
 .css-mqt2s5 {
-  margin-left: 7.5px !important;
+  margin-left: 10px !important;
   margin-top: 10px !important;
-  color: var(--white) !important;
+  color: gray !important;
+  z-index: 1;
 }
 
 .project-button {
@@ -2138,6 +2151,7 @@ section {
 .css-i44wyl,
 .css-mnn31 {
   margin-top: 0.4rem !important;
+  z-index: 1;
 }
 
 /* .swiper_container {
@@ -3441,3 +3455,39 @@ section {
     opacity: 100%;
   }
 }
+
+.skillgroup {
+  position: relative;
+  background: linear-gradient(to left, var(--black), var(--accent-25)), black;
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  flex-direction: column;
+  border-left: 5px solid var(--accent-sub);
+  border-radius: 5px;
+}
+
+/* .skillgroup::after {
+  content: var(--content);
+  position: absolute;
+  font-size: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5%;
+  color: var(--background);
+  opacity: 20%;
+} */
+
+/* .skillgroup::before {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2.5%;
+  background: var(--background);
+  opacity: 5%;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+} */
