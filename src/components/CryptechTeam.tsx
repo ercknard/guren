@@ -24,12 +24,8 @@ export default class CryptechTeam extends Component<Props, State> {
         <PageSigns />
         <div className="normal-text">
           <span data-aos="fade" data-aos-duration="1200">
-            &quot;We specialize in providing robust{" "}
-            <span className="text-effect">web3</span> and{" "}
-            <span className="text-effect">fullstack development services</span>,
-            with a primary focus on cryptocurrency, blockchain technology, and
-            web design. Additionally, we offer expert services in the realms of
-            cybersecurity , as well as technical support and consultation.&quot;
+            &quot;Unlocking Tomorrow`s Digital Frontier with Cryptech Services:
+            Your Vision, Our Expertise.&quot;
           </span>
           <div data-aos="fade-up" data-aos-duration="1200">
             <div className="to-gap-project">

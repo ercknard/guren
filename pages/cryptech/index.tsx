@@ -3,6 +3,8 @@ import Layout from "@/layout/Layout";
 import Head from "next/head";
 import PageSigns from "@/components/PageSigns";
 import CryptechTeam from "@/components/CryptechTeam";
+import CryptechBullets from "@/components/CryptechBullets";
+import ZodiacDivider from "@/components/ZodiacDivider";
 
 type Props = {};
 
@@ -33,6 +35,8 @@ export default class Cryptech extends Component<Props, State> {
                 </div>
                 <PageSigns /> */}
                 <CryptechTeam />
+                <ZodiacDivider />
+                <CryptechBullets />
               </div>
             </div>
           </section>

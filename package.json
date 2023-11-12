@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/ysabeau": "^5.0.8",
     "@mui/icons-material": "^5.14.15",
+    "@mui/joy": "^5.0.0-beta.14",
     "@mui/lab": "^5.0.0-alpha.151",
     "@mui/material": "^5.14.16",
     "@sendgrid/mail": "^7.7.0",
@@ -22,8 +23,10 @@
     "@vercel/analytics": "^1.1.1",
     "aos": "^3.0.0-beta.6",
     "autoprefixer": "10.4.15",
+    "color": "^4.2.3",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.16",
+    "mui-treasury": "^0.1.5-alpha.3",
     "next": "13.4.16",
     "postcss": "8.4.28",
     "react": "18.2.0",
@@ -40,6 +43,7 @@
     "use-local-storage": "^3.0.0"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.6"
+    "@types/aos": "^3.0.6",
+    "@types/color": "^3.0.6"
   }
 }

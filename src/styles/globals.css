@@ -3525,3 +3525,45 @@ section {
 .shadowpic-1 {
   -webkit-box-reflect: below -8rem linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
 }
+
+.bullets-style {
+  color: var(--background) !important;
+  font-size: var(--primary-font) !important;
+  filter: drop-shadow(0px 0px 2px var(--black));
+}
+
+.card-cover {
+  /* background: linear-gradient(
+    to bottom,
+    var(--black),
+    var(--accent),
+    var(--black)
+  ) !important; */
+}
+
+.cryptech-details {
+  text-align: left !important;
+  color: white !important;
+}
+
+.ctbullets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.ctcontent {
+  background: linear-gradient(
+    to bottom,
+    var(--accent-sub),
+    var(--black)
+  ) !important;
+  border-left: 5px solid var(--accent);
+}
+
+.tech-title {
+  font-size: var(--quaternary-font) !important;
+  filter: drop-shadow(2px 2px 2px var(--black));
+}
