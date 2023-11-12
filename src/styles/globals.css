@@ -3207,7 +3207,7 @@ section {
 .ctcontent {
   background: linear-gradient(
     to bottom,
-    var(--accent-sub),
+    var(--accent-25),
     var(--black)
   ) !important;
   border-left: 2.5px solid var(--accent);
