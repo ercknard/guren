@@ -35,9 +35,7 @@ export default class Cryptech extends Component<Props, State> {
                 </div>
                 <PageSigns /> */}
                 <CryptechTeam />
-                <ZodiacDivider />
                 <CryptechBullets />
-                <ZodiacDivider />
                 <CryptechSecurity />
               </div>
             </div>
