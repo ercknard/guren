@@ -2913,7 +2913,7 @@ main {
   content: var(--content);
   position: absolute;
   font-size: 1.5rem;
-  margin-top: -22.5px;
+  margin-top: -27px;
   left: 27.5%;
   transform: translate(-50%);
   z-index: 2;
@@ -2928,7 +2928,7 @@ main {
   content: var(--content);
   position: absolute;
   font-size: 1.5rem;
-  margin-top: -22.5px;
+  margin-top: -27px;
   left: 72.5%;
   transform: translate(-50%);
   z-index: 2;
