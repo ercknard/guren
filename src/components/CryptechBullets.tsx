@@ -34,11 +34,7 @@ export default class CryptechBullets extends Component<Props, State> {
             web design. Additionally, we offer expert services in the realms of
             cybersecurity , as well as technical support and consultation.&quot;
           </span>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            className="ctbullets"
-          >
+          <div className="ctbullets">
             <FullStack />
             <Web3 />
             <Solidity />

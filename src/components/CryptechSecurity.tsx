@@ -27,11 +27,7 @@ export default class CryptechSecurity extends Component<Props, State> {
           <span data-aos="fade" data-aos-duration="1200">
             &quot;Security Services we offer&quot;
           </span>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            className="ctbullets"
-          >
+          <div className="ctbullets">
             <PrimaryPackage />
             <SecondaryPackage />
             <TertiaryPackage />

@@ -10,6 +10,8 @@ import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
 export default function TechSupport() {
   return (
     <Card
+      data-aos="fade-left"
+      data-aos-duration="1500"
       className="ctcontent"
       size="lg"
       variant="plain"

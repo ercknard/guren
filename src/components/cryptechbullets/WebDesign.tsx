@@ -10,6 +10,8 @@ import BrushIcon from "@mui/icons-material/Brush";
 export default function WebDesign() {
   return (
     <Card
+      data-aos="fade-left"
+      data-aos-duration="1100"
       className="ctcontent"
       size="lg"
       variant="plain"

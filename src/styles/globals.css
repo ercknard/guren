@@ -3539,6 +3539,7 @@ section {
     var(--accent),
     var(--black)
   ) !important; */
+  background: black !important;
 }
 
 .cryptech-details {
@@ -3579,6 +3580,7 @@ section {
 .que {
   font-size: var(--quinary-font) !important;
   margin-left: 5rem !important;
+  line-height: 2rem !important;
 }
 
 .que::before {
@@ -3593,4 +3595,8 @@ section {
   border-bottom: none !important;
   border-top: none !important;
   filter: drop-shadow(5px 5px 3px var(--black)) !important;
+}
+
+.sec-title {
+  font-size: var(--special-font) !important;
 }

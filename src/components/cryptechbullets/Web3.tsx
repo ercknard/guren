@@ -10,6 +10,8 @@ import CurrencyBitcoinOutlinedIcon from "@mui/icons-material/CurrencyBitcoinOutl
 export default function Web3() {
   return (
     <Card
+      data-aos="fade-left"
+      data-aos-duration="700"
       className="ctcontent"
       size="lg"
       variant="plain"

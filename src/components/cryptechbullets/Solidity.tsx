@@ -10,6 +10,8 @@ import DataObjectIcon from "@mui/icons-material/DataObject";
 export default function Solidity() {
   return (
     <Card
+      data-aos="fade-left"
+      data-aos-duration="900"
       className="ctcontent"
       size="lg"
       variant="plain"

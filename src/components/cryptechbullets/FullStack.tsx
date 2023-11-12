@@ -10,6 +10,8 @@ import LayersOutlinedIcon from "@mui/icons-material/LayersOutlined";
 export default function FAQCard() {
   return (
     <Card
+      data-aos="fade-left"
+      data-aos-duration="500"
       className="ctcontent"
       size="lg"
       variant="plain"

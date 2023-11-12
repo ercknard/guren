@@ -10,6 +10,8 @@ import DrawOutlinedIcon from "@mui/icons-material/DrawOutlined";
 export default function GrapgicDesign() {
   return (
     <Card
+      data-aos="fade-left"
+      data-aos-duration="1300"
       className="ctcontent"
       size="lg"
       variant="plain"

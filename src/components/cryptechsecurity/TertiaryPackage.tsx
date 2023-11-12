@@ -8,6 +8,8 @@ import Typography from "@mui/joy/Typography";
 export default function TertiaryPackage() {
   return (
     <Card
+      data-aos="fade-left"
+      data-aos-duration="2250"
       className="security-card"
       orientation="horizontal"
       variant="outlined"
@@ -24,7 +26,10 @@ export default function TertiaryPackage() {
         </AspectRatio>
       </CardOverflow>
       <CardContent>
-        <Typography className="text-motion tech-title" textColor="primary.200">
+        <Typography
+          className="text-motion tech-title sec-title"
+          textColor="primary.200"
+        >
           Deluxe LTS (1 year²) ⇒ 0.04 BTC⁴
         </Typography>
         <Typography className="cryptech-details que" level="body-sm">

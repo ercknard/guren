@@ -8,6 +8,8 @@ import Typography from "@mui/joy/Typography";
 export default function LegendsPackage() {
   return (
     <Card
+      data-aos="fade-left"
+      data-aos-duration="3000"
       className="security-card"
       orientation="horizontal"
       variant="outlined"
@@ -24,7 +26,10 @@ export default function LegendsPackage() {
         </AspectRatio>
       </CardOverflow>
       <CardContent>
-        <Typography className="text-motion tech-title" textColor="primary.200">
+        <Typography
+          className="text-motion tech-title sec-title"
+          textColor="primary.200"
+        >
           Superscripts price notes :
         </Typography>
         <Typography className="cryptech-details que" level="body-sm">
