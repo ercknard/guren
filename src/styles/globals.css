@@ -2782,9 +2782,15 @@ body {
   margin-top: -7rem;
 }
 
+.main-about-1 {
+  position: relative;
+  width: 100%;
+  padding-left: 4.25rem;
+  margin-top: -7rem;
+}
+
 .sub-about {
   position: relative;
-  min-height: 100vh;
   width: 100%;
   padding-right: 4.25rem;
 }
@@ -3402,9 +3408,15 @@ body {
     margin-top: -7rem;
   }
 
+  .main-about-1 {
+    position: relative;
+    width: 100%;
+    padding-left: 2.5rem;
+    margin-top: -7rem;
+  }
+
   .sub-about {
     position: relative;
-    min-height: 100vh;
     width: 100%;
     padding-right: 2.5rem;
   }
@@ -3660,10 +3672,16 @@ body {
     flex-direction: column-reverse;
   }
 
+  .main-about-1 {
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+    flex-direction: column-reverse;
+  }
+
   .sub-about {
     position: relative;
     width: 100%;
-    min-height: 85vh;
     padding-right: 0;
     flex-direction: column-reverse;
   }

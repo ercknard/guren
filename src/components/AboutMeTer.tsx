@@ -9,7 +9,7 @@ export default class AboutMeSubTer extends Component<Props, State> {
 
   render() {
     return (
-      <div className="to-flex to-align main-about">
+      <div className="to-flex to-align main-about-1">
         <div
           data-aos="fade-right"
           data-aos-duration="3000"

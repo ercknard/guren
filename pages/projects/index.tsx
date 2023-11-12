@@ -26,7 +26,6 @@ export default class Projects extends Component<Props, State> {
             <div className="to-big">
               <div className="content-pages">
                 <ProjectSelection />
-                <ZodiacDivider />
                 <CustomizedTimeline />
               </div>
             </div>

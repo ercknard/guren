@@ -27,9 +27,7 @@ export default class About extends Component<Props, State> {
             <div className="to-big">
               <div className="content-pages">
                 <AboutMe />
-                <ZodiacDivider />
                 <AboutMeSub />
-                <ZodiacDivider />
                 <AboutMeSubTer />
               </div>
             </div>
