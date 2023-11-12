@@ -4,7 +4,7 @@ import Layout from "@/layout/Layout";
 import AboutMe from "@/components/AboutMe";
 import AboutMeSub from "@/components/AboutMeSub";
 import AboutMeSubTer from "@/components/AboutMeTer";
-import ZodiacDivider from "@/components/ZodiacDivider";
+import SecondaryLayout from "@/layout/SecondaryLayout";
 
 type Props = {};
 
@@ -27,7 +27,9 @@ export default class About extends Component<Props, State> {
             <div className="to-big">
               <div className="content-pages">
                 <AboutMe />
-                <AboutMeSub />
+                <SecondaryLayout>
+                  <AboutMeSub />
+                </SecondaryLayout>
                 <AboutMeSubTer />
               </div>
             </div>

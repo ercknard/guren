@@ -5,6 +5,7 @@ import CryptechTeam from "@/components/CryptechTeam";
 import CryptechBullets from "@/components/CryptechBullets";
 import ZodiacDivider from "@/components/ZodiacDivider";
 import CryptechSecurity from "@/components/CryptechSecurity";
+import SecondaryLayout from "@/layout/SecondaryLayout";
 
 type Props = {};
 
@@ -35,7 +36,9 @@ export default class Cryptech extends Component<Props, State> {
                 </div>
                 <PageSigns /> */}
                 <CryptechTeam />
-                <CryptechBullets />
+                <SecondaryLayout>
+                  <CryptechBullets />
+                </SecondaryLayout>
                 <CryptechSecurity />
               </div>
             </div>

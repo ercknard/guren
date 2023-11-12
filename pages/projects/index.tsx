@@ -3,7 +3,7 @@ import Layout from "@/layout/Layout";
 import Head from "next/head";
 import ProjectSelection from "@/components/ProjectSelection";
 import CustomizedTimeline from "@/components/ProjectTImeline";
-import ZodiacDivider from "@/components/ZodiacDivider";
+import SecondaryLayout from "@/layout/SecondaryLayout";
 
 type Props = {};
 
@@ -26,7 +26,9 @@ export default class Projects extends Component<Props, State> {
             <div className="to-big">
               <div className="content-pages">
                 <ProjectSelection />
-                <CustomizedTimeline />
+                <SecondaryLayout>
+                  <CustomizedTimeline />
+                </SecondaryLayout>
               </div>
             </div>
           </section>
