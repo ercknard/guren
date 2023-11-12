@@ -113,7 +113,7 @@ section {
   --seventh-font: 0.05em;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
   :root {
     --gifted-font: 4em;
     --primary-font: 3.75em;
