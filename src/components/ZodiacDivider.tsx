@@ -11,6 +11,7 @@ export default class ZodiacDivider extends Component<Props, State> {
     return (
       <div data-aos="fade" data-aos-duration="1500" className="zodiac-divider">
         <div className="zodiac-to-divide"></div>
+        <span className="zodiac-to-divide-2"></span>
       </div>
     );
   }
