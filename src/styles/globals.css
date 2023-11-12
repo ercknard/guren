@@ -783,7 +783,7 @@ section {
       var(--accent-sub-ter),
       var(--transparent)
     ),
-    rgba(0, 0, 0, 0.65);
+    rgba(0, 0, 0, 0.75);
   --after-theme-db: "ON";
 
   --to-darker: linear-gradient(
@@ -3550,9 +3550,10 @@ section {
 .ctbullets {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 4rem;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+  justify-content: space-evenly !important;
 }
 
 .ctcontent {
