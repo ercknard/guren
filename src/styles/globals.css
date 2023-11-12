@@ -3561,9 +3561,36 @@ section {
     var(--black)
   ) !important;
   border-left: 5px solid var(--accent);
+  filter: drop-shadow(5px 5px 3px var(--black)) !important;
 }
 
 .tech-title {
   font-size: var(--quaternary-font) !important;
   filter: drop-shadow(2px 2px 2px var(--black));
+}
+
+.security-card {
+  width: 100% !important;
+  border-left: 5px solid var(--accent) !important;
+  background: linear-gradient(to left, var(--accent-25), var(--black)),
+    var(--black) !important;
+}
+
+.que {
+  font-size: var(--quinary-font) !important;
+  margin-left: 5rem !important;
+}
+
+.que::before {
+  content: " +";
+  color: var(--background);
+  filter: drop-shadow(2px 2px 2px var(--black));
+}
+
+.card-promo {
+  color: white !important;
+  background: #636b74 !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  filter: drop-shadow(5px 5px 3px var(--black)) !important;
 }
