@@ -3550,10 +3550,10 @@ section {
 .ctbullets {
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-  justify-content: space-evenly !important;
+  gap: 1.5rem;
+  justify-content: center !important;
 }
 
 .ctcontent {
@@ -3562,7 +3562,7 @@ section {
     var(--accent-sub),
     var(--black)
   ) !important;
-  border-left: 5px solid var(--accent);
+  border-left: 2.5px solid var(--accent);
   filter: drop-shadow(5px 5px 3px var(--black)) !important;
 }
 
