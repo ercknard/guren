@@ -2308,6 +2308,98 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.head-services {
+  content: var(--head-open);
+  width: 10rem;
+  height: 10rem;
+  border-bottom: 2px solid !important;
+  border-image: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--background),
+      var(--transparent)
+    )
+    1 !important;
+  filter: drop-shadow(0px 0px 1px var(--background));
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: #000000 !important;
+  border-top: 1px solid white;
+}
+
+.sword-profile {
+  content: var(--sword);
+  width: 10rem;
+  height: 10rem;
+  border-bottom: 2px solid !important;
+  border-image: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--background),
+      var(--transparent)
+    )
+    1 !important;
+  filter: drop-shadow(0px 0px 1px var(--background));
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: black !important;
+  border-top: 1px solid white;
+}
+
+.bag-profile {
+  content: var(--bag);
+  width: 10rem;
+  height: 10rem;
+  border-bottom: 2px solid !important;
+  border-image: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--background),
+      var(--transparent)
+    )
+    1 !important;
+  filter: drop-shadow(0px 0px 1px var(--background));
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: black !important;
+  border-top: 1px solid white;
+}
+
+.cloud-profile {
+  content: var(--cloud);
+  width: 10rem;
+  height: 10rem;
+  border-bottom: 2px solid !important;
+  border-image: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--background),
+      var(--transparent)
+    )
+    1 !important;
+  filter: drop-shadow(0px 0px 1px var(--background));
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: black !important;
+  border-top: 1px solid white;
+}
+
 .head-profile-loader {
   content: var(--head-open);
   width: 8rem;
@@ -3248,7 +3340,7 @@ section {
 }
 
 .security-card {
-  width: 100% !important;
+  width: 75% !important;
   border-left: 5px solid var(--accent) !important;
   background: linear-gradient(to left, var(--accent-25), var(--black)),
     var(--black) !important;
@@ -3256,8 +3348,8 @@ section {
 
 .que {
   font-size: var(--quinary-font) !important;
-  margin-left: 5rem !important;
   line-height: 2rem !important;
+  margin-left: 1rem !important;
 }
 
 .que::before {
@@ -3276,6 +3368,7 @@ section {
 
 .sec-title {
   font-size: var(--special-font) !important;
+  text-align: left;
 }
 
 @media screen and (max-width: 1367px) {
@@ -3321,6 +3414,10 @@ section {
     position: absolute;
     height: 4.5rem;
     background-size: contain;
+  }
+
+  .security-card {
+    width: 100% !important;
   }
 
   .main-navigation.scrolling {

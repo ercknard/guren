@@ -16,12 +16,11 @@ export default function PrimaryPackage() {
       sx={{ width: 260 }}
     >
       <CardOverflow>
-        <AspectRatio ratio="1">
-          <img
-            src="https://images.unsplash.com/photo-1507833423370-a126b89d394b?auto=format&fit=crop&w=90"
-            srcSet="https://images.unsplash.com/photo-1507833423370-a126b89d394b?auto=format&fit=crop&w=90&dpr=2 2x"
-            loading="lazy"
-            alt=""
+        <AspectRatio ratio="1" sx={{ width: 260 }}>
+          <div
+            data-aos="fade"
+            data-aos-duration="1500"
+            className="bag-profile"
           />
         </AspectRatio>
       </CardOverflow>
