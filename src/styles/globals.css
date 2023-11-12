@@ -13,6 +13,10 @@ body {
   font-family: "Ysabeau", sans-serif !important;
 }
 
+main {
+  overflow-x: hidden !important;
+}
+
 /* section {
   overflow-x: hidden !important;
 } */
@@ -2938,8 +2942,8 @@ body {
 .zodiac-to-divide::after {
   content: var(--content);
   position: absolute;
-  font-size: 2rem;
-  margin-top: -25px;
+  font-size: 1.5rem;
+  margin-top: -17.5px;
   left: 50%;
   transform: translate(-50%);
   z-index: 2;
@@ -2949,14 +2953,15 @@ body {
 .zodiac-to-divide::before {
   content: "";
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.25rem;
+  height: 3.25rem;
   background: linear-gradient(180deg, var(--black), var(--accent-sub-ter));
-  margin-top: -30px;
+  margin-top: -25px;
   left: 50%;
   transform: translate(-50%) rotate(45deg);
   z-index: 1;
-  box-shadow: 10px -10px 1px var(--accent-sub), -10px 10px 1px var(--accent-sub);
+  box-shadow: 7.5px -7.5px 1px var(--accent-sub),
+    -7.5px 7.5px 1px var(--accent-sub);
 }
 
 .full-round-skill {
