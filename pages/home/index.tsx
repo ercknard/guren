@@ -6,6 +6,7 @@ import "@/styles/App.css";
 import React, { Component } from "react";
 import Head from "next/head";
 import AboutCoverflow from "@/components/AboutCoverflow";
+import SecondaryLayout from "@/layout/SecondaryLayout";
 
 type Props = {};
 
@@ -28,7 +29,9 @@ export default class ThemeSelection extends Component<Props, State> {
             <div className="to-background" />
             <div className="to-big">
               <div className="content-pages">
-                <AboutCoverflow />
+                <SecondaryLayout>
+                  <AboutCoverflow />
+                </SecondaryLayout>
               </div>
             </div>
           </div>

@@ -2905,6 +2905,7 @@ main {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   text-shadow: 0px 0px 5px var(--black);
+  color: var(--background);
 }
 
 .zodiac-divider::before {
@@ -2920,6 +2921,7 @@ main {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   text-shadow: 0px 0px 5px var(--black);
+  color: var(--background);
 }
 
 .zodiac-to-divide-2::after {
@@ -2935,6 +2937,7 @@ main {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   text-shadow: 0px 0px 5px var(--black);
+  color: var(--background);
 }
 
 .zodiac-to-divide-2::before {
@@ -2950,6 +2953,7 @@ main {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   text-shadow: 0px 0px 5px var(--black);
+  color: var(--background);
 }
 
 .zodiac-to-divide::after {
@@ -2961,6 +2965,7 @@ main {
   transform: translate(-50%);
   z-index: 2;
   text-shadow: 0px 0px 5px var(--black);
+  color: var(--background);
 }
 
 .zodiac-to-divide::before {

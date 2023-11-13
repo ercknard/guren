@@ -176,10 +176,13 @@ function AboutCoverflow() {
         data-aos-duration="1200"
         className="page-title text-effect"
       >
-        Please select a theme
+        Zodiac Theme Hub
       </div>
       <PageSigns />
       <div data-aos="fade-up" data-aos-duration="1200" className="normal-text">
+        <span data-aos="fade" data-aos-duration="1200">
+          &quot;Select 1 from 12 available themes&quot;
+        </span>
         <div data-aos="fade-up" data-aos-duration="1200" className="container">
           <Swiper
             effect={"coverflow"}
