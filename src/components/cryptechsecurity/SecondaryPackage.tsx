@@ -16,13 +16,15 @@ export default function SecondaryPackage() {
       sx={{ width: 260 }}
     >
       <CardOverflow>
-        <AspectRatio ratio="1" sx={{ width: 260 }}>
-          <div
-            data-aos="fade"
-            data-aos-duration="1500"
-            className="sword-profile"
-          />
-        </AspectRatio>
+        <div className="to-hide">
+          <AspectRatio ratio="1" sx={{ width: 260 }}>
+            <div
+              data-aos="fade"
+              data-aos-duration="1500"
+              className="sword-profile"
+            />
+          </AspectRatio>
+        </div>
       </CardOverflow>
       <CardContent>
         <Typography
