@@ -3793,7 +3793,7 @@ main {
   left: 50%;
   width: 100vw;
   height: 100%;
-  background: #00000095;
+  background: rgba(0, 0, 0, 0.75);
   z-index: -1;
   transform: translate(-50%);
   transform-origin: top right;
@@ -3833,3 +3833,67 @@ main {
   transform: translateX(-50%) translateY(100%) scale(-1);
   z-index: 1;
 }
+
+.to-dust-effect::before {
+  content: "";
+  top: -40px;
+  position: absolute;
+  width: 100vw;
+  height: 5rem;
+  right: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(
+    to top,
+    var(--transparent),
+    var(--accent-sub-ter),
+    var(--transparent)
+  );
+  z-index: -1;
+}
+
+.to-dust-effect::after {
+  content: "";
+  bottom: -40px;
+  position: absolute;
+  width: 100vw;
+  height: 5rem;
+  right: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(
+    to top,
+    var(--transparent),
+    var(--accent-sub-ter),
+    var(--transparent)
+  );
+  z-index: -1;
+}
+/* 
+.to-corridor-effect::before {
+  content: "";
+  top: -40px;
+  position: absolute;
+  width: 100vw;
+  height: 5rem;
+  right: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: var(--sword);
+  background-size: contain;
+  z-index: -1;
+}
+
+.to-corridor-effect::after {
+  content: "";
+  bottom: -40px;
+  position: absolute;
+  width: 100vw;
+  height: 5rem;
+  right: 0;
+  left: 50%;
+  transform: translate(-50%) scale(-2);
+  background: var(--sword);
+  background-size: contain;
+  z-index: -1;
+} */
