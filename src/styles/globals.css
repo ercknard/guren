@@ -177,6 +177,7 @@ main {
   --conste: "Aquarius";
   --to-cosmic: url("/static/images/comics/white.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(25, 25, 25);
 }
 
 [data-theme="yellow"] {
@@ -209,6 +210,7 @@ main {
   --conste: "Pisces";
   --to-cosmic: url("/static/images/comics/yellow.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(24, 20, 8);
 }
 
 [data-theme="red"] {
@@ -239,6 +241,7 @@ main {
   --conste: "Aries";
   --to-cosmic: url("/static/images/comics/red.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(25, 9, 9);
 }
 
 [data-theme="blood"] {
@@ -271,6 +274,7 @@ main {
   --conste: "Taurus";
   --to-cosmic: url("/static/images/comics/blood.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(24, 13, 5);
 }
 
 [data-theme="magenta"] {
@@ -302,6 +306,7 @@ main {
   --theme-name: "Gemini (♊︎)";
   --to-cosmic: url("/static/images/comics/magenta.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(15, 6, 15);
 }
 
 [data-theme="purple"] {
@@ -334,6 +339,7 @@ main {
   --conste: "Cancer";
   --to-cosmic: url("/static/images/comics/purple.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(17, 11, 24);
 }
 
 [data-theme="violet"] {
@@ -366,6 +372,7 @@ main {
   --conste: "Leo";
   --to-cosmic: url("/static/images/comics/violet.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(12, 14, 25);
 }
 
 [data-theme="blue"] {
@@ -396,6 +403,7 @@ main {
   --conste: "Virgo";
   --to-cosmic: url("/static/images/comics/blue.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(7, 13, 25);
 }
 
 [data-theme="navy"] {
@@ -426,6 +434,7 @@ main {
   --conste: "Libra";
   --to-cosmic: url("/static/images/comics/navy.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(8, 1, 25);
 }
 
 [data-theme="ocean"] {
@@ -458,6 +467,7 @@ main {
   --conste: "Scorpio";
   --to-cosmic: url("/static/images/comics/ocean.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(9, 19, 22);
 }
 
 [data-theme="green"] {
@@ -490,6 +500,7 @@ main {
   --conste: "Sagittarius";
   --to-cosmic: url("/static/images/comics/green.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(11, 24, 18);
 }
 
 [data-theme="epic"] {
@@ -520,6 +531,7 @@ main {
   --conste: "Capricorn";
   --to-cosmic: url("/static/images/comics/epic.webp");
   --particles: particles 3s linear 1;
+  --segment: rgb(19, 23, 7);
 }
 
 [data-theme="white"],
@@ -787,7 +799,7 @@ main {
       var(--accent-sub-ter),
       var(--transparent)
     ),
-    rgba(0, 0, 0, 0.6);
+    rgba(0, 0, 0, 0.75);
   --after-theme-db: "ON";
 
   --to-darker: linear-gradient(
@@ -2872,6 +2884,7 @@ main {
     var(--transparent),
     var(--background)
   ); */
+  z-index: 2;
 }
 
 .zodiac-to-divide {
@@ -3768,21 +3781,21 @@ main {
   left: 50%;
   width: 100vw;
   height: 100%;
-  background: var(--to-cosmic);
+  background: var(--background);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  z-index: 1;
   transform: translate(-50%);
   transform-origin: top right;
-  border: 2.5px solid;
+  /* border: 50px solid white !important;
   border-image: linear-gradient(
       to left,
       var(--transparent),
       var(--background),
       var(--transparent)
     )
-    1 !important;
+    1 !important; */
 }
 
 .to-effect-dark {
@@ -3793,8 +3806,8 @@ main {
   left: 50%;
   width: 100vw;
   height: 100%;
-  background: rgba(0, 0, 0, 0.75);
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
   transform: translate(-50%);
   transform-origin: top right;
 }
@@ -3834,7 +3847,7 @@ main {
   z-index: 1;
 }
 
-.to-dust-effect::before {
+/* .to-dust-effect::before {
   content: "";
   top: -40px;
   position: absolute;
@@ -3849,7 +3862,7 @@ main {
     var(--accent-sub-ter),
     var(--transparent)
   );
-  z-index: -1;
+  z-index: 1;
 }
 
 .to-dust-effect::after {
@@ -3867,8 +3880,8 @@ main {
     var(--accent-sub-ter),
     var(--transparent)
   );
-  z-index: -1;
-}
+  z-index: 1;
+} */
 /* 
 .to-corridor-effect::before {
   content: "";
@@ -3897,3 +3910,129 @@ main {
   background-size: contain;
   z-index: -1;
 } */
+
+.primary-svg {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.secondary-svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  transform: translate(-50%) rotate(360deg);
+  z-index: 1;
+}
+
+.tertiary-svg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  transform: translate(-50%) rotate(180deg);
+  z-index: 1;
+}
+
+.quaternary-svg {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  transform: translate(-50%) rotate(180deg);
+  z-index: 1;
+}
+
+.custom-shape-divider-top-1699865429 svg {
+  position: relative;
+  display: block;
+  width: calc(100vw + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1699865429 .shape-fill {
+  fill: var(--accent-sub-ter);
+}
+
+.custom-shape-divider-top-1699865429 .shape-fills {
+  fill: var(--segment);
+}
+
+.to-bgs-tertiary {
+  background: var(--to-cosmic);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skewed-tertiary {
+  position: absolute;
+  top: -80px;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  width: 100vw;
+  height: calc(100% + 80px);
+  background: var(--to-cosmic);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  transform: translate(-50%);
+  /* border: 2.5px solid;
+  border-image: linear-gradient(
+      to left,
+      var(--transparent),
+      var(--background),
+      var(--transparent)
+    )
+    1 !important; */
+}
+
+.to-effect-dark-tertiary {
+  position: absolute;
+  top: -80px;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  width: 100vw;
+  height: calc(100% + 80px);
+  background: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+  transform: translate(-50%);
+  transform-origin: top right;
+}
+
+.to-up-z {
+  z-index: 5;
+  position: relative;
+}
+
+.toblack {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  width: 100vw;
+  height: 100px;
+  transform: translate(-50%);
+  background: linear-gradient(
+    to top,
+    var(--transparent),
+    var(--black),
+    var(--transparent)
+  );
+  z-index: 1;
+}

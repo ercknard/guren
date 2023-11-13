@@ -33,7 +33,7 @@ export default class AboutMeSubTer extends Component<Props, State> {
           data-aos-duration="3000"
           className="main-avatar"
         >
-          <div className="main-head-profile-sub-ter shadowpic" />
+          <div className="main-head-profile-sub-ter" />
         </div>
       </div>
     );

@@ -5,6 +5,7 @@ import AboutMe from "@/components/AboutMe";
 import AboutMeSub from "@/components/AboutMeSub";
 import AboutMeSubTer from "@/components/AboutMeTer";
 import SecondaryLayout from "@/layout/SecondaryLayout";
+import TertiaryLayout from "@/layout/TertiaryLayout";
 
 type Props = {};
 
@@ -30,7 +31,9 @@ export default class About extends Component<Props, State> {
                 <SecondaryLayout>
                   <AboutMeSub />
                 </SecondaryLayout>
-                <AboutMeSubTer />
+                <TertiaryLayout>
+                  <AboutMeSubTer />
+                </TertiaryLayout>
               </div>
             </div>
           </section>

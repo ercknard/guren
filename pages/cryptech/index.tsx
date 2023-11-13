@@ -6,6 +6,7 @@ import CryptechBullets from "@/components/CryptechBullets";
 import ZodiacDivider from "@/components/ZodiacDivider";
 import CryptechSecurity from "@/components/CryptechSecurity";
 import SecondaryLayout from "@/layout/SecondaryLayout";
+import TertiaryLayout from "@/layout/TertiaryLayout";
 
 type Props = {};
 
@@ -39,7 +40,9 @@ export default class Cryptech extends Component<Props, State> {
                 <SecondaryLayout>
                   <CryptechBullets />
                 </SecondaryLayout>
-                <CryptechSecurity />
+                <TertiaryLayout>
+                  <CryptechSecurity />
+                </TertiaryLayout>
               </div>
             </div>
           </section>
