@@ -96,7 +96,7 @@ export default class Footer extends Component<Props, State> {
               </li>
             </ul>
             <p className="rights">
-              &copy;2023 Ercknard Guren I | All Rights Reserved
+              &copy;2023 Ercknard Guren I | Web Portfolio
             </p>
           </div>
         </section>
