@@ -24,8 +24,8 @@ export default class CryptechTeam extends Component<Props, State> {
         <PageSigns />
         <div className="normal-text">
           <span data-aos="fade" data-aos-duration="1200">
-            &quot;Unlocking Tomorrow`s Digital Frontier with Cryptech Services:
-            Your Vision, Our Expertise.&quot;
+            &quot; Unlocking Tomorrow`s Digital Frontier with Cryptech Services:
+            Your Vision, Our Expertise. &quot;
           </span>
           <div data-aos="fade-up" data-aos-duration="1200">
             <div className="to-gap-project">

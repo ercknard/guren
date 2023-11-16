@@ -24,11 +24,11 @@ export default class ProjectSelection extends Component<Props, State> {
         <PageSigns />
         <div className="normal-text">
           <span data-aos="fade" data-aos-duration="1200">
-            &quot;Welcome to my projects page, where I showcase a collection of
+            &quot; Welcome to my projects page, where I showcase a collection of
             my diverse and creative endeavors. Explore a range of{" "}
             <span className="text-effect">my /Cryptech Services¹</span> work ,
             from web development to design, as I share the passion and
-            dedication I bring to each project.&quot;
+            dedication I bring to each project. &quot;
           </span>
           <div>
             <div className="to-gap-project">

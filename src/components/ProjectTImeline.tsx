@@ -24,9 +24,9 @@ export default function CustomizedTimeline() {
       <PageSigns />
       <div className="normal-text">
         <span data-aos="fade" data-aos-duration="1200">
-          &quot;Here is the timeline representation of plan and actual progress
+          &quot; Here is the timeline representation of plan and actual progress
           of <span className="text-effect">my /Cryptech Services¹ </span>
-          projects.&quot;
+          projects. &quot;
           <br />
           &apos;
           <CheckIcon className="done" /> = Project is considered done,{" "}

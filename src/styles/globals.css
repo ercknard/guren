@@ -2652,7 +2652,7 @@ main {
   font-weight: 500 !important;
 }
 .project-logo::before {
-  content: var(--content);
+  content: var(--content) !important;
   position: absolute;
   color: var(--background);
   font-size: 2rem;
@@ -3416,7 +3416,7 @@ main {
 
 .sec-title {
   font-size: var(--special-font) !important;
-  text-align: left;
+  text-align: left !important;
 }
 
 @media screen and (max-width: 1367px) {
@@ -4270,4 +4270,37 @@ main {
   .main-footer {
     min-height: 35vh;
   }
+}
+
+.to-flex-git {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  text-align: center;
+}
+
+.to-width-git {
+  position: relative;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.to-width-git-1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.git-button:hover {
+  transform: translateY(-2px);
+  filter: saturate(180%);
+}
+
+.git-button:active {
+  transform: translateY(2px);
 }

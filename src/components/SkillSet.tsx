@@ -22,7 +22,7 @@ export default class SkillSet extends Component<Props, State> {
         <PageSigns />
         <div className="normal-text">
           <span data-aos="fade" data-aos-duration="1200">
-            &quot;List of things that I good at.&quot;
+            &quot; List of things that I good at. &quot;
           </span>
           {/* <div className="project-button linear">
             <Link href="/skills/linear" rel="noopener noreferrer">

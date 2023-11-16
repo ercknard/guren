@@ -25,7 +25,7 @@ export default class CryptechSecurity extends Component<Props, State> {
         <PageSigns />
         <div className="normal-text">
           <span data-aos="fade" data-aos-duration="1200">
-            &quot;Security Services we offer&quot;
+            &quot; Security Services we offer &quot;
           </span>
           <div className="ctbullets">
             <PrimaryPackage />
