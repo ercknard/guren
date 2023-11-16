@@ -4,6 +4,7 @@ import Head from "next/head";
 import ProjectSelection from "@/components/ProjectSelection";
 import CustomizedTimeline from "@/components/ProjectTImeline";
 import SecondaryLayout from "@/layout/SecondaryLayout";
+import Footer from "@/layout/Footer";
 
 type Props = {};
 
@@ -32,6 +33,7 @@ export default class Projects extends Component<Props, State> {
               </div>
             </div>
           </section>
+          <Footer />
         </Layout>
       </>
     );

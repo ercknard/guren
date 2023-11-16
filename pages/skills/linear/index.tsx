@@ -17,7 +17,7 @@ export default class Skills extends Component<Props, State> {
           <title>Ercknard | Skills</title>
         </Head>
         <Layout>
-          <section>
+          <section className="skill-set-container">
             <div className="landing-for-down" />
             <div className="to-background" />
             <div className="pages-banner" />

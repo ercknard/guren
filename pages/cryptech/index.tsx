@@ -3,10 +3,10 @@ import Layout from "@/layout/Layout";
 import Head from "next/head";
 import CryptechTeam from "@/components/CryptechTeam";
 import CryptechBullets from "@/components/CryptechBullets";
-import ZodiacDivider from "@/components/ZodiacDivider";
 import CryptechSecurity from "@/components/CryptechSecurity";
 import SecondaryLayout from "@/layout/SecondaryLayout";
 import TertiaryLayout from "@/layout/TertiaryLayout";
+import Footer from "@/layout/Footer";
 
 type Props = {};
 
@@ -46,6 +46,7 @@ export default class Cryptech extends Component<Props, State> {
               </div>
             </div>
           </section>
+          <Footer />
         </Layout>
       </>
     );

@@ -6,6 +6,7 @@ import AboutMeSub from "@/components/AboutMeSub";
 import AboutMeSubTer from "@/components/AboutMeTer";
 import SecondaryLayout from "@/layout/SecondaryLayout";
 import TertiaryLayout from "@/layout/TertiaryLayout";
+import Footer from "@/layout/Footer";
 
 type Props = {};
 
@@ -37,6 +38,7 @@ export default class About extends Component<Props, State> {
               </div>
             </div>
           </section>
+          <Footer />
         </Layout>
       </>
     );

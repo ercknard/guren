@@ -8,12 +8,11 @@ interface TertiaryLayoutProps {
 const TertiaryLayout: React.FC<TertiaryLayoutProps> = ({ children }) => {
   return (
     <>
-      <div className="to-relative">
+      <div className="to-relative tertiarypic">
         <div> {children} </div>
         <div className="skewed-tertiary"></div>
         <div className="to-effect-dark-tertiary"></div>
-        <div className="toblack"></div>
-        <ZodiacDivider />
+        {/* <div className="toblack"></div> */}
       </div>
     </>
   );
