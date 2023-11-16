@@ -22,7 +22,7 @@ export default class GithubLanguages extends Component<Props, State> {
         <PageSigns />
         <div className="normal-text">
           <span data-aos="fade" data-aos-duration="1200">
-            &quot; Showing 5 latest Github events [Ercknard] &quot;
+            &quot; Showing 1-5 latest Github events [Ercknard] &quot;
           </span>
           <div className="to-flex-git">
             <GitFeed />
