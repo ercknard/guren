@@ -1018,6 +1018,24 @@ main {
   opacity: 100%;
 }
 
+.canvas-container-1 {
+  position: fixed !important;
+  z-index: -3 !important;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100vw;
+  height: 100%;
+  opacity: 50%;
+}
+
+#tsparticles-1 {
+  position: relative !important;
+  width: 100vw;
+  height: 100%;
+  animation: var(--particles);
+}
+
 @keyframes particles {
   0% {
     opacity: 0%;
@@ -3547,7 +3565,7 @@ main {
   }
 
   #menu .main-sec-nav {
-    background: var(--background-ter), var(--black);
+    background: var(--black);
     background-size: cover;
     position: absolute;
     left: 0;
@@ -4079,7 +4097,11 @@ main {
   left: 50%;
   width: 100vw;
   height: calc(100% + 80px);
-  background: rgba(0, 0, 0, 0.75);
+  background: radial-gradient(
+    at bottom,
+    var(--accent-sub-ter),
+    rgba(0, 0, 0, 1)
+  );
   z-index: -1;
   transform: translate(-50%);
   transform-origin: top right;
@@ -4143,7 +4165,7 @@ main {
 }
 
 .custom-shape-divider-bottom-1700087865 .shape-fill {
-  fill: var(--accent-25);
+  fill: var(--segment);
 }
 
 .custom-shape-divider-top-1700089802 {
@@ -4230,4 +4252,22 @@ main {
 
 .skill-set-container {
   padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 1920px) {
+  .main-footer {
+    min-height: 25vh;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .main-footer {
+    min-height: 30vh;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .main-footer {
+    min-height: 35vh;
+  }
 }

@@ -17,7 +17,7 @@ export default function TertiaryPackage() {
     >
       <CardOverflow>
         <div className="to-hide">
-          <AspectRatio ratio="1" sx={{ width: 260 }}>
+          <AspectRatio ratio="1" sx={{ width: 210 }}>
             <div
               data-aos="fade"
               data-aos-duration="1500"

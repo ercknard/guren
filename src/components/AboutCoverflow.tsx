@@ -14,6 +14,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import NewParticlesview from "./NewParticles";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
@@ -171,6 +172,7 @@ function AboutCoverflow() {
 
   return (
     <>
+      <NewParticlesview particleColor={particleColor} />
       <div
         data-aos="fade-down"
         data-aos-duration="1200"

@@ -30,7 +30,8 @@
     ".next/types/**/*.ts",
     "src/app/pages/contact.js",
     "src/app/pages/about.jsx",
-    "node_modules/@types"
+    "node_modules/@types",
+    "src/components/Sky.jsx"
   ],
   "exclude": ["node_modules"]
 }

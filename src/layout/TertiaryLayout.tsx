@@ -1,5 +1,4 @@
 import React, { ReactNode, useState, useEffect } from "react";
-import ZodiacDivider from "@/components/ZodiacDivider";
 
 interface TertiaryLayoutProps {
   children: ReactNode;

@@ -5,6 +5,8 @@ import ProjectSelection from "@/components/ProjectSelection";
 import CustomizedTimeline from "@/components/ProjectTImeline";
 import SecondaryLayout from "@/layout/SecondaryLayout";
 import Footer from "@/layout/Footer";
+import TertiaryLayout from "@/layout/TertiaryLayout";
+import GithubLanguages from "@/components/GithubLanguages";
 
 type Props = {};
 
@@ -30,6 +32,9 @@ export default class Projects extends Component<Props, State> {
                 <SecondaryLayout>
                   <CustomizedTimeline />
                 </SecondaryLayout>
+                <TertiaryLayout>
+                  <GithubLanguages />
+                </TertiaryLayout>
               </div>
             </div>
           </section>

@@ -14,6 +14,7 @@ import Checkbox from "@mui/material/Checkbox";
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
 import Button from "@mui/material/Button";
+import NewParticlesview from "./NewParticles";
 
 function Theme() {
   const getQueryParam = (name: string): string | null => {
@@ -112,7 +113,7 @@ function Theme() {
     "particleColor"
   );
 
-  const [particleSize, setParticleSize] = useState<number>(0.5);
+  const [particleSize, setParticleSize] = useState<number>(1);
 
   const [bg, setBG] = useLocalStorage("bg", "bg");
 
@@ -337,7 +338,7 @@ function Theme() {
   const switchThemeDark = () => {
     const newdark = "dark";
     setDark(newdark);
-    const newpartSize: number = 0.5;
+    const newpartSize: number = 1;
     setParticleSize(newpartSize);
   };
 
