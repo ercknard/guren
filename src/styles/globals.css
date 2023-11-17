@@ -1020,7 +1020,7 @@ main {
 
 .canvas-container-1 {
   position: fixed !important;
-  z-index: -3 !important;
+  z-index: -1 !important;
   top: 0;
   left: 50%;
   transform: translate(-50%);
@@ -2638,13 +2638,39 @@ main {
 }
 
 .to-gap-project {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-top: 3rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.to-white {
+  color: white !important;
+}
+
+.to-proj-width {
+  width: 75%;
+}
+
+.to-gray {
+  color: gray !important;
 }
 
 .project-name {
   font-size: var(--quaternary-font) !important;
   font-weight: 700 !important;
+}
+
+.to-proj-up {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-names {
+  font-size: var(--tertiary-font) !important;
+  font-weight: 500 !important;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-project-name {
@@ -4303,4 +4329,207 @@ main {
 
 .git-button:active {
   transform: translateY(2px);
+}
+
+.to-fixed {
+  position: fixed;
+}
+
+.to-project-banner {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  border: 2px solid;
+  border-image: linear-gradient(to top, var(--background), transparent) 1;
+}
+
+.to-proj-web {
+  background: url("/static/images/projects/erckportfolio.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  left: 50%;
+  transform: translate(-50%);
+  top: 10rem;
+  border: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(
+      to left,
+      transparent,
+      var(--background),
+      transparent
+    )
+    1;
+}
+
+.to-proj-gallery {
+  background: url("/static/images/projects/minecraftgallery.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  left: 50%;
+  transform: translate(-50%);
+  top: 10rem;
+  border: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(
+      to left,
+      transparent,
+      var(--background),
+      transparent
+    )
+    1;
+}
+
+.to-proj-test {
+  background: url("/static/images/projects/cryptechtest.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  left: 50%;
+  transform: translate(-50%);
+  top: 10rem;
+  border: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(
+      to left,
+      transparent,
+      var(--background),
+      transparent
+    )
+    1;
+}
+
+.to-proj-meter {
+  background: url("/static/images/projects/maysilo.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  left: 50%;
+  transform: translate(-50%);
+  top: 10rem;
+  border: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(
+      to left,
+      transparent,
+      var(--background),
+      transparent
+    )
+    1;
+}
+
+.to-proj-craft {
+  background: url("/static/images/projects/cryptechcraft.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  left: 50%;
+  transform: translate(-50%);
+  top: 10rem;
+  border: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(
+      to left,
+      transparent,
+      var(--background),
+      transparent
+    )
+    1;
+}
+
+.to-proj-services {
+  background: url("/static/images/projects/cryptechservices.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  left: 50%;
+  transform: translate(-50%);
+  top: 10rem;
+  border: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(
+      to left,
+      transparent,
+      var(--background),
+      transparent
+    )
+    1;
+}
+
+.to-proj-metrix {
+  background: url("/static/images/projects/metrix.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  left: 50%;
+  transform: translate(-50%);
+  top: 10rem;
+  border: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(
+      to left,
+      transparent,
+      var(--background),
+      transparent
+    )
+    1;
+}
+
+.to-proj-aercrypt {
+  background: url("/static/images/projects/aercrypt.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  left: 50%;
+  transform: translate(-50%);
+  top: 10rem;
+  border: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(
+      to left,
+      transparent,
+      var(--background),
+      transparent
+    )
+    1;
+}
+
+.contributor {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 50%;
 }

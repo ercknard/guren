@@ -55,7 +55,7 @@ const NewParticlesview: React.FC<NewParticleAnimationProps> = ({
               type: "circle",
               stroke: {
                 width: 0,
-                color: "#000000",
+                color: particleColor,
               },
               polygon: {
                 nb_sides: 5,

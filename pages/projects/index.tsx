@@ -7,6 +7,7 @@ import SecondaryLayout from "@/layout/SecondaryLayout";
 import Footer from "@/layout/Footer";
 import TertiaryLayout from "@/layout/TertiaryLayout";
 import GithubLanguages from "@/components/GithubLanguages";
+import GitFeed from "@/components/github/GitMainEvents";
 
 type Props = {};
 
@@ -33,7 +34,9 @@ export default class Projects extends Component<Props, State> {
                   <CustomizedTimeline />
                 </SecondaryLayout>
                 <TertiaryLayout>
-                  <GithubLanguages />
+                  <GithubLanguages projectName="Ercknard">
+                    <GitFeed />
+                  </GithubLanguages>
                 </TertiaryLayout>
               </div>
             </div>
