@@ -79,7 +79,7 @@ export default class ErcknardWebPortfolio extends Component<Props, State> {
                       Ercknard Web Portfolio
                     </Typography>
                   </Breadcrumbs>
-                  <div className="to-flex to-align">
+                  <div className="to-flex to-align to-fix">
                     <div
                       data-aos="fade-left"
                       data-aos-duration="1200"
@@ -104,15 +104,17 @@ export default class ErcknardWebPortfolio extends Component<Props, State> {
                         creative journey. Explore my projects, designs, and
                         achievements all in one place.
                       </div>
-                      <div className="to-flex to-align">
+                      <div className="to-flex to-align to-fix">
                         <div className="about-sub-text">Contributors:</div>
-                        <Image
-                          className="contributor"
-                          src="/static/images/logos/Shotgun Boy - Gyuhwan123.png"
-                          alt="contributor"
-                          width={50}
-                          height={50}
-                        />
+                        <div className="to-flex to-align">
+                          <Image
+                            className="contributor"
+                            src="/static/images/logos/Shotgun Boy - Gyuhwan123.png"
+                            alt="contributor"
+                            width={50}
+                            height={50}
+                          />
+                        </div>
                         <span>Ercknard</span>
                       </div>
                       <div

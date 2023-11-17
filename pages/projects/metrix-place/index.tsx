@@ -77,7 +77,7 @@ export default class Metrixplace extends Component<Props, State> {
                     </Link>
                     <Typography className="to-white">Metrix Place</Typography>
                   </Breadcrumbs>
-                  <div className="to-flex to-align">
+                  <div className="to-flex to-align to-fix">
                     <div
                       data-aos="fade-left"
                       data-aos-duration="1200"
@@ -102,32 +102,38 @@ export default class Metrixplace extends Component<Props, State> {
                         single pixel per MetrixCoin transaction by paying the
                         gas fee for the transaction.
                       </div>
-                      <div className="to-flex to-align">
+                      <div className="to-flex to-align to-fix">
                         <div className="about-sub-text">Contributors:</div>
-                        <Image
-                          className="contributor"
-                          src="/static/images/logos/Shotgun Boy - Gyuhwan123.png"
-                          alt="contributor"
-                          width={50}
-                          height={50}
-                        />
-                        <span>Ercknard</span>
-                        <Image
-                          className="contributor"
-                          src="/static/images/logos/seqsee.png"
-                          alt="contributor"
-                          width={50}
-                          height={50}
-                        />
-                        <span>SeqSEE</span>
-                        <Image
-                          className="contributor"
-                          src="/static/images/logos/squid.png"
-                          alt="contributor"
-                          width={50}
-                          height={50}
-                        />
-                        <span>Squid</span>
+                        <div className="to-flex to-align">
+                          <Image
+                            className="contributor"
+                            src="/static/images/logos/Shotgun Boy - Gyuhwan123.png"
+                            alt="contributor"
+                            width={50}
+                            height={50}
+                          />
+                          <span>Ercknard</span>
+                        </div>
+                        <div className="to-flex to-align">
+                          <Image
+                            className="contributor"
+                            src="/static/images/logos/seqsee.png"
+                            alt="contributor"
+                            width={50}
+                            height={50}
+                          />
+                          <span>SeqSEE</span>
+                        </div>
+                        <div className="to-flex to-align">
+                          <Image
+                            className="contributor"
+                            src="/static/images/logos/squid.png"
+                            alt="contributor"
+                            width={50}
+                            height={50}
+                          />
+                          <span>Squid</span>
+                        </div>
                       </div>
                       <div
                         data-aos="fade"

@@ -79,7 +79,7 @@ export default class ErcknardMinecraftGalley extends Component<Props, State> {
                       Ercknard Minecraft Gallery
                     </Typography>
                   </Breadcrumbs>
-                  <div className="to-flex to-align">
+                  <div className="to-flex to-align to-fix">
                     <div
                       data-aos="fade-left"
                       data-aos-duration="1200"
@@ -108,16 +108,18 @@ export default class ErcknardMinecraftGalley extends Component<Props, State> {
                         iconic blocky world of Minecraft.
                       </div>
 
-                      <div className="to-flex to-align">
+                      <div className="to-flex to-align to-fix">
                         <div className="about-sub-text">Contributors:</div>
-                        <Image
-                          className="contributor"
-                          src="/static/images/logos/Shotgun Boy - Gyuhwan123.png"
-                          alt="contributor"
-                          width={50}
-                          height={50}
-                        />
-                        <span>Ercknard</span>
+                        <div className="to-flex to-align">
+                          <Image
+                            className="contributor"
+                            src="/static/images/logos/Shotgun Boy - Gyuhwan123.png"
+                            alt="contributor"
+                            width={50}
+                            height={50}
+                          />
+                          <span>Ercknard</span>{" "}
+                        </div>
                       </div>
                       <div
                         data-aos="fade"
