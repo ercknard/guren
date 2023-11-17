@@ -304,6 +304,7 @@ main {
   --bag: url("/static/images/divider/bag-magenta.webp");
   --content: "♊︎";
   --theme-name: "Gemini (♊︎)";
+  --conste: "Gemini";
   --to-cosmic: url("/static/images/comics/magenta.webp");
   --particles: particles 3s linear 1;
   --segment: rgb(15, 6, 15);
