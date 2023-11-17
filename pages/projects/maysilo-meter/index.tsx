@@ -64,7 +64,10 @@ export default class ErcknardWebPortfolio extends Component<Props, State> {
                     Ercknard Web Portfolio
                   </div>
                   <PageSigns /> */}
-                  <Breadcrumbs aria-label="breadcrumb" className="to-gray">
+                  <Breadcrumbs
+                    aria-label="breadcrumb"
+                    className="to-gray to-right"
+                  >
                     <Link underline="hover" className="to-gray" href="/">
                       Home
                     </Link>

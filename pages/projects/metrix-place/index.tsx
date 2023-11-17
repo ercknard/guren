@@ -62,9 +62,12 @@ export default class Metrixplace extends Component<Props, State> {
                     className="page-title text-effect"
                   >
                     Ercknard Web Portfolio
-                  </div>
-                  <PageSigns /> */}
-                  <Breadcrumbs aria-label="breadcrumb" className="to-gray">
+                  </div> 
+    <PageSigns /> */}
+                  <Breadcrumbs
+                    aria-label="breadcrumb"
+                    className="to-gray to-right"
+                  >
                     <Link underline="hover" className="to-gray" href="/">
                       Home
                     </Link>
