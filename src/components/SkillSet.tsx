@@ -131,7 +131,7 @@ export default class SkillSet extends Component<Props, State> {
                 <SkillsLinear skillName="CSS3" skillPercent="80%" />
               </div>
               <div className="to-linear-skill">
-                <SkillsLinear skillName="JavaScript" skillPercent="75%" />
+                <SkillsLinear skillName="Javascript" skillPercent="75%" />
               </div>
             </div>
             <div className="skillgroup">
