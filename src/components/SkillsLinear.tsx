@@ -18,11 +18,11 @@ const SkillsLinear = ({
       <div className="full-linear-skill to-flex to-fix">
         <div>
           <span className="to-skillname-text">{skillName}</span>
-          <div className="linear-bar" style={skillStyle} />
-          <span className="to-skill-design-2 to-hide" />
-          <span className="to-skill-design to-hide" />
-          <span className="to-skillpersent-text">{skillPercent}</span>
         </div>
+        <div className="linear-bar" style={skillStyle} />
+        <span className="to-skill-design-2 to-hide" />
+        <span className="to-skill-design to-hide" />
+        <span className="to-skillpersent-text">{skillPercent}</span>
       </div>
     </>
   );
