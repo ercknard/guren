@@ -50,7 +50,7 @@ export default class Metrixplace extends Component<Props, State> {
                   <Image
                     className="to-project-banner"
                     alt="Project"
-                    src="/static/images/projects/metrix.png"
+                    src="/static/images/projects/metrix.PNG"
                     width={3455}
                     height={1783}
                   />

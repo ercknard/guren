@@ -3427,11 +3427,6 @@ main {
   margin-left: 1rem !important;
 }
 
-.to-space-skill {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .que::before {
   content: " +";
   color: var(--background);
@@ -4508,7 +4503,7 @@ main {
 }
 
 .to-proj-metrix {
-  background: url("/static/images/projects/metrix.png");
+  background: url("/static/images/projects/metrix.PNG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
