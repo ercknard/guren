@@ -3496,6 +3496,25 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
+  .to-proj-aercrypt,
+  .to-proj-metrix,
+  .to-proj-services,
+  .to-proj-craft,
+  .to-proj-meter,
+  .to-proj-test,
+  .to-proj-gallery,
+  .to-proj-web {
+    display: none;
+  }
+
+  .to-right {
+    margin-top: unset !important;
+    margin-left: unset !important;
+  }
+
+  .to-proj-width {
+    width: 100%;
+  }
   .linear-bar {
     margin-left: 2rem;
   }
