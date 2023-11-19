@@ -1,6 +1,5 @@
 import React, { Component, ReactNode } from "react";
 import PageSigns from "./PageSigns";
-import GitFeed from "./github/GitMainEvents";
 
 interface GithubLanguagesProps {
   children: ReactNode;
