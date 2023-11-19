@@ -46,7 +46,9 @@ export default function Navigation() {
             </div>
             <div className="the-links">
               <Link
-                className={`nomo ${pathname === "/about" ? "active" : ""}`}
+                className={`nomo ${
+                  pathname?.toLowerCase().startsWith("/about") ? "active" : ""
+                }`}
                 href="/about"
               >
                 ABOUT ME
@@ -54,7 +56,9 @@ export default function Navigation() {
             </div>
             <div className="the-links">
               <Link
-                className={`nomo ${pathname === "/skills" ? "active" : ""}`}
+                className={`nomo ${
+                  pathname?.toLowerCase().startsWith("/skills") ? "active" : ""
+                }`}
                 href="/skills"
               >
                 SKILLS
@@ -63,7 +67,9 @@ export default function Navigation() {
             <div className="the-links">
               <Link
                 className={`nomo ${
-                  pathname === "/experiences" ? "active" : ""
+                  pathname?.toLowerCase().startsWith("/experiences")
+                    ? "active"
+                    : ""
                 }`}
                 href="/experiences"
               >
@@ -78,7 +84,11 @@ export default function Navigation() {
             </Link>
             <div className="the-links up-to">
               <Link
-                className={`nomo ${pathname === "/projects" ? "active" : ""}`}
+                className={`nomo ${
+                  pathname?.toLowerCase().startsWith("/projects")
+                    ? "active"
+                    : ""
+                }`}
                 href="/projects"
               >
                 PROJECTS
@@ -86,7 +96,11 @@ export default function Navigation() {
             </div>
             <div className="the-links">
               <Link
-                className={`nomo ${pathname === "/cryptech" ? "active" : ""}`}
+                className={`nomo ${
+                  pathname?.toLowerCase().startsWith("/cryptech")
+                    ? "active"
+                    : ""
+                }`}
                 href="/cryptech"
               >
                 CRYPTECH
@@ -94,7 +108,9 @@ export default function Navigation() {
             </div>
             <div className="the-links">
               <Link
-                className={`nomo ${pathname === "/contact" ? "active" : ""}`}
+                className={`nomo ${
+                  pathname?.toLowerCase().startsWith("/contact") ? "active" : ""
+                }`}
                 href="/contact"
               >
                 CONTACT
