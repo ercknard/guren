@@ -3,6 +3,7 @@ import PageSigns from "./PageSigns";
 import CheckIcon from "@mui/icons-material/Check";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import TimelineQueue from "./TimelineQueue";
+import Todos from "./Todos";
 
 export default function CustomizedTimeline() {
   return (
@@ -28,6 +29,7 @@ export default function CustomizedTimeline() {
         </span>
         <TimelineQueue />
       </div>
+      <Todos />
     </>
   );
 }

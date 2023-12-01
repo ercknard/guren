@@ -1488,6 +1488,17 @@ main {
   /* background: #00000090; */
 }
 
+.to-marg {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .landing-loader {
   display: flex;
   flex-direction: column;
