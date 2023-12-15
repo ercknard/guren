@@ -10,6 +10,7 @@ import dynamic from "next/dynamic";
 import AOScall from "@/components/Aos";
 import Loader from "@/components/Loader";
 import { useCookies } from "react-cookie";
+import StarsCanvas from "@/components/StarBackground";
 
 interface LayoutProps {
   children: ReactNode;

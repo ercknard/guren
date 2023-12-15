@@ -13,12 +13,8 @@ export default class Home extends Component<Props, State> {
       <>
         <div className="to-animate-home">
           <div className="landing-for-down" />
-          <div
-            className="text-motion icon-text to-hide"
-          ></div>
-          <div
-            className="main-title text-effect"
-          >
+          <div className="text-motion icon-text to-hide"></div>
+          <div className="main-title text-effect">
             {" "}
             <HomeTypingAnimation />{" "}
           </div>
